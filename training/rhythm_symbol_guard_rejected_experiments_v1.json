@@ -1,0 +1,50 @@
+{
+  "decision": "retain transaction-level deterministic Sobel guard; reject weaker or unstable alternatives",
+  "end_to_end_accuracy_claim": false,
+  "experiments": [
+    {
+      "decision": "rejected",
+      "frozen_false_accepts": 5,
+      "independent_false_accepts": 13,
+      "name": "absolute-event-local-classifier",
+      "reason": "absolute compatibility did not compare the proposal against the template transaction",
+      "runtime_deployed": false
+    },
+    {
+      "decision": "rejected",
+      "independent_false_accepts": 15,
+      "name": "larger-event-pairwise-tail",
+      "reason": "tail error acceptance remained unstable after increasing rendered groups",
+      "runtime_deployed": false
+    },
+    {
+      "decision": "rejected",
+      "name": "pre-safety-transaction-threshold",
+      "reason": "dedicated safety calibration exposed rare reverse-direction accepts",
+      "runtime_deployed": false,
+      "safety_false_accepts": 2,
+      "threshold": 0.981
+    },
+    {
+      "decision": "rejected",
+      "minimum_required_recall": 0.45,
+      "name": "six-decimal-runtime-quantisation",
+      "reason": "reproducible but removed too much useful symbol evidence",
+      "runtime_deployed": false,
+      "safe_positive_recall": 0.390833,
+      "safety_false_accepts": 0
+    },
+    {
+      "decision": "rejected",
+      "minimum_required_recall": 0.45,
+      "name": "deterministic-central-difference-descriptor",
+      "reason": "deterministic but insufficient safe coverage",
+      "runtime_deployed": false,
+      "safe_positive_recall": 0.405417,
+      "safety_false_accepts": 0
+    }
+  ],
+  "format": 1,
+  "runtime_deployed_model": "scorescan-rhythm-symbol-forest-1",
+  "version": "0.31.0-rc1"
+}

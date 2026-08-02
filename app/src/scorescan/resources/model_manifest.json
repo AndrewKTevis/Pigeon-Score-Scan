@@ -1,0 +1,264 @@
+{
+  "format": 1,
+  "models": [
+    {
+      "bytes": 4054589,
+      "file": "accent_visual_guard.json",
+      "model_version": "scorescan-accent-visual-forest-1",
+      "role": "accent_visual_guard",
+      "sha256": "9383fd62557905ecc53bd29cf4c777f1cd38bb5e244b5548b0c12110cb0d2767"
+    },
+    {
+      "bytes": 1684383,
+      "file": "accidental_presence_guard.json",
+      "model_version": "scorescan-accidental-presence-forest-1",
+      "role": "accidental_presence_guard",
+      "sha256": "abb3921a2df661c7ae146b7aa3d35715638331a4aaaa74d898b3a262b1d84920"
+    },
+    {
+      "bytes": 1419779,
+      "file": "articulation_patch_calibrator.json",
+      "model_version": "scorescan-articulation-patch-forest-1",
+      "role": "articulation_patch_calibration",
+      "sha256": "e7e1a1fd993d2464699c53164f503f075ca2e903a27ebdbe85eafd4cc350ed70"
+    },
+    {
+      "bytes": 240914,
+      "file": "attribute_patch_calibrator.json",
+      "model_version": "scorescan-attribute-patch-forest-1",
+      "role": "attribute_patch_calibration",
+      "sha256": "8c94e810483818e49a1d10b8abfb5b9735bef8d91a6ef6aa38eb4b745496c644"
+    },
+    {
+      "bytes": 1999155,
+      "file": "barline_classifier.json",
+      "model_version": "scorescan-barline-forest-2",
+      "role": "barline_classification",
+      "sha256": "e0a54f021f93ed61aa8bdea496b8666cadde1336c1f1dcd1d1f11b5c4f5532ac"
+    },
+    {
+      "bytes": 1543330,
+      "file": "barline_patch_calibrator.json",
+      "model_version": "scorescan-barline-patch-forest-1",
+      "role": "barline_patch_calibration",
+      "sha256": "8ed9fcee7d796cdff5490aa5a38f90a17be0b87eaf4cd59e52c7b8820747a533"
+    },
+    {
+      "bytes": 72470,
+      "file": "barline_sequence_classifier.json",
+      "model_version": "scorescan-barline-sequence-gbdt-2",
+      "role": "barline_sequence_classification",
+      "sha256": "f4d7dc635dbdcaf7fdae755fc71f332911b5926364be4c777cd13e1d607a49af"
+    },
+    {
+      "bytes": 1672,
+      "file": "candidate_calibrator.json",
+      "model_version": "scorescan-candidate-calibrator-1",
+      "role": "page_candidate_calibration",
+      "sha256": "c1d82d0d2e21a406a2e0e7bd0fc0ecabf8ad63404fe49ef0af797e6e354d40d1"
+    },
+    {
+      "bytes": 1596302,
+      "file": "chord_patch_calibrator.json",
+      "model_version": "scorescan-chord-patch-forest-1",
+      "role": "chord_patch_calibration",
+      "sha256": "05a70b0f8b83ab1c248ab96c4d075a9dcfcc25b6640f0b718fdcd903db27c7a3"
+    },
+    {
+      "bytes": 300444,
+      "file": "context_calibrator.json",
+      "model_version": "scorescan-context-forest-2",
+      "role": "context_candidate_calibration",
+      "sha256": "cb4d06c931f82052f33918a3011c140c78f10613f44a108bd13adc361e4abdaf"
+    },
+    {
+      "bytes": 777016,
+      "file": "cross_tie_patch_calibrator.json",
+      "model_version": "scorescan-cross-tie-patch-forest-2",
+      "role": "cross_tie_patch_calibration",
+      "sha256": "421cf76295ed93da755c7f9b02fc65773d5bfb5496d2340c73d3e3362e2d597a"
+    },
+    {
+      "bytes": 2008458,
+      "file": "direction_anchor_classifier.json",
+      "model_version": "scorescan-direction-anchor-hybrid-2",
+      "role": "direction_anchor_classification",
+      "sha256": "c105af2d6cad878d67e7be8c3629c2131c14828cd2423a20588f5462e6aee4b0"
+    },
+    {
+      "bytes": 71902,
+      "file": "direction_model.json",
+      "model_version": "scorescan-direction-logistic-9",
+      "role": "music_direction_correction",
+      "sha256": "29e8cd4bb6b47cce0a59f5153d43608b27451da0dbf6735f44363e0fba61c91e"
+    },
+    {
+      "bytes": 1190398,
+      "file": "direction_patch_calibrator.json",
+      "model_version": "scorescan-direction-patch-forest-1",
+      "role": "direction_patch_calibration",
+      "sha256": "a50b97b36cd71e4eef5cbd6fb2292a58e99bf71f7f0889d4d53aeccfcf6e505d"
+    },
+    {
+      "bytes": 1558625,
+      "file": "ensemble_calibrator.json",
+      "model_version": "scorescan-ensemble-forest-3",
+      "role": "ensemble_candidate_calibration",
+      "sha256": "26e43a8d9460d3d33fb5b8ef882f830ca01a9f145dbe95e656e487a97a61e30c"
+    },
+    {
+      "bytes": 1339164,
+      "file": "event_calibrator.json",
+      "model_version": "scorescan-event-forest-2",
+      "role": "event_candidate_calibration",
+      "sha256": "a1a655b570e181b20f3e51f54365f527e455df13df4564998e9b2a6c7768e5bf"
+    },
+    {
+      "bytes": 167612,
+      "file": "event_kind_patch_calibrator.json",
+      "model_version": "scorescan-event-kind-patch-forest-1",
+      "role": "event_kind_patch_calibration",
+      "sha256": "677cd1c03768bd143935b4d86a05f5827bddd60a5139d8ab67aeea86d70e8ea7"
+    },
+    {
+      "bytes": 2038813,
+      "file": "event_kind_visual_guard.json",
+      "model_version": "scorescan-event-kind-visual-forest-1",
+      "role": "event_kind_visual_guard",
+      "sha256": "55e4fd5794327e394a7516d7cebda25c681a35a6251ab43a3a1968ceb0366d62"
+    },
+    {
+      "bytes": 779626,
+      "file": "event_presence_patch_calibrator.json",
+      "model_version": "scorescan-event-presence-patch-forest-1",
+      "role": "event_presence_patch_calibration",
+      "sha256": "50b33035aa3e0f3e89d7c6b2bf974a7bf71a73ab06aaec9ade79d3a54679878b"
+    },
+    {
+      "bytes": 6324722,
+      "file": "event_presence_visual_guard.json",
+      "model_version": "scorescan-event-presence-visual-forest-1",
+      "role": "event_presence_visual_guard",
+      "sha256": "0c9b6ea7fc23b0fe7ed0b1a9d76551ab49f0b5df6df031ebc536971f9b701dcf"
+    },
+    {
+      "bytes": 589972,
+      "file": "grace_patch_calibrator.json",
+      "model_version": "scorescan-grace-patch-forest-1",
+      "role": "grace_patch_calibration",
+      "sha256": "b73cb8edba5b9f36506da1e62638bf2d82bc94427d912c198042752686cd1f5b"
+    },
+    {
+      "bytes": 636444,
+      "file": "measure_calibrator.json",
+      "model_version": "scorescan-measure-forest-3",
+      "role": "measure_candidate_calibration",
+      "sha256": "9f64e5fcc7e8264dbf45d96190de6e0b386816b92f5687d2151febfd441b6738"
+    },
+    {
+      "bytes": 5542521,
+      "file": "measure_count_resolver.json",
+      "model_version": "scorescan-measure-count-resolver-4",
+      "role": "measure_count_resolution",
+      "sha256": "8be009e6b11a285bc617bae0be982b390e39ca80fc1fbe46e4e08a2f44b45f23"
+    },
+    {
+      "bytes": 1466553,
+      "file": "ornament_patch_calibrator.json",
+      "model_version": "scorescan-ornament-patch-forest-1",
+      "role": "ornament_patch_calibration",
+      "sha256": "927910fcd52028b21075edb77ae622bd128afa649033906d25373912d59210bb"
+    },
+    {
+      "bytes": 2459,
+      "file": "page_orientation_classifier.json",
+      "model_version": "scorescan-page-orientation-logistic-1",
+      "role": "page_orientation_classification",
+      "sha256": "929bc850e8c82d86b25635eea68d13cbfdf2de8bf8ccae8e725a8bcf892b215f"
+    },
+    {
+      "bytes": 1876728,
+      "file": "patch_transaction_calibrator.json",
+      "model_version": "scorescan-patch-transaction-forest-1",
+      "role": "patch_transaction_calibration",
+      "sha256": "7d2ca677adac53344644da271c25b3deec5670ce2d5f015225fe88763858b028"
+    },
+    {
+      "bytes": 1716995,
+      "file": "pitch_patch_calibrator.json",
+      "model_version": "scorescan-pitch-patch-forest-4",
+      "role": "pitch_patch_calibration",
+      "sha256": "90a40895e4007f2b0def12752e3efe2e5e23314ca9bbe03aeadb15b0b9332802"
+    },
+    {
+      "bytes": 2371897,
+      "file": "pitch_visual_guard.json",
+      "model_version": "scorescan-pitch-visual-guard-2",
+      "role": "pitch_visual_guard",
+      "sha256": "a211f8821723c61077b13a03bdc751e69ba81d19dc681ff907ee9bfb46ecf98e"
+    },
+    {
+      "bytes": 428851,
+      "file": "rhythm_patch_calibrator.json",
+      "model_version": "scorescan-rhythm-patch-forest-1",
+      "role": "rhythm_patch_calibration",
+      "sha256": "91f2164985ebf05fd1ff26ec731bce67fe0482efeb1e4fdbdc6ace08a0d2d331"
+    },
+    {
+      "bytes": 1499281,
+      "file": "rhythm_symbol_guard.json",
+      "model_version": "scorescan-rhythm-symbol-forest-1",
+      "role": "rhythm_symbol_guard",
+      "sha256": "1cbac02b83c5dfa3d210eddb065fd082e60f2b627b745327bcf9580c0c288f69"
+    },
+    {
+      "bytes": 3425,
+      "file": "scan_variant_router.json",
+      "model_version": "scorescan-scan-router-1",
+      "role": "scan_variant_routing",
+      "sha256": "d1e61a0817940ed36e5416bc21a9178388e34d71aa325d125d0b121380df793b"
+    },
+    {
+      "bytes": 1831570,
+      "file": "selection_risk.json",
+      "model_version": "scorescan-selection-risk-forest-4",
+      "role": "selection_risk_calibration",
+      "sha256": "fb92bbae5674d237eb40c8974b89d96b9c93c92ef69f984f90b80f8439b7dd00"
+    },
+    {
+      "bytes": 1716491,
+      "file": "slur_patch_calibrator.json",
+      "model_version": "scorescan-slur-patch-forest-1",
+      "role": "slur_patch_calibration",
+      "sha256": "4d684e261f187b735b4852d853c43f272735e0426a137cc8c999be85ac5991fd"
+    },
+    {
+      "bytes": 1044775,
+      "file": "tie_patch_calibrator.json",
+      "model_version": "scorescan-tie-patch-forest-1",
+      "role": "tie_patch_calibration",
+      "sha256": "9d57ffe3ee41b83b7237ec0b6e09bf877f074c833983d42d1537d3e348a7db46"
+    },
+    {
+      "bytes": 3567253,
+      "file": "tie_visual_guard.json",
+      "model_version": "scorescan-tie-visual-forest-1",
+      "role": "tie_visual_guard",
+      "sha256": "6ad937825dcfea0208b9e9a75a1a90d6b01473c216f057436e6e28474addd841"
+    },
+    {
+      "bytes": 1827446,
+      "file": "tuplet_patch_calibrator.json",
+      "model_version": "scorescan-tuplet-patch-forest-1",
+      "role": "tuplet_patch_calibration",
+      "sha256": "2e12e24cc9f7f1ab3e1956619049d0a5b7d4ae5729a757ea795afb17bdb9c072"
+    },
+    {
+      "bytes": 2939491,
+      "file": "visual_measure_calibrator.json",
+      "model_version": "scorescan-visual-measure-calibrator-4",
+      "role": "visual_measure_compatibility",
+      "sha256": "011d7f6fa1c0b4ba9ce252d02dcf2809896a1359ab9de65194ac995d86dfbacc"
+    }
+  ]
+}

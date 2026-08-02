@@ -1,0 +1,21 @@
+{
+  "model_version": "scorescan-ensemble-calibrator-1",
+  "seed": 20260716,
+  "references": [
+    "/mnt/data/Cantata_BWV147_HP_Violin_Club.musicxml",
+    "/mnt/data/Allegretto_No_3_from_image.musicxml"
+  ],
+  "samples": 1617,
+  "measure_groups": 31,
+  "decision_groups": 248,
+  "train_samples": 1213,
+  "test_samples": 404,
+  "positive_rate": 0.3271490414347557,
+  "test_accuracy": 0.9207920792079208,
+  "test_auc": 0.9714728682170543,
+  "test_log_loss": 0.23503041866327634,
+  "baseline_group_top1": 0.78125,
+  "model_group_top1": 0.890625,
+  "split_unit": "reference measure identity; all repeated ensembles from one measure stay in one split",
+  "scope": "parsed MusicXML ensemble candidate ranking; not end-to-end scan recognition"
+}

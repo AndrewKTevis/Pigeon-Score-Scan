@@ -1,0 +1,11 @@
+{
+  "claim_boundary": "This is an experiment rejection record, not an end-to-end scan accuracy result.",
+  "decision": "rejected",
+  "experiment": "pitch_visual_guard_large_tail_v2",
+  "format": 1,
+  "observed_false_accepts": 6,
+  "reason": "The larger-tail confirmation produced six false accepts, exposing unstable threshold-tail behaviour. The larger experiment was rejected instead of being used to claim that more synthetic data automatically improved production safety.",
+  "replacement": "The deployed v2 guard uses the smaller grouped training protocol that passed threshold, frozen and independent confirmation with zero observed false accepts, plus an independent serial production-gate audit.",
+  "runtime_deployed": false,
+  "scope": "Larger rendered training and confirmation trial for the dual-detector local pitch visual guard."
+}

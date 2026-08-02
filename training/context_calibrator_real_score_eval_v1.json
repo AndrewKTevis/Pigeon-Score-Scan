@@ -1,0 +1,21 @@
+{
+  "groups": 86,
+  "model_version": "scorescan-context-calibrator-1",
+  "mutations_per_group": 5,
+  "note": "Reviewed MusicXML semantic perturbation non-regression; not a scan-image OMR benchmark.",
+  "score_count": 2,
+  "scores": [
+    {
+      "file": "Cantata_BWV147_HP_Violin_Club.musicxml",
+      "groups": 42,
+      "top1": 0.5714285714285714
+    },
+    {
+      "file": "Allegretto_No_3_from_image.musicxml",
+      "groups": 44,
+      "top1": 0.7045454545454546
+    }
+  ],
+  "seed": 20260717,
+  "top1": 0.6395348837209303
+}

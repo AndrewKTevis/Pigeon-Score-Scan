@@ -1,0 +1,13 @@
+{
+  "end_to_end_accuracy_claim": false,
+  "format": 1,
+  "model_byte_identical": true,
+  "model_sha256": "6ad937825dcfea0208b9e9a75a1a90d6b01473c216f057436e6e28474addd841",
+  "model_version": "scorescan-tie-visual-forest-1",
+  "passed": true,
+  "report_byte_identical": true,
+  "report_sha256": "1a3843ae8a3f9367a93c916dfc74658746d732d58981b9d3545c7ad547d75566",
+  "training_dataset_array_identical": true,
+  "training_seed": 20260903,
+  "version": "0.33.0-rc1"
+}

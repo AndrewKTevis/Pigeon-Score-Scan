@@ -1,0 +1,480 @@
+{"expected": "mf", "font": "DejaVuSerif-Italic.ttf", "observed": "mf", "record": 0, "sample": 0, "source_batch": "legacy_multilingual"}
+{"expected": "Lento leggiero", "font": "Lato-Italic.ttf", "observed": "Lento leggiero", "record": 1, "sample": 1, "source_batch": "legacy_multilingual"}
+{"expected": "Allegretto deciso", "font": "NimbusRoman-Italic.otf", "observed": "Allegretto deciso", "record": 2, "sample": 2, "source_batch": "legacy_multilingual"}
+{"expected": "arco", "font": "FreeSerifItalic.ttf", "observed": "arco", "record": 3, "sample": 3, "source_batch": "legacy_multilingual"}
+{"expected": "Adagio con anima", "font": "NimbusRoman-Italic.otf", "observed": "—Adagio-con-anima——", "record": 4, "sample": 4, "source_batch": "legacy_multilingual"}
+{"expected": "Larghetto tranquillo", "font": "DejaVuSerif-Italic.ttf", "observed": "Larghetto tranquillo", "record": 5, "sample": 5, "source_batch": "legacy_multilingual"}
+{"expected": "Zart", "font": "FreeSerifItalic.ttf", "observed": "Zart", "record": 6, "sample": 6, "source_batch": "legacy_multilingual"}
+{"expected": "con energia", "font": "FreeSerifItalic.ttf", "observed": "con energia", "record": 7, "sample": 7, "source_batch": "legacy_multilingual"}
+{"expected": "Vivace scherzando", "font": "FreeSerifItalic.ttf", "observed": "Vivace scherzando", "record": 8, "sample": 8, "source_batch": "legacy_multilingual"}
+{"expected": "Lento", "font": "DejaVuSerif-Italic.ttf", "observed": "Lento", "record": 9, "sample": 9, "source_batch": "legacy_multilingual"}
+{"expected": "Largo agitato", "font": "Lato-Italic.ttf", "observed": "Largo agitato", "record": 10, "sample": 10, "source_batch": "legacy_multilingual"}
+{"expected": "Vivacissimo con brio", "font": "DejaVuSerif-Italic.ttf", "observed": "Vivacissi bri", "record": 11, "sample": 11, "source_batch": "legacy_multilingual"}
+{"expected": "p", "font": "NimbusRoman-Italic.otf", "observed": "p", "record": 12, "sample": 12, "source_batch": "legacy_multilingual"}
+{"expected": "ad libitum", "font": "FreeSerifItalic.ttf", "observed": "ad libitum", "record": 13, "sample": 13, "source_batch": "legacy_multilingual"}
+{"expected": "Presto tranquillo", "font": "NimbusRoman-Regular.otf", "observed": "Presto tranquillo", "record": 14, "sample": 14, "source_batch": "legacy_multilingual"}
+{"expected": "rfz", "font": "Lato-Italic.ttf", "observed": "rfz", "record": 15, "sample": 15, "source_batch": "legacy_multilingual"}
+{"expected": "rit. e dim.", "font": "FreeSerifItalic.ttf", "observed": "rit. e dim.", "record": 16, "sample": 16, "source_batch": "legacy_multilingual"}
+{"expected": "Allegro cantabile", "font": "Lato-Italic.ttf", "observed": "Allegro cantabile", "record": 17, "sample": 17, "source_batch": "legacy_multilingual"}
+{"expected": "sf", "font": "NimbusRoman-Italic.otf", "observed": "Si", "record": 18, "sample": 18, "source_batch": "legacy_multilingual"}
+{"expected": "Largo agitato", "font": "Lato-Italic.ttf", "observed": "Largo agitato", "record": 19, "sample": 19, "source_batch": "legacy_multilingual"}
+{"expected": "Adagio appassionato", "font": "NimbusRoman-Italic.otf", "observed": "", "record": 20, "sample": 20, "source_batch": "legacy_multilingual"}
+{"expected": "tutti", "font": "DejaVuSerif-Italic.ttf", "observed": "tutti", "record": 21, "sample": 21, "source_batch": "legacy_multilingual"}
+{"expected": "Presto energico", "font": "NimbusRoman-Regular.otf", "observed": "Presto energico", "record": 22, "sample": 22, "source_batch": "legacy_multilingual"}
+{"expected": "Andantino maestoso", "font": "Lato-Italic.ttf", "observed": "Andantino maestoso", "record": 23, "sample": 23, "source_batch": "legacy_multilingual"}
+{"expected": "f", "font": "DejaVuSerif-Italic.ttf", "observed": "p", "record": 24, "sample": 24, "source_batch": "legacy_multilingual"}
+{"expected": "meno dolce", "font": "FreeSerifItalic.ttf", "observed": "meno dolce", "record": 25, "sample": 25, "source_batch": "legacy_multilingual"}
+{"expected": "Larghetto con brio", "font": "NimbusRoman-Regular.otf", "observed": "—Larghetto-con-brio—", "record": 26, "sample": 26, "source_batch": "legacy_multilingual"}
+{"expected": "Vif", "font": "Lato-Italic.ttf", "observed": "Vif", "record": 27, "sample": 27, "source_batch": "legacy_multilingual"}
+{"expected": "Grave con fuoco", "font": "NimbusRoman-Italic.otf", "observed": "Grave con fuoco", "record": 28, "sample": 28, "source_batch": "legacy_multilingual"}
+{"expected": "Allegretto espressivo", "font": "Lato-Italic.ttf", "observed": "Allegretto espressivo", "record": 29, "sample": 29, "source_batch": "legacy_multilingual"}
+{"expected": "dolce", "font": "NimbusRoman-Italic.otf", "observed": "_dolce", "record": 30, "sample": 30, "source_batch": "legacy_multilingual"}
+{"expected": "rall. e cresc.", "font": "DejaVuSerif-Italic.ttf", "observed": "_rall_e-cresc.—", "record": 31, "sample": 31, "source_batch": "legacy_multilingual"}
+{"expected": "Adagietto con fuoco", "font": "NimbusRoman-Italic.otf", "observed": "Adagietto con fuoco", "record": 32, "sample": 32, "source_batch": "legacy_multilingual"}
+{"expected": "Breit", "font": "Lato-Italic.ttf", "observed": "_ Breit", "record": 33, "sample": 33, "source_batch": "legacy_multilingual"}
+{"expected": "Allegro energico", "font": "Lato-Italic.ttf", "observed": "", "record": 34, "sample": 34, "source_batch": "legacy_multilingual"}
+{"expected": "Adagietto scherzando", "font": "DejaVuSerif.ttf", "observed": "Adagietto scherzando", "record": 35, "sample": 35, "source_batch": "legacy_multilingual"}
+{"expected": "rf", "font": "NimbusRoman-Italic.otf", "observed": "tf", "record": 36, "sample": 36, "source_batch": "legacy_multilingual"}
+{"expected": "Alla turca", "font": "DejaVuSerif-Italic.ttf", "observed": "Alla turca", "record": 37, "sample": 37, "source_batch": "legacy_multilingual"}
+{"expected": "Maestoso e sostenuto", "font": "Lato-Italic.ttf", "observed": "Maestoso e sostenuto", "record": 38, "sample": 38, "source_batch": "legacy_multilingual"}
+{"expected": "sul D", "font": "DejaVuSerif-Italic.ttf", "observed": "sul D", "record": 39, "sample": 39, "source_batch": "legacy_multilingual"}
+{"expected": "Lento non troppo", "font": "Lato-Italic.ttf", "observed": "Lento non troppo", "record": 40, "sample": 40, "source_batch": "legacy_multilingual"}
+{"expected": "Vivacissimo scherzando", "font": "NimbusRoman-Regular.otf", "observed": "Vivacissimo scherzando", "record": 41, "sample": 41, "source_batch": "legacy_multilingual"}
+{"expected": "sfp", "font": "DejaVuSerif-Italic.ttf", "observed": "sfp", "record": 42, "sample": 42, "source_batch": "legacy_multilingual"}
+{"expected": "Adagio con anima", "font": "NimbusRoman-Italic.otf", "observed": "Adagio con anima", "record": 43, "sample": 43, "source_batch": "legacy_multilingual"}
+{"expected": "Marcia moderato energico", "font": "Lato-Italic.ttf", "observed": "", "record": 44, "sample": 44, "source_batch": "legacy_multilingual"}
+{"expected": "Largo", "font": "NimbusRoman-Italic.otf", "observed": "Largo", "record": 45, "sample": 45, "source_batch": "legacy_multilingual"}
+{"expected": "Lento con fuoco", "font": "DejaVuSerif-Italic.ttf", "observed": "Lento con fuoco", "record": 46, "sample": 46, "source_batch": "legacy_multilingual"}
+{"expected": "Marcia moderato con fuoco", "font": "DejaVuSerif.ttf", "observed": "Marcia moderato con fuoco", "record": 47, "sample": 47, "source_batch": "legacy_multilingual"}
+{"expected": "Vif", "font": "DejaVuSerif.ttf", "observed": "Vif", "record": 48, "sample": 48, "source_batch": "legacy_multilingual"}
+{"expected": "Broadly", "font": "DejaVuSerif.ttf", "observed": "Broadly", "record": 49, "sample": 49, "source_batch": "legacy_multilingual"}
+{"expected": "Andante moderato con fuoco", "font": "NimbusRoman-Regular.otf", "observed": "Andante moderato con fuoco", "record": 50, "sample": 50, "source_batch": "legacy_multilingual"}
+{"expected": "Cédez", "font": "DejaVuSerif-Italic.ttf", "observed": "Cédez", "record": 51, "sample": 51, "source_batch": "legacy_multilingual"}
+{"expected": "unisono", "font": "NimbusRoman-Italic.otf", "observed": "unisono", "record": 52, "sample": 52, "source_batch": "legacy_multilingual"}
+{"expected": "Sehr ausdrucksvoll", "font": "NimbusRoman-Regular.otf", "observed": "Sehr ausdrucksvoll", "record": 53, "sample": 53, "source_batch": "legacy_multilingual"}
+{"expected": "p", "font": "DejaVuSerif-Italic.ttf", "observed": "p", "record": 54, "sample": 54, "source_batch": "legacy_multilingual"}
+{"expected": "Lento espressivo", "font": "DejaVuSerif.ttf", "observed": "Lento espressivo", "record": 55, "sample": 55, "source_batch": "legacy_multilingual"}
+{"expected": "Grave con spirito", "font": "DejaVuSerif.ttf", "observed": "_Grave con spirito_", "record": 56, "sample": 56, "source_batch": "legacy_multilingual"}
+{"expected": "sf", "font": "NimbusRoman-Regular.otf", "observed": "sf", "record": 57, "sample": 57, "source_batch": "legacy_multilingual"}
+{"expected": "molto marcato", "font": "Lato-Italic.ttf", "observed": "—molto-marcato-", "record": 58, "sample": 58, "source_batch": "legacy_multilingual"}
+{"expected": "Larghetto semplice", "font": "DejaVuSerif-Italic.ttf", "observed": "Larghetto semplice", "record": 59, "sample": 59, "source_batch": "legacy_multilingual"}
+{"expected": "arco", "font": "DejaVuSerif.ttf", "observed": "arco", "record": 60, "sample": 60, "source_batch": "legacy_multilingual"}
+{"expected": "En animant", "font": "DejaVuSerif-Italic.ttf", "observed": "En animant", "record": 61, "sample": 61, "source_batch": "legacy_multilingual"}
+{"expected": "Allegro moderato con brio", "font": "DejaVuSerif-Italic.ttf", "observed": "Allegro moderato con brio", "record": 62, "sample": 62, "source_batch": "legacy_multilingual"}
+{"expected": "ffff", "font": "NimbusRoman-Regular.otf", "observed": "fF", "record": 63, "sample": 63, "source_batch": "legacy_multilingual"}
+{"expected": "Etwas schneller", "font": "DejaVuSerif.ttf", "observed": "—Etwas schneller——", "record": 64, "sample": 64, "source_batch": "legacy_multilingual"}
+{"expected": "Larghissimo maestoso", "font": "Lato-Italic.ttf", "observed": "Larghissi", "record": 65, "sample": 65, "source_batch": "legacy_multilingual"}
+{"expected": "Coda", "font": "Lato-Italic.ttf", "observed": "Coda", "record": 66, "sample": 66, "source_batch": "legacy_multilingual"}
+{"expected": "Andante maestoso", "font": "FreeSerifItalic.ttf", "observed": "Andante maestoso", "record": 67, "sample": 67, "source_batch": "legacy_multilingual"}
+{"expected": "Mit innigem Ausdruck", "font": "Lato-Italic.ttf", "observed": "Mit innigem Ausdruck", "record": 68, "sample": 68, "source_batch": "legacy_multilingual"}
+{"expected": "rfz", "font": "NimbusRoman-Regular.otf", "observed": "rfz", "record": 69, "sample": 69, "source_batch": "legacy_multilingual"}
+{"expected": "Au mouvement", "font": "NimbusRoman-Regular.otf", "observed": "Au mouvement", "record": 70, "sample": 70, "source_batch": "legacy_multilingual"}
+{"expected": "Moderato maestoso", "font": "DejaVuSerif.ttf", "observed": "Moderato maestoso", "record": 71, "sample": 71, "source_batch": "legacy_multilingual"}
+{"expected": "Coda", "font": "FreeSerifItalic.ttf", "observed": "oda", "record": 72, "sample": 72, "source_batch": "legacy_multilingual"}
+{"expected": "Grave leggiero", "font": "NimbusRoman-Regular.otf", "observed": "Grave leggiero _", "record": 73, "sample": 73, "source_batch": "legacy_multilingual"}
+{"expected": "Marcia moderato leggiero", "font": "NimbusRoman-Italic.otf", "observed": "Marcia moderato leggiero", "record": 74, "sample": 74, "source_batch": "legacy_multilingual"}
+{"expected": "dim.", "font": "NimbusRoman-Italic.otf", "observed": "", "record": 75, "sample": 75, "source_batch": "legacy_multilingual"}
+{"expected": "Tempo ordinario", "font": "DejaVuSerif.ttf", "observed": "Tempo ordinario", "record": 76, "sample": 76, "source_batch": "legacy_multilingual"}
+{"expected": "Moderato con fuoco", "font": "DejaVuSerif.ttf", "observed": "Moderato con fuoco", "record": 77, "sample": 77, "source_batch": "legacy_multilingual"}
+{"expected": "fz", "font": "Lato-Italic.ttf", "observed": "fz", "record": 78, "sample": 78, "source_batch": "legacy_multilingual"}
+{"expected": "Grave con fuoco", "font": "DejaVuSerif.ttf", "observed": "Grave con fuoco", "record": 79, "sample": 79, "source_batch": "legacy_multilingual"}
+{"expected": "Andante moderato appassionato", "font": "FreeSerifItalic.ttf", "observed": "Andante moderato appassionato", "record": 80, "sample": 80, "source_batch": "legacy_multilingual"}
+{"expected": "Breit", "font": "DejaVuSerif.ttf", "observed": "—Breit—", "record": 81, "sample": 81, "source_batch": "legacy_multilingual"}
+{"expected": "Allegro semplice", "font": "Lato-Italic.ttf", "observed": "Allegro semplice", "record": 82, "sample": 82, "source_batch": "legacy_multilingual"}
+{"expected": "Marcia moderato molto", "font": "DejaVuSerif.ttf", "observed": "Marcia moderato molto", "record": 83, "sample": 83, "source_batch": "legacy_multilingual"}
+{"expected": "p", "font": "NimbusRoman-Italic.otf", "observed": "D", "record": 84, "sample": 84, "source_batch": "legacy_multilingual"}
+{"expected": "Allegro agitato", "font": "NimbusRoman-Italic.otf", "observed": "Allegro agitato", "record": 85, "sample": 85, "source_batch": "legacy_multilingual"}
+{"expected": "Vivace non troppo", "font": "Lato-Italic.ttf", "observed": "Vivace non troppo", "record": 86, "sample": 86, "source_batch": "legacy_multilingual"}
+{"expected": "sul G", "font": "FreeSerifItalic.ttf", "observed": "ulG", "record": 87, "sample": 87, "source_batch": "legacy_multilingual"}
+{"expected": "Allegro deciso", "font": "NimbusRoman-Italic.otf", "observed": "Allegro deciso", "record": 88, "sample": 88, "source_batch": "legacy_multilingual"}
+{"expected": "Allegro ma non troppo", "font": "NimbusRoman-Italic.otf", "observed": "Allegro ma non troppo", "record": 89, "sample": 89, "source_batch": "legacy_multilingual"}
+{"expected": "sfp", "font": "NimbusRoman-Regular.otf", "observed": "sfp", "record": 90, "sample": 90, "source_batch": "legacy_multilingual"}
+{"expected": "Au mouvement", "font": "DejaVuSerif.ttf", "observed": "Au mouvement _", "record": 91, "sample": 91, "source_batch": "legacy_multilingual"}
+{"expected": "Allegro moderato assai", "font": "NimbusRoman-Regular.otf", "observed": "Allegro moderato assai", "record": 92, "sample": 92, "source_batch": "legacy_multilingual"}
+{"expected": "rall.", "font": "DejaVuSerif-Italic.ttf", "observed": "rall.", "record": 93, "sample": 93, "source_batch": "legacy_multilingual"}
+{"expected": "Libremente", "font": "NimbusRoman-Italic.otf", "observed": "Libremente", "record": 94, "sample": 94, "source_batch": "legacy_multilingual"}
+{"expected": "Andante con anima", "font": "Lato-Italic.ttf", "observed": "Andante con anima", "record": 95, "sample": 95, "source_batch": "legacy_multilingual"}
+{"expected": "Breit", "font": "NimbusRoman-Regular.otf", "observed": "Breit", "record": 96, "sample": 96, "source_batch": "legacy_multilingual"}
+{"expected": "subito legato", "font": "FreeSerifItalic.ttf", "observed": "subito legato", "record": 97, "sample": 97, "source_batch": "legacy_multilingual"}
+{"expected": "Vivacissimo sostenuto", "font": "FreeSerifItalic.ttf", "observed": "Vivacissimo sostenuto", "record": 98, "sample": 98, "source_batch": "legacy_multilingual"}
+{"expected": "pf", "font": "DejaVuSerif-Italic.ttf", "observed": "pf", "record": 99, "sample": 99, "source_batch": "legacy_multilingual"}
+{"expected": "Grave con fuoco", "font": "FreeSerifItalic.ttf", "observed": "Grave con fuoco", "record": 100, "sample": 100, "source_batch": "legacy_multilingual"}
+{"expected": "Moderato con fuoco", "font": "Lato-Italic.ttf", "observed": "Moderato con fuoco _", "record": 101, "sample": 101, "source_batch": "legacy_multilingual"}
+{"expected": "tutti", "font": "DejaVuSerif-Italic.ttf", "observed": "tutti", "record": 102, "sample": 102, "source_batch": "legacy_multilingual"}
+{"expected": "Vivace brillante", "font": "NimbusRoman-Regular.otf", "observed": "Vivace brillante —", "record": 103, "sample": 103, "source_batch": "legacy_multilingual"}
+{"expected": "Andantino appassionato", "font": "DejaVuSerif-Italic.ttf", "observed": "Andantino appassionato _", "record": 104, "sample": 104, "source_batch": "legacy_multilingual"}
+{"expected": "arco", "font": "NimbusRoman-Italic.otf", "observed": "arco", "record": 105, "sample": 105, "source_batch": "legacy_multilingual"}
+{"expected": "Même mouvement", "font": "FreeSerifItalic.ttf", "observed": "Méine mouvement", "record": 106, "sample": 106, "source_batch": "legacy_multilingual"}
+{"expected": "Andante cantabile", "font": "DejaVuSerif-Italic.ttf", "observed": "_Andante cantabile_", "record": 107, "sample": 107, "source_batch": "legacy_multilingual"}
+{"expected": "fz", "font": "NimbusRoman-Italic.otf", "observed": "fe", "record": 108, "sample": 108, "source_batch": "legacy_multilingual"}
+{"expected": "con vibrato", "font": "NimbusRoman-Regular.otf", "observed": "con vibrato", "record": 109, "sample": 109, "source_batch": "legacy_multilingual"}
+{"expected": "Moderato alla marcia", "font": "DejaVuSerif.ttf", "observed": "Moderato alla marcia", "record": 110, "sample": 110, "source_batch": "legacy_multilingual"}
+{"expected": "ffff", "font": "DejaVuSerif.ttf", "observed": "ffff", "record": 111, "sample": 111, "source_batch": "legacy_multilingual"}
+{"expected": "Presto con moto", "font": "DejaVuSerif-Italic.ttf", "observed": "_Presto-con_moto—", "record": 112, "sample": 112, "source_batch": "legacy_multilingual"}
+{"expected": "Prestissimo dolce", "font": "NimbusRoman-Regular.otf", "observed": "—Prestissimo-dolee—", "record": 113, "sample": 113, "source_batch": "legacy_multilingual"}
+{"expected": "dim.", "font": "DejaVuSerif.ttf", "observed": "dim.", "record": 114, "sample": 114, "source_batch": "legacy_multilingual"}
+{"expected": "Largo assai", "font": "DejaVuSerif-Italic.ttf", "observed": "Largo-assai", "record": 115, "sample": 115, "source_batch": "legacy_multilingual"}
+{"expected": "Un poco sostenuto", "font": "NimbusRoman-Regular.otf", "observed": "Un poco sostenuto", "record": 116, "sample": 116, "source_batch": "legacy_multilingual"}
+{"expected": "Animé", "font": "NimbusRoman-Regular.otf", "observed": "Animé", "record": 117, "sample": 117, "source_batch": "legacy_multilingual"}
+{"expected": "Lento agitato", "font": "NimbusRoman-Regular.otf", "observed": "Lento agitato", "record": 118, "sample": 118, "source_batch": "legacy_multilingual"}
+{"expected": "Presto non troppo", "font": "DejaVuSerif-Italic.ttf", "observed": "—Presto-nen-treppo—", "record": 119, "sample": 119, "source_batch": "legacy_multilingual"}
+{"expected": "sul G", "font": "DejaVuSerif-Italic.ttf", "observed": "sul G", "record": 120, "sample": 0, "source_batch": "eng_20261101"}
+{"expected": "Grave deciso", "font": "Lato-Italic.ttf", "observed": "Grave deciso", "record": 121, "sample": 1, "source_batch": "eng_20261101"}
+{"expected": "poco a poco e cresc.", "font": "NimbusRoman-Regular.otf", "observed": "poco a poco € cresc.", "record": 122, "sample": 2, "source_batch": "eng_20261101"}
+{"expected": "sul A", "font": "DejaVuSerif-Italic.ttf", "observed": "sulA", "record": 123, "sample": 3, "source_batch": "eng_20261101"}
+{"expected": "Moderato molto", "font": "Lato-Italic.ttf", "observed": "Moderato molto", "record": 124, "sample": 4, "source_batch": "eng_20261101"}
+{"expected": "Larghissimo molto", "font": "Lato-Italic.ttf", "observed": "Larghissimo molto", "record": 125, "sample": 5, "source_batch": "eng_20261101"}
+{"expected": "sf", "font": "DejaVuSerif.ttf", "observed": "sf", "record": 126, "sample": 6, "source_batch": "eng_20261101"}
+{"expected": "Lento dolce", "font": "NimbusRoman-Regular.otf", "observed": "Lento dolce", "record": 127, "sample": 7, "source_batch": "eng_20261101"}
+{"expected": "Larghissimo assai", "font": "NimbusRoman-Italic.otf", "observed": "es a assai -", "record": 128, "sample": 8, "source_batch": "eng_20261101"}
+{"expected": "pppp", "font": "FreeSerifItalic.ttf", "observed": "PPpP", "record": 129, "sample": 9, "source_batch": "eng_20261101"}
+{"expected": "meno mosso", "font": "DejaVuSerif.ttf", "observed": "meno Mosso", "record": 130, "sample": 10, "source_batch": "eng_20261101"}
+{"expected": "Vivacissimo brillante", "font": "FreeSerifItalic.ttf", "observed": "—Vivacissime-brillante—", "record": 131, "sample": 11, "source_batch": "eng_20261101"}
+{"expected": "Vif", "font": "DejaVuSerif.ttf", "observed": "Vif", "record": 132, "sample": 12, "source_batch": "eng_20261101"}
+{"expected": "Moderato molto", "font": "FreeSerifItalic.ttf", "observed": "Moderato molto", "record": 133, "sample": 13, "source_batch": "eng_20261101"}
+{"expected": "freely, with expression", "font": "DejaVuSerif.ttf", "observed": "freely, with expression", "record": 134, "sample": 14, "source_batch": "eng_20261101"}
+{"expected": "rfz", "font": "FreeSerifItalic.ttf", "observed": "rfz", "record": 135, "sample": 15, "source_batch": "eng_20261101"}
+{"expected": "Gently flowing", "font": "DejaVuSerif.ttf", "observed": "Gently flowing", "record": 136, "sample": 16, "source_batch": "eng_20261101"}
+{"expected": "Allegretto appassionato", "font": "NimbusRoman-Regular.otf", "observed": "Allegretto appassionato", "record": 137, "sample": 17, "source_batch": "eng_20261101"}
+{"expected": "fz", "font": "DejaVuSerif.ttf", "observed": "VAs", "record": 138, "sample": 18, "source_batch": "eng_20261101"}
+{"expected": "♩ = 60", "font": "NimbusRoman-Italic.otf", "observed": "Say ee", "record": 139, "sample": 19, "source_batch": "eng_20261101"}
+{"expected": "Marcia moderato assai", "font": "NimbusRoman-Italic.otf", "observed": "Marcia moderato assai", "record": 140, "sample": 20, "source_batch": "eng_20261101"}
+{"expected": "sul A", "font": "DejaVuSerif.ttf", "observed": "sul A", "record": 141, "sample": 21, "source_batch": "eng_20261101"}
+{"expected": "Largo cantabile", "font": "NimbusRoman-Italic.otf", "observed": "Largo cantabile", "record": 142, "sample": 22, "source_batch": "eng_20261101"}
+{"expected": "Moderato grazioso", "font": "FreeSerifItalic.ttf", "observed": "Moderato grazioso", "record": 143, "sample": 23, "source_batch": "eng_20261101"}
+{"expected": "Mäßig", "font": "NimbusRoman-Regular.otf", "observed": "_Migig—", "record": 144, "sample": 24, "source_batch": "eng_20261101"}
+{"expected": "Mit Ruhe", "font": "Lato-Italic.ttf", "observed": "Mit Ruhe", "record": 145, "sample": 25, "source_batch": "eng_20261101"}
+{"expected": "Allegro moderato assai", "font": "Lato-Italic.ttf", "observed": "Allegro moderato assai", "record": 146, "sample": 26, "source_batch": "eng_20261101"}
+{"expected": "D.C.", "font": "DejaVuSerif.ttf", "observed": "D.C,", "record": 147, "sample": 27, "source_batch": "eng_20261101"}
+{"expected": "Tempo 1", "font": "FreeSerifItalic.ttf", "observed": "Tempo 1", "record": 148, "sample": 28, "source_batch": "eng_20261101"}
+{"expected": "Vivacissimo molto", "font": "DejaVuSerif.ttf", "observed": "Vivacissimo molto", "record": 149, "sample": 29, "source_batch": "eng_20261101"}
+{"expected": "pp", "font": "NimbusRoman-Italic.otf", "observed": "af Jae)", "record": 150, "sample": 30, "source_batch": "eng_20261101"}
+{"expected": "sempre dolce", "font": "FreeSerifItalic.ttf", "observed": "sempre dolce _", "record": 151, "sample": 31, "source_batch": "eng_20261101"}
+{"expected": "Allegro moderato appassionato", "font": "DejaVuSerif.ttf", "observed": "Allegro moderato appassionato", "record": 152, "sample": 32, "source_batch": "eng_20261101"}
+{"expected": "Ruhig", "font": "DejaVuSerif.ttf", "observed": "Se", "record": 153, "sample": 33, "source_batch": "eng_20261101"}
+{"expected": "Dal Segno", "font": "NimbusRoman-Italic.otf", "observed": "Dal Segno", "record": 154, "sample": 34, "source_batch": "eng_20261101"}
+{"expected": "Allegrissimo con fuoco", "font": "DejaVuSerif.ttf", "observed": "Allegrissimo con fuoco", "record": 155, "sample": 35, "source_batch": "eng_20261101"}
+{"expected": "sul G", "font": "Lato-Italic.ttf", "observed": "sul G", "record": 156, "sample": 36, "source_batch": "eng_20261101"}
+{"expected": "al niente", "font": "DejaVuSerif.ttf", "observed": "al niente", "record": 157, "sample": 37, "source_batch": "eng_20261101"}
+{"expected": "Larghetto sostenuto", "font": "DejaVuSerif.ttf", "observed": "Larghetto sostenuto", "record": 158, "sample": 38, "source_batch": "eng_20261101"}
+{"expected": "Innig", "font": "DejaVuSerif.ttf", "observed": "Innig", "record": 159, "sample": 39, "source_batch": "eng_20261101"}
+{"expected": "Adagietto dolce", "font": "Lato-Italic.ttf", "observed": "Adagietto dolce", "record": 160, "sample": 40, "source_batch": "eng_20261101"}
+{"expected": "Larghetto misterioso", "font": "DejaVuSerif.ttf", "observed": "Larghetto n iaiSteriOSe", "record": 161, "sample": 41, "source_batch": "eng_20261101"}
+{"expected": "rit.", "font": "DejaVuSerif.ttf", "observed": "", "record": 162, "sample": 42, "source_batch": "eng_20261101"}
+{"expected": "dim. molto", "font": "DejaVuSerif.ttf", "observed": "dim. molto", "record": 163, "sample": 43, "source_batch": "eng_20261101"}
+{"expected": "poco a poco e cresc.", "font": "FreeSerifItalic.ttf", "observed": "poco a poco e cresc.", "record": 164, "sample": 44, "source_batch": "eng_20261101"}
+{"expected": "Zart", "font": "FreeSerifItalic.ttf", "observed": "Zart", "record": 165, "sample": 45, "source_batch": "eng_20261101"}
+{"expected": "Adagio con fuoco", "font": "DejaVuSerif-Italic.ttf", "observed": "_Adagio con fuoco___", "record": 166, "sample": 46, "source_batch": "eng_20261101"}
+{"expected": "Larghetto con anima", "font": "NimbusRoman-Regular.otf", "observed": "Larghetto con anima", "record": 167, "sample": 47, "source_batch": "eng_20261101"}
+{"expected": "p", "font": "NimbusRoman-Italic.otf", "observed": "EE ee,", "record": 168, "sample": 48, "source_batch": "eng_20261101"}
+{"expected": "Moderato assai", "font": "FreeSerifItalic.ttf", "observed": "Moderato assai", "record": 169, "sample": 49, "source_batch": "eng_20261101"}
+{"expected": "Largo con spirito", "font": "FreeSerifItalic.ttf", "observed": "Largo con spirito", "record": 170, "sample": 50, "source_batch": "eng_20261101"}
+{"expected": "fp", "font": "Lato-Italic.ttf", "observed": "Hee", "record": 171, "sample": 51, "source_batch": "eng_20261101"}
+{"expected": "come prima", "font": "NimbusRoman-Regular.otf", "observed": "—come prima.", "record": 172, "sample": 52, "source_batch": "eng_20261101"}
+{"expected": "Allegro moderato leggiero", "font": "NimbusRoman-Italic.otf", "observed": "Allegro moderato leggiero", "record": 173, "sample": 53, "source_batch": "eng_20261101"}
+{"expected": "Coda", "font": "DejaVuSerif-Italic.ttf", "observed": "Coda", "record": 174, "sample": 54, "source_batch": "eng_20261101"}
+{"expected": "Lento tranquillo", "font": "Lato-Italic.ttf", "observed": "Lento tranquillo", "record": 175, "sample": 55, "source_batch": "eng_20261101"}
+{"expected": "Presto non troppo", "font": "DejaVuSerif-Italic.ttf", "observed": "Presto non troppo", "record": 176, "sample": 56, "source_batch": "eng_20261101"}
+{"expected": "rfz", "font": "Lato-Italic.ttf", "observed": "rfz", "record": 177, "sample": 57, "source_batch": "eng_20261101"}
+{"expected": "stringendo", "font": "FreeSerifItalic.ttf", "observed": "stringendo", "record": 178, "sample": 58, "source_batch": "eng_20261101"}
+{"expected": "Andante cantabile", "font": "FreeSerifItalic.ttf", "observed": "Andante cantabile", "record": 179, "sample": 59, "source_batch": "eng_20261101"}
+{"expected": "Innig", "font": "Lato-Italic.ttf", "observed": "Innig", "record": 180, "sample": 60, "source_batch": "eng_20261101"}
+{"expected": "Alla tedesca", "font": "DejaVuSerif-Italic.ttf", "observed": "Alla tedesca _", "record": 181, "sample": 61, "source_batch": "eng_20261101"}
+{"expected": "Andante espressivo", "font": "DejaVuSerif.ttf", "observed": "Andante espressivo", "record": 182, "sample": 62, "source_batch": "eng_20261101"}
+{"expected": "pp", "font": "NimbusRoman-Italic.otf", "observed": "PP", "record": 183, "sample": 63, "source_batch": "eng_20261101"}
+{"expected": "Andantino assai", "font": "Lato-Italic.ttf", "observed": "Andantino assai", "record": 184, "sample": 64, "source_batch": "eng_20261101"}
+{"expected": "Espressivo e cantabile", "font": "DejaVuSerif.ttf", "observed": "Espressivo e cantabile", "record": 185, "sample": 65, "source_batch": "eng_20261101"}
+{"expected": "Cédez", "font": "DejaVuSerif.ttf", "observed": "_Cédez", "record": 186, "sample": 66, "source_batch": "eng_20261101"}
+{"expected": "quarter = 96", "font": "Lato-Italic.ttf", "observed": "quarter = 96", "record": 187, "sample": 67, "source_batch": "eng_20261101"}
+{"expected": "Andante sostenuto", "font": "Lato-Italic.ttf", "observed": "Andante sostenuto", "record": 188, "sample": 68, "source_batch": "eng_20261101"}
+{"expected": "pizz.", "font": "DejaVuSerif-Italic.ttf", "observed": "pizz,", "record": 189, "sample": 69, "source_batch": "eng_20261101"}
+{"expected": "Presto maestoso", "font": "Lato-Italic.ttf", "observed": "Presto maestoso", "record": 190, "sample": 70, "source_batch": "eng_20261101"}
+{"expected": "Marcia moderato agitato", "font": "NimbusRoman-Regular.otf", "observed": "Marcia moderato agitato", "record": 191, "sample": 71, "source_batch": "eng_20261101"}
+{"expected": "mp", "font": "NimbusRoman-Regular.otf", "observed": "Baye", "record": 192, "sample": 72, "source_batch": "eng_20261101"}
+{"expected": "Moderately", "font": "Lato-Italic.ttf", "observed": "Moderately", "record": 193, "sample": 73, "source_batch": "eng_20261101"}
+{"expected": "Andante cantabile", "font": "Lato-Italic.ttf", "observed": "Andante cantabile _", "record": 194, "sample": 74, "source_batch": "eng_20261101"}
+{"expected": "fp", "font": "NimbusRoman-Regular.otf", "observed": "fp", "record": 195, "sample": 75, "source_batch": "eng_20261101"}
+{"expected": "quarter = 72", "font": "DejaVuSerif.ttf", "observed": "_quarter = 72 —", "record": 196, "sample": 76, "source_batch": "eng_20261101"}
+{"expected": "Andantino brillante", "font": "NimbusRoman-Regular.otf", "observed": "Andantino brillante", "record": 197, "sample": 77, "source_batch": "eng_20261101"}
+{"expected": "Vif", "font": "NimbusRoman-Regular.otf", "observed": "Vif", "record": 198, "sample": 78, "source_batch": "eng_20261101"}
+{"expected": "Larghetto dolce", "font": "DejaVuSerif.ttf", "observed": "Larghetto dolce", "record": 199, "sample": 79, "source_batch": "eng_20261101"}
+{"expected": "sans ralentissement", "font": "Lato-Italic.ttf", "observed": "sans ralentissement", "record": 200, "sample": 80, "source_batch": "eng_20261101"}
+{"expected": "sul E", "font": "DejaVuSerif.ttf", "observed": "sulE", "record": 201, "sample": 81, "source_batch": "eng_20261101"}
+{"expected": "mezza voce", "font": "NimbusRoman-Regular.otf", "observed": "me€Zza voce", "record": 202, "sample": 82, "source_batch": "eng_20261101"}
+{"expected": "Andante moderato con moto", "font": "DejaVuSerif.ttf", "observed": "Andante moderato con moto", "record": 203, "sample": 83, "source_batch": "eng_20261101"}
+{"expected": "pp", "font": "FreeSerifItalic.ttf", "observed": "Pp", "record": 204, "sample": 84, "source_batch": "eng_20261101"}
+{"expected": "Prestissimo", "font": "Lato-Italic.ttf", "observed": "Prestissimo", "record": 205, "sample": 85, "source_batch": "eng_20261101"}
+{"expected": "Larghissimo appassionato", "font": "DejaVuSerif-Italic.ttf", "observed": "Larghissimo appassionato", "record": 206, "sample": 86, "source_batch": "eng_20261101"}
+{"expected": "D.S.", "font": "NimbusRoman-Italic.otf", "observed": "D.S.", "record": 207, "sample": 87, "source_batch": "eng_20261101"}
+{"expected": "Presto", "font": "Lato-Italic.ttf", "observed": "Presto.", "record": 208, "sample": 88, "source_batch": "eng_20261101"}
+{"expected": "Larghissimo con spirito", "font": "DejaVuSerif.ttf", "observed": "Larghissimo con spirito", "record": 209, "sample": 89, "source_batch": "eng_20261101"}
+{"expected": "Coda", "font": "NimbusRoman-Regular.otf", "observed": "Coda", "record": 210, "sample": 90, "source_batch": "eng_20261101"}
+{"expected": "ritenuto", "font": "Lato-Italic.ttf", "observed": "_ritenuto_", "record": 211, "sample": 91, "source_batch": "eng_20261101"}
+{"expected": "Allegro misterioso", "font": "NimbusRoman-Regular.otf", "observed": "Allegro misterioso", "record": 212, "sample": 92, "source_batch": "eng_20261101"}
+{"expected": "dim.", "font": "DejaVuSerif-Italic.ttf", "observed": "dim.", "record": 213, "sample": 93, "source_batch": "eng_20261101"}
+{"expected": "Andante agitato", "font": "NimbusRoman-Regular.otf", "observed": "Andante agitato", "record": 214, "sample": 94, "source_batch": "eng_20261101"}
+{"expected": "Allegrissimo dolce", "font": "NimbusRoman-Italic.otf", "observed": "Allegrissimo dolce", "record": 215, "sample": 95, "source_batch": "eng_20261101"}
+{"expected": "Largo", "font": "FreeSerifItalic.ttf", "observed": "Largo", "record": 216, "sample": 96, "source_batch": "eng_20261101"}
+{"expected": "Vivace sostenuto", "font": "DejaVuSerif.ttf", "observed": "Vivace sostenuto", "record": 217, "sample": 97, "source_batch": "eng_20261101"}
+{"expected": "Vivacissimo con brio", "font": "NimbusRoman-Regular.otf", "observed": "Vivacissimo | con brio", "record": 218, "sample": 98, "source_batch": "eng_20261101"}
+{"expected": "Grave", "font": "DejaVuSerif-Italic.ttf", "observed": "Grave", "record": 219, "sample": 99, "source_batch": "eng_20261101"}
+{"expected": "Allegro maestoso", "font": "NimbusRoman-Italic.otf", "observed": "Allegro maestoso", "record": 220, "sample": 100, "source_batch": "eng_20261101"}
+{"expected": "Un poco meno mosso", "font": "DejaVuSerif-Italic.ttf", "observed": "Un poco meno mosso", "record": 221, "sample": 101, "source_batch": "eng_20261101"}
+{"expected": "dolce", "font": "DejaVuSerif-Italic.ttf", "observed": "mee SS", "record": 222, "sample": 102, "source_batch": "eng_20261101"}
+{"expected": "poco marcato", "font": "DejaVuSerif-Italic.ttf", "observed": "poco marcato", "record": 223, "sample": 103, "source_batch": "eng_20261101"}
+{"expected": "Allegro moderato energico", "font": "NimbusRoman-Italic.otf", "observed": "Allegro moderato energico", "record": 224, "sample": 104, "source_batch": "eng_20261101"}
+{"expected": "sfpp", "font": "DejaVuSerif.ttf", "observed": "sfpp", "record": 225, "sample": 105, "source_batch": "eng_20261101"}
+{"expected": "Da Capo", "font": "NimbusRoman-Italic.otf", "observed": "Da Capo", "record": 226, "sample": 106, "source_batch": "eng_20261101"}
+{"expected": "Presto tranquillo", "font": "Lato-Italic.ttf", "observed": "Presto tranquillo", "record": 227, "sample": 107, "source_batch": "eng_20261101"}
+{"expected": "Breit", "font": "NimbusRoman-Regular.otf", "observed": "Breit", "record": 228, "sample": 108, "source_batch": "eng_20261101"}
+{"expected": "agitato", "font": "DejaVuSerif.ttf", "observed": "agitato", "record": 229, "sample": 109, "source_batch": "eng_20261101"}
+{"expected": "Moderato con moto", "font": "Lato-Italic.ttf", "observed": "Moderato con moto", "record": 230, "sample": 110, "source_batch": "eng_20261101"}
+{"expected": "tutti", "font": "FreeSerifItalic.ttf", "observed": "tutti", "record": 231, "sample": 111, "source_batch": "eng_20261101"}
+{"expected": "pressante", "font": "NimbusRoman-Regular.otf", "observed": "pressante", "record": 232, "sample": 112, "source_batch": "eng_20261101"}
+{"expected": "Larghetto agitato", "font": "DejaVuSerif-Italic.ttf", "observed": "Larghetto agitato", "record": 233, "sample": 113, "source_batch": "eng_20261101"}
+{"expected": "Largo", "font": "DejaVuSerif.ttf", "observed": "Largo", "record": 234, "sample": 114, "source_batch": "eng_20261101"}
+{"expected": "Marcato il canto", "font": "NimbusRoman-Regular.otf", "observed": "Marcato il canto", "record": 235, "sample": 115, "source_batch": "eng_20261101"}
+{"expected": "Allegrissimo ma non troppo", "font": "DejaVuSerif-Italic.ttf", "observed": "Allegrissimo ma_non troppo", "record": 236, "sample": 116, "source_batch": "eng_20261101"}
+{"expected": "Fine", "font": "FreeSerifItalic.ttf", "observed": "chine", "record": 237, "sample": 117, "source_batch": "eng_20261101"}
+{"expected": "ad lib.", "font": "NimbusRoman-Italic.otf", "observed": "ad lib.", "record": 238, "sample": 118, "source_batch": "eng_20261101"}
+{"expected": "Vivacissimo non troppo", "font": "DejaVuSerif.ttf", "observed": "Vivacissimo non troppo", "record": 239, "sample": 119, "source_batch": "eng_20261101"}
+{"expected": "Segno", "font": "DejaVuSerif-Italic.ttf", "observed": "Segno", "record": 240, "sample": 0, "source_batch": "eng_20261102"}
+{"expected": "senza tempo", "font": "NimbusRoman-Italic.otf", "observed": "senza tempo", "record": 241, "sample": 1, "source_batch": "eng_20261102"}
+{"expected": "Prestissimo con moto", "font": "NimbusRoman-Italic.otf", "observed": "Prestissimo con moto", "record": 242, "sample": 2, "source_batch": "eng_20261102"}
+{"expected": "f", "font": "Lato-Italic.ttf", "observed": "f", "record": 243, "sample": 3, "source_batch": "eng_20261102"}
+{"expected": "come sopra", "font": "NimbusRoman-Italic.otf", "observed": "come sopra", "record": 244, "sample": 4, "source_batch": "eng_20261102"}
+{"expected": "Vivacissimo leggiero", "font": "NimbusRoman-Italic.otf", "observed": "Vivacissimo leggiero", "record": 245, "sample": 5, "source_batch": "eng_20261102"}
+{"expected": "Mäßig", "font": "DejaVuSerif-Italic.ttf", "observed": "Mafig", "record": 246, "sample": 6, "source_batch": "eng_20261102"}
+{"expected": "smorzando", "font": "FreeSerifItalic.ttf", "observed": "smorzando", "record": 247, "sample": 7, "source_batch": "eng_20261102"}
+{"expected": "Andante molto cantabile", "font": "FreeSerifItalic.ttf", "observed": "Andante molto cantabile", "record": 248, "sample": 8, "source_batch": "eng_20261102"}
+{"expected": "pizz.", "font": "DejaVuSerif-Italic.ttf", "observed": "pizz.", "record": 249, "sample": 9, "source_batch": "eng_20261102"}
+{"expected": "lamentoso", "font": "NimbusRoman-Regular.otf", "observed": "lamentoso", "record": 250, "sample": 10, "source_batch": "eng_20261102"}
+{"expected": "freely, with expression", "font": "NimbusRoman-Italic.otf", "observed": "freely, with expression", "record": 251, "sample": 11, "source_batch": "eng_20261102"}
+{"expected": "fp", "font": "DejaVuSerif-Italic.ttf", "observed": "fp", "record": 252, "sample": 12, "source_batch": "eng_20261102"}
+{"expected": "Presto grazioso", "font": "NimbusRoman-Regular.otf", "observed": "Presto grazioso", "record": 253, "sample": 13, "source_batch": "eng_20261102"}
+{"expected": "Allegro ma non troppo e molto espressivo", "font": "DejaVuSerif.ttf", "observed": "Allegro ma non troppo e molto espressivo", "record": 254, "sample": 14, "source_batch": "eng_20261102"}
+{"expected": "sul G", "font": "NimbusRoman-Regular.otf", "observed": "sul G", "record": 255, "sample": 15, "source_batch": "eng_20261102"}
+{"expected": "♩ = 120-126", "font": "DejaVuSerif.ttf", "observed": "J = 120-126", "record": 256, "sample": 16, "source_batch": "eng_20261102"}
+{"expected": "Doux et expressif", "font": "FreeSerifItalic.ttf", "observed": "Doux et expressif", "record": 257, "sample": 17, "source_batch": "eng_20261102"}
+{"expected": "Lento", "font": "Lato-Italic.ttf", "observed": "Lento", "record": 258, "sample": 18, "source_batch": "eng_20261102"}
+{"expected": "più marcato", "font": "NimbusRoman-Regular.otf", "observed": "pit. marcato", "record": 259, "sample": 19, "source_batch": "eng_20261102"}
+{"expected": "Moderato sostenuto", "font": "NimbusRoman-Italic.otf", "observed": "Moderato sostenuto", "record": 260, "sample": 20, "source_batch": "eng_20261102"}
+{"expected": "rfz", "font": "FreeSerifItalic.ttf", "observed": "nz", "record": 261, "sample": 21, "source_batch": "eng_20261102"}
+{"expected": "con nobiltà", "font": "DejaVuSerif-Italic.ttf", "observed": "con nobilta", "record": 262, "sample": 22, "source_batch": "eng_20261102"}
+{"expected": "Allegro moderato assai", "font": "NimbusRoman-Regular.otf", "observed": "Allegro moderato_assai__", "record": 263, "sample": 23, "source_batch": "eng_20261102"}
+{"expected": "rfz", "font": "FreeSerifItalic.ttf", "observed": "rfz", "record": 264, "sample": 24, "source_batch": "eng_20261102"}
+{"expected": "Presto", "font": "NimbusRoman-Regular.otf", "observed": "Presto", "record": 265, "sample": 25, "source_batch": "eng_20261102"}
+{"expected": "Allegrissimo non troppo", "font": "NimbusRoman-Italic.otf", "observed": "Allegrissimo non troppo", "record": 266, "sample": 26, "source_batch": "eng_20261102"}
+{"expected": "sfp", "font": "DejaVuSerif-Italic.ttf", "observed": "Sfp", "record": 267, "sample": 27, "source_batch": "eng_20261102"}
+{"expected": "subito legato", "font": "NimbusRoman-Italic.otf", "observed": "subito legato", "record": 268, "sample": 28, "source_batch": "eng_20261102"}
+{"expected": "Vivacissimo energico", "font": "FreeSerifItalic.ttf", "observed": "", "record": 269, "sample": 29, "source_batch": "eng_20261102"}
+{"expected": "pizz.", "font": "DejaVuSerif-Italic.ttf", "observed": "pizz.", "record": 270, "sample": 30, "source_batch": "eng_20261102"}
+{"expected": "Allegretto dolce", "font": "Lato-Italic.ttf", "observed": "Allegretto dolce", "record": 271, "sample": 31, "source_batch": "eng_20261102"}
+{"expected": "Vivacissimo ma non troppo", "font": "DejaVuSerif.ttf", "observed": "Vivacissimo-ma_non-troppo—", "record": 272, "sample": 32, "source_batch": "eng_20261102"}
+{"expected": "rf", "font": "NimbusRoman-Regular.otf", "observed": "rf", "record": 273, "sample": 33, "source_batch": "eng_20261102"}
+{"expected": "Andante", "font": "NimbusRoman-Italic.otf", "observed": "", "record": 274, "sample": 34, "source_batch": "eng_20261102"}
+{"expected": "Moderato alla marcia", "font": "FreeSerifItalic.ttf", "observed": "Moderato alla marcia", "record": 275, "sample": 35, "source_batch": "eng_20261102"}
+{"expected": "sul D", "font": "FreeSerifItalic.ttf", "observed": "", "record": 276, "sample": 36, "source_batch": "eng_20261102"}
+{"expected": "Presto cantabile", "font": "DejaVuSerif.ttf", "observed": "Presto cantabile", "record": 277, "sample": 37, "source_batch": "eng_20261102"}
+{"expected": "Prestissimo maestoso", "font": "FreeSerifItalic.ttf", "observed": "Prestissimo maestoso", "record": 278, "sample": 38, "source_batch": "eng_20261102"}
+{"expected": "soave", "font": "DejaVuSerif-Italic.ttf", "observed": "sodve", "record": 279, "sample": 39, "source_batch": "eng_20261102"}
+{"expected": "Alla tedesca", "font": "NimbusRoman-Italic.otf", "observed": "Alla tedesca", "record": 280, "sample": 40, "source_batch": "eng_20261102"}
+{"expected": "Allegrissimo dolce", "font": "DejaVuSerif.ttf", "observed": "_Allegrissimo dolce _", "record": 281, "sample": 41, "source_batch": "eng_20261102"}
+{"expected": "Breit", "font": "Lato-Italic.ttf", "observed": "Breit", "record": 282, "sample": 42, "source_batch": "eng_20261102"}
+{"expected": "Largo scherzando", "font": "Lato-Italic.ttf", "observed": "Largo scherzando", "record": 283, "sample": 43, "source_batch": "eng_20261102"}
+{"expected": "Marcia moderato misterioso", "font": "DejaVuSerif.ttf", "observed": "Marcia moderato misterioso", "record": 284, "sample": 44, "source_batch": "eng_20261102"}
+{"expected": "sffz", "font": "FreeSerifItalic.ttf", "observed": "sffz", "record": 285, "sample": 45, "source_batch": "eng_20261102"}
+{"expected": "♩. = 72", "font": "DejaVuSerif.ttf", "observed": "J. = 72", "record": 286, "sample": 46, "source_batch": "eng_20261102"}
+{"expected": "Allegro espressivo", "font": "Lato-Italic.ttf", "observed": "Allegro espressivo", "record": 287, "sample": 47, "source_batch": "eng_20261102"}
+{"expected": "vivo", "font": "DejaVuSerif-Italic.ttf", "observed": "vivo", "record": 288, "sample": 48, "source_batch": "eng_20261102"}
+{"expected": "sempre", "font": "Lato-Italic.ttf", "observed": "sempre", "record": 289, "sample": 49, "source_batch": "eng_20261102"}
+{"expected": "Adagietto leggiero", "font": "Lato-Italic.ttf", "observed": "Adasgietto leggiero", "record": 290, "sample": 50, "source_batch": "eng_20261102"}
+{"expected": "sfpp", "font": "FreeSerifItalic.ttf", "observed": "Sfpp", "record": 291, "sample": 51, "source_batch": "eng_20261102"}
+{"expected": "D.C. al Coda", "font": "Lato-Italic.ttf", "observed": "D.C. al Coda", "record": 292, "sample": 52, "source_batch": "eng_20261102"}
+{"expected": "Allegrissimo brillante", "font": "NimbusRoman-Italic.otf", "observed": "Allegrissimo brillante", "record": 293, "sample": 53, "source_batch": "eng_20261102"}
+{"expected": "f", "font": "Lato-Italic.ttf", "observed": "f", "record": 294, "sample": 54, "source_batch": "eng_20261102"}
+{"expected": "cantabile", "font": "DejaVuSerif-Italic.ttf", "observed": "cantabile", "record": 295, "sample": 55, "source_batch": "eng_20261102"}
+{"expected": "Andante misterioso", "font": "DejaVuSerif.ttf", "observed": "Andante misterioso", "record": 296, "sample": 56, "source_batch": "eng_20261102"}
+{"expected": "fp", "font": "DejaVuSerif.ttf", "observed": "fp", "record": 297, "sample": 57, "source_batch": "eng_20261102"}
+{"expected": "first time", "font": "Lato-Italic.ttf", "observed": "_first time", "record": 298, "sample": 58, "source_batch": "eng_20261102"}
+{"expected": "Un poco meno mosso", "font": "DejaVuSerif-Italic.ttf", "observed": "Un poco meno Mosso", "record": 299, "sample": 59, "source_batch": "eng_20261102"}
+{"expected": "Innig", "font": "DejaVuSerif.ttf", "observed": "Innig", "record": 300, "sample": 60, "source_batch": "eng_20261102"}
+{"expected": "Adagietto molto", "font": "DejaVuSerif.ttf", "observed": "Adagietto molto", "record": 301, "sample": 61, "source_batch": "eng_20261102"}
+{"expected": "Vivace misterioso", "font": "NimbusRoman-Regular.otf", "observed": "Vivace misterioso", "record": 302, "sample": 62, "source_batch": "eng_20261102"}
+{"expected": "Largo", "font": "Lato-Italic.ttf", "observed": "Largo", "record": 303, "sample": 63, "source_batch": "eng_20261102"}
+{"expected": "With expression", "font": "DejaVuSerif.ttf", "observed": "With expression", "record": 304, "sample": 64, "source_batch": "eng_20261102"}
+{"expected": "Vivace ma non troppo", "font": "DejaVuSerif-Italic.ttf", "observed": "Vivace ma non troppo", "record": 305, "sample": 65, "source_batch": "eng_20261102"}
+{"expected": "pf", "font": "NimbusRoman-Regular.otf", "observed": "$$", "record": 306, "sample": 66, "source_batch": "eng_20261102"}
+{"expected": "molto marcato", "font": "NimbusRoman-Regular.otf", "observed": "molto marcato", "record": 307, "sample": 67, "source_batch": "eng_20261102"}
+{"expected": "Allegrissimo con spirito", "font": "Lato-Italic.ttf", "observed": "Allegrissimo con spirito", "record": 308, "sample": 68, "source_batch": "eng_20261102"}
+{"expected": "Cédez", "font": "NimbusRoman-Italic.otf", "observed": "Cédez", "record": 309, "sample": 69, "source_batch": "eng_20261102"}
+{"expected": "smorzando", "font": "DejaVuSerif.ttf", "observed": "smorzando", "record": 310, "sample": 70, "source_batch": "eng_20261102"}
+{"expected": "Andante moderato deciso", "font": "FreeSerifItalic.ttf", "observed": "Andante moderato deciso", "record": 311, "sample": 71, "source_batch": "eng_20261102"}
+{"expected": "Mäßig", "font": "DejaVuSerif.ttf", "observed": "MaRig", "record": 312, "sample": 72, "source_batch": "eng_20261102"}
+{"expected": "più cantabile", "font": "DejaVuSerif.ttf", "observed": "piu cantabile", "record": 313, "sample": 73, "source_batch": "eng_20261102"}
+{"expected": "Larghetto tranquillo", "font": "Lato-Italic.ttf", "observed": "Larghetto tranquillo", "record": 314, "sample": 74, "source_batch": "eng_20261102"}
+{"expected": "Coda", "font": "NimbusRoman-Italic.otf", "observed": "-Coda—", "record": 315, "sample": 75, "source_batch": "eng_20261102"}
+{"expected": "divisi", "font": "DejaVuSerif.ttf", "observed": "", "record": 316, "sample": 76, "source_batch": "eng_20261102"}
+{"expected": "Adagietto leggiero", "font": "DejaVuSerif-Italic.ttf", "observed": "Adagietto leggiero", "record": 317, "sample": 77, "source_batch": "eng_20261102"}
+{"expected": "p", "font": "DejaVuSerif.ttf", "observed": "p", "record": 318, "sample": 78, "source_batch": "eng_20261102"}
+{"expected": "Immer schneller", "font": "FreeSerifItalic.ttf", "observed": "_Immer schneller _", "record": 319, "sample": 79, "source_batch": "eng_20261102"}
+{"expected": "Allegrissimo con spirito", "font": "DejaVuSerif-Italic.ttf", "observed": "Allegrissimo con spirito", "record": 320, "sample": 80, "source_batch": "eng_20261102"}
+{"expected": "rall.", "font": "DejaVuSerif.ttf", "observed": "rall.", "record": 321, "sample": 81, "source_batch": "eng_20261102"}
+{"expected": "smorzando", "font": "DejaVuSerif-Italic.ttf", "observed": "smorzando", "record": 322, "sample": 82, "source_batch": "eng_20261102"}
+{"expected": "Vivace appassionato", "font": "NimbusRoman-Italic.otf", "observed": "Vivace appassionato", "record": 323, "sample": 83, "source_batch": "eng_20261102"}
+{"expected": "cedez", "font": "FreeSerifItalic.ttf", "observed": "cedez", "record": 324, "sample": 84, "source_batch": "eng_20261102"}
+{"expected": "♩ = 108", "font": "NimbusRoman-Italic.otf", "observed": "—= 108—", "record": 325, "sample": 85, "source_batch": "eng_20261102"}
+{"expected": "Adagietto con moto", "font": "FreeSerifItalic.ttf", "observed": "Adagietto con moto", "record": 326, "sample": 86, "source_batch": "eng_20261102"}
+{"expected": "Mäßig", "font": "FreeSerifItalic.ttf", "observed": "Mafig", "record": 327, "sample": 87, "source_batch": "eng_20261102"}
+{"expected": "perdendosi", "font": "FreeSerifItalic.ttf", "observed": "perdendosi", "record": 328, "sample": 88, "source_batch": "eng_20261102"}
+{"expected": "Adagio tranquillo", "font": "FreeSerifItalic.ttf", "observed": "Adagio tranquillo", "record": 329, "sample": 89, "source_batch": "eng_20261102"}
+{"expected": "arco", "font": "NimbusRoman-Italic.otf", "observed": "arco", "record": 330, "sample": 90, "source_batch": "eng_20261102"}
+{"expected": "Presto brillante", "font": "Lato-Italic.ttf", "observed": "Presto brillante", "record": 331, "sample": 91, "source_batch": "eng_20261102"}
+{"expected": "Adagio con spirito", "font": "DejaVuSerif.ttf", "observed": "", "record": 332, "sample": 92, "source_batch": "eng_20261102"}
+{"expected": "mf", "font": "NimbusRoman-Regular.otf", "observed": "mf", "record": 333, "sample": 93, "source_batch": "eng_20261102"}
+{"expected": "Im Tempo", "font": "NimbusRoman-Italic.otf", "observed": "Im Tempo", "record": 334, "sample": 94, "source_batch": "eng_20261102"}
+{"expected": "Vivacissimo alla marcia", "font": "NimbusRoman-Regular.otf", "observed": "Vivacissimo alla marcia", "record": 335, "sample": 95, "source_batch": "eng_20261102"}
+{"expected": "arco", "font": "NimbusRoman-Italic.otf", "observed": "aFCO.", "record": 336, "sample": 96, "source_batch": "eng_20261102"}
+{"expected": "Avec expression", "font": "Lato-Italic.ttf", "observed": "Avec expression", "record": 337, "sample": 97, "source_batch": "eng_20261102"}
+{"expected": "Prestissimo semplice", "font": "Lato-Italic.ttf", "observed": "Prestissimo semplice", "record": 338, "sample": 98, "source_batch": "eng_20261102"}
+{"expected": "sul E", "font": "FreeSerifItalic.ttf", "observed": "SsuLE", "record": 339, "sample": 99, "source_batch": "eng_20261102"}
+{"expected": "quarter = 84", "font": "NimbusRoman-Italic.otf", "observed": "quarter = 84", "record": 340, "sample": 100, "source_batch": "eng_20261102"}
+{"expected": "Marcia moderato con moto", "font": "NimbusRoman-Italic.otf", "observed": "Marcia moderato_con moto _", "record": 341, "sample": 101, "source_batch": "eng_20261102"}
+{"expected": "mp", "font": "NimbusRoman-Italic.otf", "observed": "mp", "record": 342, "sample": 102, "source_batch": "eng_20261102"}
+{"expected": "Gradually slower", "font": "FreeSerifItalic.ttf", "observed": "Gradually slower_", "record": 343, "sample": 103, "source_batch": "eng_20261102"}
+{"expected": "Mit innigem Ausdruck", "font": "Lato-Italic.ttf", "observed": "Mit innigem Ausdruck", "record": 344, "sample": 104, "source_batch": "eng_20261102"}
+{"expected": "rall.", "font": "DejaVuSerif.ttf", "observed": "rall.", "record": 345, "sample": 105, "source_batch": "eng_20261102"}
+{"expected": "meno espressivo", "font": "NimbusRoman-Regular.otf", "observed": "meno espressivo", "record": 346, "sample": 106, "source_batch": "eng_20261102"}
+{"expected": "Larghissimo appassionato", "font": "DejaVuSerif.ttf", "observed": "_Larghissimo appassionato _", "record": 347, "sample": 107, "source_batch": "eng_20261102"}
+{"expected": "sf", "font": "DejaVuSerif-Italic.ttf", "observed": "sf", "record": 348, "sample": 108, "source_batch": "eng_20261102"}
+{"expected": "poco cantabile", "font": "NimbusRoman-Regular.otf", "observed": "", "record": 349, "sample": 109, "source_batch": "eng_20261102"}
+{"expected": "Andante appassionato", "font": "NimbusRoman-Italic.otf", "observed": "Andante appassionato", "record": 350, "sample": 110, "source_batch": "eng_20261102"}
+{"expected": "mf", "font": "Lato-Italic.ttf", "observed": "mf", "record": 351, "sample": 111, "source_batch": "eng_20261102"}
+{"expected": "Lento molto", "font": "DejaVuSerif.ttf", "observed": "Lento molto", "record": 352, "sample": 112, "source_batch": "eng_20261102"}
+{"expected": "Andantino misterioso", "font": "Lato-Italic.ttf", "observed": "Andantino misterioso", "record": 353, "sample": 113, "source_batch": "eng_20261102"}
+{"expected": "Largo", "font": "NimbusRoman-Regular.otf", "observed": "_Largo—", "record": 354, "sample": 114, "source_batch": "eng_20261102"}
+{"expected": "ad lib.", "font": "FreeSerifItalic.ttf", "observed": "ad lib.", "record": 355, "sample": 115, "source_batch": "eng_20261102"}
+{"expected": "Prestissimo grazioso", "font": "FreeSerifItalic.ttf", "observed": "Prestissimo grazioso", "record": 356, "sample": 116, "source_batch": "eng_20261102"}
+{"expected": "ppp", "font": "FreeSerifItalic.ttf", "observed": "PPP", "record": 357, "sample": 117, "source_batch": "eng_20261102"}
+{"expected": "au mouvt.", "font": "Lato-Italic.ttf", "observed": "au_mouvt.", "record": 358, "sample": 118, "source_batch": "eng_20261102"}
+{"expected": "poco a poco a tempo", "font": "NimbusRoman-Regular.otf", "observed": "poco a poco a tempo", "record": 359, "sample": 119, "source_batch": "eng_20261102"}
+{"expected": "Cédez", "font": "DejaVuSerif.ttf", "observed": "Cédez", "record": 360, "sample": 0, "source_batch": "eng_20261103"}
+{"expected": "Largo non troppo", "font": "NimbusRoman-Italic.otf", "observed": "Largo non troppo _", "record": 361, "sample": 1, "source_batch": "eng_20261103"}
+{"expected": "Allegro moderato tranquillo", "font": "NimbusRoman-Regular.otf", "observed": "Allegro moderato tranquillo", "record": 362, "sample": 2, "source_batch": "eng_20261103"}
+{"expected": "dim.", "font": "DejaVuSerif.ttf", "observed": "dim.", "record": 363, "sample": 3, "source_batch": "eng_20261103"}
+{"expected": "teneramente", "font": "DejaVuSerif-Italic.ttf", "observed": "teneramente", "record": 364, "sample": 4, "source_batch": "eng_20261103"}
+{"expected": "Allegrissimo brillante", "font": "FreeSerifItalic.ttf", "observed": "", "record": 365, "sample": 5, "source_batch": "eng_20261103"}
+{"expected": "solo", "font": "NimbusRoman-Italic.otf", "observed": "solo", "record": 366, "sample": 6, "source_batch": "eng_20261103"}
+{"expected": "En dehors", "font": "NimbusRoman-Regular.otf", "observed": "En dehors", "record": 367, "sample": 7, "source_batch": "eng_20261103"}
+{"expected": "Lento con espressione", "font": "NimbusRoman-Regular.otf", "observed": "", "record": 368, "sample": 8, "source_batch": "eng_20261103"}
+{"expected": "ff", "font": "FreeSerifItalic.ttf", "observed": "ff", "record": 369, "sample": 9, "source_batch": "eng_20261103"}
+{"expected": "Freely", "font": "NimbusRoman-Italic.otf", "observed": "Freely", "record": 370, "sample": 10, "source_batch": "eng_20261103"}
+{"expected": "Marcia moderato misterioso", "font": "NimbusRoman-Italic.otf", "observed": "Marcia moderato misterioso", "record": 371, "sample": 11, "source_batch": "eng_20261103"}
+{"expected": "ppp", "font": "Lato-Italic.ttf", "observed": "ppp", "record": 372, "sample": 12, "source_batch": "eng_20261103"}
+{"expected": "Adagio con brio", "font": "FreeSerifItalic.ttf", "observed": "Adagio con brio", "record": 373, "sample": 13, "source_batch": "eng_20261103"}
+{"expected": "Presto alla marcia", "font": "Lato-Italic.ttf", "observed": "Presto alla marcia", "record": 374, "sample": 14, "source_batch": "eng_20261103"}
+{"expected": "sf", "font": "NimbusRoman-Italic.otf", "observed": "sf", "record": 375, "sample": 15, "source_batch": "eng_20261103"}
+{"expected": "Adagio leggiero", "font": "NimbusRoman-Italic.otf", "observed": "Adagio leggiero", "record": 376, "sample": 16, "source_batch": "eng_20261103"}
+{"expected": "Allegro espressivo", "font": "Lato-Italic.ttf", "observed": "Allegro espressivo", "record": 377, "sample": 17, "source_batch": "eng_20261103"}
+{"expected": "Cédez", "font": "Lato-Italic.ttf", "observed": "Cédez", "record": 378, "sample": 18, "source_batch": "eng_20261103"}
+{"expected": "scherzando", "font": "FreeSerifItalic.ttf", "observed": "scherzando", "record": 379, "sample": 19, "source_batch": "eng_20261103"}
+{"expected": "Moderato ma non troppo", "font": "DejaVuSerif.ttf", "observed": "Moderato ma non troppo", "record": 380, "sample": 20, "source_batch": "eng_20261103"}
+{"expected": "vivo", "font": "FreeSerifItalic.ttf", "observed": "vivo", "record": 381, "sample": 21, "source_batch": "eng_20261103"}
+{"expected": "Grave assai", "font": "NimbusRoman-Italic.otf", "observed": "Grave assai", "record": 382, "sample": 22, "source_batch": "eng_20261103"}
+{"expected": "Broadly and sustained", "font": "NimbusRoman-Italic.otf", "observed": "Broadly and sustained :", "record": 383, "sample": 23, "source_batch": "eng_20261103"}
+{"expected": "dim.", "font": "DejaVuSerif.ttf", "observed": "dim.", "record": 384, "sample": 24, "source_batch": "eng_20261103"}
+{"expected": "A little slower", "font": "NimbusRoman-Italic.otf", "observed": "A little slower", "record": 385, "sample": 25, "source_batch": "eng_20261103"}
+{"expected": "poco a poco sempre", "font": "NimbusRoman-Italic.otf", "observed": "poco a poco sempre", "record": 386, "sample": 26, "source_batch": "eng_20261103"}
+{"expected": "fp", "font": "NimbusRoman-Italic.otf", "observed": "2", "record": 387, "sample": 27, "source_batch": "eng_20261103"}
+{"expected": "Allegro grazioso", "font": "NimbusRoman-Italic.otf", "observed": "_ Allegro grazioso___", "record": 388, "sample": 28, "source_batch": "eng_20261103"}
+{"expected": "poco a poco e dim.", "font": "NimbusRoman-Regular.otf", "observed": "poco a poco e dim.", "record": 389, "sample": 29, "source_batch": "eng_20261103"}
+{"expected": "Innig", "font": "NimbusRoman-Regular.otf", "observed": "Innig", "record": 390, "sample": 30, "source_batch": "eng_20261103"}
+{"expected": "Lento con fuoco", "font": "DejaVuSerif.ttf", "observed": "Lento con fuoco", "record": 391, "sample": 31, "source_batch": "eng_20261103"}
+{"expected": "Andante moderato con spirito", "font": "DejaVuSerif.ttf", "observed": "Andante moderato con spirito", "record": 392, "sample": 32, "source_batch": "eng_20261103"}
+{"expected": "sf", "font": "DejaVuSerif-Italic.ttf", "observed": "sf", "record": 393, "sample": 33, "source_batch": "eng_20261103"}
+{"expected": "Lento maestoso", "font": "NimbusRoman-Italic.otf", "observed": "Lento maestoso", "record": 394, "sample": 34, "source_batch": "eng_20261103"}
+{"expected": "Moderato con anima", "font": "FreeSerifItalic.ttf", "observed": "Moderato con anima", "record": 395, "sample": 35, "source_batch": "eng_20261103"}
+{"expected": "p", "font": "FreeSerifItalic.ttf", "observed": "GP", "record": 396, "sample": 36, "source_batch": "eng_20261103"}
+{"expected": "dim. molto", "font": "Lato-Italic.ttf", "observed": "dim. molto", "record": 397, "sample": 37, "source_batch": "eng_20261103"}
+{"expected": "Andantino alla marcia", "font": "DejaVuSerif-Italic.ttf", "observed": "Andantino alla marcia", "record": 398, "sample": 38, "source_batch": "eng_20261103"}
+{"expected": "dolce", "font": "DejaVuSerif.ttf", "observed": "", "record": 399, "sample": 39, "source_batch": "eng_20261103"}
+{"expected": "poco animato", "font": "DejaVuSerif.ttf", "observed": "-peco animato—", "record": 400, "sample": 40, "source_batch": "eng_20261103"}
+{"expected": "Moderato con moto", "font": "DejaVuSerif.ttf", "observed": "Moderato con moto", "record": 401, "sample": 41, "source_batch": "eng_20261103"}
+{"expected": "fp", "font": "NimbusRoman-Italic.otf", "observed": "iD", "record": 402, "sample": 42, "source_batch": "eng_20261103"}
+{"expected": "sehr getragen", "font": "FreeSerifItalic.ttf", "observed": "sehr getragen", "record": 403, "sample": 43, "source_batch": "eng_20261103"}
+{"expected": "Allegro appassionato", "font": "NimbusRoman-Italic.otf", "observed": "Allegro appassionato", "record": 404, "sample": 44, "source_batch": "eng_20261103"}
+{"expected": "sul G", "font": "NimbusRoman-Regular.otf", "observed": "sul G", "record": 405, "sample": 45, "source_batch": "eng_20261103"}
+{"expected": "Largo molto", "font": "Lato-Italic.ttf", "observed": "Largo molto", "record": 406, "sample": 46, "source_batch": "eng_20261103"}
+{"expected": "Lento con espressione", "font": "NimbusRoman-Regular.otf", "observed": "Lento con espressione", "record": 407, "sample": 47, "source_batch": "eng_20261103"}
+{"expected": "Largo", "font": "Lato-Italic.ttf", "observed": "Largo", "record": 408, "sample": 48, "source_batch": "eng_20261103"}
+{"expected": "poco meno", "font": "DejaVuSerif.ttf", "observed": "poco meno", "record": 409, "sample": 49, "source_batch": "eng_20261103"}
+{"expected": "Vivacissimo leggiero", "font": "DejaVuSerif-Italic.ttf", "observed": "Vivacissimo leggiero", "record": 410, "sample": 50, "source_batch": "eng_20261103"}
+{"expected": "Vif", "font": "NimbusRoman-Italic.otf", "observed": "Vif", "record": 411, "sample": 51, "source_batch": "eng_20261103"}
+{"expected": "Allegro", "font": "DejaVuSerif-Italic.ttf", "observed": "Allegro", "record": 412, "sample": 52, "source_batch": "eng_20261103"}
+{"expected": "Moderato sostenuto", "font": "NimbusRoman-Regular.otf", "observed": "Moderato sostenuto", "record": 413, "sample": 53, "source_batch": "eng_20261103"}
+{"expected": "sf", "font": "FreeSerifItalic.ttf", "observed": "sf", "record": 414, "sample": 54, "source_batch": "eng_20261103"}
+{"expected": "poco più", "font": "NimbusRoman-Regular.otf", "observed": "poco piu", "record": 415, "sample": 55, "source_batch": "eng_20261103"}
+{"expected": "Moderato maestoso", "font": "FreeSerifItalic.ttf", "observed": "Moderato maestoso _", "record": 416, "sample": 56, "source_batch": "eng_20261103"}
+{"expected": "pppp", "font": "NimbusRoman-Regular.otf", "observed": "PPPP", "record": 417, "sample": 57, "source_batch": "eng_20261103"}
+{"expected": "poco legato", "font": "Lato-Italic.ttf", "observed": "poco legato", "record": 418, "sample": 58, "source_batch": "eng_20261103"}
+{"expected": "Marcia moderato con fuoco", "font": "DejaVuSerif.ttf", "observed": "Marcia moderato con fuoco", "record": 419, "sample": 59, "source_batch": "eng_20261103"}
+{"expected": "Segno", "font": "DejaVuSerif.ttf", "observed": "Segno", "record": 420, "sample": 60, "source_batch": "eng_20261103"}
+{"expected": "Sempre legato", "font": "NimbusRoman-Regular.otf", "observed": "Sempre legato", "record": 421, "sample": 61, "source_batch": "eng_20261103"}
+{"expected": "Andante moderato ma non troppo", "font": "DejaVuSerif-Italic.ttf", "observed": "Andante moderato ma non troppo", "record": 422, "sample": 62, "source_batch": "eng_20261103"}
+{"expected": "solo", "font": "DejaVuSerif-Italic.ttf", "observed": "solo", "record": 423, "sample": 63, "source_batch": "eng_20261103"}
+{"expected": "Vivace con moto", "font": "FreeSerifItalic.ttf", "observed": "Vivace con moto", "record": 424, "sample": 64, "source_batch": "eng_20261103"}
+{"expected": "Allegretto agitato", "font": "FreeSerifItalic.ttf", "observed": "_ Allegretto agitato __", "record": 425, "sample": 65, "source_batch": "eng_20261103"}
+{"expected": "pppp", "font": "Lato-Italic.ttf", "observed": "ePPPRe", "record": 426, "sample": 66, "source_batch": "eng_20261103"}
+{"expected": "scorrevole", "font": "Lato-Italic.ttf", "observed": "scorrevole", "record": 427, "sample": 67, "source_batch": "eng_20261103"}
+{"expected": "Prestissimo ma non troppo", "font": "Lato-Italic.ttf", "observed": "Prestissimo ma non troppo", "record": 428, "sample": 68, "source_batch": "eng_20261103"}
+{"expected": "sfpp", "font": "DejaVuSerif-Italic.ttf", "observed": "sfpp", "record": 429, "sample": 69, "source_batch": "eng_20261103"}
+{"expected": "Freely", "font": "FreeSerifItalic.ttf", "observed": "Freely", "record": 430, "sample": 70, "source_batch": "eng_20261103"}
+{"expected": "Grave alla marcia", "font": "NimbusRoman-Regular.otf", "observed": "Grave alla marcia", "record": 431, "sample": 71, "source_batch": "eng_20261103"}
+{"expected": "rfz", "font": "NimbusRoman-Italic.otf", "observed": "rfz", "record": 432, "sample": 72, "source_batch": "eng_20261103"}
+{"expected": "accelerando", "font": "NimbusRoman-Italic.otf", "observed": "accelerando", "record": 433, "sample": 73, "source_batch": "eng_20261103"}
+{"expected": "Allegretto misterioso", "font": "NimbusRoman-Regular.otf", "observed": "Allegretto misterioso", "record": 434, "sample": 74, "source_batch": "eng_20261103"}
+{"expected": "Grave", "font": "DejaVuSerif-Italic.ttf", "observed": "Grave", "record": 435, "sample": 75, "source_batch": "eng_20261103"}
+{"expected": "Vivace semplice", "font": "NimbusRoman-Regular.otf", "observed": "Vi li", "record": 436, "sample": 76, "source_batch": "eng_20261103"}
+{"expected": "Andantino alla marcia", "font": "DejaVuSerif-Italic.ttf", "observed": "Andantino alla marcia —", "record": 437, "sample": 77, "source_batch": "eng_20261103"}
+{"expected": "sul D", "font": "FreeSerifItalic.ttf", "observed": "—sulD", "record": 438, "sample": 78, "source_batch": "eng_20261103"}
+{"expected": "Marcato il canto", "font": "DejaVuSerif-Italic.ttf", "observed": "Marcato il canto _", "record": 439, "sample": 79, "source_batch": "eng_20261103"}
+{"expected": "Sehr ausdrucksvoll", "font": "DejaVuSerif.ttf", "observed": "_ Sehr ausdrucksvoll |", "record": 440, "sample": 80, "source_batch": "eng_20261103"}
+{"expected": "Mäßig", "font": "NimbusRoman-Regular.otf", "observed": "Mikig", "record": 441, "sample": 81, "source_batch": "eng_20261103"}
+{"expected": "Da Capo", "font": "DejaVuSerif.ttf", "observed": "Da Capo", "record": 442, "sample": 82, "source_batch": "eng_20261103"}
+{"expected": "Allegro brillante", "font": "DejaVuSerif-Italic.ttf", "observed": "Allegro brillante", "record": 443, "sample": 83, "source_batch": "eng_20261103"}
+{"expected": "sffz", "font": "DejaVuSerif.ttf", "observed": "sffz", "record": 444, "sample": 84, "source_batch": "eng_20261103"}
+{"expected": "Con sentimento", "font": "Lato-Italic.ttf", "observed": "Con sentimento", "record": 445, "sample": 85, "source_batch": "eng_20261103"}
+{"expected": "Larghissimo brillante", "font": "NimbusRoman-Italic.otf", "observed": "Larghissimo brillante", "record": 446, "sample": 86, "source_batch": "eng_20261103"}
+{"expected": "pizz.", "font": "NimbusRoman-Regular.otf", "observed": "pizz.", "record": 447, "sample": 87, "source_batch": "eng_20261103"}
+{"expected": "meno cantabile", "font": "DejaVuSerif-Italic.ttf", "observed": "meno cantabile", "record": 448, "sample": 88, "source_batch": "eng_20261103"}
+{"expected": "Adagio espressivo", "font": "DejaVuSerif-Italic.ttf", "observed": "Adagio espressivo", "record": 449, "sample": 89, "source_batch": "eng_20261103"}
+{"expected": "rall.", "font": "DejaVuSerif-Italic.ttf", "observed": "rall.", "record": 450, "sample": 90, "source_batch": "eng_20261103"}
+{"expected": "meno marcato", "font": "NimbusRoman-Italic.otf", "observed": "meno marcato", "record": 451, "sample": 91, "source_batch": "eng_20261103"}
+{"expected": "Larghissimo con fuoco", "font": "DejaVuSerif-Italic.ttf", "observed": "Larghissimo con fuoco", "record": 452, "sample": 92, "source_batch": "eng_20261103"}
+{"expected": "sul E", "font": "Lato-Italic.ttf", "observed": "sul E", "record": 453, "sample": 93, "source_batch": "eng_20261103"}
+{"expected": "Andante energico", "font": "NimbusRoman-Italic.otf", "observed": "", "record": 454, "sample": 94, "source_batch": "eng_20261103"}
+{"expected": "Adagietto energico", "font": "DejaVuSerif-Italic.ttf", "observed": "", "record": 455, "sample": 95, "source_batch": "eng_20261103"}
+{"expected": "arco", "font": "DejaVuSerif.ttf", "observed": "arco", "record": 456, "sample": 96, "source_batch": "eng_20261103"}
+{"expected": "ritard.", "font": "NimbusRoman-Regular.otf", "observed": "", "record": 457, "sample": 97, "source_batch": "eng_20261103"}
+{"expected": "Allegrissimo con spirito", "font": "DejaVuSerif-Italic.ttf", "observed": "Allegrissimo con spirito", "record": 458, "sample": 98, "source_batch": "eng_20261103"}
+{"expected": "ppp", "font": "DejaVuSerif-Italic.ttf", "observed": "ppp", "record": 459, "sample": 99, "source_batch": "eng_20261103"}
+{"expected": "nobilmente", "font": "DejaVuSerif-Italic.ttf", "observed": "nobilmente", "record": 460, "sample": 100, "source_batch": "eng_20261103"}
+{"expected": "Andantino con moto", "font": "FreeSerifItalic.ttf", "observed": "Andantino con moto", "record": 461, "sample": 101, "source_batch": "eng_20261103"}
+{"expected": "fff", "font": "Lato-Italic.ttf", "observed": "fff", "record": 462, "sample": 102, "source_batch": "eng_20261103"}
+{"expected": "dim. e dim.", "font": "NimbusRoman-Regular.otf", "observed": "dim. e dim.", "record": 463, "sample": 103, "source_batch": "eng_20261103"}
+{"expected": "Mit innigem Ausdruck", "font": "NimbusRoman-Italic.otf", "observed": "Mit innigem Ausdruck", "record": 464, "sample": 104, "source_batch": "eng_20261103"}
+{"expected": "sffz", "font": "NimbusRoman-Italic.otf", "observed": "Siz", "record": 465, "sample": 105, "source_batch": "eng_20261103"}
+{"expected": "Nicht schleppen", "font": "DejaVuSerif.ttf", "observed": "Nicht schleppen", "record": 466, "sample": 106, "source_batch": "eng_20261103"}
+{"expected": "Lento appassionato", "font": "NimbusRoman-Italic.otf", "observed": "Lento appassionato", "record": 467, "sample": 107, "source_batch": "eng_20261103"}
+{"expected": "pf", "font": "NimbusRoman-Italic.otf", "observed": "2 is aR", "record": 468, "sample": 108, "source_batch": "eng_20261103"}
+{"expected": "pressante", "font": "DejaVuSerif.ttf", "observed": "pressante", "record": 469, "sample": 109, "source_batch": "eng_20261103"}
+{"expected": "Larghissimo molto", "font": "DejaVuSerif.ttf", "observed": "Larghissimo molto", "record": 470, "sample": 110, "source_batch": "eng_20261103"}
+{"expected": "Animé", "font": "Lato-Italic.ttf", "observed": "Animé", "record": 471, "sample": 111, "source_batch": "eng_20261103"}
+{"expected": "Lebhaft", "font": "NimbusRoman-Italic.otf", "observed": "Lebhaft", "record": 472, "sample": 112, "source_batch": "eng_20261103"}
+{"expected": "Andante non troppo", "font": "NimbusRoman-Italic.otf", "observed": "Andante non troppo", "record": 473, "sample": 113, "source_batch": "eng_20261103"}
+{"expected": "ffff", "font": "NimbusRoman-Italic.otf", "observed": "Sif", "record": 474, "sample": 114, "source_batch": "eng_20261103"}
+{"expected": "con forza", "font": "DejaVuSerif-Italic.ttf", "observed": "con forza", "record": 475, "sample": 115, "source_batch": "eng_20261103"}
+{"expected": "Allegretto deciso", "font": "NimbusRoman-Regular.otf", "observed": "Allegretto deciso", "record": 476, "sample": 116, "source_batch": "eng_20261103"}
+{"expected": "pf", "font": "DejaVuSerif-Italic.ttf", "observed": "pf", "record": 477, "sample": 117, "source_batch": "eng_20261103"}
+{"expected": "Grave tranquillo", "font": "DejaVuSerif.ttf", "observed": "Grave tranquillo", "record": 478, "sample": 118, "source_batch": "eng_20261103"}
+{"expected": "Prestissimo con anima", "font": "NimbusRoman-Italic.otf", "observed": "Prestissimo con anima", "record": 479, "sample": 119, "source_batch": "eng_20261103"}

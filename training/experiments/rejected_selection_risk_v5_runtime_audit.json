@@ -1,0 +1,196 @@
+{
+  "accepted_runtime_changes": [
+    "fail-closed invalid sibling family abstention",
+    "minimum three independent families for whole-measure replacement",
+    "deterministic exact and semantic permission gates"
+  ],
+  "artifacts": {
+    "rejected_selection_risk_v5_model.json": {
+      "bytes": 760966,
+      "sha256": "bcf0e87790ec68ff43224ab0ad8ac40f1bff15f58e704e8b0935373ceabc18da"
+    },
+    "rejected_selection_risk_v5_model_size_audit.json": {
+      "bytes": 1996,
+      "sha256": "2cd9971f0f6308b22601d8847895d85ff88556e09cd45373a88fecfb43d27f9a"
+    },
+    "rejected_selection_risk_v5_report.json": {
+      "bytes": 14046,
+      "sha256": "fdae1eca2cbdb429fdb1f843c3f332175cd3dc038d390b1d0864545bfd367bb6"
+    }
+  },
+  "cpu_training": {
+    "confirmation_groups": 3000,
+    "confirmation_seed": 20270611,
+    "groups": 6000,
+    "safety_groups": 4000,
+    "samples": 18000,
+    "selected_config": {
+      "max_depth": 7,
+      "min_samples_leaf": 8,
+      "n_estimators": 32
+    }
+  },
+  "decision": "rejected_from_runtime",
+  "experiment": "selection-risk-v5-invalid-family-aware",
+  "model_size_ablation": [
+    {
+      "bytes_estimate": 397574,
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 8,
+        "n_estimators": 32
+      },
+      "confirmation": {
+        "accepted": 724,
+        "coverage": 0.08044444444444444,
+        "false": 0,
+        "precision": 1.0,
+        "true": 724
+      },
+      "frozen": {
+        "accepted": 140,
+        "coverage": 0.07777777777777778,
+        "false": 0,
+        "precision": 1.0,
+        "true": 140
+      },
+      "safety": {
+        "accepted": 889,
+        "coverage": 0.07408333333333333,
+        "false": 0,
+        "precision": 1.0,
+        "true": 889
+      },
+      "thresholds": {
+        "exact": 0.9862472151823694,
+        "semantic": 0.9933820395953886
+      }
+    },
+    {
+      "bytes_estimate": 863004,
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 7,
+        "n_estimators": 48
+      },
+      "confirmation": {
+        "accepted": 765,
+        "coverage": 0.085,
+        "false": 0,
+        "precision": 1.0,
+        "true": 765
+      },
+      "frozen": {
+        "accepted": 149,
+        "coverage": 0.08277777777777778,
+        "false": 0,
+        "precision": 1.0,
+        "true": 149
+      },
+      "safety": {
+        "accepted": 951,
+        "coverage": 0.07925,
+        "false": 0,
+        "precision": 1.0,
+        "true": 951
+      },
+      "thresholds": {
+        "exact": 0.9884280452992004,
+        "semantic": 0.9931874261291426
+      }
+    },
+    {
+      "bytes_estimate": 1643659,
+      "config": {
+        "max_depth": 9,
+        "min_samples_leaf": 6,
+        "n_estimators": 64
+      },
+      "confirmation": {
+        "accepted": 786,
+        "coverage": 0.08733333333333333,
+        "false": 0,
+        "precision": 1.0,
+        "true": 786
+      },
+      "frozen": {
+        "accepted": 151,
+        "coverage": 0.08388888888888889,
+        "false": 0,
+        "precision": 1.0,
+        "true": 151
+      },
+      "safety": {
+        "accepted": 966,
+        "coverage": 0.0805,
+        "false": 0,
+        "precision": 1.0,
+        "true": 966
+      },
+      "thresholds": {
+        "exact": 0.9876850961022815,
+        "semantic": 0.9926301781186215
+      }
+    }
+  ],
+  "production_v4_same_confirmation": {
+    "accepted": 826,
+    "by_selection_kind": {
+      "exact_majority": {
+        "accepted": 644,
+        "coverage": 0.18426323319027182,
+        "false_accepts": 0,
+        "mean_semantic_gain": 0.14987013186125936,
+        "precision": 1.0,
+        "total_semantic_gain": 96.51636491865102,
+        "true_accepts": 644
+      },
+      "semantic_consensus": {
+        "accepted": 182,
+        "coverage": 0.03306085376930064,
+        "false_accepts": 0,
+        "mean_semantic_gain": 0.14972313761683467,
+        "precision": 1.0,
+        "total_semantic_gain": 27.249611046263908,
+        "true_accepts": 182
+      }
+    },
+    "coverage": 0.09177777777777778,
+    "false_accepts": 0,
+    "mean_semantic_gain": 0.1498377432989285,
+    "precision": 1.0,
+    "total_semantic_gain": 123.76597596491493,
+    "true_accepts": 826
+  },
+  "reason": "No independent deployment benefit: all v5 sizes achieved zero false accepts under the new deterministic gates, but the maintained v4 model retained higher same-confirmation coverage with a smaller established runtime resource.",
+  "scope": "programmatic selection-risk evaluation; not end-to-end OMR accuracy",
+  "selected_v5_policy": {
+    "accepted": 724,
+    "by_selection_kind": {
+      "exact_majority": {
+        "accepted": 609,
+        "coverage": 0.1742489270386266,
+        "false_accepts": 0,
+        "mean_semantic_gain": 0.14814948249815318,
+        "precision": 1.0,
+        "total_semantic_gain": 90.2230348413753,
+        "true_accepts": 609
+      },
+      "semantic_consensus": {
+        "accepted": 115,
+        "coverage": 0.02089009990917348,
+        "false_accepts": 0,
+        "mean_semantic_gain": 0.15074236393844598,
+        "precision": 1.0,
+        "total_semantic_gain": 17.335371852921288,
+        "true_accepts": 115
+      }
+    },
+    "coverage": 0.08044444444444444,
+    "false_accepts": 0,
+    "mean_semantic_gain": 0.14856133521311685,
+    "precision": 1.0,
+    "total_semantic_gain": 107.5584066942966,
+    "true_accepts": 724
+  }
+}

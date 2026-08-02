@@ -1,0 +1,10 @@
+{
+  "format": 1,
+  "model_reproducible": true,
+  "model_sha256": "0d03ce254084ae628c65187fc9fc14f4d9d1900531340998cce5a22eb0d0c29b",
+  "model_size": 155242,
+  "model_version": "scorescan-measure-localized-exact-veto-experiment-2",
+  "report_reproducible": true,
+  "report_sha256": "315ee0b93cd0541e5c4a9d49efc0ddb0ee921b1b38df5d8beecc9d30fd668598",
+  "report_size": 4567
+}

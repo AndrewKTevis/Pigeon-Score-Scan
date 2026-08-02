@@ -1,0 +1,96 @@
+{"expected": "Etwas schneller und bewegt", "observed": "Etwas schneller und sii", "font": "FreeSerifItalic.ttf", "sample": 0, "dataset": "compositional-test"}
+{"expected": "Avec expression et chaleur", "observed": "Avec expression et chaleur", "font": "NimbusRoman-Regular.otf", "sample": 1, "dataset": "compositional-test"}
+{"expected": "Etwas schneller und bewegt", "observed": "Etwas schneller und bewegt", "font": "NimbusRoman-Regular.otf", "sample": 2, "dataset": "compositional-test"}
+{"expected": "Poco più mosso e cantabile", "observed": "Poco piu mosso e cantabile", "font": "FreeSerifItalic.ttf", "sample": 3, "dataset": "compositional-test"}
+{"expected": "Sempre cantabile e dolce", "observed": "Sempre cantabile e dolce", "font": "DejaVuSerif-Italic.ttf", "sample": 4, "dataset": "compositional-test"}
+{"expected": "Vivace con spirito e brillante", "observed": "Vivace con spirito e brillante", "font": "NimbusRoman-Regular.otf", "sample": 5, "dataset": "compositional-test"}
+{"expected": "With tenderness and warmth", "observed": "With tenderness and warmth", "font": "DejaVuSerif.ttf", "sample": 6, "dataset": "compositional-test"}
+{"expected": "Poco meno mosso e dolce", "observed": "Poco meno mosso e dolce", "font": "FreeSerifItalic.ttf", "sample": 7, "dataset": "compositional-test"}
+{"expected": "Mit Ausdruck und Wärme", "observed": "Mit Ausdruck und Wiirme", "font": "FreeSerifItalic.ttf", "sample": 8, "dataset": "compositional-test"}
+{"expected": "Slowly but freely", "observed": "Slowly but freely", "font": "FreeSerifItalic.ttf", "sample": 9, "dataset": "compositional-test"}
+{"expected": "Andante molto dolce e cantabile", "observed": "Andante molto dolce e cantabile", "font": "Lato-Italic.ttf", "sample": 10, "dataset": "compositional-test"}
+{"expected": "Andante molto dolce e cantabile", "observed": "Andante molto dolce e cantabile", "font": "DejaVuSerif-Italic.ttf", "sample": 11, "dataset": "compositional-test"}
+{"expected": "Con energia e brillante", "observed": "Con energia e brillante", "font": "DejaVuSerif.ttf", "sample": 12, "dataset": "compositional-test"}
+{"expected": "Molto sostenuto ma cantabile", "observed": "_ Molto sostenuto ma cantabile _", "font": "DejaVuSerif-Italic.ttf", "sample": 13, "dataset": "compositional-test"}
+{"expected": "Avec expression et chaleur", "observed": "Avec expression et chaleur", "font": "NimbusRoman-Italic.otf", "sample": 14, "dataset": "compositional-test"}
+{"expected": "A little slower but flowing", "observed": "A little slower but flowing", "font": "NimbusRoman-Regular.otf", "sample": 15, "dataset": "compositional-test"}
+{"expected": "Sempre più mosso ma leggiero", "observed": "Sempre piu mosso ma leggiero", "font": "DejaVuSerif.ttf", "sample": 16, "dataset": "compositional-test"}
+{"expected": "Lebhaft und kräftig", "observed": "Lebhaft und kriftig", "font": "NimbusRoman-Regular.otf", "sample": 17, "dataset": "compositional-test"}
+{"expected": "Un peu moins vite et très doux", "observed": "U; oat >s-d", "font": "NimbusRoman-Italic.otf", "sample": 18, "dataset": "compositional-test"}
+{"expected": "Un peu moins vite et très doux", "observed": "Un peu moins vite et trés doux", "font": "DejaVuSerif.ttf", "sample": 19, "dataset": "compositional-test"}
+{"expected": "Etwas schneller und bewegt", "observed": "Etwas schneller und bewegt", "font": "FreeSerifItalic.ttf", "sample": 20, "dataset": "compositional-test"}
+{"expected": "Très calme et chanté", "observed": "2s caline et chante", "font": "NimbusRoman-Italic.otf", "sample": 21, "dataset": "compositional-test"}
+{"expected": "With tenderness and warmth", "observed": "With tenderness and warmth", "font": "Lato-Italic.ttf", "sample": 22, "dataset": "compositional-test"}
+{"expected": "Andante molto dolce e cantabile", "observed": "Andante molto dolce e cantabile _", "font": "FreeSerifItalic.ttf", "sample": 23, "dataset": "compositional-test"}
+{"expected": "Adagio con calma e dolcezza", "observed": "Adagio con calma e dolcezza", "font": "FreeSerifItalic.ttf", "sample": 24, "dataset": "compositional-test"}
+{"expected": "Molto sostenuto ma cantabile", "observed": "Molto sostenuto ma cantabile", "font": "DejaVuSerif-Italic.ttf", "sample": 25, "dataset": "compositional-test"}
+{"expected": "Allegro con anima ma non troppo", "observed": "-Allegro-con-anima-ma-non-troppo—", "font": "DejaVuSerif-Italic.ttf", "sample": 26, "dataset": "compositional-test"}
+{"expected": "Adagio con calma e dolcezza", "observed": "Adagio con calma e dolcezza", "font": "DejaVuSerif-Italic.ttf", "sample": 27, "dataset": "compositional-test"}
+{"expected": "Avec expression et chaleur", "observed": "Avec expression et chaleur", "font": "DejaVuSerif-Italic.ttf", "sample": 28, "dataset": "compositional-test"}
+{"expected": "Con energia e brillante", "observed": "_Con energia e brillante", "font": "NimbusRoman-Italic.otf", "sample": 29, "dataset": "compositional-test"}
+{"expected": "Mit Ausdruck und Wärme", "observed": "Mit Ausdruck und Warme", "font": "DejaVuSerif.ttf", "sample": 30, "dataset": "compositional-test"}
+{"expected": "Très calme et chanté", "observed": "_Trés calme et chanté_", "font": "NimbusRoman-Italic.otf", "sample": 31, "dataset": "compositional-test"}
+{"expected": "Etwas schneller und bewegt", "observed": "Etwas schneller und bewegt", "font": "NimbusRoman-Italic.otf", "sample": 32, "dataset": "compositional-test"}
+{"expected": "Mit Ausdruck und Wärme", "observed": "Mit Ausdruck und Warme", "font": "Lato-Italic.ttf", "sample": 33, "dataset": "compositional-test"}
+{"expected": "Tenderly and with expression", "observed": "Tenderly and with expression", "font": "NimbusRoman-Regular.otf", "sample": 34, "dataset": "compositional-test"}
+{"expected": "Sempre più mosso ma leggiero", "observed": "Sempre pit. mosso ma leggiero", "font": "DejaVuSerif.ttf", "sample": 35, "dataset": "compositional-test"}
+{"expected": "Con energia e brillante", "observed": "Con energia e brillante", "font": "DejaVuSerif.ttf", "sample": 36, "dataset": "compositional-test"}
+{"expected": "Sehr langsam und innig", "observed": "Sehr langsam und innig", "font": "NimbusRoman-Italic.otf", "sample": 37, "dataset": "compositional-test"}
+{"expected": "Allegro con anima ma non troppo", "observed": "Allegro con anima ma non troppo", "font": "NimbusRoman-Italic.otf", "sample": 38, "dataset": "compositional-test"}
+{"expected": "Con energia e brillante", "observed": "Con energia e brillante", "font": "Lato-Italic.ttf", "sample": 39, "dataset": "compositional-test"}
+{"expected": "Molto sostenuto ma cantabile", "observed": "", "font": "Lato-Italic.ttf", "sample": 40, "dataset": "compositional-test"}
+{"expected": "Poco più mosso e cantabile", "observed": "op i hil", "font": "NimbusRoman-Italic.otf", "sample": 41, "dataset": "compositional-test"}
+{"expected": "Molto sostenuto ma cantabile", "observed": "Molto sostenuto ma cantabile", "font": "NimbusRoman-Regular.otf", "sample": 42, "dataset": "compositional-test"}
+{"expected": "Tenderly and with expression", "observed": "Tenderly and with expression", "font": "FreeSerifItalic.ttf", "sample": 43, "dataset": "compositional-test"}
+{"expected": "Allegro con anima ma non troppo", "observed": "Allegro con anima ma non troppo", "font": "Lato-Italic.ttf", "sample": 44, "dataset": "compositional-test"}
+{"expected": "A little slower but flowing", "observed": "A little slower but flowing", "font": "DejaVuSerif-Italic.ttf", "sample": 45, "dataset": "compositional-test"}
+{"expected": "Sempre più mosso ma leggiero", "observed": "Sempre piu mosso ma leggiero", "font": "DejaVuSerif-Italic.ttf", "sample": 46, "dataset": "compositional-test"}
+{"expected": "Avec expression et chaleur", "observed": "", "font": "FreeSerifItalic.ttf", "sample": 47, "dataset": "compositional-test"}
+{"expected": "Sehr langsam und innig", "observed": "Sehr langsam und innig", "font": "NimbusRoman-Italic.otf", "sample": 48, "dataset": "compositional-test"}
+{"expected": "Sehr langsam und innig", "observed": "Sehr langsam und innig", "font": "NimbusRoman-Italic.otf", "sample": 49, "dataset": "compositional-test"}
+{"expected": "Sehr langsam und innig", "observed": "Sehr langsam und innig", "font": "DejaVuSerif-Italic.ttf", "sample": 50, "dataset": "compositional-test"}
+{"expected": "Mit Ausdruck und Wärme", "observed": "Mit Ausdruck und Warme", "font": "NimbusRoman-Regular.otf", "sample": 51, "dataset": "compositional-test"}
+{"expected": "Slowly but freely", "observed": "Slowly but freely", "font": "DejaVuSerif.ttf", "sample": 52, "dataset": "compositional-test"}
+{"expected": "Moderato sostenuto e tranquillo", "observed": "Moderato sostenuto e tranquillo", "font": "Lato-Italic.ttf", "sample": 53, "dataset": "compositional-test"}
+{"expected": "Sempre cantabile e dolce", "observed": "Sempre cantabile e dolce", "font": "NimbusRoman-Regular.otf", "sample": 54, "dataset": "compositional-test"}
+{"expected": "Avec expression et chaleur", "observed": "Avec expression et chaleur", "font": "Lato-Italic.ttf", "sample": 55, "dataset": "compositional-test"}
+{"expected": "Vivace con spirito e brillante", "observed": "Vivace con spirito e brillante", "font": "DejaVuSerif.ttf", "sample": 56, "dataset": "compositional-test"}
+{"expected": "Adagio con calma e dolcezza", "observed": "Adagio con calma e dolcezza", "font": "DejaVuSerif-Italic.ttf", "sample": 57, "dataset": "compositional-test"}
+{"expected": "Poco più mosso e cantabile", "observed": "e = hil", "font": "NimbusRoman-Italic.otf", "sample": 58, "dataset": "compositional-test"}
+{"expected": "Vivace con spirito e brillante", "observed": "Vivace con spirito e brillante", "font": "DejaVuSerif.ttf", "sample": 59, "dataset": "compositional-test"}
+{"expected": "Sempre più mosso ma leggiero", "observed": "_ Sempre pitt mosso ma leggiero ]", "font": "FreeSerifItalic.ttf", "sample": 60, "dataset": "compositional-test"}
+{"expected": "Sempre cantabile e dolce", "observed": "__ Sempre cantabile e dolce", "font": "DejaVuSerif.ttf", "sample": 61, "dataset": "compositional-test"}
+{"expected": "Moderato sostenuto e tranquillo", "observed": "Moderato sostenuto e tranquillo", "font": "NimbusRoman-Italic.otf", "sample": 62, "dataset": "compositional-test"}
+{"expected": "Poco meno mosso e dolce", "observed": "Poco meno mosso e dolce", "font": "FreeSerifItalic.ttf", "sample": 63, "dataset": "compositional-test"}
+{"expected": "Poco più mosso e cantabile", "observed": "Poco pitt mosso e cantabile", "font": "FreeSerifItalic.ttf", "sample": 64, "dataset": "compositional-test"}
+{"expected": "Moderato sostenuto e tranquillo", "observed": "Moderato sostenuto e tranquillo", "font": "NimbusRoman-Regular.otf", "sample": 65, "dataset": "compositional-test"}
+{"expected": "Andante molto dolce e cantabile", "observed": "Andante molto dolce e cantabile", "font": "NimbusRoman-Italic.otf", "sample": 66, "dataset": "compositional-test"}
+{"expected": "Adagio con calma e dolcezza", "observed": "__ Adagio con calma e dolcezza _", "font": "FreeSerifItalic.ttf", "sample": 67, "dataset": "compositional-test"}
+{"expected": "Slowly but freely", "observed": "Slowly but freely", "font": "DejaVuSerif-Italic.ttf", "sample": 68, "dataset": "compositional-test"}
+{"expected": "Lebhaft und kräftig", "observed": "Lebhaft und kraftig", "font": "NimbusRoman-Regular.otf", "sample": 69, "dataset": "compositional-test"}
+{"expected": "Un peu moins vite et très doux", "observed": "Un peu moins vite et trés doux", "font": "DejaVuSerif.ttf", "sample": 70, "dataset": "compositional-test"}
+{"expected": "Mit Ausdruck und Wärme", "observed": "Mit Ausdruck-und Warme—", "font": "NimbusRoman-Italic.otf", "sample": 71, "dataset": "compositional-test"}
+{"expected": "Sehr langsam und innig", "observed": "Sehr langsam und innig", "font": "NimbusRoman-Regular.otf", "sample": 72, "dataset": "compositional-test"}
+{"expected": "Sempre cantabile e dolce", "observed": "Sempre cantabile e dolce", "font": "Lato-Italic.ttf", "sample": 73, "dataset": "compositional-test"}
+{"expected": "Molto sostenuto ma cantabile", "observed": "Molto sostenuto ma cantabile", "font": "FreeSerifItalic.ttf", "sample": 74, "dataset": "compositional-test"}
+{"expected": "Sempre cantabile e dolce", "observed": "_Sempre cantabile e dolce _", "font": "NimbusRoman-Italic.otf", "sample": 75, "dataset": "compositional-test"}
+{"expected": "Con energia e brillante", "observed": "Con energia e brillante", "font": "FreeSerifItalic.ttf", "sample": 76, "dataset": "compositional-test"}
+{"expected": "Molto sostenuto ma cantabile", "observed": "Molto sostenuto ma cantabile", "font": "NimbusRoman-Italic.otf", "sample": 77, "dataset": "compositional-test"}
+{"expected": "Un peu moins vite et très doux", "observed": "Un peu moins vite et trés doux", "font": "DejaVuSerif.ttf", "sample": 78, "dataset": "compositional-test"}
+{"expected": "Slowly but freely", "observed": "Slowly but freely", "font": "DejaVuSerif-Italic.ttf", "sample": 79, "dataset": "compositional-test"}
+{"expected": "Très calme et chanté", "observed": "_Trés calme et chanté _", "font": "DejaVuSerif.ttf", "sample": 80, "dataset": "compositional-test"}
+{"expected": "A little slower but flowing", "observed": "A little slower but flowing", "font": "DejaVuSerif-Italic.ttf", "sample": 81, "dataset": "compositional-test"}
+{"expected": "Avec expression et chaleur", "observed": "", "font": "Lato-Italic.ttf", "sample": 82, "dataset": "compositional-test"}
+{"expected": "Moderato sostenuto e tranquillo", "observed": "Moderato sostenuto e tranquillo", "font": "DejaVuSerif-Italic.ttf", "sample": 83, "dataset": "compositional-test"}
+{"expected": "Lebhaft und kräftig", "observed": "Lebhaft und krdaftig", "font": "NimbusRoman-Italic.otf", "sample": 84, "dataset": "compositional-test"}
+{"expected": "En animant et en retenant", "observed": "En animant et en retenant", "font": "DejaVuSerif.ttf", "sample": 85, "dataset": "compositional-test"}
+{"expected": "Sehr langsam und innig", "observed": "", "font": "NimbusRoman-Regular.otf", "sample": 86, "dataset": "compositional-test"}
+{"expected": "Adagio con calma e dolcezza", "observed": "Adagio con calma e dolcezza", "font": "FreeSerifItalic.ttf", "sample": 87, "dataset": "compositional-test"}
+{"expected": "With tenderness and warmth", "observed": "With tenderness and warmth", "font": "Lato-Italic.ttf", "sample": 88, "dataset": "compositional-test"}
+{"expected": "Sehr langsam und innig", "observed": "Sehr langsam und innig", "font": "Lato-Italic.ttf", "sample": 89, "dataset": "compositional-test"}
+{"expected": "Poco più mosso e cantabile", "observed": "_ Poco pit EOEHD & coniabile", "font": "NimbusRoman-Regular.otf", "sample": 90, "dataset": "compositional-test"}
+{"expected": "Etwas schneller und bewegt", "observed": "—Etwas_schneller-und bewegt-", "font": "FreeSerifItalic.ttf", "sample": 91, "dataset": "compositional-test"}
+{"expected": "Poco più mosso e cantabile", "observed": "Poco piu mosso e cantabile", "font": "DejaVuSerif-Italic.ttf", "sample": 92, "dataset": "compositional-test"}
+{"expected": "Slowly but freely", "observed": "Slowly but freely", "font": "Lato-Italic.ttf", "sample": 93, "dataset": "compositional-test"}
+{"expected": "Con energia e brillante", "observed": "Con energia e brillante", "font": "NimbusRoman-Italic.otf", "sample": 94, "dataset": "compositional-test"}
+{"expected": "En animant et en retenant", "observed": "En animant et en retenant", "font": "NimbusRoman-Regular.otf", "sample": 95, "dataset": "compositional-test"}

@@ -1,0 +1,288 @@
+{
+  "auditor_source_sha256": "d883c8039ddb9a95a14599385178e5721f48d19c4f51b7edf95e680ff2dcb3e5",
+  "candidates": [
+    {
+      "best_model_sha256": "32c24230e1a9e1bfce49de4a361e82f432433940f81adf025918800b7dce2766",
+      "epochs": [
+        {
+          "epoch": 2,
+          "excluded_low_support_classes": [
+            {
+              "map": 0.03906390639063907,
+              "name": "expressionText",
+              "support": 4
+            },
+            {
+              "map": 0.18074449212475732,
+              "name": "genericOrnament",
+              "support": 6
+            },
+            {
+              "map": 0.15643564356435646,
+              "name": "jumpText",
+              "support": 4
+            },
+            {
+              "map": 0.042128712871287124,
+              "name": "markerText",
+              "support": 2
+            },
+            {
+              "map": 0.0023242831623213637,
+              "name": "staffText",
+              "support": 14
+            },
+            {
+              "map": 0.08804569743800546,
+              "name": "systemText",
+              "support": 23
+            }
+          ],
+          "gate_passed": false,
+          "priority_mark_map": 0.5895340853437121,
+          "reported_selection_score": 0.5812723907298516,
+          "selection_score": 0.6056705037106986,
+          "support_filtered_map": 0.6540797588116583,
+          "supported_classes": [
+            "arpeggio",
+            "augmentationDot",
+            "beam",
+            "bracket",
+            "breathMark",
+            "fermata",
+            "fingeringText",
+            "flag",
+            "genericAccidental",
+            "genericArticulation",
+            "genericBarline",
+            "genericClef",
+            "genericDynamic",
+            "genericKeySignature",
+            "genericRest",
+            "genericTimeSignature",
+            "graceSlash",
+            "hairpin",
+            "instrumentNameText",
+            "measureNumberText",
+            "ottava",
+            "pedal",
+            "rehearsalMarkText",
+            "scoreText",
+            "slur",
+            "tempoText",
+            "tie",
+            "tuplet",
+            "volta"
+          ]
+        },
+        {
+          "epoch": 4,
+          "excluded_low_support_classes": [
+            {
+              "map": 0.032508250825082505,
+              "name": "expressionText",
+              "support": 4
+            },
+            {
+              "map": 0.16278877887788784,
+              "name": "genericOrnament",
+              "support": 6
+            },
+            {
+              "map": 0.2272277227722772,
+              "name": "jumpText",
+              "support": 4
+            },
+            {
+              "map": 0.0,
+              "name": "markerText",
+              "support": 2
+            },
+            {
+              "map": 0.002823848379186923,
+              "name": "staffText",
+              "support": 14
+            },
+            {
+              "map": 0.09100313456571608,
+              "name": "systemText",
+              "support": 23
+            }
+          ],
+          "gate_passed": false,
+          "priority_mark_map": 0.5947249336324816,
+          "reported_selection_score": 0.5861415827427815,
+          "selection_score": 0.6106760434757292,
+          "support_filtered_map": 0.6585293730054723,
+          "supported_classes": [
+            "arpeggio",
+            "augmentationDot",
+            "beam",
+            "bracket",
+            "breathMark",
+            "fermata",
+            "fingeringText",
+            "flag",
+            "genericAccidental",
+            "genericArticulation",
+            "genericBarline",
+            "genericClef",
+            "genericDynamic",
+            "genericKeySignature",
+            "genericRest",
+            "genericTimeSignature",
+            "graceSlash",
+            "hairpin",
+            "instrumentNameText",
+            "measureNumberText",
+            "ottava",
+            "pedal",
+            "rehearsalMarkText",
+            "scoreText",
+            "slur",
+            "tempoText",
+            "tie",
+            "tuplet",
+            "volta"
+          ]
+        }
+      ],
+      "minimum_class_support": 25,
+      "model_contract": {
+        "background_iou_threshold": 0.25,
+        "foreground_iou_threshold": 0.35,
+        "nms_iou": 0.75,
+        "version": "retinanet-r50-fpnv2-music-anchors-groupnorm-giou-matcher35-25-nms75@3"
+      },
+      "reported_best_epoch": 4,
+      "reported_best_selection_score": 0.5861415827427815,
+      "reported_selection_protocol": "support-filtered-priority-macro-map@1",
+      "rescored_best_epoch": 4,
+      "rescored_best_gate_passed": false,
+      "rescored_best_priority_mark_map": 0.5947249336324816,
+      "rescored_best_selection_score": 0.6106760434757292,
+      "rescored_best_support_filtered_map": 0.6585293730054723,
+      "training_acceptance_passed": false,
+      "training_report": "/workspace/pigeon-score-scan/training_data/models/muse-omr-scan-semantic-detector-v5-matcher35-25-ablation-e12-runtime2-20260730/training_report.json",
+      "training_report_sha256": "a55b32724603c4c3316df23a8ea2a46d33d53dd641950b132b3e4313cc06eb40"
+    },
+    {
+      "best_model_sha256": "cf85871790f1a01232e1e3f357f4e34f90e5a2c251e7eb8911de876355a57589",
+      "epochs": [
+        {
+          "epoch": 2,
+          "excluded_low_support_classes": [
+            {
+              "map": 0.0816124469589816,
+              "name": "expressionText",
+              "support": 4
+            },
+            {
+              "map": 0.59290102949287,
+              "name": "genericOrnament",
+              "support": 6
+            },
+            {
+              "map": 0.10297029702970298,
+              "name": "jumpText",
+              "support": 4
+            },
+            {
+              "map": 0.06732673267326733,
+              "name": "markerText",
+              "support": 2
+            },
+            {
+              "map": 0.003969973268513291,
+              "name": "staffText",
+              "support": 14
+            },
+            {
+              "map": 0.21021248555941668,
+              "name": "systemText",
+              "support": 23
+            }
+          ],
+          "gate_passed": false,
+          "priority_mark_map": 0.5911963383979328,
+          "reported_selection_score": 0.586868961591377,
+          "selection_score": 0.6074235135055797,
+          "support_filtered_map": 0.6561050388285199,
+          "supported_classes": [
+            "arpeggio",
+            "augmentationDot",
+            "beam",
+            "bracket",
+            "breathMark",
+            "fermata",
+            "fingeringText",
+            "flag",
+            "genericAccidental",
+            "genericArticulation",
+            "genericBarline",
+            "genericClef",
+            "genericDynamic",
+            "genericKeySignature",
+            "genericRest",
+            "genericTimeSignature",
+            "graceSlash",
+            "hairpin",
+            "instrumentNameText",
+            "measureNumberText",
+            "ottava",
+            "pedal",
+            "rehearsalMarkText",
+            "scoreText",
+            "slur",
+            "tempoText",
+            "tie",
+            "tuplet",
+            "volta"
+          ]
+        }
+      ],
+      "minimum_class_support": 25,
+      "model_contract": {
+        "background_iou_threshold": 0.25,
+        "foreground_iou_threshold": 0.35,
+        "nms_iou": 0.75,
+        "strict_background_iou_threshold": 0.4,
+        "strict_foreground_iou_threshold": 0.5,
+        "strict_match_classes": [
+          "arpeggio",
+          "augmentationDot",
+          "beam",
+          "expressionText",
+          "genericBarline",
+          "genericTimeSignature",
+          "graceSlash",
+          "jumpText",
+          "markerText",
+          "scoreText",
+          "staffText"
+        ],
+        "version": "retinanet-r50-fpnv2-music-anchors-groupnorm-giou-classaware-matcher35-25-strict50-40-nms75@4"
+      },
+      "reported_best_epoch": 2,
+      "reported_best_selection_score": 0.586868961591377,
+      "reported_selection_protocol": "support-filtered-priority-macro-map@1",
+      "rescored_best_epoch": 2,
+      "rescored_best_gate_passed": false,
+      "rescored_best_priority_mark_map": 0.5911963383979328,
+      "rescored_best_selection_score": 0.6074235135055797,
+      "rescored_best_support_filtered_map": 0.6561050388285199,
+      "training_acceptance_passed": false,
+      "training_report": "/workspace/pigeon-score-scan/training_data/models/muse-omr-scan-semantic-detector-v6-class-aware-matcher-e12-runtime2-20260730/training_report.json",
+      "training_report_sha256": "3c6545e34442094b6ea56ef726382017d8756c9855bf26c7bc18bdc7c1e2eff2"
+    }
+  ],
+  "decision_changed": true,
+  "format": 1,
+  "name": "scorescan-detector-selection-policy-audit-v1",
+  "new_policy_winner_report_sha256": "a55b32724603c4c3316df23a8ea2a46d33d53dd641950b132b3e4313cc06eb40",
+  "old_policy_winner_report_sha256": "3c6545e34442094b6ea56ef726382017d8756c9855bf26c7bc18bdc7c1e2eff2",
+  "purpose": "prevent statistically tiny classes from selecting a detector checkpoint or ablation",
+  "release_authorized": false,
+  "selection_implementation_source_sha256": "cc3e0902f53c2894b81cf6f1d2cbe295e1343a8393f7ad16446521df17ad1677",
+  "selection_protocol": "support-filtered-overall-and-priority-macro-map@2"
+}

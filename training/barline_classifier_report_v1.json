@@ -1,0 +1,40 @@
+{
+  "calibration": {
+    "accepted_fraction": 0.22666666666666666,
+    "accuracy": 0.72,
+    "auc": 0.9663940256045519,
+    "f1": 0.6181818181818182,
+    "precision": 1.0,
+    "recall": 0.4473684210526316,
+    "threshold": 0.9382044738027957
+  },
+  "calibration_samples": 150,
+  "groups": 500,
+  "model_version": "scorescan-barline-logistic-1",
+  "positive_rate": 0.5,
+  "runtime_test": {
+    "accepted_fraction": 0.41333333333333333,
+    "accuracy": 0.9066666666666666,
+    "auc": 0.9644381223328592,
+    "f1": 0.8985507246376812,
+    "precision": 1.0,
+    "recall": 0.8157894736842105,
+    "threshold": 0.68
+  },
+  "runtime_threshold": 0.68,
+  "samples": 1000,
+  "scope": "synthetic staff-spanning vertical-stroke classification; not end-to-end OMR accuracy",
+  "seed": 20260716,
+  "test": {
+    "accepted_fraction": 0.26,
+    "accuracy": 0.7533333333333333,
+    "auc": 0.9644381223328592,
+    "f1": 0.6782608695652174,
+    "precision": 1.0,
+    "recall": 0.5131578947368421,
+    "threshold": 0.9382044738027957
+  },
+  "test_samples": 150,
+  "train_samples": 700,
+  "variants_per_group": 2
+}

@@ -1,0 +1,80 @@
+{
+  "candidate_policies": [
+    {
+      "accepted": 1772,
+      "coverage": 0.36916666666666664,
+      "false_accepts": 2,
+      "maximum_false_direction_confidence": 0.987139780042603,
+      "positive_recall": 0.7375,
+      "precision": 0.9988713318284425,
+      "threshold": 0.9817765278986386,
+      "true_accepts": 1770
+    },
+    {
+      "accepted": 1588,
+      "coverage": 0.3308333333333333,
+      "false_accepts": 2,
+      "maximum_false_direction_confidence": 0.987139780042603,
+      "positive_recall": 0.6608333333333334,
+      "precision": 0.9987405541561712,
+      "threshold": 0.985,
+      "true_accepts": 1586
+    },
+    {
+      "accepted": 1201,
+      "coverage": 0.2502083333333333,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.987139780042603,
+      "positive_recall": 0.5004166666666666,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 1201
+    },
+    {
+      "accepted": 1032,
+      "coverage": 0.215,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.987139780042603,
+      "positive_recall": 0.43,
+      "precision": 1.0,
+      "threshold": 0.988,
+      "true_accepts": 1032
+    },
+    {
+      "accepted": 767,
+      "coverage": 0.15979166666666667,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.987139780042603,
+      "positive_recall": 0.31958333333333333,
+      "precision": 1.0,
+      "threshold": 0.9885,
+      "true_accepts": 767
+    }
+  ],
+  "groups": 1200,
+  "initial_threshold": 0.9817765278986386,
+  "model_version": "scorescan-rhythm-symbol-forest-1",
+  "publication_gates": {
+    "minimum_positive_recall": 0.45,
+    "zero_error_accepts": true
+  },
+  "sample": {
+    "accuracy": 0.9570833333333333,
+    "brier_score": 0.026164222009498535,
+    "log_loss": 0.08922187430775269,
+    "roc_auc": 0.9956949652777778
+  },
+  "samples": 4800,
+  "scope": "dedicated rendered threshold safety calibration; excluded from training and final independent audit",
+  "seed": 20260917,
+  "selected_policy": {
+    "accepted": 1201,
+    "coverage": 0.2502083333333333,
+    "false_accepts": 0,
+    "maximum_false_direction_confidence": 0.987139780042603,
+    "positive_recall": 0.5004166666666666,
+    "precision": 1.0,
+    "threshold": 0.9875,
+    "true_accepts": 1201
+  }
+}

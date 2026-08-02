@@ -1,0 +1,340 @@
+{
+  "seed": 20260718,
+  "lexicon_size": 926,
+  "training_pairs": 11753,
+  "validation_pairs": 2601,
+  "pair_accuracy": 0.9857747020376778,
+  "pair_auc": 0.997377667942191,
+  "heldout_top1_accuracy": 0.8902195608782435,
+  "autocorrect_precision": 0.9420731707317073,
+  "autocorrect_coverage": 0.654690618762475,
+  "rendered_ocr_observations": 116,
+  "rendered_ocr_raw_exact": 0.7413793103448276,
+  "rendered_ocr_corrected_top1": 0.8793103448275862,
+  "compositional_novel_phrase_tests": 64,
+  "compositional_novel_phrase_top1": 0.6875,
+  "compositional_autocorrect_precision": 0.8378378378378378,
+  "compositional_autocorrect_coverage": 0.578125,
+  "examples": [
+    {
+      "observed": "scrioso",
+      "expected": "serioso",
+      "suggested": "serioso",
+      "probability": 0.9973185944221162,
+      "margin": 0.27083153699749596,
+      "correct": true
+    },
+    {
+      "observed": "se r1oso",
+      "expected": "serioso",
+      "suggested": "serioso",
+      "probability": 0.978537493261899,
+      "margin": 0.7886533426328481,
+      "correct": true
+    },
+    {
+      "observed": "serioso",
+      "expected": "serioso",
+      "suggested": "serioso",
+      "probability": 0.9998441381358022,
+      "margin": 0.051597476872922154,
+      "correct": true
+    },
+    {
+      "observed": "fP",
+      "expected": "fp",
+      "suggested": "fp",
+      "probability": 0.9999770335741639,
+      "margin": 0.07041895277624988,
+      "correct": true
+    },
+    {
+      "observed": "tP",
+      "expected": "fp",
+      "suggested": "p",
+      "probability": 0.3719591926261125,
+      "margin": 0.030698961534635194,
+      "correct": false
+    },
+    {
+      "observed": "Fp",
+      "expected": "fp",
+      "suggested": "fp",
+      "probability": 0.9999770335741639,
+      "margin": 0.07041895277624988,
+      "correct": true
+    },
+    {
+      "observed": "Adagiet leggiero",
+      "expected": "Adagietto leggiero",
+      "suggested": "Adagietto leggiero",
+      "probability": 0.9665525277146302,
+      "margin": 0.3387630347545694,
+      "correct": true
+    },
+    {
+      "observed": "Adagietto lEgiero",
+      "expected": "Adagietto leggiero",
+      "suggested": "Adagietto leggiero",
+      "probability": 0.9886882034582132,
+      "margin": 0.17483073110756164,
+      "correct": true
+    },
+    {
+      "observed": "ADagietto leggiero",
+      "expected": "Adagietto leggiero",
+      "suggested": "Adagietto leggiero",
+      "probability": 0.9995203011156601,
+      "margin": 0.043985133189406,
+      "correct": true
+    },
+    {
+      "observed": "A Cpo",
+      "expected": "Da Capo",
+      "suggested": "A Capo",
+      "probability": 0.9842407343847637,
+      "margin": 0.7750338333472001,
+      "correct": false
+    },
+    {
+      "observed": "a Capo",
+      "expected": "Da Capo",
+      "suggested": "a Capo",
+      "probability": 0.9949999999999999,
+      "margin": 0.5,
+      "correct": false
+    },
+    {
+      "observed": "Da nCap0",
+      "expected": "Da Capo",
+      "suggested": "Da Capo",
+      "probability": 0.43790166347903314,
+      "margin": 0.4219435656952288,
+      "correct": true
+    },
+    {
+      "observed": "Andanfe moderatoscherzando",
+      "expected": "Andante moderato scherzando",
+      "suggested": "Andante moderato scherzando",
+      "probability": 0.9786905106242978,
+      "margin": 0.08856467017087633,
+      "correct": true
+    },
+    {
+      "observed": "Andante moderato scherzndo",
+      "expected": "Andante moderato scherzando",
+      "suggested": "Andante moderato scherzando",
+      "probability": 0.9836106695927094,
+      "margin": 0.32544693070012176,
+      "correct": true
+    },
+    {
+      "observed": "Andante modera to scher2ando",
+      "expected": "Andante moderato scherzando",
+      "suggested": "Andante moderato scherzando",
+      "probability": 0.9675361878308116,
+      "margin": 0.3015250710608377,
+      "correct": true
+    },
+    {
+      "observed": "Ardante moderato energico",
+      "expected": "Andante moderato energico",
+      "suggested": "Andante moderato energico",
+      "probability": 0.99570989980833,
+      "margin": 0.49913883887004845,
+      "correct": true
+    },
+    {
+      "observed": "AndaNte moderato enrgico",
+      "expected": "Andante moderato energico",
+      "suggested": "Andante moderato energico",
+      "probability": 0.9824716388817624,
+      "margin": 0.3294948870879455,
+      "correct": true
+    },
+    {
+      "observed": "Andante modrlato energico",
+      "expected": "Andante moderato energico",
+      "suggested": "Andante moderato energico",
+      "probability": 0.9698409253487045,
+      "margin": 0.3085951386688416,
+      "correct": true
+    },
+    {
+      "observed": "Andante ma non troppro",
+      "expected": "Andante ma non troppo",
+      "suggested": "Andante ma non troppo",
+      "probability": 0.9765660657769721,
+      "margin": 0.2544824640516674,
+      "correct": true
+    },
+    {
+      "observed": "Andante ma non troppo",
+      "expected": "Andante ma non troppo",
+      "suggested": "Andante ma non troppo",
+      "probability": 0.9995203011156601,
+      "margin": 0.07214533854272076,
+      "correct": true
+    },
+    {
+      "observed": "Andante mt non toppo",
+      "expected": "Andante ma non troppo",
+      "suggested": "Andante ma non troppo",
+      "probability": 0.9046068916371098,
+      "margin": 0.1832269980385629,
+      "correct": true
+    },
+    {
+      "observed": "With tendern ess",
+      "expected": "With tenderness",
+      "suggested": "With tenderness",
+      "probability": 0.9957308254457367,
+      "margin": 0.9455503120376239,
+      "correct": true
+    },
+    {
+      "observed": "With Tenderness",
+      "expected": "With tenderness",
+      "suggested": "With tenderness",
+      "probability": 0.9998441381358022,
+      "margin": 0.9297235942081564,
+      "correct": true
+    },
+    {
+      "observed": "With tenyerness",
+      "expected": "With tenderness",
+      "suggested": "With tenderness",
+      "probability": 0.9929182104551851,
+      "margin": 0.9716165805328332,
+      "correct": true
+    },
+    {
+      "observed": "Flavtardo",
+      "expected": "flautando",
+      "suggested": "flautando",
+      "probability": 0.8337654964159332,
+      "margin": 0.5547391008899276,
+      "correct": true
+    },
+    {
+      "observed": "flatando",
+      "expected": "flautando",
+      "suggested": "flautando",
+      "probability": 0.9931500283589256,
+      "margin": 0.14116935963867605,
+      "correct": true
+    },
+    {
+      "observed": "flat ando",
+      "expected": "flautando",
+      "suggested": "flautando",
+      "probability": 0.9645781556085722,
+      "margin": 0.07980509389155133,
+      "correct": true
+    },
+    {
+      "observed": "rfrz",
+      "expected": "rfz",
+      "suggested": "rfz",
+      "probability": 0.9740634436785593,
+      "margin": 0.6744840884487227,
+      "correct": true
+    },
+    {
+      "observed": "Rf",
+      "expected": "rfz",
+      "suggested": "rf",
+      "probability": 0.9999770335741639,
+      "margin": 0.14686525049007337,
+      "correct": false
+    },
+    {
+      "observed": "Rfz",
+      "expected": "rfz",
+      "suggested": "rfz",
+      "probability": 0.9998441381358022,
+      "margin": 0.07028605733788817,
+      "correct": true
+    },
+    {
+      "observed": "Viv acisrsimo non troppo",
+      "expected": "Vivacissimo non troppo",
+      "suggested": "Vivacissimo non troppo",
+      "probability": 0.969933621639032,
+      "margin": 0.1801663464471911,
+      "correct": true
+    },
+    {
+      "observed": "Vivacissimorr non t roppo",
+      "expected": "Vivacissimo non troppo",
+      "suggested": "Vivacissimo non troppo",
+      "probability": 0.9877589642989996,
+      "margin": 0.6739696540312499,
+      "correct": true
+    },
+    {
+      "observed": "Vivacissimo non troppo",
+      "expected": "Vivacissimo non troppo",
+      "suggested": "Vivacissimo non troppo",
+      "probability": 0.9995203011156601,
+      "margin": 0.05891392627260794,
+      "correct": true
+    },
+    {
+      "observed": "Le nto con brio",
+      "expected": "Lento con brio",
+      "suggested": "Lento con brio",
+      "probability": 0.9978661232163628,
+      "margin": 0.10105900032938941,
+      "correct": true
+    },
+    {
+      "observed": "Lento con brio",
+      "expected": "Lento con brio",
+      "suggested": "Lento con brio",
+      "probability": 0.9995203011156601,
+      "margin": 0.06507692639524998,
+      "correct": true
+    },
+    {
+      "observed": "Lentto con br'Io",
+      "expected": "Lento con brio",
+      "suggested": "Lento con br'Io",
+      "probability": 0.9921189662113217,
+      "margin": 0.22151359577302387,
+      "correct": false
+    },
+    {
+      "observed": "Moderato scher2ando",
+      "expected": "Moderato scherzando",
+      "suggested": "Moderato scherzando",
+      "probability": 0.9814457937068785,
+      "margin": 0.34394590889649457,
+      "correct": true
+    },
+    {
+      "observed": "Modetrato  schrzando",
+      "expected": "Moderato scherzando",
+      "suggested": "Moderato scherzando",
+      "probability": 0.9478136310994287,
+      "margin": 0.30716653702884744,
+      "correct": true
+    },
+    {
+      "observed": "ModerAto scher zando",
+      "expected": "Moderato scherzando",
+      "suggested": "Moderato scherzando",
+      "probability": 0.991280018144337,
+      "margin": 0.3235300166216587,
+      "correct": true
+    },
+    {
+      "observed": "Allegro moderato  tranquillo",
+      "expected": "Allegro moderato tranquillo",
+      "suggested": "Allegro moderato tranquillo",
+      "probability": 0.9995203011156601,
+      "margin": 0.06276998324383509,
+      "correct": true
+    }
+  ]
+}

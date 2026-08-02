@@ -1,0 +1,22 @@
+{
+  "format": 1,
+  "passed": true,
+  "model_version": "scorescan-accent-visual-forest-1",
+  "fixed_seed_training": 20261031,
+  "repeat_training_used_identical_committed_npz_inputs": true,
+  "training_data_generator_deterministic_unit_test": true,
+  "model_byte_identical": true,
+  "report_byte_identical": true,
+  "artifacts": {
+    "model": {
+      "run_a_sha256": "9383fd62557905ecc53bd29cf4c777f1cd38bb5e244b5548b0c12110cb0d2767",
+      "run_b_sha256": "9383fd62557905ecc53bd29cf4c777f1cd38bb5e244b5548b0c12110cb0d2767"
+    },
+    "report": {
+      "run_a_sha256": "a0fa150d870951b911fe6501d630066fec4174256159ffae52291e652b0782d8",
+      "run_b_sha256": "a0fa150d870951b911fe6501d630066fec4174256159ffae52291e652b0782d8"
+    }
+  },
+  "end_to_end_accuracy_claim": false,
+  "scope": "repeat CPU training from the same three committed group-isolated rendered datasets; not real-scan OMR accuracy"
+}

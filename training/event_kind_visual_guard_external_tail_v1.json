@@ -1,0 +1,101 @@
+{
+  "dataset_role": "post-freeze external tail; not used for training, configuration selection, calibration or threshold selection",
+  "end_to_end_accuracy_claim": false,
+  "model_version": "scorescan-event-kind-visual-forest-1",
+  "policy": {
+    "correct_accepts": 3057,
+    "coverage": 0.3057,
+    "false_accepts": 0,
+    "groups": 5000,
+    "note_correct_accepts": 1580,
+    "note_positive_total": 2514,
+    "note_recall": 0.6284805091487669,
+    "rest_correct_accepts": 1477,
+    "rest_positive_total": 2486,
+    "rest_recall": 0.5941271118262269,
+    "samples": 10000,
+    "selective_precision": 1.0,
+    "threshold": 0.9398595387286881
+  },
+  "rejected_lower_thresholds": {
+    "0.85": {
+      "correct_accepts": 3751,
+      "false_accepts": 6
+    },
+    "0.88": {
+      "correct_accepts": 3592,
+      "false_accepts": 3
+    },
+    "0.9": {
+      "correct_accepts": 3467,
+      "false_accepts": 2
+    },
+    "0.92": {
+      "correct_accepts": 3300,
+      "false_accepts": 0
+    },
+    "0.93": {
+      "correct_accepts": 3192,
+      "false_accepts": 0
+    }
+  },
+  "sample": {
+    "brier_score": 0.04248660379654269,
+    "log_loss": 0.16099550672097135,
+    "roc_auc": 0.9926575599999999
+  },
+  "scenario_false_accepts": {
+    "beam_fragment": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.7936081505676758,
+      "negative_samples": 484
+    },
+    "clean": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.6735306837728305,
+      "negative_samples": 474
+    },
+    "compact_noise": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.8604525438205792,
+      "negative_samples": 480
+    },
+    "dense_neighbours": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.7620935740363889,
+      "negative_samples": 526
+    },
+    "low_contrast": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.8949213887230465,
+      "negative_samples": 568
+    },
+    "nearby_opposite_symbol": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.5852745285530757,
+      "negative_samples": 448
+    },
+    "notehead_noise": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.8074248521756029,
+      "negative_samples": 485
+    },
+    "partial_symbol": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.91255208642052,
+      "negative_samples": 504
+    },
+    "staff_residue": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.6700574601546453,
+      "negative_samples": 492
+    },
+    "stem_fragment": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.783348531035713,
+      "negative_samples": 539
+    }
+  },
+  "schema_version": 1,
+  "seed": 20261004
+}

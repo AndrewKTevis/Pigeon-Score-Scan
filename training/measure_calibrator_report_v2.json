@@ -1,0 +1,17 @@
+{
+  "evaluation": "procedural measure-level ensemble calibration",
+  "model_version": "scorescan-measure-calibrator-2",
+  "seed": 20260724,
+  "ensembles": 90,
+  "samples": 3893,
+  "positive_samples": 3094,
+  "train_samples": 3103,
+  "test_samples": 790,
+  "sample_accuracy": 0.9772151898734177,
+  "sample_auc": 0.9936907574081273,
+  "heldout_measure_decisions": 90,
+  "baseline_top1_accuracy": 0.9666666666666667,
+  "calibrated_top1_accuracy": 0.9888888888888889,
+  "decisions_with_correct_candidate": 90,
+  "notes": "Procedural MusicXML ensemble-selection calibration; not an end-to-end scan OMR metric."
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "role": "external_scan_reference_match_candidates_not_training_or_evaluation",
+  "boundary_contract_version": "printed-western-instrumental-scan-boundary@4",
+  "training_authorized": false,
+  "evaluation_authorized": false,
+  "release_authorized": false,
+  "source_repository": {
+    "url": "https://github.com/pl-wnifc/humdrum-chopin-first-editions",
+    "revision": "95dfb105c1669c72d10b04088566154f12d3dc1c",
+    "license": "CC-BY-4.0",
+    "license_path": "LICENSE.txt",
+    "license_sha256": "49a77b80d9c010c02c5f49f7dc7a63855128b1b591414b803ca3b507d3d466da"
+  },
+  "works": [
+    {
+      "id": "chopin-op13-kistner-1834-nifc-f10132",
+      "parent_pid": "nifc:155166",
+      "parent_page_url": "https://repozytorium.nifc.pl/islandora/object/nifc%3A155166",
+      "expected_parent_title": "Fantazja A-dur na tematy polskie op. 13",
+      "required_parent_mods_fragments": [
+        "CC BY 4.0",
+        "Kistner",
+        "1033. 1034.",
+        "Leipsic [1834]",
+        "s. 1–20"
+      ],
+      "child_pids": [
+        "nifc:155167",
+        "nifc:155168",
+        "nifc:155169",
+        "nifc:155170",
+        "nifc:155171",
+        "nifc:155172",
+        "nifc:155173",
+        "nifc:155174",
+        "nifc:155175",
+        "nifc:155176"
+      ],
+      "child_title_prefix": "pl-wnifc-mkf--f10132--",
+      "non_music_leading_children": 1,
+      "scan_layout": "left_to_right_two_page_spread_fixed_midpoint",
+      "first_printed_music_page": 2,
+      "expected_music_page_count": 18,
+      "reference_path": "kern/013-1a-KI.krn",
+      "reference_sha256": "c4edc5581004cadf62763aa5942dae031ae46b07032e3b4b6202abf86d40bfc0",
+      "reference_instrumentation": "1 piano",
+      "required_reference_records": {
+        "COM": "Chopin, Fryderyk",
+        "OPS": "Op. 13",
+        "PPR": "Kistner",
+        "PPP": "Leipzig"
+      }
+    },
+    {
+      "id": "chopin-op18-schlesinger-1834-nifc-f5739",
+      "parent_pid": "nifc:142590",
+      "parent_page_url": "https://repozytorium.nifc.pl/islandora/object/nifc%3A142590",
+      "expected_parent_title": "Walc Es-dur op. 18",
+      "required_parent_mods_fragments": [
+        "CC BY 4.0",
+        "Maurice Schlesinger",
+        "M. S. 1599.",
+        "Paris",
+        "s. 1–9"
+      ],
+      "child_pids": [
+        "nifc:142591",
+        "nifc:142592",
+        "nifc:142593",
+        "nifc:142594",
+        "nifc:142595",
+        "nifc:142596",
+        "nifc:142597",
+        "nifc:142598",
+        "nifc:142599"
+      ],
+      "child_title_prefix": "pl-wnifc-mkf--f5739--",
+      "non_music_leading_children": 1,
+      "scan_layout": "single_page_no_geometric_transform",
+      "first_printed_music_page": 2,
+      "expected_music_page_count": 8,
+      "reference_path": "kern/018-1a-Sm-001.krn",
+      "reference_sha256": "2bea09edda47673768c168a83b29fbe16259a6c3d19b4ed77057d3772208e466",
+      "reference_instrumentation": "1 piano",
+      "required_reference_records": {
+        "COM": "Chopin, Fryderyk",
+        "OPS": "Op. 18",
+        "PPR": "M. Schlesinger",
+        "PPP": "Paris"
+      }
+    }
+  ]
+}

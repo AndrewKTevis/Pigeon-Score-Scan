@@ -1,0 +1,45 @@
+{
+  "model_version": "scorescan-selection-risk-1",
+  "seed": 20260716,
+  "references": [
+    "/mnt/data/Allegretto_No_3_from_image.musicxml",
+    "/mnt/data/Cantata_BWV147_HP_Violin_Club.musicxml"
+  ],
+  "samples": 190,
+  "measure_groups": 45,
+  "train_samples": 124,
+  "calibration_samples": 35,
+  "test_samples": 31,
+  "positive_rate": 0.5368421052631579,
+  "test_accuracy_at_0_5": 0.6774193548387096,
+  "test_auc": 0.7791666666666667,
+  "test_log_loss": 0.6224274390666812,
+  "target_precision": 0.95,
+  "calibration_selective": {
+    "threshold": 0.9892516317751179,
+    "precision": 1.0,
+    "coverage": 0.22857142857142856,
+    "accepted": 8
+  },
+  "test_selective": {
+    "threshold": 0.9892516317751179,
+    "precision": 1.0,
+    "coverage": 0.03225806451612903,
+    "accepted": 1,
+    "false_accepts": 0
+  },
+  "baseline_ensemble_selective_at_matched_coverage": {
+    "threshold": 0.9982956004546025,
+    "precision": 0.2857142857142857,
+    "coverage": 0.22580645161290322,
+    "accepted": 7,
+    "false_accepts": 5
+  },
+  "selection_kind_counts": {
+    "exact_majority": 0,
+    "semantic_consensus": 190,
+    "template": 0
+  },
+  "split_unit": "reference measure identity; repeated corruptions of one measure never cross splits",
+  "scope": "fuzzy semantic-consensus parsed-MusicXML replacement benefit gating; exact majorities remain governed by deterministic guards"
+}

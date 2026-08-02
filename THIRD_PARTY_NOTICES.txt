@@ -1,0 +1,13 @@
+Pigeon Score Scan 0.37.0-dev third-party notices
+
+Pigeon Score Scan source is distributed under the project LICENSE. Runtime dependencies remain governed by their respective licenses as recorded by the committed lock and license files.
+
+Important components include Python, OpenCV, NumPy, PyMuPDF, Pillow, lxml, homr 0.7.0, RapidOCR, optional Tesseract, Verovio, Flask, Werkzeug, pywebview, pystray, pythonnet, clr-loader, Bottle, proxy-tools, uv and Zig. The project does not relicense these components.
+
+The native Windows shell uses pywebview 6.2.1 under the BSD 3-Clause license and pystray 0.19.5 under LGPL-3.0. Their locked transitive dependencies include pythonnet (MIT), clr-loader, Bottle (MIT) and proxy-tools (MIT). These Python distributions are downloaded unchanged from the locked package indexes on first run; their original metadata, copyright notices and complete license files remain installed in the selected portable runtime environment.
+
+The Windows launcher is compiled with Zig 0.16.0. Its MIT notice is included as licenses\LICENSE-MIT-Zig.txt. Bundled uv license texts remain in licenses\LICENSE-APACHE-uv.txt and licenses\LICENSE-MIT-uv.txt. Python packages installed on first run retain the metadata and license files delivered by their locked distributions.
+
+The development-only files in third_party\paddleocr-patches derive from PaddleOCR revision 2661c7c0 and remain under Apache License 2.0. The applicable license and patch description are included in that directory. These files are exercised by training-contract tests and are not loaded by the desktop runtime.
+
+The PrIMuS corpus and research checkpoints used for development benchmarks are not bundled. Their metrics do not change the application license or establish permission to redistribute third-party model weights.

@@ -1,0 +1,9 @@
+{
+  "format": 1,
+  "model_byte_identical": true,
+  "model_sha256": "421cf76295ed93da755c7f9b02fc65773d5bfb5496d2340c73d3e3362e2d597a",
+  "model_version": "scorescan-cross-tie-patch-forest-2",
+  "report_byte_identical": true,
+  "report_sha256": "26d9f5542b7992e157b2c2b615bdf0e978e648443e765b82fbc230ff8f7a61a3",
+  "training_runs": 2
+}

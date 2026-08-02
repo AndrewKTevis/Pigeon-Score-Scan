@@ -1,0 +1,21 @@
+{
+  "format": 1,
+  "role": "nifc_chopin_reference_quality_catalog_not_training_or_evaluation",
+  "repository_revision": "95dfb105c1669c72d10b04088566154f12d3dc1c",
+  "reference_count": 512,
+  "training_authorized": false,
+  "evaluation_authorized": false,
+  "release_authorized": false,
+  "high_priority_candidates": [
+    {"id": "fixture-01", "training_authorized": false},
+    {"id": "fixture-02", "training_authorized": false},
+    {"id": "fixture-03", "training_authorized": false},
+    {"id": "fixture-04", "training_authorized": false},
+    {"id": "fixture-05", "training_authorized": false},
+    {"id": "fixture-06", "training_authorized": false},
+    {"id": "fixture-07", "training_authorized": false},
+    {"id": "fixture-08", "training_authorized": false},
+    {"id": "fixture-09", "training_authorized": false},
+    {"id": "fixture-10", "training_authorized": false}
+  ]
+}

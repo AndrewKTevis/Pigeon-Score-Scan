@@ -1,0 +1,177 @@
+{
+  "confirmation": {
+    "accepted": 864,
+    "by_kind": {
+      "all-correlated-wrong": {
+        "accepted": 3,
+        "correct": 0,
+        "errors": 3,
+        "groups": 271
+      },
+      "all-exact-correct": {
+        "accepted": 458,
+        "correct": 458,
+        "errors": 0,
+        "groups": 744
+      },
+      "mid-attribute-invalid": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 169
+      },
+      "one-invalid-two-correct": {
+        "accepted": 343,
+        "correct": 343,
+        "errors": 0,
+        "groups": 393
+      },
+      "one-substantive-split-two-correct": {
+        "accepted": 59,
+        "correct": 59,
+        "errors": 0,
+        "groups": 573
+      },
+      "only-one-valid": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 173
+      },
+      "semantic-only-three-way-split": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 272
+      },
+      "two-correlated-wrong-one-correct": {
+        "accepted": 1,
+        "correct": 0,
+        "errors": 1,
+        "groups": 405
+      }
+    },
+    "correct_accepts": 860,
+    "coverage": 0.288,
+    "error_accepts": 4,
+    "groups": 3000,
+    "selective_precision": 0.9953703703703703
+  },
+  "confirmation_deterministic_baseline": {
+    "accepted": 2386,
+    "correct_accepts": 1710,
+    "coverage": 0.7953333333333333,
+    "error_accepts": 676,
+    "groups": 3000,
+    "selective_precision": 0.7166806370494552
+  },
+  "confirmation_groups": 3000,
+  "decision": "reject; deterministic exact-content gate plus production page verifier remains simpler and authoritative",
+  "end_to_end_accuracy_claim": false,
+  "feature_names": [
+    "valid_variant_count",
+    "strict_winner_support",
+    "strict_runner_up_support",
+    "strict_margin",
+    "semantic_winner_support",
+    "semantic_runner_up_support",
+    "semantic_minus_strict_support",
+    "primary_in_strict_winner",
+    "all_variants_valid",
+    "note_count_scaled",
+    "note_count_spread_scaled",
+    "notation_disagreement_ratio",
+    "page_score_delta_scaled",
+    "measure_probability_delta",
+    "event_probability_delta",
+    "visual_probability_delta",
+    "context_probability_delta"
+  ],
+  "format": 1,
+  "frozen": {
+    "accepted": 155,
+    "by_kind": {
+      "all-correlated-wrong": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 61
+      },
+      "all-exact-correct": {
+        "accepted": 87,
+        "correct": 87,
+        "errors": 0,
+        "groups": 153
+      },
+      "mid-attribute-invalid": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 32
+      },
+      "one-invalid-two-correct": {
+        "accepted": 60,
+        "correct": 60,
+        "errors": 0,
+        "groups": 69
+      },
+      "one-substantive-split-two-correct": {
+        "accepted": 8,
+        "correct": 8,
+        "errors": 0,
+        "groups": 104
+      },
+      "only-one-valid": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 40
+      },
+      "semantic-only-three-way-split": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 68
+      },
+      "two-correlated-wrong-one-correct": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 73
+      }
+    },
+    "correct_accepts": 155,
+    "coverage": 0.25833333333333336,
+    "error_accepts": 0,
+    "groups": 600,
+    "selective_precision": 1.0
+  },
+  "frozen_deterministic_baseline": {
+    "accepted": 460,
+    "correct_accepts": 326,
+    "coverage": 0.7666666666666667,
+    "error_accepts": 134,
+    "groups": 600,
+    "selective_precision": 0.7086956521739131
+  },
+  "frozen_sample_metrics": {
+    "brier_score": 0.06108443780968962,
+    "log_loss": 0.20994942081575407,
+    "roc_auc": 0.9776543818010838
+  },
+  "model_version": "scorescan-measure-localized-exact-veto-experiment-2",
+  "probability_floor": 0.9336976846172856,
+  "programmatic_training": true,
+  "rejection_reasons": [
+    "The training data are programmatic rather than independent real scan labels.",
+    "The model can only remove deterministic coverage and overlaps the existing page-level selection-risk verifier.",
+    "Strict normalized XML equality already detects the newly identified beam/stem/unmodelled-notation disagreement without learned authority."
+  ],
+  "runtime_deployed": false,
+  "selected_configuration": {
+    "max_depth": 7,
+    "min_samples_leaf": 8,
+    "trees": 32
+  },
+  "training_groups": 6000
+}

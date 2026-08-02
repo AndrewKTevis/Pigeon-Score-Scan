@@ -1,0 +1,28 @@
+{
+  "systems": 8,
+  "estimated_measures": 46,
+  "marks": 86,
+  "injected": 1,
+  "review_candidates": 0,
+  "barline_exact": 55,
+  "barline_rescaled": 21,
+  "mean_role_probability": 0.014262553324760873,
+  "warnings": [
+    "音乐术语模型自动校正了 1 处高置信度 OCR 结果"
+  ],
+  "injected_items": [
+    {
+      "raw": "Allesretto.",
+      "text": "Allegretto",
+      "kind": "direction",
+      "score": 0.86173264,
+      "prob": 0.9857915243697065,
+      "placement": "above",
+      "measure": 1,
+      "anchor": "barline_rescaled",
+      "corrected": true,
+      "method": "anchor-assisted-phrase"
+    }
+  ],
+  "review_items": []
+}

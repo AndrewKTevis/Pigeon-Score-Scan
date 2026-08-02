@@ -1,0 +1,157 @@
+{
+  "groups": 5000,
+  "model_version": "scorescan-event-presence-visual-forest-1",
+  "policy": {
+    "auto_patch_thresholds": {
+      "note": 0.976999903636,
+      "rest": 0.976871562567
+    },
+    "correct_accepts": 2383,
+    "coverage": 0.11915,
+    "delete_transactions_review_only": 10000,
+    "false_accepts": 0,
+    "insert_correct_accepts": 2383,
+    "insert_positive_total": 5000,
+    "insert_recall": 0.4766,
+    "note_insert_correct_accepts": 1284,
+    "note_insert_positive_total": 2471,
+    "note_insert_recall": 0.519627681101,
+    "rest_insert_correct_accepts": 1099,
+    "rest_insert_positive_total": 2529,
+    "rest_insert_recall": 0.434559114274,
+    "selective_precision": 1.0
+  },
+  "rejected_lower_thresholds": {
+    "0.85": {
+      "auto_patch_thresholds": {
+        "note": 0.85,
+        "rest": 0.85
+      },
+      "correct_accepts": 4443,
+      "coverage": 0.2236,
+      "delete_transactions_review_only": 10000,
+      "false_accepts": 29,
+      "insert_correct_accepts": 4443,
+      "insert_positive_total": 5000,
+      "insert_recall": 0.8886,
+      "note_insert_correct_accepts": 2202,
+      "note_insert_positive_total": 2471,
+      "note_insert_recall": 0.89113719142,
+      "rest_insert_correct_accepts": 2241,
+      "rest_insert_positive_total": 2529,
+      "rest_insert_recall": 0.886120996441,
+      "selective_precision": 0.993515205725
+    },
+    "0.88": {
+      "auto_patch_thresholds": {
+        "note": 0.88,
+        "rest": 0.88
+      },
+      "correct_accepts": 4354,
+      "coverage": 0.21875,
+      "delete_transactions_review_only": 10000,
+      "false_accepts": 21,
+      "insert_correct_accepts": 4354,
+      "insert_positive_total": 5000,
+      "insert_recall": 0.8708,
+      "note_insert_correct_accepts": 2168,
+      "note_insert_positive_total": 2471,
+      "note_insert_recall": 0.877377579927,
+      "rest_insert_correct_accepts": 2186,
+      "rest_insert_positive_total": 2529,
+      "rest_insert_recall": 0.864373270067,
+      "selective_precision": 0.9952
+    },
+    "0.90": {
+      "auto_patch_thresholds": {
+        "note": 0.9,
+        "rest": 0.9
+      },
+      "correct_accepts": 4266,
+      "coverage": 0.2141,
+      "delete_transactions_review_only": 10000,
+      "false_accepts": 16,
+      "insert_correct_accepts": 4266,
+      "insert_positive_total": 5000,
+      "insert_recall": 0.8532,
+      "note_insert_correct_accepts": 2127,
+      "note_insert_positive_total": 2471,
+      "note_insert_recall": 0.860785107244,
+      "rest_insert_correct_accepts": 2139,
+      "rest_insert_positive_total": 2529,
+      "rest_insert_recall": 0.845788849348,
+      "selective_precision": 0.996263428305
+    }
+  },
+  "sample_metrics": {
+    "accuracy": 0.96735,
+    "brier_score": 0.024237497594,
+    "log_loss": 0.096618459152,
+    "roc_auc": 0.99619403
+  },
+  "samples": 20000,
+  "scenario_false_accepts": {
+    "absence_residue": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.837815302272,
+      "negative_samples": 441
+    },
+    "beam_fragment": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.971904538709,
+      "negative_samples": 397
+    },
+    "clean": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.920380291614,
+      "negative_samples": 406
+    },
+    "close_neighbours": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.918380386744,
+      "negative_samples": 433
+    },
+    "compact_noise": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.924289480279,
+      "negative_samples": 400
+    },
+    "dense_neighbours": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.930720935261,
+      "negative_samples": 434
+    },
+    "low_contrast": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.916328372975,
+      "negative_samples": 452
+    },
+    "notehead_noise": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.944522520629,
+      "negative_samples": 382
+    },
+    "overlapping_neighbour": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.912927169673,
+      "negative_samples": 398
+    },
+    "partial_target": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.949996494257,
+      "negative_samples": 430
+    },
+    "staff_residue": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.957166253092,
+      "negative_samples": 421
+    },
+    "stem_fragment": {
+      "false_accepts": 0,
+      "maximum_negative_probability": 0.944722427787,
+      "negative_samples": 406
+    }
+  },
+  "schema_version": 1,
+  "used_for_training_or_threshold_selection": false
+}

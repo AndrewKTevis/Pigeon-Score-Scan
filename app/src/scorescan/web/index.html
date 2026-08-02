@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Pigeon Score Scan</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <main class="shell" data-boundary-contract="printed-western-instrumental-scan-boundary@4" data-design-language="editorial-score-desk@1">
+    <header class="app-header">
+      <div class="brand"><h1>Pigeon Score Scan</h1></div>
+      <div class="header-actions" data-i18n-aria-label="appToolbar" aria-label="Application toolbar">
+        <label class="language-control">
+          <span class="sr-only" data-i18n="language">Language</span>
+          <select id="languageSelect" data-i18n-aria-label="language" aria-label="Language">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+          </select>
+        </label>
+        <button id="systemCheckButton" class="toolbar-button" data-i18n="systemStatus">System status</button>
+        <button id="quitButton" class="toolbar-button danger" data-i18n="close">Close</button>
+      </div>
+    </header>
+
+    <nav class="workflow-track" data-i18n-aria-label="conversionWorkflow" aria-label="Conversion workflow">
+      <div id="workflowImport" class="workflow-step active" data-stage="import" aria-current="step"><span>01</span><strong data-i18n="import">Import</strong></div>
+      <div id="workflowProcess" class="workflow-step" data-stage="process"><span>02</span><strong data-i18n="recognize">Recognize</strong></div>
+      <div id="workflowOutput" class="workflow-step" data-stage="output"><span>03</span><strong data-i18n="output">Output</strong></div>
+    </nav>
+
+    <div id="panelScrim" class="panel-scrim hidden"></div>
+
+    <section id="systemPanel" class="utility-panel utility-panel-wide hidden" role="dialog" aria-modal="true" aria-labelledby="systemTitle">
+      <div class="panel-heading"><div><span class="section-label" data-i18n="systemStatus">System status</span><h2 id="systemTitle" data-i18n="runtimeCheck">Runtime check</h2></div><button id="systemCloseButton" class="icon-button" data-i18n-aria-label="closeSystemStatus" aria-label="Close system status">×</button></div>
+      <p id="systemSummary" class="muted" data-i18n="checking">Checking…</p>
+      <div id="systemHighlights" class="system-highlights"></div>
+      <details id="systemDetails" class="system-details"><summary id="systemDetailsSummary" data-i18n="allChecks">All checks</summary><div id="systemChecks" class="system-checks"></div></details>
+      <div class="panel-footer"><a id="diagnosticsButton" class="button" href="/api/diagnostics" data-i18n="downloadDiagnostics">Download diagnostics</a></div>
+    </section>
+
+    <section id="resumePanel" class="resume-strip hidden">
+      <div><span class="section-label" data-i18n="unfinished">Unfinished</span><strong data-i18n="resumePrevious">Resume previous conversion</strong><span id="resumeText" class="muted"></span></div>
+      <div class="button-row"><button id="resumeButton" class="button primary" data-i18n="resume">Resume</button><button id="dismissResumeButton" class="button text-button" data-i18n="dismiss">Dismiss</button></div>
+    </section>
+
+    <section id="importPanel" class="workspace-card">
+      <header class="workspace-heading">
+        <div><span class="section-label" data-i18n="importLabel">01 / Import</span><h2 data-i18n="newConversion">New conversion</h2><p data-i18n="importScoreScans">Import score scans</p></div>
+      </header>
+
+      <div class="import-layout">
+        <div class="source-pane">
+          <div id="dropZone" class="drop-zone">
+            <span class="drop-symbol" aria-hidden="true">+</span>
+            <strong data-i18n="dropScans">Drop scans here</strong>
+            <span data-i18n="imagesOrPdf">Images or PDF</span>
+            <div class="button-row drop-actions">
+              <label class="button primary"><span data-i18n="addImages">Add images</span><input id="imageInput" type="file" accept="image/png,image/jpeg,image/tiff,image/bmp,image/webp" multiple hidden></label>
+              <label class="button"><span data-i18n="addPdf">Add PDF</span><input id="pdfInput" type="file" accept="application/pdf" multiple hidden></label>
+            </div>
+            <small>PNG · JPG · TIFF · BMP · WebP · PDF</small>
+          </div>
+          <div id="modeMessage" class="notice hidden" role="alert"></div>
+
+          <div class="file-list-heading"><strong data-i18n="pageOrder">Page order</strong><button id="clearButton" class="button text-button" disabled data-i18n="clear">Clear</button></div>
+          <div id="fileList" class="file-list" aria-live="polite"></div>
+        </div>
+
+        <aside class="job-sheet" data-i18n-aria-label="quickSettings" aria-label="Quick settings">
+          <div><span class="section-label" data-i18n="quickSettings">Quick settings</span><h3 data-i18n="conversionSettings">Conversion settings</h3></div>
+          <div class="quick-settings">
+            <label class="setting-field" for="outputName">
+              <span data-i18n="outputFileName">Output file name</span>
+              <input id="outputName" type="text" maxlength="120" autocomplete="off" data-i18n-placeholder="automaticFileName" placeholder="Automatic">
+            </label>
+          </div>
+          <dl class="compact-specs">
+            <div><dt data-i18n="outputFiles">Output files</dt><dd>MXL + MusicXML</dd></div>
+          </dl>
+          <p class="orientation-note" data-i18n="correctOrientation">Import correctly oriented score pages.</p>
+          <details class="scope-details">
+            <summary data-i18n="scenarioLimits">Scenarios and feature limits</summary>
+            <div class="scope-box">
+              <p data-i18n="supportedScope">Printed Western staff notation; monophonic instruments; common piano scores; aligned full scores. Instruments do not need note-by-note horizontal alignment.</p>
+              <dl class="scope-list">
+                <div><dt data-i18n="fullScore">Full score</dt><dd data-i18n="fullScoreLimit">Up to 16 physical staves per system and one keyboard part</dd></div>
+                <div><dt data-i18n="piano">Piano</dt><dd data-i18n="pianoLimit">Up to 4 physical staves; up to 8 independent rhythmic voices per measure and staff; temporary staves, ossia, cross-staff notes, and cross-staff beams</dd></div>
+                <div><dt data-i18n="otherParts">Other parts</dt><dd data-i18n="otherPartsLimit">One independent rhythmic voice per staff</dd></div>
+                <div><dt data-i18n="multipleScans">Multiple scans</dt><dd data-i18n="multipleScansLimit">Consecutive pages of the same score only</dd></div>
+              </dl>
+              <p data-i18n="unsupportedScope">Handwriting, percussion, tablature, lyrics, chord symbols, figured bass, and graphic notation. Convert separately scanned parts as separate jobs.</p>
+            </div>
+          </details>
+        </aside>
+      </div>
+
+      <footer class="action-bar">
+        <span id="fileSummary" class="muted" data-i18n="noFiles">No files added</span>
+        <button id="startButton" class="button primary action-primary" disabled data-i18n="startConversion">Start conversion</button>
+      </footer>
+    </section>
+
+    <section id="progressPanel" class="workspace-card hidden">
+      <header class="workspace-heading">
+        <div><span class="section-label">02 / PROCESS</span><h2 id="stageText">Preparing conversion</h2><p>Recognition and output validation</p></div>
+        <span id="progressNumber" class="progress-figure">0%</span>
+      </header>
+      <div class="process-layout">
+        <div class="process-main">
+          <div class="progress-meta"><span id="pageText">Waiting for page information</span><span id="queueText"></span></div>
+          <div id="jobProgressTrack" class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progressBar"></div></div>
+          <div class="runtime-grid" aria-label="Runtime information">
+            <div class="runtime-stat"><span>ELAPSED</span><strong id="elapsedTime">00:00</strong></div>
+            <div class="runtime-stat"><span>TIME REMAINING</span><strong id="remainingTime">CALCULATING</strong></div>
+            <div class="runtime-stat"><span>SYSTEM CPU</span><strong id="systemCpu">—</strong></div>
+            <div class="runtime-stat"><span>MEMORY</span><strong id="systemMemory">—</strong></div>
+            <div class="runtime-stat"><span>SERVICE MEMORY</span><strong id="serviceMemory">—</strong></div>
+          </div>
+        </div>
+        <aside class="process-side">
+          <span class="status-dot"></span><strong>PROCESSING</strong>
+          <p>The conversion continues when the window is minimized to the tray.</p>
+          <button id="cancelButton" class="button text-button danger">Cancel conversion</button>
+        </aside>
+      </div>
+    </section>
+
+    <section id="reviewPanel" class="workspace-card hidden">
+      <header class="workspace-heading">
+        <div><span class="section-label" data-i18n="reviewLabel">03 / Review</span><h2 data-i18n="reviewItems">Review items</h2><p id="reviewProgress"></p></div>
+        <button id="reviewBack" class="button text-button" data-i18n="backToOutput">Back to output</button>
+      </header>
+      <div class="review-card">
+        <div class="review-visual"><img id="reviewCrop" class="review-crop" data-i18n-alt="scanDetail" alt="Scan detail"></div>
+        <div class="review-form">
+          <h3 id="reviewTitle"></h3><p id="reviewMessage" class="muted"></p>
+          <div id="reviewOptions" class="review-options"></div>
+          <label id="reviewCustomLabel" class="custom-label"><span data-i18n="content">Content</span><input id="reviewCustom" type="text" autocomplete="off"></label>
+          <div class="button-row"><button id="reviewApply" class="button primary" data-i18n="apply">Apply</button><button id="reviewIgnore" class="button text-button" data-i18n="skip">Skip</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultPanel" class="workspace-card hidden">
+      <header class="workspace-heading">
+        <div><span class="section-label" data-i18n="outputLabel">03 / Output</span><h2 data-i18n="conversionResult">Conversion result</h2></div>
+        <button id="newJobButton" class="button text-button" data-i18n="newConversion">New conversion</button>
+      </header>
+      <div class="result-layout">
+        <div class="result-summary">
+          <div id="resultStatus" class="result-status"></div>
+          <div id="qualityBadge" class="quality-badge hidden"></div>
+          <p id="qualityHelp" class="muted small hidden"></p>
+          <div id="integrityStatus" class="integrity-status hidden"></div>
+          <details id="warningDetails" class="warning-details hidden"><summary id="warningSummary" data-i18n="checkDetails">Check details</summary><div id="warningList"></div></details>
+          <button id="reviewButton" class="button hidden" data-i18n="handleChecks">Handle checks</button>
+        </div>
+        <aside class="result-actions-panel">
+          <span class="section-label" data-i18n="files">Files</span>
+          <div id="downloadActions" class="result-actions">
+            <a id="downloadMxl" class="button primary" href="#" data-i18n="exportMxl">Export MXL</a>
+            <small class="mxl-note" data-i18n="mxlMuseScoreNote">MXL files can be viewed and edited in MuseScore</small>
+            <button id="previewButton" class="button hidden" type="button" data-i18n="preview">Preview</button>
+            <a id="downloadXml" class="button" href="#" data-i18n="exportMusicXml">Export MusicXML</a>
+            <a id="downloadReport" class="button text-button" href="#" data-i18n="conversionReport">Conversion report</a>
+          </div>
+          <div class="secondary-actions"><button id="openMxlButton" class="button" data-i18n="openMxl">Open MXL</button><button id="openFolderButton" class="button" data-i18n="openFolder">Open folder</button></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <section id="closeDialog" class="choice-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="closeDialogTitle">
+    <div class="choice-card">
+      <div class="panel-heading"><div><span class="section-label" data-i18n="close">Close</span><h2 id="closeDialogTitle" data-i18n="closeProduct">Close Pigeon Score Scan?</h2></div></div>
+      <p id="closeDialogMessage" class="muted" data-i18n="chooseCloseAction">The service will stop.</p>
+      <div class="close-choices">
+        <button id="cancelCloseButton" data-i18n="cancel">Cancel</button>
+        <button id="exitCompletelyButton" class="danger-choice" data-i18n="exitCompletely">Exit completely</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="previewDialog" class="preview-dialog hidden" role="dialog" aria-modal="true" aria-labelledby="previewDialogTitle">
+    <div class="preview-card">
+      <div class="preview-heading">
+        <div><span class="section-label" data-i18n="preview">Preview</span><h2 id="previewDialogTitle" data-i18n="scorePreview">Score preview</h2></div>
+        <button id="previewCloseButton" class="icon-button" data-i18n-aria-label="closePreview" aria-label="Close preview">×</button>
+      </div>
+      <div id="previewViewport" class="preview-viewport" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

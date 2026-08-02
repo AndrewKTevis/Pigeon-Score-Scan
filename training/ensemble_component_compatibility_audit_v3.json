@@ -1,0 +1,157 @@
+{
+  "audit_version": "scorescan-ensemble-compatibility-audit-3",
+  "checks": {
+    "clean_agreement_preserved": true,
+    "clean_majority_preserved": true,
+    "cross_family_floor": true,
+    "cross_family_regression_bounded": true,
+    "localized_isolation_trap_floor": true,
+    "localized_partial_trap_floor": true,
+    "localized_rescue_floor": true,
+    "measure_v3_active": true,
+    "model_version_preserved": true,
+    "top1_floor": true,
+    "top1_regression_bounded": true,
+    "visual_v4_active": true
+  },
+  "current_models": {
+    "context": "scorescan-context-forest-2",
+    "ensemble": "scorescan-ensemble-forest-3",
+    "event": "scorescan-event-forest-2",
+    "measure": "scorescan-measure-forest-3",
+    "visual": "scorescan-visual-measure-calibrator-4"
+  },
+  "frozen_samples": 1295,
+  "frozen_test": {
+    "by_scenario": {
+      "alignment-trap": {
+        "correct": 5,
+        "groups": 7,
+        "top1_accuracy": 0.7142857142857143
+      },
+      "clean-agreement": {
+        "correct": 19,
+        "groups": 19,
+        "top1_accuracy": 1.0
+      },
+      "clean-majority": {
+        "correct": 20,
+        "groups": 20,
+        "top1_accuracy": 1.0
+      },
+      "cross-family-fuzzy-trap": {
+        "correct": 4,
+        "groups": 7,
+        "top1_accuracy": 0.5714285714285714
+      },
+      "evidence-conflict": {
+        "correct": 14,
+        "groups": 16,
+        "top1_accuracy": 0.875
+      },
+      "independent-errors": {
+        "correct": 16,
+        "groups": 18,
+        "top1_accuracy": 0.8888888888888888
+      },
+      "invalid-page-trap": {
+        "correct": 12,
+        "groups": 13,
+        "top1_accuracy": 0.9230769230769231
+      },
+      "legitimate-transition": {
+        "correct": 17,
+        "groups": 19,
+        "top1_accuracy": 0.8947368421052632
+      },
+      "local-structure-trap": {
+        "correct": 8,
+        "groups": 10,
+        "top1_accuracy": 0.8
+      },
+      "localized-isolation-trap": {
+        "correct": 21,
+        "groups": 24,
+        "top1_accuracy": 0.875
+      },
+      "localized-partial-trap": {
+        "correct": 15,
+        "groups": 17,
+        "top1_accuracy": 0.8823529411764706
+      },
+      "localized-rescue": {
+        "correct": 16,
+        "groups": 19,
+        "top1_accuracy": 0.8421052631578947
+      },
+      "missing-visual": {
+        "correct": 9,
+        "groups": 13,
+        "top1_accuracy": 0.6923076923076923
+      },
+      "page-score-trap": {
+        "correct": 8,
+        "groups": 9,
+        "top1_accuracy": 0.8888888888888888
+      },
+      "single-family-exact-trap": {
+        "correct": 10,
+        "groups": 12,
+        "top1_accuracy": 0.8333333333333334
+      },
+      "visual-density-trap": {
+        "correct": 17,
+        "groups": 17,
+        "top1_accuracy": 1.0
+      }
+    },
+    "decision": {
+      "correct": 211,
+      "groups": 240,
+      "top1_accuracy": 0.8791666666666667
+    },
+    "policy_gate": {
+      "accuracy": 0.9328185328185328,
+      "brier_score": 0.04768870990784382,
+      "f1": 0.8803301237964236,
+      "false_accepts": 52,
+      "false_rejects": 35,
+      "log_loss": 0.15915627907060403,
+      "precision": 0.8602150537634409,
+      "recall": 0.9014084507042254,
+      "roc_auc": 0.9813754869643392,
+      "threshold": 0.34
+    },
+    "sample": {
+      "accuracy": 0.9281853281853282,
+      "brier_score": 0.04768870990784382,
+      "f1": 0.8642335766423358,
+      "false_accepts": 34,
+      "false_rejects": 59,
+      "log_loss": 0.15915627907060403,
+      "precision": 0.896969696969697,
+      "recall": 0.8338028169014085,
+      "roc_auc": 0.9813754869643392,
+      "threshold": 0.5
+    }
+  },
+  "groups": 2400,
+  "passed": true,
+  "reference_v3_training_report": {
+    "cross_family_fuzzy_trap": {
+      "correct": 4,
+      "groups": 7,
+      "top1_accuracy": 0.5714285714285714
+    },
+    "decision": {
+      "correct": 211,
+      "groups": 240,
+      "top1_accuracy": 0.8791666666666667
+    },
+    "model_version": "scorescan-ensemble-forest-3"
+  },
+  "samples": 13057,
+  "scope": "compatibility audit for ensemble v3 across whole-page and system-localized candidate families; not model training or end-to-end OMR",
+  "seed": 20270115,
+  "split_unit": "complete source decision; ensemble v3 frozen partition is rebuilt without tuning"
+}

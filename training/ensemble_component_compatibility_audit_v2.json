@@ -1,0 +1,139 @@
+{
+  "audit_version": "scorescan-ensemble-compatibility-audit-2",
+  "checks": {
+    "clean_agreement_preserved": true,
+    "clean_majority_preserved": true,
+    "cross_family_floor": true,
+    "cross_family_regression_bounded": true,
+    "measure_v3_active": true,
+    "model_version_preserved": true,
+    "top1_floor": true,
+    "top1_regression_bounded": true,
+    "visual_v4_active": true
+  },
+  "current_models": {
+    "context": "scorescan-context-forest-2",
+    "ensemble": "scorescan-ensemble-forest-2",
+    "event": "scorescan-event-forest-2",
+    "measure": "scorescan-measure-forest-3",
+    "visual": "scorescan-visual-measure-calibrator-4"
+  },
+  "frozen_samples": 1168,
+  "frozen_test": {
+    "by_scenario": {
+      "alignment-trap": {
+        "correct": 15,
+        "groups": 19,
+        "top1_accuracy": 0.7894736842105263
+      },
+      "clean-agreement": {
+        "correct": 18,
+        "groups": 18,
+        "top1_accuracy": 1.0
+      },
+      "clean-majority": {
+        "correct": 19,
+        "groups": 19,
+        "top1_accuracy": 1.0
+      },
+      "cross-family-fuzzy-trap": {
+        "correct": 14,
+        "groups": 21,
+        "top1_accuracy": 0.6666666666666666
+      },
+      "evidence-conflict": {
+        "correct": 13,
+        "groups": 19,
+        "top1_accuracy": 0.6842105263157895
+      },
+      "independent-errors": {
+        "correct": 19,
+        "groups": 23,
+        "top1_accuracy": 0.8260869565217391
+      },
+      "invalid-page-trap": {
+        "correct": 15,
+        "groups": 16,
+        "top1_accuracy": 0.9375
+      },
+      "legitimate-transition": {
+        "correct": 16,
+        "groups": 19,
+        "top1_accuracy": 0.8421052631578947
+      },
+      "local-structure-trap": {
+        "correct": 23,
+        "groups": 25,
+        "top1_accuracy": 0.92
+      },
+      "missing-visual": {
+        "correct": 10,
+        "groups": 14,
+        "top1_accuracy": 0.7142857142857143
+      },
+      "page-score-trap": {
+        "correct": 14,
+        "groups": 18,
+        "top1_accuracy": 0.7777777777777778
+      },
+      "single-family-exact-trap": {
+        "correct": 12,
+        "groups": 12,
+        "top1_accuracy": 1.0
+      },
+      "visual-density-trap": {
+        "correct": 16,
+        "groups": 17,
+        "top1_accuracy": 0.9411764705882353
+      }
+    },
+    "decision": {
+      "correct": 204,
+      "groups": 240,
+      "top1_accuracy": 0.85
+    },
+    "policy_gate": {
+      "accuracy": 0.913527397260274,
+      "brier_score": 0.062491278247270514,
+      "f1": 0.8567375886524823,
+      "false_accepts": 59,
+      "false_rejects": 42,
+      "log_loss": 0.21204768864636883,
+      "precision": 0.8365650969529086,
+      "recall": 0.877906976744186,
+      "roc_auc": 0.9671201174079928,
+      "threshold": 0.34
+    },
+    "sample": {
+      "accuracy": 0.9169520547945206,
+      "brier_score": 0.062491278247270514,
+      "f1": 0.8541353383458646,
+      "false_accepts": 37,
+      "false_rejects": 60,
+      "log_loss": 0.21204768864636883,
+      "precision": 0.8847352024922118,
+      "recall": 0.8255813953488372,
+      "roc_auc": 0.9671201174079928,
+      "threshold": 0.5
+    }
+  },
+  "groups": 2400,
+  "passed": true,
+  "reference_v2_training_report": {
+    "cross_family_fuzzy_trap": {
+      "correct": 15,
+      "groups": 21,
+      "top1_accuracy": 0.7142857142857143
+    },
+    "decision": {
+      "correct": 204,
+      "groups": 240,
+      "top1_accuracy": 0.85
+    },
+    "model_version": "scorescan-ensemble-forest-2"
+  },
+  "samples": 11457,
+  "scope": "compatibility audit for unchanged ensemble v2 after measure v3 and visual v4 upstream upgrades; not model training or end-to-end OMR",
+  "seed": 20270115,
+  "split_unit": "complete source decision; original ensemble v2 frozen partition is reused without tuning"
+}

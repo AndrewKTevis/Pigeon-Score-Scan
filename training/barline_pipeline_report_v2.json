@@ -1,0 +1,830 @@
+{
+  "baseline": {
+    "calibration": {
+      "boundary_precision": 0.8183266932270916,
+      "exact_measure_count_rate": 0.3433333333333333,
+      "exact_measure_count_systems": 103,
+      "false_boundaries": 228,
+      "false_boundaries_per_system": 0.76,
+      "matched_true_boundaries": 1027,
+      "missed_true_boundaries": 427,
+      "systems": 300,
+      "total_boundary_errors": 655,
+      "true_boundary_recall": 0.7063273727647867
+    },
+    "frozen_test": {
+      "boundary_precision": 0.8390718562874252,
+      "exact_measure_count_rate": 0.34,
+      "exact_measure_count_systems": 102,
+      "false_boundaries": 215,
+      "false_boundaries_per_system": 0.7166666666666667,
+      "matched_true_boundaries": 1121,
+      "missed_true_boundaries": 419,
+      "systems": 300,
+      "total_boundary_errors": 634,
+      "true_boundary_recall": 0.727922077922078
+    },
+    "model_version": "scorescan-barline-logistic-1",
+    "threshold": 0.68
+  },
+  "candidate": {
+    "boundary_error_regressions": [
+      {
+        "baseline": {
+          "boundary_errors": 0,
+          "detected": [
+            60,
+            267,
+            480,
+            694,
+            905
+          ],
+          "false": 0,
+          "matched": 4,
+          "measure_count": 5,
+          "measure_count_exact": true,
+          "missed": 0
+        },
+        "candidate": {
+          "boundary_errors": 1,
+          "detected": [
+            168,
+            267,
+            480,
+            694,
+            897,
+            1048
+          ],
+          "false": 1,
+          "matched": 4,
+          "measure_count": 6,
+          "measure_count_exact": false,
+          "missed": 0
+        },
+        "expected_measure_count": 5,
+        "group": 26,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 1,
+          "detected": [
+            175,
+            242,
+            340,
+            471,
+            630,
+            773,
+            969
+          ],
+          "false": 1,
+          "matched": 5,
+          "measure_count": 7,
+          "measure_count_exact": false,
+          "missed": 0
+        },
+        "candidate": {
+          "boundary_errors": 4,
+          "detected": [
+            175,
+            242,
+            630,
+            713,
+            773,
+            969
+          ],
+          "false": 2,
+          "matched": 3,
+          "measure_count": 6,
+          "measure_count_exact": true,
+          "missed": 2
+        },
+        "expected_measure_count": 6,
+        "group": 36,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 0,
+          "detected": [
+            95,
+            258,
+            580,
+            754,
+            1023,
+            1227,
+            1491,
+            1748
+          ],
+          "false": 0,
+          "matched": 6,
+          "measure_count": 7,
+          "measure_count_exact": true,
+          "missed": 0
+        },
+        "candidate": {
+          "boundary_errors": 1,
+          "detected": [
+            258,
+            580,
+            754,
+            1023,
+            1239,
+            1400,
+            1491,
+            1748
+          ],
+          "false": 1,
+          "matched": 6,
+          "measure_count": 8,
+          "measure_count_exact": false,
+          "missed": 0
+        },
+        "expected_measure_count": 7,
+        "group": 52,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 4,
+          "detected": [
+            254,
+            468,
+            612,
+            1074,
+            1126,
+            1342,
+            1578
+          ],
+          "false": 2,
+          "matched": 5,
+          "measure_count": 8,
+          "measure_count_exact": true,
+          "missed": 2
+        },
+        "candidate": {
+          "boundary_errors": 5,
+          "detected": [
+            254,
+            468,
+            612,
+            1074,
+            1126,
+            1152,
+            1342,
+            1578
+          ],
+          "false": 3,
+          "matched": 5,
+          "measure_count": 9,
+          "measure_count_exact": false,
+          "missed": 2
+        },
+        "expected_measure_count": 8,
+        "group": 61,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 1,
+          "detected": [
+            167,
+            266,
+            390,
+            533,
+            677,
+            763
+          ],
+          "false": 1,
+          "matched": 5,
+          "measure_count": 7,
+          "measure_count_exact": false,
+          "missed": 0
+        },
+        "candidate": {
+          "boundary_errors": 2,
+          "detected": [
+            167,
+            266,
+            375,
+            533,
+            677,
+            795
+          ],
+          "false": 1,
+          "matched": 4,
+          "measure_count": 6,
+          "measure_count_exact": true,
+          "missed": 1
+        },
+        "expected_measure_count": 6,
+        "group": 93,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 1,
+          "detected": [
+            40,
+            164,
+            352,
+            418,
+            480,
+            670,
+            792,
+            1000,
+            1114
+          ],
+          "false": 1,
+          "matched": 6,
+          "measure_count": 8,
+          "measure_count_exact": false,
+          "missed": 0
+        },
+        "candidate": {
+          "boundary_errors": 3,
+          "detected": [
+            164,
+            352,
+            480,
+            670,
+            776,
+            792,
+            804,
+            1000,
+            1058,
+            1114
+          ],
+          "false": 3,
+          "matched": 6,
+          "measure_count": 10,
+          "measure_count_exact": false,
+          "missed": 0
+        },
+        "expected_measure_count": 7,
+        "group": 126,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 6,
+          "detected": [
+            1002,
+            1198
+          ],
+          "false": 0,
+          "matched": 2,
+          "measure_count": 3,
+          "measure_count_exact": false,
+          "missed": 6
+        },
+        "candidate": {
+          "boundary_errors": 7,
+          "detected": [
+            1002
+          ],
+          "false": 0,
+          "matched": 1,
+          "measure_count": 2,
+          "measure_count_exact": false,
+          "missed": 7
+        },
+        "expected_measure_count": 9,
+        "group": 177,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 2,
+          "detected": [
+            294,
+            448,
+            864,
+            1034,
+            1244,
+            1270,
+            1392
+          ],
+          "false": 1,
+          "matched": 6,
+          "measure_count": 8,
+          "measure_count_exact": true,
+          "missed": 1
+        },
+        "candidate": {
+          "boundary_errors": 3,
+          "detected": [
+            294,
+            448,
+            864,
+            1244,
+            1270,
+            1392
+          ],
+          "false": 1,
+          "matched": 5,
+          "measure_count": 7,
+          "measure_count_exact": false,
+          "missed": 2
+        },
+        "expected_measure_count": 8,
+        "group": 187,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 2,
+          "detected": [
+            514
+          ],
+          "false": 0,
+          "matched": 1,
+          "measure_count": 2,
+          "measure_count_exact": false,
+          "missed": 2
+        },
+        "candidate": {
+          "boundary_errors": 3,
+          "detected": [],
+          "false": 0,
+          "matched": 0,
+          "measure_count": 1,
+          "measure_count_exact": false,
+          "missed": 3
+        },
+        "expected_measure_count": 4,
+        "group": 195,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 1,
+          "detected": [
+            60,
+            209,
+            412,
+            548,
+            744,
+            1100,
+            1324
+          ],
+          "false": 0,
+          "matched": 6,
+          "measure_count": 7,
+          "measure_count_exact": false,
+          "missed": 1
+        },
+        "candidate": {
+          "boundary_errors": 2,
+          "detected": [
+            209,
+            389,
+            548,
+            744,
+            907,
+            1100,
+            1324,
+            1519
+          ],
+          "false": 1,
+          "matched": 6,
+          "measure_count": 8,
+          "measure_count_exact": true,
+          "missed": 1
+        },
+        "expected_measure_count": 8,
+        "group": 201,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 1,
+          "detected": [
+            238,
+            412,
+            636,
+            922,
+            1120,
+            1300,
+            1492
+          ],
+          "false": 0,
+          "matched": 7,
+          "measure_count": 8,
+          "measure_count_exact": false,
+          "missed": 1
+        },
+        "candidate": {
+          "boundary_errors": 2,
+          "detected": [
+            238,
+            412,
+            544,
+            636,
+            922,
+            1120,
+            1300,
+            1492
+          ],
+          "false": 1,
+          "matched": 7,
+          "measure_count": 9,
+          "measure_count_exact": true,
+          "missed": 1
+        },
+        "expected_measure_count": 9,
+        "group": 220,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 2,
+          "detected": [
+            67,
+            327,
+            552,
+            1024,
+            1144,
+            1260,
+            1547,
+            1789
+          ],
+          "false": 1,
+          "matched": 5,
+          "measure_count": 7,
+          "measure_count_exact": true,
+          "missed": 1
+        },
+        "candidate": {
+          "boundary_errors": 4,
+          "detected": [
+            67,
+            211,
+            327,
+            618,
+            782,
+            1024,
+            1144,
+            1260,
+            1547,
+            1789
+          ],
+          "false": 3,
+          "matched": 5,
+          "measure_count": 9,
+          "measure_count_exact": false,
+          "missed": 1
+        },
+        "expected_measure_count": 7,
+        "group": 239,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 0,
+          "detected": [
+            160,
+            376,
+            628,
+            798,
+            1032,
+            1237,
+            1435
+          ],
+          "false": 0,
+          "matched": 7,
+          "measure_count": 8,
+          "measure_count_exact": true,
+          "missed": 0
+        },
+        "candidate": {
+          "boundary_errors": 1,
+          "detected": [
+            160,
+            376,
+            628,
+            776,
+            798,
+            1032,
+            1237,
+            1435,
+            1634
+          ],
+          "false": 1,
+          "matched": 7,
+          "measure_count": 9,
+          "measure_count_exact": false,
+          "missed": 0
+        },
+        "expected_measure_count": 8,
+        "group": 250,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 0,
+          "detected": [
+            175,
+            332,
+            546,
+            737
+          ],
+          "false": 0,
+          "matched": 4,
+          "measure_count": 5,
+          "measure_count_exact": true,
+          "missed": 0
+        },
+        "candidate": {
+          "boundary_errors": 3,
+          "detected": [
+            244,
+            294,
+            332,
+            546,
+            737
+          ],
+          "false": 2,
+          "matched": 3,
+          "measure_count": 6,
+          "measure_count_exact": false,
+          "missed": 1
+        },
+        "expected_measure_count": 5,
+        "group": 287,
+        "variant": 0
+      },
+      {
+        "baseline": {
+          "boundary_errors": 0,
+          "detected": [
+            245,
+            464,
+            639,
+            808,
+            1033,
+            1194,
+            1423,
+            1569
+          ],
+          "false": 0,
+          "matched": 7,
+          "measure_count": 8,
+          "measure_count_exact": true,
+          "missed": 0
+        },
+        "candidate": {
+          "boundary_errors": 2,
+          "detected": [
+            245,
+            464,
+            630,
+            808,
+            1033,
+            1194,
+            1374,
+            1569
+          ],
+          "false": 1,
+          "matched": 6,
+          "measure_count": 8,
+          "measure_count_exact": true,
+          "missed": 1
+        },
+        "expected_measure_count": 8,
+        "group": 289,
+        "variant": 0
+      }
+    ],
+    "comparison_to_baseline": {
+      "both_measure_counts_exact": 85,
+      "harmed_measure_count_systems": 17,
+      "helped_measure_count_systems": 111,
+      "net_boundary_error_change": -387,
+      "systems_with_equal_boundary_errors": 96,
+      "systems_with_fewer_boundary_errors": 189,
+      "systems_with_more_boundary_errors": 15
+    },
+    "frozen_test": {
+      "boundary_precision": 0.961456102783726,
+      "exact_measure_count_rate": 0.6533333333333333,
+      "exact_measure_count_systems": 196,
+      "false_boundaries": 54,
+      "false_boundaries_per_system": 0.18,
+      "matched_true_boundaries": 1347,
+      "missed_true_boundaries": 193,
+      "systems": 300,
+      "total_boundary_errors": 247,
+      "true_boundary_recall": 0.8746753246753247
+    },
+    "model_version": "scorescan-barline-forest-2",
+    "selected_threshold": 0.25
+  },
+  "evaluation": "grouped rendered-system local-barline pipeline benchmark",
+  "groups": 300,
+  "limitations": [
+    "No large frozen real-scan boundary proposal set is bundled.",
+    "The benchmark evaluates deskewed single-staff printed systems."
+  ],
+  "proposal_recall": {
+    "calibration": 0.9463548830811555,
+    "frozen_test": 0.9584415584415584
+  },
+  "scope": "synthetic rendered staff-system layout accuracy; not note recognition or end-to-end OMR accuracy",
+  "seed": 20261005,
+  "split_unit": "rendered staff-system identity; calibration and frozen test use independent groups",
+  "threshold_calibration": [
+    {
+      "comparison_to_baseline": {
+        "both_measure_counts_exact": 82,
+        "harmed_measure_count_systems": 21,
+        "helped_measure_count_systems": 92,
+        "net_boundary_error_change": -366,
+        "systems_with_equal_boundary_errors": 104,
+        "systems_with_fewer_boundary_errors": 180,
+        "systems_with_more_boundary_errors": 16
+      },
+      "metrics": {
+        "boundary_precision": 0.9512006196746708,
+        "exact_measure_count_rate": 0.58,
+        "exact_measure_count_systems": 174,
+        "false_boundaries": 63,
+        "false_boundaries_per_system": 0.21,
+        "matched_true_boundaries": 1228,
+        "missed_true_boundaries": 226,
+        "systems": 300,
+        "total_boundary_errors": 289,
+        "true_boundary_recall": 0.844566712517194
+      },
+      "threshold": 0.15
+    },
+    {
+      "comparison_to_baseline": {
+        "both_measure_counts_exact": 82,
+        "harmed_measure_count_systems": 21,
+        "helped_measure_count_systems": 92,
+        "net_boundary_error_change": -367,
+        "systems_with_equal_boundary_errors": 105,
+        "systems_with_fewer_boundary_errors": 180,
+        "systems_with_more_boundary_errors": 15
+      },
+      "metrics": {
+        "boundary_precision": 0.951937984496124,
+        "exact_measure_count_rate": 0.58,
+        "exact_measure_count_systems": 174,
+        "false_boundaries": 62,
+        "false_boundaries_per_system": 0.20666666666666667,
+        "matched_true_boundaries": 1228,
+        "missed_true_boundaries": 226,
+        "systems": 300,
+        "total_boundary_errors": 288,
+        "true_boundary_recall": 0.844566712517194
+      },
+      "threshold": 0.2
+    },
+    {
+      "comparison_to_baseline": {
+        "both_measure_counts_exact": 82,
+        "harmed_measure_count_systems": 21,
+        "helped_measure_count_systems": 93,
+        "net_boundary_error_change": -370,
+        "systems_with_equal_boundary_errors": 104,
+        "systems_with_fewer_boundary_errors": 181,
+        "systems_with_more_boundary_errors": 15
+      },
+      "metrics": {
+        "boundary_precision": 0.954863813229572,
+        "exact_measure_count_rate": 0.5833333333333334,
+        "exact_measure_count_systems": 175,
+        "false_boundaries": 58,
+        "false_boundaries_per_system": 0.19333333333333333,
+        "matched_true_boundaries": 1227,
+        "missed_true_boundaries": 227,
+        "systems": 300,
+        "total_boundary_errors": 285,
+        "true_boundary_recall": 0.843878954607978
+      },
+      "threshold": 0.25
+    },
+    {
+      "comparison_to_baseline": {
+        "both_measure_counts_exact": 82,
+        "harmed_measure_count_systems": 21,
+        "helped_measure_count_systems": 93,
+        "net_boundary_error_change": -370,
+        "systems_with_equal_boundary_errors": 104,
+        "systems_with_fewer_boundary_errors": 181,
+        "systems_with_more_boundary_errors": 15
+      },
+      "metrics": {
+        "boundary_precision": 0.954863813229572,
+        "exact_measure_count_rate": 0.5833333333333334,
+        "exact_measure_count_systems": 175,
+        "false_boundaries": 58,
+        "false_boundaries_per_system": 0.19333333333333333,
+        "matched_true_boundaries": 1227,
+        "missed_true_boundaries": 227,
+        "systems": 300,
+        "total_boundary_errors": 285,
+        "true_boundary_recall": 0.843878954607978
+      },
+      "threshold": 0.3
+    },
+    {
+      "comparison_to_baseline": {
+        "both_measure_counts_exact": 81,
+        "harmed_measure_count_systems": 22,
+        "helped_measure_count_systems": 92,
+        "net_boundary_error_change": -368,
+        "systems_with_equal_boundary_errors": 103,
+        "systems_with_fewer_boundary_errors": 181,
+        "systems_with_more_boundary_errors": 16
+      },
+      "metrics": {
+        "boundary_precision": 0.9547934528448948,
+        "exact_measure_count_rate": 0.5766666666666667,
+        "exact_measure_count_systems": 173,
+        "false_boundaries": 58,
+        "false_boundaries_per_system": 0.19333333333333333,
+        "matched_true_boundaries": 1225,
+        "missed_true_boundaries": 229,
+        "systems": 300,
+        "total_boundary_errors": 287,
+        "true_boundary_recall": 0.842503438789546
+      },
+      "threshold": 0.35
+    },
+    {
+      "comparison_to_baseline": {
+        "both_measure_counts_exact": 81,
+        "harmed_measure_count_systems": 22,
+        "helped_measure_count_systems": 90,
+        "net_boundary_error_change": -368,
+        "systems_with_equal_boundary_errors": 104,
+        "systems_with_fewer_boundary_errors": 180,
+        "systems_with_more_boundary_errors": 16
+      },
+      "metrics": {
+        "boundary_precision": 0.9562157935887412,
+        "exact_measure_count_rate": 0.57,
+        "exact_measure_count_systems": 171,
+        "false_boundaries": 56,
+        "false_boundaries_per_system": 0.18666666666666668,
+        "matched_true_boundaries": 1223,
+        "missed_true_boundaries": 231,
+        "systems": 300,
+        "total_boundary_errors": 287,
+        "true_boundary_recall": 0.8411279229711142
+      },
+      "threshold": 0.4
+    },
+    {
+      "comparison_to_baseline": {
+        "both_measure_counts_exact": 81,
+        "harmed_measure_count_systems": 22,
+        "helped_measure_count_systems": 91,
+        "net_boundary_error_change": -368,
+        "systems_with_equal_boundary_errors": 105,
+        "systems_with_fewer_boundary_errors": 179,
+        "systems_with_more_boundary_errors": 16
+      },
+      "metrics": {
+        "boundary_precision": 0.9583660644147682,
+        "exact_measure_count_rate": 0.5733333333333334,
+        "exact_measure_count_systems": 172,
+        "false_boundaries": 53,
+        "false_boundaries_per_system": 0.17666666666666667,
+        "matched_true_boundaries": 1220,
+        "missed_true_boundaries": 234,
+        "systems": 300,
+        "total_boundary_errors": 287,
+        "true_boundary_recall": 0.8390646492434664
+      },
+      "threshold": 0.45
+    },
+    {
+      "comparison_to_baseline": {
+        "both_measure_counts_exact": 80,
+        "harmed_measure_count_systems": 23,
+        "helped_measure_count_systems": 90,
+        "net_boundary_error_change": -365,
+        "systems_with_equal_boundary_errors": 105,
+        "systems_with_fewer_boundary_errors": 178,
+        "systems_with_more_boundary_errors": 17
+      },
+      "metrics": {
+        "boundary_precision": 0.9582677165354331,
+        "exact_measure_count_rate": 0.5666666666666667,
+        "exact_measure_count_systems": 170,
+        "false_boundaries": 53,
+        "false_boundaries_per_system": 0.17666666666666667,
+        "matched_true_boundaries": 1217,
+        "missed_true_boundaries": 237,
+        "systems": 300,
+        "total_boundary_errors": 290,
+        "true_boundary_recall": 0.8370013755158184
+      },
+      "threshold": 0.5
+    }
+  ]
+}

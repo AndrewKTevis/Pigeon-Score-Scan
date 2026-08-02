@@ -1,0 +1,120 @@
+{"expected": "mf", "observed": "mf", "font": "DejaVuSerif-Italic.ttf", "sample": 0}
+{"expected": "Lento leggiero", "observed": "Lento leggiero", "font": "Lato-Italic.ttf", "sample": 1}
+{"expected": "Allegretto deciso", "observed": "Allegretto deciso", "font": "NimbusRoman-Italic.otf", "sample": 2}
+{"expected": "arco", "observed": "arco", "font": "FreeSerifItalic.ttf", "sample": 3}
+{"expected": "Adagio con anima", "observed": "—Adagio-con-anima——", "font": "NimbusRoman-Italic.otf", "sample": 4}
+{"expected": "Larghetto tranquillo", "observed": "Larghetto tranquillo", "font": "DejaVuSerif-Italic.ttf", "sample": 5}
+{"expected": "Zart", "observed": "Zart", "font": "FreeSerifItalic.ttf", "sample": 6}
+{"expected": "con energia", "observed": "con energia", "font": "FreeSerifItalic.ttf", "sample": 7}
+{"expected": "Vivace scherzando", "observed": "Vivace scherzando", "font": "FreeSerifItalic.ttf", "sample": 8}
+{"expected": "Lento", "observed": "Lento", "font": "DejaVuSerif-Italic.ttf", "sample": 9}
+{"expected": "Largo agitato", "observed": "Largo agitato", "font": "Lato-Italic.ttf", "sample": 10}
+{"expected": "Vivacissimo con brio", "observed": "Vivacissi bri", "font": "DejaVuSerif-Italic.ttf", "sample": 11}
+{"expected": "p", "observed": "p", "font": "NimbusRoman-Italic.otf", "sample": 12}
+{"expected": "ad libitum", "observed": "ad libitum", "font": "FreeSerifItalic.ttf", "sample": 13}
+{"expected": "Presto tranquillo", "observed": "Presto tranquillo", "font": "NimbusRoman-Regular.otf", "sample": 14}
+{"expected": "rfz", "observed": "rfz", "font": "Lato-Italic.ttf", "sample": 15}
+{"expected": "rit. e dim.", "observed": "rit. e dim.", "font": "FreeSerifItalic.ttf", "sample": 16}
+{"expected": "Allegro cantabile", "observed": "Allegro cantabile", "font": "Lato-Italic.ttf", "sample": 17}
+{"expected": "sf", "observed": "Si", "font": "NimbusRoman-Italic.otf", "sample": 18}
+{"expected": "Largo agitato", "observed": "Largo agitato", "font": "Lato-Italic.ttf", "sample": 19}
+{"expected": "Adagio appassionato", "observed": "", "font": "NimbusRoman-Italic.otf", "sample": 20}
+{"expected": "tutti", "observed": "tutti", "font": "DejaVuSerif-Italic.ttf", "sample": 21}
+{"expected": "Presto energico", "observed": "Presto energico", "font": "NimbusRoman-Regular.otf", "sample": 22}
+{"expected": "Andantino maestoso", "observed": "Andantino maestoso", "font": "Lato-Italic.ttf", "sample": 23}
+{"expected": "f", "observed": "p", "font": "DejaVuSerif-Italic.ttf", "sample": 24}
+{"expected": "meno dolce", "observed": "meno dolce", "font": "FreeSerifItalic.ttf", "sample": 25}
+{"expected": "Larghetto con brio", "observed": "—Larghetto-con-brio—", "font": "NimbusRoman-Regular.otf", "sample": 26}
+{"expected": "Vif", "observed": "Vif", "font": "Lato-Italic.ttf", "sample": 27}
+{"expected": "Grave con fuoco", "observed": "Grave con fuoco", "font": "NimbusRoman-Italic.otf", "sample": 28}
+{"expected": "Allegretto espressivo", "observed": "Allegretto espressivo", "font": "Lato-Italic.ttf", "sample": 29}
+{"expected": "dolce", "observed": "_dolce", "font": "NimbusRoman-Italic.otf", "sample": 30}
+{"expected": "rall. e cresc.", "observed": "_rall_e-cresc.—", "font": "DejaVuSerif-Italic.ttf", "sample": 31}
+{"expected": "Adagietto con fuoco", "observed": "Adagietto con fuoco", "font": "NimbusRoman-Italic.otf", "sample": 32}
+{"expected": "Breit", "observed": "_ Breit", "font": "Lato-Italic.ttf", "sample": 33}
+{"expected": "Allegro energico", "observed": "", "font": "Lato-Italic.ttf", "sample": 34}
+{"expected": "Adagietto scherzando", "observed": "Adagietto scherzando", "font": "DejaVuSerif.ttf", "sample": 35}
+{"expected": "rf", "observed": "tf", "font": "NimbusRoman-Italic.otf", "sample": 36}
+{"expected": "Alla turca", "observed": "Alla turca", "font": "DejaVuSerif-Italic.ttf", "sample": 37}
+{"expected": "Maestoso e sostenuto", "observed": "Maestoso e sostenuto", "font": "Lato-Italic.ttf", "sample": 38}
+{"expected": "sul D", "observed": "sul D", "font": "DejaVuSerif-Italic.ttf", "sample": 39}
+{"expected": "Lento non troppo", "observed": "Lento non troppo", "font": "Lato-Italic.ttf", "sample": 40}
+{"expected": "Vivacissimo scherzando", "observed": "Vivacissimo scherzando", "font": "NimbusRoman-Regular.otf", "sample": 41}
+{"expected": "sfp", "observed": "sfp", "font": "DejaVuSerif-Italic.ttf", "sample": 42}
+{"expected": "Adagio con anima", "observed": "Adagio con anima", "font": "NimbusRoman-Italic.otf", "sample": 43}
+{"expected": "Marcia moderato energico", "observed": "", "font": "Lato-Italic.ttf", "sample": 44}
+{"expected": "Largo", "observed": "Largo", "font": "NimbusRoman-Italic.otf", "sample": 45}
+{"expected": "Lento con fuoco", "observed": "Lento con fuoco", "font": "DejaVuSerif-Italic.ttf", "sample": 46}
+{"expected": "Marcia moderato con fuoco", "observed": "Marcia moderato con fuoco", "font": "DejaVuSerif.ttf", "sample": 47}
+{"expected": "Vif", "observed": "Vif", "font": "DejaVuSerif.ttf", "sample": 48}
+{"expected": "Broadly", "observed": "Broadly", "font": "DejaVuSerif.ttf", "sample": 49}
+{"expected": "Andante moderato con fuoco", "observed": "Andante moderato con fuoco", "font": "NimbusRoman-Regular.otf", "sample": 50}
+{"expected": "Cédez", "observed": "Cédez", "font": "DejaVuSerif-Italic.ttf", "sample": 51}
+{"expected": "unisono", "observed": "unisono", "font": "NimbusRoman-Italic.otf", "sample": 52}
+{"expected": "Sehr ausdrucksvoll", "observed": "Sehr ausdrucksvoll", "font": "NimbusRoman-Regular.otf", "sample": 53}
+{"expected": "p", "observed": "p", "font": "DejaVuSerif-Italic.ttf", "sample": 54}
+{"expected": "Lento espressivo", "observed": "Lento espressivo", "font": "DejaVuSerif.ttf", "sample": 55}
+{"expected": "Grave con spirito", "observed": "_Grave con spirito_", "font": "DejaVuSerif.ttf", "sample": 56}
+{"expected": "sf", "observed": "sf", "font": "NimbusRoman-Regular.otf", "sample": 57}
+{"expected": "molto marcato", "observed": "—molto-marcato-", "font": "Lato-Italic.ttf", "sample": 58}
+{"expected": "Larghetto semplice", "observed": "Larghetto semplice", "font": "DejaVuSerif-Italic.ttf", "sample": 59}
+{"expected": "arco", "observed": "arco", "font": "DejaVuSerif.ttf", "sample": 60}
+{"expected": "En animant", "observed": "En animant", "font": "DejaVuSerif-Italic.ttf", "sample": 61}
+{"expected": "Allegro moderato con brio", "observed": "Allegro moderato con brio", "font": "DejaVuSerif-Italic.ttf", "sample": 62}
+{"expected": "ffff", "observed": "fF", "font": "NimbusRoman-Regular.otf", "sample": 63}
+{"expected": "Etwas schneller", "observed": "—Etwas schneller——", "font": "DejaVuSerif.ttf", "sample": 64}
+{"expected": "Larghissimo maestoso", "observed": "Larghissi", "font": "Lato-Italic.ttf", "sample": 65}
+{"expected": "Coda", "observed": "Coda", "font": "Lato-Italic.ttf", "sample": 66}
+{"expected": "Andante maestoso", "observed": "Andante maestoso", "font": "FreeSerifItalic.ttf", "sample": 67}
+{"expected": "Mit innigem Ausdruck", "observed": "Mit innigem Ausdruck", "font": "Lato-Italic.ttf", "sample": 68}
+{"expected": "rfz", "observed": "rfz", "font": "NimbusRoman-Regular.otf", "sample": 69}
+{"expected": "Au mouvement", "observed": "Au mouvement", "font": "NimbusRoman-Regular.otf", "sample": 70}
+{"expected": "Moderato maestoso", "observed": "Moderato maestoso", "font": "DejaVuSerif.ttf", "sample": 71}
+{"expected": "Coda", "observed": "oda", "font": "FreeSerifItalic.ttf", "sample": 72}
+{"expected": "Grave leggiero", "observed": "Grave leggiero _", "font": "NimbusRoman-Regular.otf", "sample": 73}
+{"expected": "Marcia moderato leggiero", "observed": "Marcia moderato leggiero", "font": "NimbusRoman-Italic.otf", "sample": 74}
+{"expected": "dim.", "observed": "", "font": "NimbusRoman-Italic.otf", "sample": 75}
+{"expected": "Tempo ordinario", "observed": "Tempo ordinario", "font": "DejaVuSerif.ttf", "sample": 76}
+{"expected": "Moderato con fuoco", "observed": "Moderato con fuoco", "font": "DejaVuSerif.ttf", "sample": 77}
+{"expected": "fz", "observed": "fz", "font": "Lato-Italic.ttf", "sample": 78}
+{"expected": "Grave con fuoco", "observed": "Grave con fuoco", "font": "DejaVuSerif.ttf", "sample": 79}
+{"expected": "Andante moderato appassionato", "observed": "Andante moderato appassionato", "font": "FreeSerifItalic.ttf", "sample": 80}
+{"expected": "Breit", "observed": "—Breit—", "font": "DejaVuSerif.ttf", "sample": 81}
+{"expected": "Allegro semplice", "observed": "Allegro semplice", "font": "Lato-Italic.ttf", "sample": 82}
+{"expected": "Marcia moderato molto", "observed": "Marcia moderato molto", "font": "DejaVuSerif.ttf", "sample": 83}
+{"expected": "p", "observed": "D", "font": "NimbusRoman-Italic.otf", "sample": 84}
+{"expected": "Allegro agitato", "observed": "Allegro agitato", "font": "NimbusRoman-Italic.otf", "sample": 85}
+{"expected": "Vivace non troppo", "observed": "Vivace non troppo", "font": "Lato-Italic.ttf", "sample": 86}
+{"expected": "sul G", "observed": "ulG", "font": "FreeSerifItalic.ttf", "sample": 87}
+{"expected": "Allegro deciso", "observed": "Allegro deciso", "font": "NimbusRoman-Italic.otf", "sample": 88}
+{"expected": "Allegro ma non troppo", "observed": "Allegro ma non troppo", "font": "NimbusRoman-Italic.otf", "sample": 89}
+{"expected": "sfp", "observed": "sfp", "font": "NimbusRoman-Regular.otf", "sample": 90}
+{"expected": "Au mouvement", "observed": "Au mouvement _", "font": "DejaVuSerif.ttf", "sample": 91}
+{"expected": "Allegro moderato assai", "observed": "Allegro moderato assai", "font": "NimbusRoman-Regular.otf", "sample": 92}
+{"expected": "rall.", "observed": "rall.", "font": "DejaVuSerif-Italic.ttf", "sample": 93}
+{"expected": "Libremente", "observed": "Libremente", "font": "NimbusRoman-Italic.otf", "sample": 94}
+{"expected": "Andante con anima", "observed": "Andante con anima", "font": "Lato-Italic.ttf", "sample": 95}
+{"expected": "Breit", "observed": "Breit", "font": "NimbusRoman-Regular.otf", "sample": 96}
+{"expected": "subito legato", "observed": "subito legato", "font": "FreeSerifItalic.ttf", "sample": 97}
+{"expected": "Vivacissimo sostenuto", "observed": "Vivacissimo sostenuto", "font": "FreeSerifItalic.ttf", "sample": 98}
+{"expected": "pf", "observed": "pf", "font": "DejaVuSerif-Italic.ttf", "sample": 99}
+{"expected": "Grave con fuoco", "observed": "Grave con fuoco", "font": "FreeSerifItalic.ttf", "sample": 100}
+{"expected": "Moderato con fuoco", "observed": "Moderato con fuoco _", "font": "Lato-Italic.ttf", "sample": 101}
+{"expected": "tutti", "observed": "tutti", "font": "DejaVuSerif-Italic.ttf", "sample": 102}
+{"expected": "Vivace brillante", "observed": "Vivace brillante —", "font": "NimbusRoman-Regular.otf", "sample": 103}
+{"expected": "Andantino appassionato", "observed": "Andantino appassionato _", "font": "DejaVuSerif-Italic.ttf", "sample": 104}
+{"expected": "arco", "observed": "arco", "font": "NimbusRoman-Italic.otf", "sample": 105}
+{"expected": "Même mouvement", "observed": "Méine mouvement", "font": "FreeSerifItalic.ttf", "sample": 106}
+{"expected": "Andante cantabile", "observed": "_Andante cantabile_", "font": "DejaVuSerif-Italic.ttf", "sample": 107}
+{"expected": "fz", "observed": "fe", "font": "NimbusRoman-Italic.otf", "sample": 108}
+{"expected": "con vibrato", "observed": "con vibrato", "font": "NimbusRoman-Regular.otf", "sample": 109}
+{"expected": "Moderato alla marcia", "observed": "Moderato alla marcia", "font": "DejaVuSerif.ttf", "sample": 110}
+{"expected": "ffff", "observed": "ffff", "font": "DejaVuSerif.ttf", "sample": 111}
+{"expected": "Presto con moto", "observed": "_Presto-con_moto—", "font": "DejaVuSerif-Italic.ttf", "sample": 112}
+{"expected": "Prestissimo dolce", "observed": "—Prestissimo-dolee—", "font": "NimbusRoman-Regular.otf", "sample": 113}
+{"expected": "dim.", "observed": "dim.", "font": "DejaVuSerif.ttf", "sample": 114}
+{"expected": "Largo assai", "observed": "Largo-assai", "font": "DejaVuSerif-Italic.ttf", "sample": 115}
+{"expected": "Un poco sostenuto", "observed": "Un poco sostenuto", "font": "NimbusRoman-Regular.otf", "sample": 116}
+{"expected": "Animé", "observed": "Animé", "font": "NimbusRoman-Regular.otf", "sample": 117}
+{"expected": "Lento agitato", "observed": "Lento agitato", "font": "NimbusRoman-Regular.otf", "sample": 118}
+{"expected": "Presto non troppo", "observed": "—Presto-nen-treppo—", "font": "DejaVuSerif-Italic.ttf", "sample": 119}

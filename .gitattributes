@@ -1,0 +1,32 @@
+* text=auto eol=lf
+
+.editorconfig text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+LICENSE text eol=lf
+VERSION text eol=lf
+*.lock text eol=lf
+*.txt text eol=lf
+
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.zig text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tif binary
+*.tiff binary
+*.bmp binary
+*.webp binary
+*.mxl binary

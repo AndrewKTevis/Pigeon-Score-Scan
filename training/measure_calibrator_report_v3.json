@@ -1,0 +1,547 @@
+{
+  "baseline_v2_same_frozen_test": {
+    "by_scenario": {
+      "accidental_integrity": {
+        "correct": 24,
+        "groups": 24,
+        "top1_accuracy": 1.0
+      },
+      "chord_integrity": {
+        "correct": 17,
+        "groups": 21,
+        "top1_accuracy": 0.8095238095238095
+      },
+      "complete_agreement": {
+        "correct": 24,
+        "groups": 24,
+        "top1_accuracy": 1.0
+      },
+      "duplicate_integrity": {
+        "correct": 16,
+        "groups": 24,
+        "top1_accuracy": 0.6666666666666666
+      },
+      "final_boundary": {
+        "correct": 0,
+        "groups": 22,
+        "top1_accuracy": 0.0
+      },
+      "interior_gap": {
+        "correct": 22,
+        "groups": 23,
+        "top1_accuracy": 0.9565217391304348
+      },
+      "mixed_structure": {
+        "correct": 10,
+        "groups": 12,
+        "top1_accuracy": 0.8333333333333334
+      },
+      "page_score_trap": {
+        "correct": 22,
+        "groups": 23,
+        "top1_accuracy": 0.9565217391304348
+      },
+      "pickup_boundary": {
+        "correct": 0,
+        "groups": 25,
+        "top1_accuracy": 0.0
+      },
+      "pitch_trap": {
+        "correct": 18,
+        "groups": 19,
+        "top1_accuracy": 0.9473684210526315
+      },
+      "strict_majority": {
+        "correct": 23,
+        "groups": 23,
+        "top1_accuracy": 1.0
+      }
+    },
+    "decision": {
+      "correct": 176,
+      "groups": 240,
+      "top1_accuracy": 0.7333333333333333
+    },
+    "model_version": "scorescan-measure-calibrator-2",
+    "sample": {
+      "accuracy": 0.7871870397643593,
+      "brier_score": 0.16549325992886746,
+      "f1": 0.6522262334536703,
+      "false_accepts": 138,
+      "false_rejects": 151,
+      "log_loss": 1.316927082797132,
+      "precision": 0.6625916870415648,
+      "recall": 0.6421800947867299,
+      "roc_auc": 0.8001554461862519
+    }
+  },
+  "deployment_parity": {
+    "max_absolute_probability_delta": 1.6653345369377348e-15
+  },
+  "frozen_test": {
+    "by_scenario": {
+      "accidental_integrity": {
+        "correct": 24,
+        "groups": 24,
+        "top1_accuracy": 1.0
+      },
+      "chord_integrity": {
+        "correct": 21,
+        "groups": 21,
+        "top1_accuracy": 1.0
+      },
+      "complete_agreement": {
+        "correct": 24,
+        "groups": 24,
+        "top1_accuracy": 1.0
+      },
+      "duplicate_integrity": {
+        "correct": 22,
+        "groups": 24,
+        "top1_accuracy": 0.9166666666666666
+      },
+      "final_boundary": {
+        "correct": 22,
+        "groups": 22,
+        "top1_accuracy": 1.0
+      },
+      "interior_gap": {
+        "correct": 23,
+        "groups": 23,
+        "top1_accuracy": 1.0
+      },
+      "mixed_structure": {
+        "correct": 12,
+        "groups": 12,
+        "top1_accuracy": 1.0
+      },
+      "page_score_trap": {
+        "correct": 22,
+        "groups": 23,
+        "top1_accuracy": 0.9565217391304348
+      },
+      "pickup_boundary": {
+        "correct": 25,
+        "groups": 25,
+        "top1_accuracy": 1.0
+      },
+      "pitch_trap": {
+        "correct": 18,
+        "groups": 19,
+        "top1_accuracy": 0.9473684210526315
+      },
+      "strict_majority": {
+        "correct": 23,
+        "groups": 23,
+        "top1_accuracy": 1.0
+      }
+    },
+    "decision": {
+      "correct": 236,
+      "groups": 240,
+      "top1_accuracy": 0.9833333333333333
+    },
+    "sample": {
+      "accuracy": 0.9639175257731959,
+      "brier_score": 0.03166425876589579,
+      "f1": 0.944254835039818,
+      "false_accepts": 42,
+      "false_rejects": 7,
+      "log_loss": 0.11028076422058009,
+      "precision": 0.9080962800875274,
+      "recall": 0.9834123222748815,
+      "roc_auc": 0.9968024668854052
+    }
+  },
+  "groups": 2400,
+  "hybrid_rule": "max(forest_probability, legacy_probability * (legacy_preservation_floor + (1 - legacy_preservation_floor) * forest_probability))",
+  "limitations": [
+    "Procedural immutable MusicXML measure candidates; not an end-to-end scan OMR metric.",
+    "Pitch-only errors remain primarily the responsibility of event, context and ensemble evidence.",
+    "Boundary features distinguish likely pickup/final partial measures but do not infer missing notes.",
+    "The embedded v2 prior intentionally preserves the probability scale expected by downstream gates."
+  ],
+  "model_selection_audit": [
+    {
+      "config": {
+        "max_depth": 6,
+        "min_samples_leaf": 8,
+        "n_estimators": 24
+      },
+      "decision": {
+        "correct": 231,
+        "groups": 240,
+        "top1_accuracy": 0.9625
+      },
+      "legacy_preservation_floor": 0.5,
+      "sample": {
+        "accuracy": 0.9749816041206769,
+        "brier_score": 0.03205714368271538,
+        "f1": 0.9607390300230947,
+        "false_accepts": 25,
+        "false_rejects": 9,
+        "log_loss": 0.10575480031481646,
+        "precision": 0.9433106575963719,
+        "recall": 0.9788235294117648,
+        "roc_auc": 0.9955359617080237
+      }
+    },
+    {
+      "config": {
+        "max_depth": 6,
+        "min_samples_leaf": 8,
+        "n_estimators": 24
+      },
+      "decision": {
+        "correct": 231,
+        "groups": 240,
+        "top1_accuracy": 0.9625
+      },
+      "legacy_preservation_floor": 0.55,
+      "sample": {
+        "accuracy": 0.9492273730684326,
+        "brier_score": 0.0355575963331586,
+        "f1": 0.9234184239733629,
+        "false_accepts": 60,
+        "false_rejects": 9,
+        "log_loss": 0.11352477632136951,
+        "precision": 0.8739495798319328,
+        "recall": 0.9788235294117648,
+        "roc_auc": 0.9953923667968259
+      }
+    },
+    {
+      "config": {
+        "max_depth": 6,
+        "min_samples_leaf": 8,
+        "n_estimators": 24
+      },
+      "decision": {
+        "correct": 231,
+        "groups": 240,
+        "top1_accuracy": 0.9625
+      },
+      "legacy_preservation_floor": 0.6,
+      "sample": {
+        "accuracy": 0.9330389992641648,
+        "brier_score": 0.039417059555984686,
+        "f1": 0.9014084507042254,
+        "false_accepts": 82,
+        "false_rejects": 9,
+        "log_loss": 0.12194629181739926,
+        "precision": 0.8353413654618473,
+        "recall": 0.9788235294117648,
+        "roc_auc": 0.9951933492883234
+      }
+    },
+    {
+      "config": {
+        "max_depth": 6,
+        "min_samples_leaf": 8,
+        "n_estimators": 24
+      },
+      "decision": {
+        "correct": 231,
+        "groups": 240,
+        "top1_accuracy": 0.9625
+      },
+      "legacy_preservation_floor": 0.65,
+      "sample": {
+        "accuracy": 0.9227373068432672,
+        "brier_score": 0.04363553342947854,
+        "f1": 0.887940234791889,
+        "false_accepts": 96,
+        "false_rejects": 9,
+        "log_loss": 0.1311380649128541,
+        "precision": 0.8125,
+        "recall": 0.9788235294117648,
+        "roc_auc": 0.9950296007053786
+      }
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 32
+      },
+      "decision": {
+        "correct": 234,
+        "groups": 240,
+        "top1_accuracy": 0.975
+      },
+      "legacy_preservation_floor": 0.5,
+      "sample": {
+        "accuracy": 0.9749816041206769,
+        "brier_score": 0.029775035753313788,
+        "f1": 0.9608294930875576,
+        "false_accepts": 26,
+        "false_rejects": 8,
+        "log_loss": 0.09919986169345707,
+        "precision": 0.9413092550790068,
+        "recall": 0.9811764705882353,
+        "roc_auc": 0.9965663181760926
+      }
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 32
+      },
+      "decision": {
+        "correct": 234,
+        "groups": 240,
+        "top1_accuracy": 0.975
+      },
+      "legacy_preservation_floor": 0.55,
+      "sample": {
+        "accuracy": 0.9506990434142752,
+        "brier_score": 0.03330348415538844,
+        "f1": 0.925638179800222,
+        "false_accepts": 59,
+        "false_rejects": 8,
+        "log_loss": 0.10701669622462766,
+        "precision": 0.8760504201680672,
+        "recall": 0.9811764705882353,
+        "roc_auc": 0.9963748582944956
+      }
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 32
+      },
+      "decision": {
+        "correct": 234,
+        "groups": 240,
+        "top1_accuracy": 0.975
+      },
+      "legacy_preservation_floor": 0.6,
+      "sample": {
+        "accuracy": 0.9345106696100074,
+        "brier_score": 0.03719302783080377,
+        "f1": 0.9035752979414952,
+        "false_accepts": 81,
+        "false_rejects": 8,
+        "log_loss": 0.11548927236983532,
+        "precision": 0.8373493975903614,
+        "recall": 0.9811764705882353,
+        "roc_auc": 0.9962388210102028
+      }
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 32
+      },
+      "decision": {
+        "correct": 233,
+        "groups": 240,
+        "top1_accuracy": 0.9708333333333333
+      },
+      "legacy_preservation_floor": 0.65,
+      "sample": {
+        "accuracy": 0.9242089771891097,
+        "brier_score": 0.04144492507062533,
+        "f1": 0.8900747065101388,
+        "false_accepts": 95,
+        "false_rejects": 8,
+        "log_loss": 0.12474508040394895,
+        "precision": 0.814453125,
+        "recall": 0.9811764705882353,
+        "roc_auc": 0.9961632447411513
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 6,
+        "n_estimators": 48
+      },
+      "decision": {
+        "correct": 235,
+        "groups": 240,
+        "top1_accuracy": 0.9791666666666666
+      },
+      "legacy_preservation_floor": 0.5,
+      "sample": {
+        "accuracy": 0.9808682855040471,
+        "brier_score": 0.027609689484814952,
+        "f1": 0.9698375870069605,
+        "false_accepts": 19,
+        "false_rejects": 7,
+        "log_loss": 0.09482688955661124,
+        "precision": 0.9565217391304348,
+        "recall": 0.9835294117647059,
+        "roc_auc": 0.9974959062854263
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 6,
+        "n_estimators": 48
+      },
+      "decision": {
+        "correct": 235,
+        "groups": 240,
+        "top1_accuracy": 0.9791666666666666
+      },
+      "legacy_preservation_floor": 0.55,
+      "sample": {
+        "accuracy": 0.9521707137601177,
+        "brier_score": 0.031179600665811245,
+        "f1": 0.9278579356270811,
+        "false_accepts": 58,
+        "false_rejects": 7,
+        "log_loss": 0.10272719994084195,
+        "precision": 0.8781512605042017,
+        "recall": 0.9835294117647059,
+        "roc_auc": 0.997211235671999
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 6,
+        "n_estimators": 48
+      },
+      "decision": {
+        "correct": 234,
+        "groups": 240,
+        "top1_accuracy": 0.975
+      },
+      "legacy_preservation_floor": 0.6,
+      "sample": {
+        "accuracy": 0.9359823399558499,
+        "brier_score": 0.035110794493240616,
+        "f1": 0.905742145178765,
+        "false_accepts": 80,
+        "false_rejects": 7,
+        "log_loss": 0.11127924448165417,
+        "precision": 0.8393574297188755,
+        "recall": 0.9835294117647059,
+        "roc_auc": 0.9970852752235798
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 6,
+        "n_estimators": 48
+      },
+      "decision": {
+        "correct": 234,
+        "groups": 240,
+        "top1_accuracy": 0.975
+      },
+      "legacy_preservation_floor": 0.65,
+      "sample": {
+        "accuracy": 0.9271523178807947,
+        "brier_score": 0.03940327169024304,
+        "f1": 0.8941176470588236,
+        "false_accepts": 92,
+        "false_rejects": 7,
+        "log_loss": 0.12060385159203449,
+        "precision": 0.8196078431372549,
+        "recall": 0.9835294117647059,
+        "roc_auc": 0.9969441995213503
+      }
+    }
+  ],
+  "model_version": "scorescan-measure-forest-3",
+  "new_feature_ablation": {
+    "by_scenario": {
+      "accidental_integrity": {
+        "correct": 17,
+        "groups": 24,
+        "top1_accuracy": 0.7083333333333334
+      },
+      "chord_integrity": {
+        "correct": 19,
+        "groups": 21,
+        "top1_accuracy": 0.9047619047619048
+      },
+      "complete_agreement": {
+        "correct": 24,
+        "groups": 24,
+        "top1_accuracy": 1.0
+      },
+      "duplicate_integrity": {
+        "correct": 19,
+        "groups": 24,
+        "top1_accuracy": 0.7916666666666666
+      },
+      "final_boundary": {
+        "correct": 22,
+        "groups": 22,
+        "top1_accuracy": 1.0
+      },
+      "interior_gap": {
+        "correct": 23,
+        "groups": 23,
+        "top1_accuracy": 1.0
+      },
+      "mixed_structure": {
+        "correct": 10,
+        "groups": 12,
+        "top1_accuracy": 0.8333333333333334
+      },
+      "page_score_trap": {
+        "correct": 22,
+        "groups": 23,
+        "top1_accuracy": 0.9565217391304348
+      },
+      "pickup_boundary": {
+        "correct": 25,
+        "groups": 25,
+        "top1_accuracy": 1.0
+      },
+      "pitch_trap": {
+        "correct": 18,
+        "groups": 19,
+        "top1_accuracy": 0.9473684210526315
+      },
+      "strict_majority": {
+        "correct": 23,
+        "groups": 23,
+        "top1_accuracy": 1.0
+      }
+    },
+    "decision": {
+      "correct": 222,
+      "groups": 240,
+      "top1_accuracy": 0.925
+    },
+    "description": "same selected forest, preservation floor and split using only the twenty-eight v2 features",
+    "sample": {
+      "accuracy": 0.9418262150220913,
+      "brier_score": 0.041182062989672946,
+      "f1": 0.9103291713961408,
+      "false_accepts": 58,
+      "false_rejects": 21,
+      "log_loss": 0.13686176845770642,
+      "precision": 0.8736383442265795,
+      "recall": 0.9502369668246445,
+      "roc_auc": 0.9915264106614817
+    }
+  },
+  "positive_rate": 0.30580654717819583,
+  "samples": 13502,
+  "samples_by_partition": {
+    "forest_probability_calibration": 1336,
+    "frozen_test": 1358,
+    "model_selection_audit": 1359,
+    "train": 9449
+  },
+  "seed": 20270201,
+  "selected_config": {
+    "max_depth": 8,
+    "min_samples_leaf": 6,
+    "n_estimators": 48
+  },
+  "selected_legacy_preservation_floor": 0.55,
+  "split_unit": "source measure identity; all three-to-seven correlated candidates remain together"
+}

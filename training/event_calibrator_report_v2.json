@@ -1,0 +1,221 @@
+{
+  "baseline_v1_same_frozen_test": {
+    "by_scenario": {
+      "cross-family-correlated-error": {
+        "correct": 7,
+        "groups": 29,
+        "top1_accuracy": 0.2413793103448276
+      },
+      "independent-errors": {
+        "correct": 35,
+        "groups": 38,
+        "top1_accuracy": 0.9210526315789473
+      },
+      "single-family-correlated-error": {
+        "correct": 86,
+        "groups": 93,
+        "top1_accuracy": 0.9247311827956989
+      }
+    },
+    "decision": {
+      "correct": 128,
+      "groups": 160,
+      "top1_accuracy": 0.8
+    },
+    "model_version": "scorescan-event-calibrator-1",
+    "sample": {
+      "accuracy": 0.7473214285714286,
+      "brier_score": 0.1715482976639058,
+      "f1": 0.7249757045675413,
+      "false_accepts": 154,
+      "false_rejects": 129,
+      "log_loss": 0.5213068188573845,
+      "precision": 0.7077798861480076,
+      "recall": 0.7430278884462151,
+      "roc_auc": 0.8244981240088192
+    }
+  },
+  "deployment_parity": {
+    "implementation": "dependency-free production random-forest JSON runtime",
+    "max_absolute_probability_delta": 7.216449660063518e-16
+  },
+  "family_feature_ablation": {
+    "by_scenario": {
+      "cross-family-correlated-error": {
+        "correct": 7,
+        "groups": 29,
+        "top1_accuracy": 0.2413793103448276
+      },
+      "independent-errors": {
+        "correct": 35,
+        "groups": 38,
+        "top1_accuracy": 0.9210526315789473
+      },
+      "single-family-correlated-error": {
+        "correct": 87,
+        "groups": 93,
+        "top1_accuracy": 0.9354838709677419
+      }
+    },
+    "decision": {
+      "correct": 129,
+      "groups": 160,
+      "top1_accuracy": 0.80625
+    },
+    "description": "same forest configuration and split using only the thirteen legacy all-peer features",
+    "sample": {
+      "accuracy": 0.8089285714285714,
+      "brier_score": 0.13740451700529507,
+      "f1": 0.7811860940695297,
+      "false_accepts": 94,
+      "false_rejects": 120,
+      "log_loss": 0.4198511267397148,
+      "precision": 0.8025210084033614,
+      "recall": 0.7609561752988048,
+      "roc_auc": 0.8873551103031241
+    }
+  },
+  "frozen_test": {
+    "by_scenario": {
+      "cross-family-correlated-error": {
+        "correct": 23,
+        "groups": 29,
+        "top1_accuracy": 0.7931034482758621
+      },
+      "independent-errors": {
+        "correct": 36,
+        "groups": 38,
+        "top1_accuracy": 0.9473684210526315
+      },
+      "single-family-correlated-error": {
+        "correct": 85,
+        "groups": 93,
+        "top1_accuracy": 0.9139784946236559
+      }
+    },
+    "decision": {
+      "correct": 144,
+      "groups": 160,
+      "top1_accuracy": 0.9
+    },
+    "sample": {
+      "accuracy": 0.8758928571428571,
+      "brier_score": 0.08671660592745045,
+      "f1": 0.8608608608608609,
+      "false_accepts": 67,
+      "false_rejects": 72,
+      "log_loss": 0.2805567765500082,
+      "precision": 0.8651911468812877,
+      "recall": 0.8565737051792829,
+      "roc_auc": 0.9540156525999561
+    }
+  },
+  "groups": 1600,
+  "limitations": [
+    "No large frozen real-scan candidate ensemble corpus is bundled.",
+    "The model supplies only a bounded prior and cannot create consensus or edit events."
+  ],
+  "model_selection_audit": [
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 6,
+        "n_estimators": 48
+      },
+      "decision": {
+        "correct": 139,
+        "groups": 160,
+        "top1_accuracy": 0.86875
+      },
+      "sample": {
+        "accuracy": 0.8776785714285714,
+        "brier_score": 0.09648522222790407,
+        "f1": 0.8609137055837564,
+        "false_accepts": 64,
+        "false_rejects": 73,
+        "log_loss": 0.31200877756770506,
+        "precision": 0.8688524590163934,
+        "recall": 0.8531187122736419,
+        "roc_auc": 0.9416402104440447
+      },
+      "selection_score": [
+        0.86875,
+        -0.31200877756770506,
+        -0.09648522222790407
+      ]
+    },
+    {
+      "config": {
+        "max_depth": 10,
+        "min_samples_leaf": 4,
+        "n_estimators": 64
+      },
+      "decision": {
+        "correct": 139,
+        "groups": 160,
+        "top1_accuracy": 0.86875
+      },
+      "sample": {
+        "accuracy": 0.8732142857142857,
+        "brier_score": 0.09470429496593173,
+        "f1": 0.857429718875502,
+        "false_accepts": 72,
+        "false_rejects": 70,
+        "log_loss": 0.30555185055989575,
+        "precision": 0.8557114228456913,
+        "recall": 0.8591549295774648,
+        "roc_auc": 0.9450733292209114
+      },
+      "selection_score": [
+        0.86875,
+        -0.30555185055989575,
+        -0.09470429496593173
+      ]
+    },
+    {
+      "config": {
+        "max_depth": 12,
+        "min_samples_leaf": 4,
+        "n_estimators": 80
+      },
+      "decision": {
+        "correct": 135,
+        "groups": 160,
+        "top1_accuracy": 0.84375
+      },
+      "sample": {
+        "accuracy": 0.8821428571428571,
+        "brier_score": 0.08898736866766208,
+        "f1": 0.8661257606490872,
+        "false_accepts": 62,
+        "false_rejects": 70,
+        "log_loss": 0.2918268765656807,
+        "precision": 0.8732106339468303,
+        "recall": 0.8591549295774648,
+        "roc_auc": 0.9494688839295806
+      },
+      "selection_score": [
+        0.84375,
+        -0.2918268765656807,
+        -0.08898736866766208
+      ]
+    }
+  ],
+  "model_version": "scorescan-event-forest-2",
+  "positive_rate": 0.46223214285714287,
+  "samples": 11200,
+  "samples_by_partition": {
+    "frozen_test": 1120,
+    "model_selection_audit": 1120,
+    "probability_calibration": 1120,
+    "train": 7840
+  },
+  "scope": "grouped procedural event-candidate selection with preprocessing-family correlations; not end-to-end scan or MusicXML accuracy",
+  "seed": 20260718,
+  "selected_config": {
+    "max_depth": 8,
+    "min_samples_leaf": 6,
+    "n_estimators": 48
+  },
+  "split_unit": "source measure identity; all seven correlated preprocessing variants remain together"
+}

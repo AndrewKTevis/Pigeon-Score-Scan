@@ -1,0 +1,502 @@
+{
+  "dataset_fingerprint": "a1a3620dd968b0dd5ecff5ecd3cf0c43457be91d536ddd3fa92f347493cfb973",
+  "deployment_parity": {
+    "max_absolute_probability_delta": 5.551115123125783e-16
+  },
+  "feature_names": [
+    "candidate_count_scaled",
+    "eligible_family_count_scaled",
+    "voting_family_count_scaled",
+    "winner_family_support_ratio",
+    "winner_margin_ratio",
+    "template_family_support_ratio",
+    "family_abstention_ratio",
+    "winner_boundary_present",
+    "changed_endpoint_ratio",
+    "added_endpoint_ratio",
+    "removed_endpoint_ratio",
+    "left_boundary_duration_scaled",
+    "right_boundary_duration_scaled",
+    "mean_support_page_probability",
+    "mean_support_measure_probability",
+    "mean_support_visual_probability",
+    "mean_support_event_probability",
+    "mean_support_context_probability",
+    "mean_support_ensemble_probability",
+    "minimum_support_ensemble_probability",
+    "mean_support_alignment_similarity",
+    "mean_support_page_score_margin_scaled",
+    "mean_support_vs_template_measure_probability",
+    "mean_support_vs_template_visual_probability",
+    "mean_support_vs_template_event_probability",
+    "mean_support_vs_template_context_probability",
+    "mean_support_vs_template_ensemble_probability"
+  ],
+  "frozen_test": {
+    "accept_all_deterministic_proposals": {
+      "accepted": 2700,
+      "coverage": 1.0,
+      "false_accepts": 1323,
+      "positive_recall": 1.0,
+      "precision": 0.51,
+      "threshold": 0.5,
+      "true_accepts": 1377
+    },
+    "policy": {
+      "accepted": 1341,
+      "coverage": 0.49666666666666665,
+      "false_accepts": 0,
+      "positive_recall": 0.9738562091503268,
+      "precision": 1.0,
+      "threshold": 0.9999246676787151,
+      "true_accepts": 1341
+    },
+    "sample": {
+      "accuracy": 0.9977777777777778,
+      "brier_score": 0.0019311969790605488,
+      "log_loss": 0.006670049291690184,
+      "roc_auc": 0.9999857281732994
+    },
+    "scenarios": {
+      "alignment-weak": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 0
+      },
+      "common-mode-false-boundary": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 0
+      },
+      "context-supported-neutral": {
+        "accepted": 228,
+        "coverage": 0.987012987012987,
+        "false_accepts": 0,
+        "positive_recall": 0.987012987012987,
+        "precision": 1.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 228
+      },
+      "continuation-chain": {
+        "accepted": 203,
+        "coverage": 0.9950980392156863,
+        "false_accepts": 0,
+        "positive_recall": 0.9950980392156863,
+        "precision": 1.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 203
+      },
+      "high-confidence-common-error": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 0
+      },
+      "incomplete-family-trap": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 0
+      },
+      "low-visual-valid": {
+        "accepted": 171,
+        "coverage": 0.9661016949152542,
+        "false_accepts": 0,
+        "positive_recall": 0.9661016949152542,
+        "precision": 1.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 171
+      },
+      "missing-boundary-strong-support": {
+        "accepted": 326,
+        "coverage": 0.9969418960244648,
+        "false_accepts": 0,
+        "positive_recall": 0.9969418960244648,
+        "precision": 1.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 326
+      },
+      "spurious-boundary-strong-support": {
+        "accepted": 318,
+        "coverage": 0.9906542056074766,
+        "false_accepts": 0,
+        "positive_recall": 0.9906542056074766,
+        "precision": 1.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 318
+      },
+      "template-near-tie-valid": {
+        "accepted": 95,
+        "coverage": 0.811965811965812,
+        "false_accepts": 0,
+        "positive_recall": 0.811965811965812,
+        "precision": 1.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 95
+      },
+      "template-quality-superior": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 0
+      },
+      "visual-context-double-conflict": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 0
+      },
+      "weak-family-margin": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9999246676787151,
+        "true_accepts": 0
+      }
+    },
+    "v1_same_data_policy": {
+      "accepted": 1311,
+      "coverage": 0.4855555555555556,
+      "false_accepts": 4,
+      "positive_recall": 0.9491648511256354,
+      "precision": 0.9969488939740656,
+      "threshold": 0.995,
+      "true_accepts": 1307
+    },
+    "v1_same_data_scenarios": {
+      "alignment-weak": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "common-mode-false-boundary": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "context-supported-neutral": {
+        "accepted": 231,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 231
+      },
+      "continuation-chain": {
+        "accepted": 204,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 204
+      },
+      "high-confidence-common-error": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "incomplete-family-trap": {
+        "accepted": 4,
+        "coverage": 0.03418803418803419,
+        "false_accepts": 4,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "low-visual-valid": {
+        "accepted": 166,
+        "coverage": 0.9378531073446328,
+        "false_accepts": 0,
+        "positive_recall": 0.9378531073446328,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 166
+      },
+      "missing-boundary-strong-support": {
+        "accepted": 327,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 327
+      },
+      "spurious-boundary-strong-support": {
+        "accepted": 321,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 321
+      },
+      "template-near-tie-valid": {
+        "accepted": 58,
+        "coverage": 0.49572649572649574,
+        "false_accepts": 0,
+        "positive_recall": 0.49572649572649574,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 58
+      },
+      "template-quality-superior": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "visual-context-double-conflict": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "weak-family-margin": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      }
+    }
+  },
+  "group_leakage_audit": {
+    "groups_per_partition": {
+      "calibration": 900,
+      "frozen_test": 900,
+      "model_selection_audit": 900,
+      "threshold_selection": 450,
+      "train": 5850
+    },
+    "leakage_detected": false,
+    "pairwise_group_overlap": {
+      "calibration__frozen_test": 0,
+      "calibration__model_selection_audit": 0,
+      "calibration__threshold_selection": 0,
+      "model_selection_audit__frozen_test": 0,
+      "model_selection_audit__threshold_selection": 0,
+      "threshold_selection__frozen_test": 0,
+      "train__calibration": 0,
+      "train__frozen_test": 0,
+      "train__model_selection_audit": 0,
+      "train__threshold_selection": 0
+    }
+  },
+  "groups": 9000,
+  "independent_confirmation": {
+    "accept_all_deterministic_proposals": {
+      "accepted": 9000,
+      "coverage": 1.0,
+      "false_accepts": 4494,
+      "positive_recall": 1.0,
+      "precision": 0.5006666666666667,
+      "threshold": 0.5,
+      "true_accepts": 4506
+    },
+    "dataset_fingerprint": "1a661f4bad6310704aa99b7a2eea2c3fce3e1b668b987bc07b3143a29fa85200",
+    "groups": 3000,
+    "policy": {
+      "accepted": 4338,
+      "coverage": 0.482,
+      "false_accepts": 0,
+      "positive_recall": 0.96271637816245,
+      "precision": 1.0,
+      "threshold": 0.9999246676787151,
+      "true_accepts": 4338
+    },
+    "samples": 9000,
+    "seed": 20260724,
+    "v1_same_data_policy": {
+      "accepted": 4241,
+      "coverage": 0.4712222222222222,
+      "false_accepts": 4,
+      "positive_recall": 0.9403018197958278,
+      "precision": 0.9990568262202311,
+      "threshold": 0.995,
+      "true_accepts": 4237
+    }
+  },
+  "model_bytes": 777016,
+  "model_selection": [
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 10,
+        "n_estimators": 48
+      },
+      "sample": {
+        "accuracy": 0.9992592592592593,
+        "brier_score": 0.0005534292112713353,
+        "log_loss": 0.0018315272503806293,
+        "roc_auc": 0.9999994509750957
+      }
+    },
+    {
+      "config": {
+        "max_depth": 9,
+        "min_samples_leaf": 8,
+        "n_estimators": 64
+      },
+      "sample": {
+        "accuracy": 0.9992592592592593,
+        "brier_score": 0.0006314789160173435,
+        "log_loss": 0.002182659444094935,
+        "roc_auc": 0.9999983529252869
+      }
+    },
+    {
+      "config": {
+        "max_depth": 10,
+        "min_samples_leaf": 7,
+        "n_estimators": 80
+      },
+      "sample": {
+        "accuracy": 0.9992592592592593,
+        "brier_score": 0.0004649133021771883,
+        "log_loss": 0.0014673180993379344,
+        "roc_auc": 0.9999994509750956
+      }
+    }
+  ],
+  "model_sha256": "421cf76295ed93da755c7f9b02fc65773d5bfb5496d2340c73d3e3362e2d597a",
+  "model_version": "scorescan-cross-tie-patch-forest-2",
+  "partitions": {
+    "calibration": 2700,
+    "frozen_test": 2700,
+    "model_selection_audit": 2700,
+    "threshold_selection": 1350,
+    "train": 17550
+  },
+  "policy_probability_floor": 0.995,
+  "safety_calibration": {
+    "dataset_fingerprint": "41dfe7951e734be1cf30dfd21bb19a5bb4bc0afb9af4e2333c2a4ed0554c3c60",
+    "groups": 4000,
+    "policy": {
+      "accepted": 5861,
+      "coverage": 0.48841666666666667,
+      "false_accepts": 0,
+      "positive_recall": 0.9600327600327601,
+      "precision": 1.0,
+      "threshold": 0.9999246676787151,
+      "true_accepts": 5861
+    },
+    "samples": 12000,
+    "seed": 20260723
+  },
+  "safety_groups": 4000,
+  "samples": 27000,
+  "samples_per_group": 3,
+  "secondary_confirmation": {
+    "accept_all_deterministic_proposals": {
+      "accepted": 9000,
+      "coverage": 1.0,
+      "false_accepts": 4548,
+      "positive_recall": 1.0,
+      "precision": 0.49466666666666664,
+      "threshold": 0.5,
+      "true_accepts": 4452
+    },
+    "dataset_fingerprint": "16720442ad7b842b73f299cbf0e9930902a35d13c1f10e53df34c83eb45c005f",
+    "groups": 3000,
+    "policy": {
+      "accepted": 4293,
+      "coverage": 0.477,
+      "false_accepts": 0,
+      "positive_recall": 0.9642857142857143,
+      "precision": 1.0,
+      "threshold": 0.9999246676787151,
+      "true_accepts": 4293
+    },
+    "samples": 9000,
+    "seed": 20260725,
+    "v1_same_data_policy": {
+      "accepted": 4220,
+      "coverage": 0.4688888888888889,
+      "false_accepts": 4,
+      "positive_recall": 0.9469901168014375,
+      "precision": 0.9990521327014218,
+      "threshold": 0.995,
+      "true_accepts": 4216
+    }
+  },
+  "seed": 20260722,
+  "selected_config": {
+    "max_depth": 8,
+    "min_samples_leaf": 10,
+    "n_estimators": 48
+  },
+  "selected_threshold": {
+    "accepted": 626,
+    "coverage": 0.46370370370370373,
+    "false_accepts": 0,
+    "positive_recall": 0.9750778816199377,
+    "precision": 1.0,
+    "threshold": 0.9999246676787151,
+    "true_accepts": 626
+  },
+  "threshold_selection": {
+    "initial_policy": {
+      "accepted": 638,
+      "coverage": 0.4725925925925926,
+      "false_accepts": 0,
+      "positive_recall": 0.9937694704049844,
+      "precision": 1.0,
+      "threshold": 0.995,
+      "true_accepts": 638
+    },
+    "raw_precision_threshold": {
+      "accepted": 640,
+      "coverage": 0.4740740740740741,
+      "false_accepts": 0,
+      "positive_recall": 0.9968847352024922,
+      "precision": 1.0,
+      "threshold": 0.9868603702945907,
+      "true_accepts": 640
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "deployment_parity": {
+    "max_absolute_probability_delta": 4.336808689942018e-19
+  },
+  "feature_names": [
+    "candidate_count_scaled",
+    "eligible_family_count_scaled",
+    "voting_family_count_scaled",
+    "winner_family_support_ratio",
+    "winner_family_margin_ratio",
+    "template_family_support_ratio",
+    "family_abstention_ratio",
+    "attribute_is_time",
+    "attribute_is_key",
+    "attribute_is_clef",
+    "is_first_measure",
+    "is_last_measure",
+    "template_has_explicit_attribute",
+    "support_explicit_attribute_ratio",
+    "support_previous_continuity_ratio",
+    "support_following_continuity_ratio",
+    "template_previous_continuity",
+    "template_following_continuity",
+    "template_meter_error_scaled",
+    "winner_meter_error_scaled",
+    "meter_error_improvement_scaled",
+    "mean_support_page_probability",
+    "mean_support_measure_probability",
+    "mean_support_visual_probability",
+    "mean_support_event_probability",
+    "mean_support_context_probability",
+    "mean_support_ensemble_probability",
+    "minimum_support_ensemble_probability",
+    "mean_support_page_score_margin_scaled",
+    "mean_support_vs_template_ensemble_probability"
+  ],
+  "frozen_test": {
+    "accept_all_deterministic_proposals": {
+      "accepted": 800,
+      "coverage": 1.0,
+      "false_accepts": 303,
+      "positive_recall": 1.0,
+      "precision": 0.62125,
+      "threshold": 0.5,
+      "true_accepts": 497
+    },
+    "attribute_kinds": {
+      "clef": {
+        "accepted": 164,
+        "coverage": 0.6188679245283019,
+        "false_accepts": 0,
+        "positive_recall": 0.9939393939393939,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 164
+      },
+      "key": {
+        "accepted": 169,
+        "coverage": 0.6213235294117647,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 169
+      },
+      "time": {
+        "accepted": 163,
+        "coverage": 0.6197718631178707,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 163
+      }
+    },
+    "policy": {
+      "accepted": 496,
+      "coverage": 0.62,
+      "false_accepts": 0,
+      "positive_recall": 0.9979879275653923,
+      "precision": 1.0,
+      "threshold": 0.9966251923945637,
+      "true_accepts": 496
+    },
+    "sample": {
+      "accuracy": 1.0,
+      "brier_score": 3.194888750566557e-07,
+      "log_loss": 0.0002191719507039874,
+      "roc_auc": 1.0
+    },
+    "scenarios": {
+      "clear-first-attribute": {
+        "accepted": 119,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 119
+      },
+      "context-conflict": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 0
+      },
+      "correlated-family-error": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 0
+      },
+      "edge-meter-ambiguity": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 0
+      },
+      "explicit-change-boundary": {
+        "accepted": 109,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 109
+      },
+      "meter-fit-repair": {
+        "accepted": 110,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 110
+      },
+      "remove-spurious-template-change": {
+        "accepted": 92,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 92
+      },
+      "strong-context-repair": {
+        "accepted": 66,
+        "coverage": 0.9850746268656716,
+        "false_accepts": 0,
+        "positive_recall": 0.9850746268656716,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 66
+      },
+      "template-better": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 0
+      },
+      "visual-conflict": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 0
+      },
+      "weak-quality-majority": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 0
+      }
+    }
+  },
+  "groups": 8000,
+  "independent_confirmation": {
+    "accept_all_deterministic_proposals": {
+      "accepted": 2400,
+      "coverage": 1.0,
+      "false_accepts": 833,
+      "positive_recall": 1.0,
+      "precision": 0.6529166666666667,
+      "threshold": 0.5,
+      "true_accepts": 1567
+    },
+    "attribute_kinds": {
+      "clef": {
+        "accepted": 515,
+        "coverage": 0.64375,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 515
+      },
+      "key": {
+        "accepted": 519,
+        "coverage": 0.64875,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 519
+      },
+      "time": {
+        "accepted": 533,
+        "coverage": 0.66625,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9966251923945637,
+        "true_accepts": 533
+      }
+    },
+    "groups": 2400,
+    "policy": {
+      "accepted": 1567,
+      "coverage": 0.6529166666666667,
+      "false_accepts": 0,
+      "positive_recall": 1.0,
+      "precision": 1.0,
+      "threshold": 0.9966251923945637,
+      "true_accepts": 1567
+    },
+    "seed": 20260722
+  },
+  "model_bytes": 240914,
+  "model_selection": [
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 8,
+        "n_estimators": 48
+      },
+      "sample": {
+        "accuracy": 1.0,
+        "brier_score": 4.3907874474869066e-07,
+        "log_loss": 0.00020878060348677557,
+        "roc_auc": 1.0
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 7,
+        "n_estimators": 64
+      },
+      "sample": {
+        "accuracy": 1.0,
+        "brier_score": 3.28579014148112e-07,
+        "log_loss": 0.0002034574821343592,
+        "roc_auc": 1.0
+      }
+    },
+    {
+      "config": {
+        "max_depth": 9,
+        "min_samples_leaf": 6,
+        "n_estimators": 80
+      },
+      "sample": {
+        "accuracy": 1.0,
+        "brier_score": 1.8062206162925236e-07,
+        "log_loss": 0.00019500955158826053,
+        "roc_auc": 1.0
+      }
+    }
+  ],
+  "model_version": "scorescan-attribute-patch-forest-1",
+  "partitions": {
+    "calibration": 800,
+    "frozen_test": 800,
+    "model_selection_audit": 800,
+    "threshold_selection": 400,
+    "train": 5200
+  },
+  "samples": 8000,
+  "seed": 20260720,
+  "selected_config": {
+    "max_depth": 9,
+    "min_samples_leaf": 6,
+    "n_estimators": 80
+  },
+  "selected_threshold": {
+    "accepted": 247,
+    "coverage": 0.6175,
+    "false_accepts": 0,
+    "positive_recall": 1.0,
+    "precision": 1.0,
+    "threshold": 0.9966251923945637,
+    "true_accepts": 247
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "cases": [
+    {
+      "expected_equal": true,
+      "legacy_equal": false,
+      "legacy_false_collapse": false,
+      "name": "equivalent_divisions",
+      "passed": true,
+      "preservation_equal": true
+    },
+    {
+      "expected_equal": true,
+      "legacy_equal": true,
+      "legacy_false_collapse": false,
+      "name": "layout_coordinates",
+      "passed": true,
+      "preservation_equal": true
+    },
+    {
+      "expected_equal": false,
+      "legacy_equal": true,
+      "legacy_false_collapse": true,
+      "name": "beam_topology",
+      "passed": true,
+      "preservation_equal": false
+    },
+    {
+      "expected_equal": false,
+      "legacy_equal": true,
+      "legacy_false_collapse": true,
+      "name": "notehead_shape",
+      "passed": true,
+      "preservation_equal": false
+    },
+    {
+      "expected_equal": false,
+      "legacy_equal": true,
+      "legacy_false_collapse": true,
+      "name": "fermata",
+      "passed": true,
+      "preservation_equal": false
+    },
+    {
+      "expected_equal": false,
+      "legacy_equal": true,
+      "legacy_false_collapse": true,
+      "name": "lyric_text",
+      "passed": true,
+      "preservation_equal": false
+    },
+    {
+      "expected_equal": false,
+      "legacy_equal": true,
+      "legacy_false_collapse": true,
+      "name": "technical_value",
+      "passed": true,
+      "preservation_equal": false
+    },
+    {
+      "expected_equal": false,
+      "legacy_equal": true,
+      "legacy_false_collapse": true,
+      "name": "unknown_notation",
+      "passed": true,
+      "preservation_equal": false
+    }
+  ],
+  "format": 1,
+  "legacy_false_collapse_count": 6,
+  "passed": true,
+  "policy_version": "scorescan-policy-61",
+  "three_way_conflict": {
+    "legacy_distinct_signatures": 1,
+    "new_exact_majority_would_form": false,
+    "old_exact_majority_would_form": true,
+    "preservation_distinct_signatures": 3
+  },
+  "two_family_preservation_support": {
+    "accepted": true,
+    "required": 2,
+    "support": 2
+  },
+  "version": "0.37.0-dev",
+  "workflow_version": "printed-full-score-scan@1"
+}

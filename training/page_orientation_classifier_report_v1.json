@@ -1,0 +1,15 @@
+{
+  "model_version": "scorescan-page-orientation-logistic-1",
+  "seed": 20260718,
+  "source_pages": 30,
+  "samples": 120,
+  "train_samples": 92,
+  "test_samples": 28,
+  "binary_test_accuracy": 0.9285714285714286,
+  "binary_test_auc": 0.9931972789115646,
+  "binary_test_log_loss": 0.17869944404089014,
+  "page_orientation_top1": 1.0,
+  "mean_top1_margin": 0.6130498556658418,
+  "test_pages": 7,
+  "scope": "synthetic printed-score uprightness/orientation; not end-to-end OMR accuracy"
+}

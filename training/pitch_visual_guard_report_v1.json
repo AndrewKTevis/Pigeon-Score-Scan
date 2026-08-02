@@ -1,0 +1,293 @@
+{
+  "deployment_parity": {
+    "max_absolute_probability_delta": 5.551115123125783e-16
+  },
+  "feature_names": [
+    "changed_event_count_scaled",
+    "changed_event_ratio",
+    "changed_staff_position_ratio",
+    "maximum_staff_position_delta_scaled",
+    "notehead_exact_cell_improvement",
+    "notehead_near_cell_improvement",
+    "notehead_vertical_chamfer_improvement",
+    "notehead_severe_vertical_improvement",
+    "notehead_visual_unmatched_improvement",
+    "notehead_column_centroid_improvement",
+    "notehead_column_order_improvement",
+    "template_notehead_exact_cell_gap",
+    "template_notehead_near_cell_gap",
+    "template_notehead_vertical_chamfer_gap",
+    "template_notehead_severe_vertical_gap",
+    "template_notehead_visual_unmatched_gap",
+    "template_notehead_column_centroid_gap",
+    "template_notehead_column_order_gap",
+    "proposal_notehead_exact_cell_gap",
+    "proposal_notehead_near_cell_gap",
+    "proposal_notehead_vertical_chamfer_gap",
+    "proposal_notehead_severe_vertical_gap",
+    "proposal_notehead_visual_unmatched_gap",
+    "proposal_notehead_column_centroid_gap",
+    "proposal_notehead_column_order_gap"
+  ],
+  "frozen_test": {
+    "accept_all": {
+      "accepted": 320,
+      "coverage": 1.0,
+      "false_accepts": 160,
+      "positive_recall": 1.0,
+      "precision": 0.5,
+      "threshold": 0.5,
+      "true_accepts": 160
+    },
+    "policy": {
+      "accepted": 16,
+      "coverage": 0.05,
+      "false_accepts": 0,
+      "positive_recall": 0.1,
+      "precision": 1.0,
+      "threshold": 0.9555957011096021,
+      "true_accepts": 16
+    },
+    "sample": {
+      "accuracy": 0.765625,
+      "brier_score": 0.1388160991078437,
+      "log_loss": 0.41848584375911546,
+      "roc_auc": 0.8784375
+    },
+    "scenarios": {
+      "rendered-adjacent-swap-correction": {
+        "accepted": 6,
+        "coverage": 0.17142857142857143,
+        "false_accepts": 0,
+        "positive_recall": 0.17142857142857143,
+        "precision": 1.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 6
+      },
+      "rendered-adjacent-swap-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 0
+      },
+      "rendered-chord-tone-correction": {
+        "accepted": 1,
+        "coverage": 0.024390243902439025,
+        "false_accepts": 0,
+        "positive_recall": 0.024390243902439025,
+        "precision": 1.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 1
+      },
+      "rendered-chord-tone-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 0
+      },
+      "rendered-octave-correction": {
+        "accepted": 6,
+        "coverage": 0.15384615384615385,
+        "false_accepts": 0,
+        "positive_recall": 0.15384615384615385,
+        "precision": 1.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 6
+      },
+      "rendered-octave-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 0
+      },
+      "rendered-single-step-correction": {
+        "accepted": 3,
+        "coverage": 0.06666666666666667,
+        "false_accepts": 0,
+        "positive_recall": 0.06666666666666667,
+        "precision": 1.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 3
+      },
+      "rendered-single-step-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 0
+      }
+    }
+  },
+  "groups": 1600,
+  "independent_confirmation": {
+    "groups": 600,
+    "policy": {
+      "accepted": 40,
+      "coverage": 0.03333333333333333,
+      "false_accepts": 0,
+      "positive_recall": 0.06666666666666667,
+      "precision": 1.0,
+      "threshold": 0.9555957011096021,
+      "true_accepts": 40
+    },
+    "sample": {
+      "accuracy": 0.7425,
+      "brier_score": 0.1479012954697085,
+      "log_loss": 0.4411157000933658,
+      "roc_auc": 0.8587736111111111
+    },
+    "scenarios": {
+      "rendered-adjacent-swap-correction": {
+        "accepted": 5,
+        "coverage": 0.03333333333333333,
+        "false_accepts": 0,
+        "positive_recall": 0.03333333333333333,
+        "precision": 1.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 5
+      },
+      "rendered-adjacent-swap-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 0
+      },
+      "rendered-chord-tone-correction": {
+        "accepted": 3,
+        "coverage": 0.02,
+        "false_accepts": 0,
+        "positive_recall": 0.02,
+        "precision": 1.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 3
+      },
+      "rendered-chord-tone-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 0
+      },
+      "rendered-octave-correction": {
+        "accepted": 26,
+        "coverage": 0.17333333333333334,
+        "false_accepts": 0,
+        "positive_recall": 0.17333333333333334,
+        "precision": 1.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 26
+      },
+      "rendered-octave-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 0
+      },
+      "rendered-single-step-correction": {
+        "accepted": 6,
+        "coverage": 0.04,
+        "false_accepts": 0,
+        "positive_recall": 0.04,
+        "precision": 1.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 6
+      },
+      "rendered-single-step-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9555957011096021,
+        "true_accepts": 0
+      }
+    },
+    "seed": 20260731
+  },
+  "model_bytes": 1292351,
+  "model_selection": [
+    {
+      "config": {
+        "max_depth": 6,
+        "min_samples_leaf": 8,
+        "n_estimators": 64
+      },
+      "sample": {
+        "accuracy": 0.74375,
+        "brier_score": 0.1515500471945938,
+        "log_loss": 0.4482014649464352,
+        "roc_auc": 0.8590234375
+      }
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 96
+      },
+      "sample": {
+        "accuracy": 0.74375,
+        "brier_score": 0.1506778105583996,
+        "log_loss": 0.4440243190906902,
+        "roc_auc": 0.8625390625
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 5,
+        "n_estimators": 128
+      },
+      "sample": {
+        "accuracy": 0.740625,
+        "brier_score": 0.15199753883370176,
+        "log_loss": 0.4486906615908774,
+        "roc_auc": 0.858515625
+      }
+    }
+  ],
+  "model_version": "scorescan-pitch-visual-guard-1",
+  "partitions": {
+    "calibration": 480,
+    "frozen_test": 320,
+    "model_selection_audit": 320,
+    "threshold_selection": 480,
+    "train": 1600
+  },
+  "samples": 3200,
+  "scope": "rendered pitch transaction safety only; not end-to-end OMR accuracy",
+  "seed": 20260727,
+  "selected_config": {
+    "max_depth": 7,
+    "min_samples_leaf": 6,
+    "n_estimators": 96
+  },
+  "selected_threshold": {
+    "accepted": 17,
+    "coverage": 0.035416666666666666,
+    "false_accepts": 0,
+    "positive_recall": 0.07083333333333333,
+    "precision": 1.0,
+    "threshold": 0.9555957011096021,
+    "true_accepts": 17
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "candidate_model": "scorescan-selection-risk-forest-6",
+  "datasets": {
+    "confirmation_seed": 20270611,
+    "frozen_seed": 20270501,
+    "generator": "programmatic grouped replacement-risk evidence with measure-localised rescue scenarios",
+    "safety_seed": 20270503,
+    "split_unit": "programmatic score-family identity"
+  },
+  "decision": "retain production v4; reject v6",
+  "format": 1,
+  "policy_version": "scorescan-policy-52",
+  "production_model": "scorescan-selection-risk-forest-4",
+  "release_assertions": {
+    "candidate_v6_has_no_independent_advantage": true,
+    "production_v4_accepts_valid_measure_rescues": true,
+    "production_v4_rejects_measure_rescue_traps": true,
+    "production_v4_zero_false_accepts": true
+  },
+  "scope": "CPU replacement-risk and measure-localised rescue policy audit; not end-to-end OMR accuracy",
+  "sections": {
+    "frozen_test": {
+      "candidate_v6": {
+        "accepted": 146,
+        "by_scenario": {
+          "measure-localized-clear-gain": {
+            "accepted": 22,
+            "false_accepts": 0,
+            "samples": 125,
+            "true_accepts": 22
+          },
+          "measure-localized-common-error": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 78,
+            "true_accepts": 0
+          },
+          "measure-localized-partial-trap": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 50,
+            "true_accepts": 0
+          }
+        },
+        "coverage": 0.0811111111111111,
+        "false_accepts": 0,
+        "samples": 1800,
+        "true_accepts": 146
+      },
+      "production_v4": {
+        "accepted": 147,
+        "by_scenario": {
+          "measure-localized-clear-gain": {
+            "accepted": 21,
+            "false_accepts": 0,
+            "samples": 125,
+            "true_accepts": 21
+          },
+          "measure-localized-common-error": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 78,
+            "true_accepts": 0
+          },
+          "measure-localized-partial-trap": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 50,
+            "true_accepts": 0
+          }
+        },
+        "coverage": 0.08166666666666667,
+        "false_accepts": 0,
+        "samples": 1800,
+        "true_accepts": 147
+      }
+    },
+    "independent_confirmation": {
+      "candidate_v6": {
+        "accepted": 691,
+        "by_scenario": {
+          "measure-localized-clear-gain": {
+            "accepted": 90,
+            "false_accepts": 0,
+            "samples": 616,
+            "true_accepts": 90
+          },
+          "measure-localized-common-error": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 434,
+            "true_accepts": 0
+          },
+          "measure-localized-partial-trap": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 253,
+            "true_accepts": 0
+          }
+        },
+        "coverage": 0.07677777777777778,
+        "false_accepts": 1,
+        "samples": 9000,
+        "true_accepts": 690
+      },
+      "production_v4": {
+        "accepted": 706,
+        "by_scenario": {
+          "measure-localized-clear-gain": {
+            "accepted": 92,
+            "false_accepts": 0,
+            "samples": 616,
+            "true_accepts": 92
+          },
+          "measure-localized-common-error": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 434,
+            "true_accepts": 0
+          },
+          "measure-localized-partial-trap": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 253,
+            "true_accepts": 0
+          }
+        },
+        "coverage": 0.07844444444444444,
+        "false_accepts": 0,
+        "samples": 9000,
+        "true_accepts": 706
+      }
+    },
+    "safety_corpus": {
+      "candidate_v6": {
+        "accepted": 919,
+        "by_scenario": {
+          "measure-localized-clear-gain": {
+            "accepted": 97,
+            "false_accepts": 0,
+            "samples": 781,
+            "true_accepts": 97
+          },
+          "measure-localized-common-error": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 571,
+            "true_accepts": 0
+          },
+          "measure-localized-partial-trap": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 369,
+            "true_accepts": 0
+          }
+        },
+        "coverage": 0.07658333333333334,
+        "false_accepts": 0,
+        "samples": 12000,
+        "true_accepts": 919
+      },
+      "production_v4": {
+        "accepted": 949,
+        "by_scenario": {
+          "measure-localized-clear-gain": {
+            "accepted": 98,
+            "false_accepts": 0,
+            "samples": 781,
+            "true_accepts": 98
+          },
+          "measure-localized-common-error": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 571,
+            "true_accepts": 0
+          },
+          "measure-localized-partial-trap": {
+            "accepted": 0,
+            "false_accepts": 0,
+            "samples": 369,
+            "true_accepts": 0
+          }
+        },
+        "coverage": 0.07908333333333334,
+        "false_accepts": 0,
+        "samples": 12000,
+        "true_accepts": 949
+      }
+    }
+  },
+  "workflow_version": "single-staff-printed-scan@58"
+}

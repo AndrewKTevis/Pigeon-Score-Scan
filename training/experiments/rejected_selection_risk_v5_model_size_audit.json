@@ -1,0 +1,101 @@
+[
+  {
+    "config": {
+      "n_estimators": 32,
+      "max_depth": 7,
+      "min_samples_leaf": 8
+    },
+    "thresholds": {
+      "exact": 0.9862472151823694,
+      "semantic": 0.9933820395953886
+    },
+    "frozen": {
+      "accepted": 140,
+      "false": 0,
+      "true": 140,
+      "coverage": 0.07777777777777778,
+      "precision": 1.0
+    },
+    "safety": {
+      "accepted": 889,
+      "false": 0,
+      "true": 889,
+      "coverage": 0.07408333333333333,
+      "precision": 1.0
+    },
+    "confirmation": {
+      "accepted": 724,
+      "false": 0,
+      "true": 724,
+      "coverage": 0.08044444444444444,
+      "precision": 1.0
+    },
+    "bytes_estimate": 397574
+  },
+  {
+    "config": {
+      "n_estimators": 48,
+      "max_depth": 8,
+      "min_samples_leaf": 7
+    },
+    "thresholds": {
+      "exact": 0.9884280452992004,
+      "semantic": 0.9931874261291426
+    },
+    "frozen": {
+      "accepted": 149,
+      "false": 0,
+      "true": 149,
+      "coverage": 0.08277777777777778,
+      "precision": 1.0
+    },
+    "safety": {
+      "accepted": 951,
+      "false": 0,
+      "true": 951,
+      "coverage": 0.07925,
+      "precision": 1.0
+    },
+    "confirmation": {
+      "accepted": 765,
+      "false": 0,
+      "true": 765,
+      "coverage": 0.085,
+      "precision": 1.0
+    },
+    "bytes_estimate": 863004
+  },
+  {
+    "config": {
+      "n_estimators": 64,
+      "max_depth": 9,
+      "min_samples_leaf": 6
+    },
+    "thresholds": {
+      "exact": 0.9876850961022815,
+      "semantic": 0.9926301781186215
+    },
+    "frozen": {
+      "accepted": 151,
+      "false": 0,
+      "true": 151,
+      "coverage": 0.08388888888888889,
+      "precision": 1.0
+    },
+    "safety": {
+      "accepted": 966,
+      "false": 0,
+      "true": 966,
+      "coverage": 0.0805,
+      "precision": 1.0
+    },
+    "confirmation": {
+      "accepted": 786,
+      "false": 0,
+      "true": 786,
+      "coverage": 0.08733333333333333,
+      "precision": 1.0
+    },
+    "bytes_estimate": 1643659
+  }
+]

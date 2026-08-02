@@ -1,0 +1,407 @@
+{
+  "baseline_v2_same_frozen_test": {
+    "by_scenario": {
+      "alignment-trap": {
+        "correct": 5,
+        "groups": 7,
+        "top1_accuracy": 0.7142857142857143
+      },
+      "clean-agreement": {
+        "correct": 19,
+        "groups": 19,
+        "top1_accuracy": 1.0
+      },
+      "clean-majority": {
+        "correct": 20,
+        "groups": 20,
+        "top1_accuracy": 1.0
+      },
+      "cross-family-fuzzy-trap": {
+        "correct": 4,
+        "groups": 7,
+        "top1_accuracy": 0.5714285714285714
+      },
+      "evidence-conflict": {
+        "correct": 12,
+        "groups": 16,
+        "top1_accuracy": 0.75
+      },
+      "independent-errors": {
+        "correct": 15,
+        "groups": 18,
+        "top1_accuracy": 0.8333333333333334
+      },
+      "invalid-page-trap": {
+        "correct": 12,
+        "groups": 13,
+        "top1_accuracy": 0.9230769230769231
+      },
+      "legitimate-transition": {
+        "correct": 17,
+        "groups": 19,
+        "top1_accuracy": 0.8947368421052632
+      },
+      "local-structure-trap": {
+        "correct": 8,
+        "groups": 10,
+        "top1_accuracy": 0.8
+      },
+      "localized-isolation-trap": {
+        "correct": 20,
+        "groups": 24,
+        "top1_accuracy": 0.8333333333333334
+      },
+      "localized-partial-trap": {
+        "correct": 15,
+        "groups": 17,
+        "top1_accuracy": 0.8823529411764706
+      },
+      "localized-rescue": {
+        "correct": 16,
+        "groups": 19,
+        "top1_accuracy": 0.8421052631578947
+      },
+      "missing-visual": {
+        "correct": 8,
+        "groups": 13,
+        "top1_accuracy": 0.6153846153846154
+      },
+      "page-score-trap": {
+        "correct": 8,
+        "groups": 9,
+        "top1_accuracy": 0.8888888888888888
+      },
+      "single-family-exact-trap": {
+        "correct": 10,
+        "groups": 12,
+        "top1_accuracy": 0.8333333333333334
+      },
+      "visual-density-trap": {
+        "correct": 15,
+        "groups": 17,
+        "top1_accuracy": 0.8823529411764706
+      }
+    },
+    "decision": {
+      "correct": 204,
+      "groups": 240,
+      "top1_accuracy": 0.85
+    },
+    "model_version": "scorescan-ensemble-forest-2",
+    "policy_gate": {
+      "accuracy": 0.9204633204633205,
+      "brier_score": 0.05297464351073222,
+      "f1": 0.859481582537517,
+      "false_accepts": 63,
+      "false_rejects": 40,
+      "log_loss": 0.1734812163896587,
+      "precision": 0.8333333333333334,
+      "recall": 0.8873239436619719,
+      "roc_auc": 0.9772849865148338,
+      "threshold": 0.34
+    },
+    "sample": {
+      "accuracy": 0.9243243243243243,
+      "brier_score": 0.05297464351073222,
+      "f1": 0.8591954022988506,
+      "false_accepts": 42,
+      "false_rejects": 56,
+      "log_loss": 0.1734812163896587,
+      "precision": 0.8768328445747801,
+      "recall": 0.8422535211267606,
+      "roc_auc": 0.9772849865148338,
+      "threshold": 0.5
+    }
+  },
+  "component_models": {
+    "context": "scorescan-context-forest-2",
+    "event": "scorescan-event-forest-2",
+    "measure": "scorescan-measure-forest-3",
+    "visual": "scorescan-visual-measure-calibrator-4"
+  },
+  "deployment_parity": {
+    "max_absolute_probability_delta": 9.43689570931383e-16,
+    "tolerance": 1e-10
+  },
+  "feature_names": [
+    "page_score_scaled",
+    "page_probability",
+    "page_valid",
+    "alignment_similarity",
+    "alignment_margin",
+    "exact_support_ratio",
+    "semantic_support_ratio",
+    "signature_support_ratio",
+    "missing_ratio",
+    "distance_to_template",
+    "distance_to_medoid",
+    "mean_peer_distance",
+    "measure_probability",
+    "visual_probability",
+    "event_probability",
+    "context_probability",
+    "measure_probability_margin",
+    "visual_probability_margin",
+    "event_probability_margin",
+    "context_probability_margin",
+    "page_score_margin_scaled",
+    "candidate_count_scaled",
+    "initial_cluster_member",
+    "exact_signature_member"
+  ],
+  "frozen_test": {
+    "by_scenario": {
+      "alignment-trap": {
+        "correct": 5,
+        "groups": 7,
+        "top1_accuracy": 0.7142857142857143
+      },
+      "clean-agreement": {
+        "correct": 19,
+        "groups": 19,
+        "top1_accuracy": 1.0
+      },
+      "clean-majority": {
+        "correct": 20,
+        "groups": 20,
+        "top1_accuracy": 1.0
+      },
+      "cross-family-fuzzy-trap": {
+        "correct": 4,
+        "groups": 7,
+        "top1_accuracy": 0.5714285714285714
+      },
+      "evidence-conflict": {
+        "correct": 14,
+        "groups": 16,
+        "top1_accuracy": 0.875
+      },
+      "independent-errors": {
+        "correct": 16,
+        "groups": 18,
+        "top1_accuracy": 0.8888888888888888
+      },
+      "invalid-page-trap": {
+        "correct": 12,
+        "groups": 13,
+        "top1_accuracy": 0.9230769230769231
+      },
+      "legitimate-transition": {
+        "correct": 17,
+        "groups": 19,
+        "top1_accuracy": 0.8947368421052632
+      },
+      "local-structure-trap": {
+        "correct": 8,
+        "groups": 10,
+        "top1_accuracy": 0.8
+      },
+      "localized-isolation-trap": {
+        "correct": 21,
+        "groups": 24,
+        "top1_accuracy": 0.875
+      },
+      "localized-partial-trap": {
+        "correct": 15,
+        "groups": 17,
+        "top1_accuracy": 0.8823529411764706
+      },
+      "localized-rescue": {
+        "correct": 16,
+        "groups": 19,
+        "top1_accuracy": 0.8421052631578947
+      },
+      "missing-visual": {
+        "correct": 9,
+        "groups": 13,
+        "top1_accuracy": 0.6923076923076923
+      },
+      "page-score-trap": {
+        "correct": 8,
+        "groups": 9,
+        "top1_accuracy": 0.8888888888888888
+      },
+      "single-family-exact-trap": {
+        "correct": 10,
+        "groups": 12,
+        "top1_accuracy": 0.8333333333333334
+      },
+      "visual-density-trap": {
+        "correct": 17,
+        "groups": 17,
+        "top1_accuracy": 1.0
+      }
+    },
+    "decision": {
+      "correct": 211,
+      "groups": 240,
+      "top1_accuracy": 0.8791666666666667
+    },
+    "policy_gate": {
+      "accuracy": 0.9328185328185328,
+      "brier_score": 0.04768870990784382,
+      "f1": 0.8803301237964236,
+      "false_accepts": 52,
+      "false_rejects": 35,
+      "log_loss": 0.15915627907060403,
+      "precision": 0.8602150537634409,
+      "recall": 0.9014084507042254,
+      "roc_auc": 0.9813754869643392,
+      "threshold": 0.34
+    },
+    "sample": {
+      "accuracy": 0.9281853281853282,
+      "brier_score": 0.04768870990784382,
+      "f1": 0.8642335766423358,
+      "false_accepts": 34,
+      "false_rejects": 59,
+      "log_loss": 0.15915627907060403,
+      "precision": 0.896969696969697,
+      "recall": 0.8338028169014085,
+      "roc_auc": 0.9813754869643392,
+      "threshold": 0.5
+    }
+  },
+  "groups": 2400,
+  "limitations": [
+    "No large frozen real-scan candidate ensemble corpus is bundled.",
+    "The model is a bounded prior and cannot create consensus or bypass hard validation.",
+    "Cross-family fuzzy errors remain difficult when several independent evidence layers share the same mistake."
+  ],
+  "linear_model_ablation": {
+    "decision": {
+      "correct": 192,
+      "groups": 240,
+      "top1_accuracy": 0.8
+    },
+    "description": "retrained standardized logistic regression using all current features",
+    "sample": {
+      "accuracy": 0.8818532818532818,
+      "brier_score": 0.0821494879846016,
+      "f1": 0.8045977011494253,
+      "false_accepts": 113,
+      "false_rejects": 40,
+      "log_loss": 0.2578836868939901,
+      "precision": 0.735981308411215,
+      "recall": 0.8873239436619719,
+      "roc_auc": 0.9603506143242434,
+      "threshold": 0.5
+    }
+  },
+  "model_selection_audit": [
+    {
+      "config": {
+        "max_depth": 6,
+        "min_samples_leaf": 8,
+        "n_estimators": 24
+      },
+      "decision": {
+        "correct": 195,
+        "groups": 240,
+        "top1_accuracy": 0.8125
+      },
+      "sample": {
+        "accuracy": 0.9247311827956989,
+        "brier_score": 0.05791531226532254,
+        "f1": 0.846875,
+        "false_accepts": 33,
+        "false_rejects": 65,
+        "log_loss": 0.1926447933854172,
+        "precision": 0.8914473684210527,
+        "recall": 0.8065476190476191,
+        "roc_auc": 0.9693754313319531,
+        "threshold": 0.5
+      }
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 32
+      },
+      "decision": {
+        "correct": 201,
+        "groups": 240,
+        "top1_accuracy": 0.8375
+      },
+      "sample": {
+        "accuracy": 0.9201228878648233,
+        "brier_score": 0.057404380922783334,
+        "f1": 0.8419452887537994,
+        "false_accepts": 45,
+        "false_rejects": 59,
+        "log_loss": 0.18625595452670562,
+        "precision": 0.860248447204969,
+        "recall": 0.8244047619047619,
+        "roc_auc": 0.9731619096914128,
+        "threshold": 0.5
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 6,
+        "n_estimators": 48
+      },
+      "decision": {
+        "correct": 204,
+        "groups": 240,
+        "top1_accuracy": 0.85
+      },
+      "sample": {
+        "accuracy": 0.9278033794162827,
+        "brier_score": 0.052995599426411154,
+        "f1": 0.8558282208588958,
+        "false_accepts": 37,
+        "false_rejects": 57,
+        "log_loss": 0.1752238896092716,
+        "precision": 0.8829113924050633,
+        "recall": 0.8303571428571429,
+        "roc_auc": 0.9758146012028,
+        "threshold": 0.5
+      }
+    },
+    {
+      "config": {
+        "max_depth": 10,
+        "min_samples_leaf": 4,
+        "n_estimators": 64
+      },
+      "decision": {
+        "correct": 207,
+        "groups": 240,
+        "top1_accuracy": 0.8625
+      },
+      "sample": {
+        "accuracy": 0.9324116743471582,
+        "brier_score": 0.04759007355286179,
+        "f1": 0.8641975308641975,
+        "false_accepts": 32,
+        "false_rejects": 56,
+        "log_loss": 0.15751155634053002,
+        "precision": 0.8974358974358975,
+        "recall": 0.8333333333333334,
+        "roc_auc": 0.9811661983634032,
+        "threshold": 0.5
+      }
+    }
+  ],
+  "model_version": "scorescan-ensemble-forest-3",
+  "positive_rate": 0.2539633912843685,
+  "samples": 13057,
+  "samples_by_partition": {
+    "frozen_test": 1295,
+    "model_selection_audit": 1302,
+    "probability_calibration": 1299,
+    "train": 9161
+  },
+  "scope": "programmatic difficult measure-candidate decisions scored by current component models; not end-to-end OMR",
+  "seed": 20270115,
+  "selected_config": {
+    "max_depth": 8,
+    "min_samples_leaf": 6,
+    "n_estimators": 48
+  },
+  "selection_rule": "smallest forest within 0.025 group Top-1 and 0.02 log-loss of the independent-audit best",
+  "split_unit": "complete source decision with three to eight candidates across up to five independent families; correlated preprocessing families never cross partitions"
+}

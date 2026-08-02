@@ -1,0 +1,314 @@
+{
+  "deployment_parity": {
+    "max_absolute_probability_delta": 9.43689570931383e-16
+  },
+  "feature_names": [
+    "changed_event_count_scaled",
+    "changed_event_ratio",
+    "changed_staff_position_ratio",
+    "maximum_staff_position_delta_scaled",
+    "notehead_exact_cell_improvement",
+    "notehead_near_cell_improvement",
+    "notehead_vertical_chamfer_improvement",
+    "notehead_severe_vertical_improvement",
+    "notehead_visual_unmatched_improvement",
+    "notehead_column_centroid_improvement",
+    "notehead_column_order_improvement",
+    "template_notehead_exact_cell_gap",
+    "template_notehead_near_cell_gap",
+    "template_notehead_vertical_chamfer_gap",
+    "template_notehead_severe_vertical_gap",
+    "template_notehead_visual_unmatched_gap",
+    "template_notehead_column_centroid_gap",
+    "template_notehead_column_order_gap",
+    "proposal_notehead_exact_cell_gap",
+    "proposal_notehead_near_cell_gap",
+    "proposal_notehead_vertical_chamfer_gap",
+    "proposal_notehead_severe_vertical_gap",
+    "proposal_notehead_visual_unmatched_gap",
+    "proposal_notehead_column_centroid_gap",
+    "proposal_notehead_column_order_gap",
+    "strict_notehead_exact_cell_improvement",
+    "strict_notehead_near_cell_improvement",
+    "strict_notehead_vertical_chamfer_improvement",
+    "strict_notehead_severe_vertical_improvement",
+    "strict_notehead_visual_unmatched_improvement",
+    "strict_notehead_column_centroid_improvement",
+    "strict_notehead_column_order_improvement",
+    "template_strict_notehead_exact_cell_gap",
+    "template_strict_notehead_near_cell_gap",
+    "template_strict_notehead_vertical_chamfer_gap",
+    "template_strict_notehead_severe_vertical_gap",
+    "template_strict_notehead_visual_unmatched_gap",
+    "template_strict_notehead_column_centroid_gap",
+    "template_strict_notehead_column_order_gap",
+    "proposal_strict_notehead_exact_cell_gap",
+    "proposal_strict_notehead_near_cell_gap",
+    "proposal_strict_notehead_vertical_chamfer_gap",
+    "proposal_strict_notehead_severe_vertical_gap",
+    "proposal_strict_notehead_visual_unmatched_gap",
+    "proposal_strict_notehead_column_centroid_gap",
+    "proposal_strict_notehead_column_order_gap"
+  ],
+  "frozen_test": {
+    "accept_all": {
+      "accepted": 320,
+      "coverage": 1.0,
+      "false_accepts": 160,
+      "positive_recall": 1.0,
+      "precision": 0.5,
+      "threshold": 0.5,
+      "true_accepts": 160
+    },
+    "policy": {
+      "accepted": 17,
+      "coverage": 0.053125,
+      "false_accepts": 0,
+      "positive_recall": 0.10625,
+      "precision": 1.0,
+      "threshold": 0.9579654034961268,
+      "true_accepts": 17
+    },
+    "sample": {
+      "accuracy": 0.7375,
+      "brier_score": 0.15270356005398428,
+      "log_loss": 0.4528678318953201,
+      "roc_auc": 0.85337890625
+    },
+    "scenarios": {
+      "rendered-adjacent-swap-correction": {
+        "accepted": 3,
+        "coverage": 0.08571428571428572,
+        "false_accepts": 0,
+        "positive_recall": 0.08571428571428572,
+        "precision": 1.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 3
+      },
+      "rendered-adjacent-swap-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 0
+      },
+      "rendered-chord-tone-correction": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 0
+      },
+      "rendered-chord-tone-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 0
+      },
+      "rendered-octave-correction": {
+        "accepted": 11,
+        "coverage": 0.28205128205128205,
+        "false_accepts": 0,
+        "positive_recall": 0.28205128205128205,
+        "precision": 1.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 11
+      },
+      "rendered-octave-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 0
+      },
+      "rendered-single-step-correction": {
+        "accepted": 3,
+        "coverage": 0.06666666666666667,
+        "false_accepts": 0,
+        "positive_recall": 0.06666666666666667,
+        "precision": 1.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 3
+      },
+      "rendered-single-step-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 0
+      }
+    }
+  },
+  "groups": 1600,
+  "independent_confirmation": {
+    "groups": 600,
+    "policy": {
+      "accepted": 72,
+      "coverage": 0.06,
+      "false_accepts": 0,
+      "positive_recall": 0.12,
+      "precision": 1.0,
+      "threshold": 0.9579654034961268,
+      "true_accepts": 72
+    },
+    "sample": {
+      "accuracy": 0.7333333333333333,
+      "brier_score": 0.15131414542688082,
+      "log_loss": 0.44990711165337244,
+      "roc_auc": 0.849675
+    },
+    "scenarios": {
+      "rendered-adjacent-swap-correction": {
+        "accepted": 7,
+        "coverage": 0.04666666666666667,
+        "false_accepts": 0,
+        "positive_recall": 0.04666666666666667,
+        "precision": 1.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 7
+      },
+      "rendered-adjacent-swap-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 0
+      },
+      "rendered-chord-tone-correction": {
+        "accepted": 5,
+        "coverage": 0.03333333333333333,
+        "false_accepts": 0,
+        "positive_recall": 0.03333333333333333,
+        "precision": 1.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 5
+      },
+      "rendered-chord-tone-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 0
+      },
+      "rendered-octave-correction": {
+        "accepted": 42,
+        "coverage": 0.28,
+        "false_accepts": 0,
+        "positive_recall": 0.28,
+        "precision": 1.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 42
+      },
+      "rendered-octave-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 0
+      },
+      "rendered-single-step-correction": {
+        "accepted": 18,
+        "coverage": 0.12,
+        "false_accepts": 0,
+        "positive_recall": 0.12,
+        "precision": 1.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 18
+      },
+      "rendered-single-step-regression": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9579654034961268,
+        "true_accepts": 0
+      }
+    },
+    "seed": 20260731
+  },
+  "model_bytes": 2371897,
+  "model_selection": [
+    {
+      "config": {
+        "max_depth": 6,
+        "min_samples_leaf": 8,
+        "n_estimators": 64
+      },
+      "sample": {
+        "accuracy": 0.71875,
+        "brier_score": 0.15573917594170786,
+        "log_loss": 0.45802134816290785,
+        "roc_auc": 0.83865234375
+      }
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 96
+      },
+      "sample": {
+        "accuracy": 0.71875,
+        "brier_score": 0.15466219250284116,
+        "log_loss": 0.45583585665679677,
+        "roc_auc": 0.83884765625
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 5,
+        "n_estimators": 128
+      },
+      "sample": {
+        "accuracy": 0.721875,
+        "brier_score": 0.15533134694360845,
+        "log_loss": 0.4572394672772406,
+        "roc_auc": 0.84044921875
+      }
+    }
+  ],
+  "model_version": "scorescan-pitch-visual-guard-2",
+  "partitions": {
+    "calibration": 480,
+    "frozen_test": 320,
+    "model_selection_audit": 320,
+    "threshold_selection": 480,
+    "train": 1600
+  },
+  "samples": 3200,
+  "scope": "rendered pitch transaction safety only; not end-to-end OMR accuracy",
+  "seed": 20260727,
+  "selected_config": {
+    "max_depth": 8,
+    "min_samples_leaf": 5,
+    "n_estimators": 128
+  },
+  "selected_threshold": {
+    "accepted": 33,
+    "coverage": 0.06875,
+    "false_accepts": 0,
+    "positive_recall": 0.1375,
+    "precision": 1.0,
+    "threshold": 0.9579654034961268,
+    "true_accepts": 33
+  }
+}

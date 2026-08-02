@@ -1,0 +1,29 @@
+{
+  "model_version": "scorescan-measure-count-resolver-1",
+  "cases": [
+    {
+      "name": "allegretto",
+      "truth": 46,
+      "layout_count": 46,
+      "layout_confidence": 0.9870235630519992,
+      "resolved_count": 46,
+      "correct": true,
+      "source": "model",
+      "probability": 0.9999744954691534,
+      "margin": 0.9999605491594893
+    },
+    {
+      "name": "bwv147",
+      "truth": 44,
+      "layout_count": 47,
+      "layout_confidence": 0.9868669104552603,
+      "resolved_count": 44,
+      "correct": true,
+      "source": "model",
+      "probability": 0.9993940526567803,
+      "margin": 0.9993885363871946
+    }
+  ],
+  "accuracy": 1.0,
+  "scope": "real scan layout plus constructed OMR count evidence; not end-to-end OMR"
+}

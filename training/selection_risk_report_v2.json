@@ -1,0 +1,243 @@
+{
+  "baseline_v1_on_same_test": {
+    "model_version": "scorescan-selection-risk-1",
+    "same_target_threshold_selection": {
+      "chosen_threshold": 1.0,
+      "test": {
+        "accepted": 0,
+        "accepted_mean_semantic_gain": 0.0,
+        "accepted_total_semantic_gain": 0.0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "precision": 1.0,
+        "threshold": 1.0,
+        "true_accepts": 0
+      },
+      "threshold_split": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "precision": 1.0,
+        "threshold": 1.0,
+        "true_accepts": 0
+      }
+    },
+    "stored_threshold": {
+      "accepted": 222,
+      "accepted_mean_semantic_gain": 0.02430492718669595,
+      "accepted_total_semantic_gain": 5.395693835446501,
+      "coverage": 0.13875,
+      "false_accepts": 93,
+      "precision": 0.581081081081081,
+      "threshold": 0.9892516317751179,
+      "true_accepts": 129
+    },
+    "test": {
+      "accuracy": 0.540625,
+      "brier_score": 0.3996307624703148,
+      "log_loss": 2.215004944352769,
+      "roc_auc": 0.5620383435606788
+    }
+  },
+  "deployment_parity": {
+    "max_absolute_probability_delta": 3.3306690738754696e-16,
+    "samples": 1600
+  },
+  "feature_names": [
+    "selection_exact_majority",
+    "selection_semantic_consensus",
+    "selection_template",
+    "selected_page_score_scaled",
+    "selected_page_probability",
+    "selected_ensemble_probability",
+    "ensemble_probability_margin",
+    "selected_measure_probability",
+    "measure_probability_margin",
+    "selected_visual_probability",
+    "visual_probability_margin",
+    "selected_event_probability",
+    "event_probability_margin",
+    "selected_context_probability",
+    "context_probability_margin",
+    "exact_support_ratio",
+    "semantic_support_ratio",
+    "signature_support_ratio",
+    "missing_ratio",
+    "mean_cluster_distance",
+    "template_distance",
+    "alignment_similarity",
+    "alignment_margin",
+    "selected_distance_to_medoid",
+    "selected_mean_peer_distance",
+    "page_score_margin_scaled",
+    "candidate_count_scaled",
+    "exact_support_count_scaled",
+    "distinct_signature_ratio",
+    "top_signature_margin",
+    "unanimous",
+    "strict_majority",
+    "selected_is_template",
+    "selected_is_exact_signature",
+    "selected_in_initial_cluster",
+    "page_valid",
+    "selected_vs_template_page_probability",
+    "selected_vs_template_ensemble_probability",
+    "selected_vs_template_measure_probability",
+    "selected_vs_template_visual_probability",
+    "selected_vs_template_event_probability",
+    "selected_vs_template_context_probability",
+    "selected_vs_template_alignment_similarity",
+    "template_page_valid",
+    "template_in_initial_cluster",
+    "template_is_exact_signature"
+  ],
+  "groups": 4000,
+  "legacy_feature_ablation": {
+    "feature_count": 36,
+    "release_threshold": 0.97,
+    "test": {
+      "accuracy": 0.80875,
+      "brier_score": 0.13175417753386642,
+      "log_loss": 0.40972535379834135,
+      "roc_auc": 0.894304407681213
+    },
+    "test_selective": {
+      "accepted": 108,
+      "accepted_mean_semantic_gain": 0.1436766995465169,
+      "accepted_total_semantic_gain": 15.517083551023827,
+      "coverage": 0.0675,
+      "false_accepts": 0,
+      "precision": 1.0,
+      "threshold": 0.97,
+      "true_accepts": 108
+    }
+  },
+  "limitations": [
+    "evidence distributions are programmatic and require confirmation on a frozen real-scan corpus",
+    "the model can only veto fuzzy replacement; deterministic guards and exact-majority handling are unchanged"
+  ],
+  "model_version": "scorescan-selection-risk-gbdt-2",
+  "positive_rate": 0.496375,
+  "samples": 16000,
+  "scenario_counts": {
+    "ambiguous": 2286,
+    "clear_gain": 4021,
+    "conflicting_evidence": 1651,
+    "false_consensus": 3653,
+    "invalid_selected": 1220,
+    "subtle_gain": 3169
+  },
+  "scenario_test_selective": {
+    "ambiguous": {
+      "accepted": 0,
+      "accepted_mean_semantic_gain": 0.0,
+      "accepted_total_semantic_gain": 0.0,
+      "coverage": 0.0,
+      "false_accepts": 0,
+      "precision": 1.0,
+      "threshold": 0.97,
+      "true_accepts": 0
+    },
+    "clear_gain": {
+      "accepted": 133,
+      "accepted_mean_semantic_gain": 0.14978505101294234,
+      "accepted_total_semantic_gain": 19.921411784721332,
+      "coverage": 0.3350125944584383,
+      "false_accepts": 0,
+      "precision": 1.0,
+      "threshold": 0.97,
+      "true_accepts": 133
+    },
+    "conflicting_evidence": {
+      "accepted": 7,
+      "accepted_mean_semantic_gain": 0.08018176707730616,
+      "accepted_total_semantic_gain": 0.5612723695411431,
+      "coverage": 0.04142011834319527,
+      "false_accepts": 0,
+      "precision": 1.0,
+      "threshold": 0.97,
+      "true_accepts": 7
+    },
+    "false_consensus": {
+      "accepted": 0,
+      "accepted_mean_semantic_gain": 0.0,
+      "accepted_total_semantic_gain": 0.0,
+      "coverage": 0.0,
+      "false_accepts": 0,
+      "precision": 1.0,
+      "threshold": 0.97,
+      "true_accepts": 0
+    },
+    "invalid_selected": {
+      "accepted": 0,
+      "accepted_mean_semantic_gain": 0.0,
+      "accepted_total_semantic_gain": 0.0,
+      "coverage": 0.0,
+      "false_accepts": 0,
+      "precision": 1.0,
+      "threshold": 0.97,
+      "true_accepts": 0
+    },
+    "subtle_gain": {
+      "accepted": 7,
+      "accepted_mean_semantic_gain": 0.04365054773259363,
+      "accepted_total_semantic_gain": 0.3055538341281554,
+      "coverage": 0.022508038585209004,
+      "false_accepts": 0,
+      "precision": 1.0,
+      "threshold": 0.97,
+      "true_accepts": 7
+    }
+  },
+  "scope": "grouped synthetic fuzzy-consensus replacement-benefit gating; not end-to-end OMR accuracy",
+  "seed": 20260901,
+  "splits": {
+    "frozen_test_samples": 1600,
+    "probability_calibration_samples": 1600,
+    "split_unit": "synthetic score-family identity; related evidence conditions never cross splits",
+    "threshold_selection_samples": 1600,
+    "train_samples": 11200
+  },
+  "test": {
+    "accuracy": 0.813125,
+    "brier_score": 0.12854381901908385,
+    "log_loss": 0.3998809301303205,
+    "roc_auc": 0.8997751390340823
+  },
+  "test_selective": {
+    "accepted": 147,
+    "accepted_mean_semantic_gain": 0.14141658495503834,
+    "accepted_total_semantic_gain": 20.788237988390634,
+    "coverage": 0.091875,
+    "false_accepts": 0,
+    "precision": 1.0,
+    "threshold": 0.97,
+    "true_accepts": 147
+  },
+  "threshold_selection": {
+    "empirical_chosen_threshold": 0.9653735602055055,
+    "minimum_coverage": 0.03,
+    "minimum_probability_floor": 0.97,
+    "release_threshold": 0.97,
+    "target_precision": 1.0,
+    "threshold_split_at_empirical_threshold": {
+      "accepted": 137,
+      "coverage": 0.085625,
+      "false_accepts": 0,
+      "precision": 1.0,
+      "threshold": 0.9653735602055055,
+      "true_accepts": 137
+    },
+    "threshold_split_at_release_threshold": {
+      "accepted": 123,
+      "accepted_mean_semantic_gain": 0.14467011667846413,
+      "accepted_total_semantic_gain": 17.794424351451088,
+      "coverage": 0.076875,
+      "false_accepts": 0,
+      "precision": 1.0,
+      "threshold": 0.97,
+      "true_accepts": 123
+    }
+  },
+  "variants_per_group": 4
+}

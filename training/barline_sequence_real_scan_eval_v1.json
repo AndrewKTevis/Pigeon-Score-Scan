@@ -1,0 +1,22 @@
+{
+  "baseline_absolute_error": 1,
+  "baseline_estimate": 47,
+  "ground_truth_measures": 46,
+  "new_absolute_error": 0,
+  "removed_false_split_regression": true,
+  "scope": "one supplied printed scan page; layout boundary regression only, not end-to-end OMR accuracy",
+  "scorescan_0_15_estimate": 46,
+  "source_file": "6bb348fd-e3ea-4d2c-9dd2-0e39312d6f20.png",
+  "source_sha256": "376399ce84a27f6595278f00cc8808af8cbd6284631ea0fadf88fa3b4fc717af",
+  "system_count": 8,
+  "system_measure_counts": [
+    6,
+    6,
+    6,
+    5,
+    6,
+    6,
+    5,
+    6
+  ]
+}

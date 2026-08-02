@@ -1,0 +1,11 @@
+{
+  "format": 1,
+  "name": "Polish Scores frozen-boundary aggregate fixture",
+  "role": "public_test_fixture_not_training_or_evaluation",
+  "accepted_candidate_count": 343,
+  "accepted_work_count": 343,
+  "accepted_source_group_count": 155,
+  "training_authorized": false,
+  "evaluation_authorized": false,
+  "release_authorized": false
+}

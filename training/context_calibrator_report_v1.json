@@ -1,0 +1,15 @@
+{
+  "evaluated_decision_groups": 484,
+  "groups": 2200,
+  "heuristic_group_top1": 0.45661157024793386,
+  "model_group_top1": 0.9132231404958677,
+  "model_version": "scorescan-context-calibrator-1",
+  "positive_rate": 0.30435064935064937,
+  "samples": 15400,
+  "seed": 20260716,
+  "source_score_count": 2,
+  "test_accuracy": 0.7927981109799291,
+  "test_auc": 0.8929299068708805,
+  "test_samples": 3388,
+  "train_samples": 12012
+}

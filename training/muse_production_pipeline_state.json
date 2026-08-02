@@ -1,0 +1,17 @@
+{
+    "format":  1,
+    "phase":  "queues_started",
+    "updated_at":  "2026-07-28T19:09:08.9287561+08:00",
+    "orchestrator_pid":  44396,
+    "processes":  {
+                      "scan_semantic_pipeline":  45560,
+                      "scan_text_preparation":  21456,
+                      "holdout_region_preparation":  41900,
+                      "holdout_text_preparation":  43496,
+                      "holdout_detection_labels":  32716,
+                      "semantic_holdout_evaluation":  26108,
+                      "semantic_release_candidate":  33716,
+                      "ocr_recognition_pipeline":  28380,
+                      "ocr_detection_pipeline":  37576
+                  }
+}

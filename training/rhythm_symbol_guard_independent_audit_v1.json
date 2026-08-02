@@ -1,0 +1,170 @@
+{
+  "groups": 1200,
+  "model_version": "scorescan-rhythm-symbol-forest-1",
+  "policy": {
+    "accepted": 1217,
+    "coverage": 0.25354166666666667,
+    "false_accepts": 0,
+    "maximum_false_direction_confidence": 0.9853119203549533,
+    "positive_recall": 0.5070833333333333,
+    "precision": 1.0,
+    "threshold": 0.9875,
+    "true_accepts": 1217
+  },
+  "publication_gates": {
+    "minimum_positive_recall": 0.45,
+    "zero_error_accepts": true
+  },
+  "sample": {
+    "accuracy": 0.9683333333333334,
+    "brier_score": 0.02217326848063588,
+    "log_loss": 0.08136396802192773,
+    "roc_auc": 0.9965696180555557
+  },
+  "samples": 4800,
+  "scenarios": {
+    "beam": {
+      "accepted": 152,
+      "coverage": 0.2695035460992908,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.9520966215444485,
+      "positive_recall": 0.5390070921985816,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 152
+    },
+    "beam+dot": {
+      "accepted": 540,
+      "coverage": 0.2755102040816326,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.9853119203549533,
+      "positive_recall": 0.5510204081632653,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 540
+    },
+    "beam+dot+rest": {
+      "accepted": 98,
+      "coverage": 0.15806451612903225,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.8217052462063433,
+      "positive_recall": 0.3161290322580645,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 98
+    },
+    "beam+open": {
+      "accepted": 38,
+      "coverage": 0.23170731707317074,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.8060010967385938,
+      "positive_recall": 0.4634146341463415,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 38
+    },
+    "beam+open+dot": {
+      "accepted": 154,
+      "coverage": 0.28308823529411764,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.7101680383641644,
+      "positive_recall": 0.5661764705882353,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 154
+    },
+    "beam+open+dot+rest": {
+      "accepted": 25,
+      "coverage": 0.2604166666666667,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.6156870315515531,
+      "positive_recall": 0.5208333333333334,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 25
+    },
+    "beam+open+rest": {
+      "accepted": 2,
+      "coverage": 0.041666666666666664,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.9581015146096853,
+      "positive_recall": 0.08333333333333333,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 2
+    },
+    "beam+rest": {
+      "accepted": 20,
+      "coverage": 0.10416666666666667,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.9318513626215095,
+      "positive_recall": 0.20833333333333334,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 20
+    },
+    "dot": {
+      "accepted": 48,
+      "coverage": 0.26666666666666666,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.841067657508201,
+      "positive_recall": 0.5333333333333333,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 48
+    },
+    "dot+rest": {
+      "accepted": 13,
+      "coverage": 0.19117647058823528,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.03736414001698863,
+      "positive_recall": 0.38235294117647056,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 13
+    },
+    "open": {
+      "accepted": 44,
+      "coverage": 0.39285714285714285,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.4917310225306839,
+      "positive_recall": 0.7857142857142857,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 44
+    },
+    "open+dot": {
+      "accepted": 63,
+      "coverage": 0.36627906976744184,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.8175688675742614,
+      "positive_recall": 0.7325581395348837,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 63
+    },
+    "open+dot+rest": {
+      "accepted": 9,
+      "coverage": 0.225,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.1530068110913592,
+      "positive_recall": 0.45,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 9
+    },
+    "open+rest": {
+      "accepted": 11,
+      "coverage": 0.275,
+      "false_accepts": 0,
+      "maximum_false_direction_confidence": 0.4402600198096192,
+      "positive_recall": 0.55,
+      "precision": 1.0,
+      "threshold": 0.9875,
+      "true_accepts": 11
+    }
+  },
+  "scope": "independent rendered rhythm-transaction audit; not real-scan or end-to-end OMR accuracy",
+  "seed": 20261017,
+  "threshold": 0.9875
+}

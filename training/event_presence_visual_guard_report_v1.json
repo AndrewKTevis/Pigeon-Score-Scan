@@ -1,0 +1,455 @@
+{
+  "auto_patch_thresholds": {
+    "note": 0.976999903636,
+    "rest": 0.976871562567
+  },
+  "context_only_ablation": {
+    "accuracy": 0.5,
+    "brier_score": 0.250218723427,
+    "log_loss": 0.693585372504,
+    "roc_auc": 0.5
+  },
+  "dataset": {
+    "external_groups": 5000,
+    "external_samples": 20000,
+    "independent_groups": 3000,
+    "independent_samples": 12000,
+    "safety_groups": 4000,
+    "safety_samples": 16000,
+    "training_groups": 1600,
+    "training_samples": 6400
+  },
+  "deployment_max_probability_delta": 0.0,
+  "deployment_probability_deltas": {
+    "external_tail": 0.0,
+    "independent_test": 0.0,
+    "safety_calibration": 0.0,
+    "training_all": 0.0
+  },
+  "feature_count": 640,
+  "limitations": [
+    "Programmatic rendered event-presence transactions are not a substitute for an independently reviewed real-scan benchmark.",
+    "The runtime gate confirms only one already-proposed event insertion and cannot choose pitch, duration or event kind.",
+    "The source-image comparison models both a coherent suffix shift by the inserted duration and an existing explicit gap; partially shifted suffixes fail closed.",
+    "Event deletion was rejected for automatic deployment because partially visible source events produced unsafe absence tails.",
+    "Multiple edits, chords, grace notes, unpitched events and unsupported note types remain review-only when source evidence is present."
+  ],
+  "model_version": "scorescan-event-presence-visual-forest-1",
+  "policies": {
+    "external_tail": {
+      "auto_patch_thresholds": {
+        "note": 0.976999903636,
+        "rest": 0.976871562567
+      },
+      "correct_accepts": 2383,
+      "coverage": 0.11915,
+      "delete_transactions_review_only": 10000,
+      "false_accepts": 0,
+      "insert_correct_accepts": 2383,
+      "insert_positive_total": 5000,
+      "insert_recall": 0.4766,
+      "note_insert_correct_accepts": 1284,
+      "note_insert_positive_total": 2471,
+      "note_insert_recall": 0.519627681101,
+      "rest_insert_correct_accepts": 1099,
+      "rest_insert_positive_total": 2529,
+      "rest_insert_recall": 0.434559114274,
+      "selective_precision": 1.0
+    },
+    "frozen_test": {
+      "auto_patch_thresholds": {
+        "note": 0.976999903636,
+        "rest": 0.976871562567
+      },
+      "correct_accepts": 69,
+      "coverage": 0.1078125,
+      "delete_transactions_review_only": 320,
+      "false_accepts": 0,
+      "insert_correct_accepts": 69,
+      "insert_positive_total": 160,
+      "insert_recall": 0.43125,
+      "note_insert_correct_accepts": 36,
+      "note_insert_positive_total": 79,
+      "note_insert_recall": 0.455696202532,
+      "rest_insert_correct_accepts": 33,
+      "rest_insert_positive_total": 81,
+      "rest_insert_recall": 0.407407407407,
+      "selective_precision": 1.0
+    },
+    "independent_test": {
+      "auto_patch_thresholds": {
+        "note": 0.976999903636,
+        "rest": 0.976871562567
+      },
+      "correct_accepts": 1372,
+      "coverage": 0.114333333333,
+      "delete_transactions_review_only": 6000,
+      "false_accepts": 0,
+      "insert_correct_accepts": 1372,
+      "insert_positive_total": 3000,
+      "insert_recall": 0.457333333333,
+      "note_insert_correct_accepts": 794,
+      "note_insert_positive_total": 1510,
+      "note_insert_recall": 0.52582781457,
+      "rest_insert_correct_accepts": 578,
+      "rest_insert_positive_total": 1490,
+      "rest_insert_recall": 0.387919463087,
+      "selective_precision": 1.0
+    },
+    "safety_calibration": {
+      "auto_patch_thresholds": {
+        "note": 0.976999903636,
+        "rest": 0.976871562567
+      },
+      "correct_accepts": 1893,
+      "coverage": 0.1183125,
+      "delete_transactions_review_only": 8000,
+      "false_accepts": 0,
+      "insert_correct_accepts": 1893,
+      "insert_positive_total": 4000,
+      "insert_recall": 0.47325,
+      "note_insert_correct_accepts": 1043,
+      "note_insert_positive_total": 1985,
+      "note_insert_recall": 0.525440806045,
+      "rest_insert_correct_accepts": 850,
+      "rest_insert_positive_total": 2015,
+      "rest_insert_recall": 0.421836228288,
+      "selective_precision": 1.0
+    }
+  },
+  "rejected_lower_thresholds": {
+    "0.85": {
+      "auto_patch_thresholds": {
+        "note": 0.85,
+        "rest": 0.85
+      },
+      "correct_accepts": 4443,
+      "coverage": 0.2236,
+      "delete_transactions_review_only": 10000,
+      "false_accepts": 29,
+      "insert_correct_accepts": 4443,
+      "insert_positive_total": 5000,
+      "insert_recall": 0.8886,
+      "note_insert_correct_accepts": 2202,
+      "note_insert_positive_total": 2471,
+      "note_insert_recall": 0.89113719142,
+      "rest_insert_correct_accepts": 2241,
+      "rest_insert_positive_total": 2529,
+      "rest_insert_recall": 0.886120996441,
+      "selective_precision": 0.993515205725
+    },
+    "0.88": {
+      "auto_patch_thresholds": {
+        "note": 0.88,
+        "rest": 0.88
+      },
+      "correct_accepts": 4354,
+      "coverage": 0.21875,
+      "delete_transactions_review_only": 10000,
+      "false_accepts": 21,
+      "insert_correct_accepts": 4354,
+      "insert_positive_total": 5000,
+      "insert_recall": 0.8708,
+      "note_insert_correct_accepts": 2168,
+      "note_insert_positive_total": 2471,
+      "note_insert_recall": 0.877377579927,
+      "rest_insert_correct_accepts": 2186,
+      "rest_insert_positive_total": 2529,
+      "rest_insert_recall": 0.864373270067,
+      "selective_precision": 0.9952
+    },
+    "0.90": {
+      "auto_patch_thresholds": {
+        "note": 0.9,
+        "rest": 0.9
+      },
+      "correct_accepts": 4266,
+      "coverage": 0.2141,
+      "delete_transactions_review_only": 10000,
+      "false_accepts": 16,
+      "insert_correct_accepts": 4266,
+      "insert_positive_total": 5000,
+      "insert_recall": 0.8532,
+      "note_insert_correct_accepts": 2127,
+      "note_insert_positive_total": 2471,
+      "note_insert_recall": 0.860785107244,
+      "rest_insert_correct_accepts": 2139,
+      "rest_insert_positive_total": 2529,
+      "rest_insert_recall": 0.845788849348,
+      "selective_precision": 0.996263428305
+    }
+  },
+  "sample_metrics": {
+    "external_tail": {
+      "accuracy": 0.96735,
+      "brier_score": 0.024237497594,
+      "log_loss": 0.096618459152,
+      "roc_auc": 0.99619403
+    },
+    "frozen_test": {
+      "accuracy": 0.9640625,
+      "brier_score": 0.02795271818,
+      "log_loss": 0.105780748773,
+      "roc_auc": 0.995078125
+    },
+    "independent_test": {
+      "accuracy": 0.968083333333,
+      "brier_score": 0.024503458074,
+      "log_loss": 0.097401043965,
+      "roc_auc": 0.995937194444
+    },
+    "safety_calibration": {
+      "accuracy": 0.9645625,
+      "brier_score": 0.026029413597,
+      "log_loss": 0.101856198094,
+      "roc_auc": 0.99548234375
+    }
+  },
+  "scenario_false_accepts": {
+    "external_tail": {
+      "absence_residue": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.837815302272,
+        "negative_samples": 441
+      },
+      "beam_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.971904538709,
+        "negative_samples": 397
+      },
+      "clean": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.920380291614,
+        "negative_samples": 406
+      },
+      "close_neighbours": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.918380386744,
+        "negative_samples": 433
+      },
+      "compact_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.924289480279,
+        "negative_samples": 400
+      },
+      "dense_neighbours": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.930720935261,
+        "negative_samples": 434
+      },
+      "low_contrast": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.916328372975,
+        "negative_samples": 452
+      },
+      "notehead_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.944522520629,
+        "negative_samples": 382
+      },
+      "overlapping_neighbour": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.912927169673,
+        "negative_samples": 398
+      },
+      "partial_target": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.949996494257,
+        "negative_samples": 430
+      },
+      "staff_residue": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.957166253092,
+        "negative_samples": 421
+      },
+      "stem_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.944722427787,
+        "negative_samples": 406
+      }
+    },
+    "independent_test": {
+      "absence_residue": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.85908635335,
+        "negative_samples": 261
+      },
+      "beam_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.975532188237,
+        "negative_samples": 263
+      },
+      "clean": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.854885405563,
+        "negative_samples": 235
+      },
+      "close_neighbours": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.947284151114,
+        "negative_samples": 260
+      },
+      "compact_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.958342830694,
+        "negative_samples": 245
+      },
+      "dense_neighbours": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.907111328403,
+        "negative_samples": 269
+      },
+      "low_contrast": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.690964304037,
+        "negative_samples": 260
+      },
+      "notehead_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.949128855298,
+        "negative_samples": 258
+      },
+      "overlapping_neighbour": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.967632655794,
+        "negative_samples": 250
+      },
+      "partial_target": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.941835714586,
+        "negative_samples": 254
+      },
+      "staff_residue": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.834295708945,
+        "negative_samples": 217
+      },
+      "stem_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.826123642631,
+        "negative_samples": 228
+      }
+    },
+    "safety_calibration": {
+      "absence_residue": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.722456614307,
+        "negative_samples": 339
+      },
+      "beam_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.948534268636,
+        "negative_samples": 337
+      },
+      "clean": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.975999903636,
+        "negative_samples": 339
+      },
+      "close_neighbours": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.950056919325,
+        "negative_samples": 348
+      },
+      "compact_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.953451412344,
+        "negative_samples": 350
+      },
+      "dense_neighbours": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.93518372806,
+        "negative_samples": 315
+      },
+      "low_contrast": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.913661344222,
+        "negative_samples": 331
+      },
+      "notehead_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.961668829477,
+        "negative_samples": 349
+      },
+      "overlapping_neighbour": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.975544110298,
+        "negative_samples": 313
+      },
+      "partial_target": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.954198335934,
+        "negative_samples": 354
+      },
+      "staff_residue": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.81104231495,
+        "negative_samples": 319
+      },
+      "stem_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.970190529313,
+        "negative_samples": 306
+      }
+    }
+  },
+  "schema_version": 1,
+  "selected_config": {
+    "max_depth": 11,
+    "min_samples_leaf": 2,
+    "n_estimators": 160
+  },
+  "selection": [
+    {
+      "config": {
+        "max_depth": 9,
+        "min_samples_leaf": 3,
+        "n_estimators": 96
+      },
+      "sample": {
+        "accuracy": 0.959375,
+        "brier_score": 0.031107634825,
+        "log_loss": 0.115825116337,
+        "roc_auc": 0.993505859375
+      }
+    },
+    {
+      "config": {
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "n_estimators": 128
+      },
+      "sample": {
+        "accuracy": 0.9609375,
+        "brier_score": 0.029400693901,
+        "log_loss": 0.109875125172,
+        "roc_auc": 0.994248046875
+      }
+    },
+    {
+      "config": {
+        "max_depth": 11,
+        "min_samples_leaf": 2,
+        "n_estimators": 160
+      },
+      "sample": {
+        "accuracy": 0.9578125,
+        "brier_score": 0.028832678806,
+        "log_loss": 0.10856747993,
+        "roc_auc": 0.99447265625
+      }
+    }
+  ],
+  "threshold_margin": 0.001,
+  "training_seed": 20261205,
+  "transaction_contract": {
+    "accepted_suffix_forms": [
+      "unchanged_explicit_gap",
+      "coherent_shift_by_inserted_duration"
+    ],
+    "operation": "single_event_insertion_only",
+    "source_comparison": "proposed_event_vs_displaced_event_plus_complete_before_after_sequence",
+    "surrounding_score_sampling": "natural_4_to_1_note_rest",
+    "target_event_kind_sampling": "balanced_note_rest"
+  }
+}

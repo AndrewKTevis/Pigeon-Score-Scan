@@ -1,0 +1,38 @@
+[project]
+name = "scorescan"
+version = "0.37.0.dev0"
+description = "Local Windows desktop converter from printed score scans to MXL and MusicXML"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = "AGPL-3.0-or-later"
+authors = [{name = "Pigeon Score Scan contributors"}]
+dependencies = [
+  "Flask==3.1.3",
+  "homr==0.7.0",
+  "lxml==6.1.1",
+  "numpy==2.5.1",
+  "onnxruntime==1.27.0",
+  "opencv-python-headless==4.13.0.92",
+  "Pillow==12.3.0",
+  "PyMuPDF==1.28.0",
+  "pystray==0.19.5",
+  "pywebview==6.2.1",
+  "verovio==6.2.1",
+]
+
+[dependency-groups]
+dev = [
+  "pdfplumber==0.11.9",
+  "pytest==9.0.3",
+  "scikit-learn==1.8.0",
+]
+
+[tool.uv]
+package = false
+exclude-dependencies = [
+  "opencv-python",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

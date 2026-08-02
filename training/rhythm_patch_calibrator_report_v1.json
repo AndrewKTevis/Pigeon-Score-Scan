@@ -1,0 +1,241 @@
+{
+  "deployment_parity": {
+    "max_absolute_probability_delta": 1.3877787807814457e-17
+  },
+  "feature_names": [
+    "candidate_count_scaled",
+    "eligible_family_count_scaled",
+    "voting_family_count_scaled",
+    "changed_event_count_scaled",
+    "changed_event_ratio",
+    "minimum_winner_family_support_ratio",
+    "mean_winner_family_support_ratio",
+    "minimum_winner_margin_ratio",
+    "mean_winner_margin_ratio",
+    "maximum_template_family_support_ratio",
+    "family_abstention_ratio",
+    "minimum_pitch_coherence_ratio",
+    "mean_pitch_coherence_ratio",
+    "template_duration_error_scaled",
+    "patched_duration_error_scaled",
+    "duration_error_improvement_scaled",
+    "template_type_mismatch_ratio",
+    "patched_type_mismatch_ratio",
+    "mean_support_page_probability",
+    "mean_support_measure_probability",
+    "mean_support_visual_probability",
+    "mean_support_event_probability",
+    "mean_support_context_probability",
+    "mean_support_ensemble_probability",
+    "minimum_support_ensemble_probability",
+    "mean_support_page_score_margin_scaled",
+    "mean_support_vs_template_ensemble_probability"
+  ],
+  "frozen_test": {
+    "accept_all_deterministic_proposals": {
+      "accepted": 600,
+      "coverage": 1.0,
+      "false_accepts": 294,
+      "positive_recall": 1.0,
+      "precision": 0.51,
+      "threshold": 0.5,
+      "true_accepts": 306
+    },
+    "policy": {
+      "accepted": 300,
+      "coverage": 0.5,
+      "false_accepts": 0,
+      "positive_recall": 0.9803921568627451,
+      "precision": 1.0,
+      "threshold": 0.9994848795881937,
+      "true_accepts": 300
+    },
+    "sample": {
+      "accuracy": 1.0,
+      "brier_score": 8.504523448575809e-06,
+      "log_loss": 0.0004640090994161709,
+      "roc_auc": 1.0
+    },
+    "scenarios": {
+      "clear-meter-repair": {
+        "accepted": 104,
+        "coverage": 0.9719626168224299,
+        "false_accepts": 0,
+        "positive_recall": 0.9719626168224299,
+        "precision": 1.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 104
+      },
+      "complementary-errors": {
+        "accepted": 100,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 100
+      },
+      "correlated-family-error": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 0
+      },
+      "pickup-meter-overfit": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 0
+      },
+      "pitch-identity-ambiguity": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 0
+      },
+      "quality-conflict": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 0
+      },
+      "subtle-rhythm-repair": {
+        "accepted": 35,
+        "coverage": 1.0,
+        "false_accepts": 0,
+        "positive_recall": 1.0,
+        "precision": 1.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 35
+      },
+      "template-better": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 0
+      },
+      "type-duration-repair": {
+        "accepted": 61,
+        "coverage": 0.953125,
+        "false_accepts": 0,
+        "positive_recall": 0.953125,
+        "precision": 1.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 61
+      },
+      "visual-conflict": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.9994848795881937,
+        "true_accepts": 0
+      }
+    }
+  },
+  "groups": 6000,
+  "independent_confirmation": {
+    "accept_all_deterministic_proposals": {
+      "accepted": 2000,
+      "coverage": 1.0,
+      "false_accepts": 902,
+      "positive_recall": 1.0,
+      "precision": 0.549,
+      "threshold": 0.5,
+      "true_accepts": 1098
+    },
+    "groups": 2000,
+    "policy": {
+      "accepted": 1081,
+      "coverage": 0.5405,
+      "false_accepts": 0,
+      "positive_recall": 0.9845173041894353,
+      "precision": 1.0,
+      "threshold": 0.9994848795881937,
+      "true_accepts": 1081
+    },
+    "seed": 20260721
+  },
+  "model_bytes": 428851,
+  "model_selection": [
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 8,
+        "n_estimators": 40
+      },
+      "sample": {
+        "accuracy": 1.0,
+        "brier_score": 2.4973612008108963e-06,
+        "log_loss": 0.0003292261279683135,
+        "roc_auc": 1.0
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 7,
+        "n_estimators": 56
+      },
+      "sample": {
+        "accuracy": 1.0,
+        "brier_score": 1.1918738322876798e-06,
+        "log_loss": 0.0002954740700421418,
+        "roc_auc": 1.0
+      }
+    },
+    {
+      "config": {
+        "max_depth": 9,
+        "min_samples_leaf": 6,
+        "n_estimators": 72
+      },
+      "sample": {
+        "accuracy": 1.0,
+        "brier_score": 2.3346478679481373e-07,
+        "log_loss": 0.00027215967336296555,
+        "roc_auc": 1.0
+      }
+    }
+  ],
+  "model_version": "scorescan-rhythm-patch-forest-1",
+  "partitions": {
+    "calibration": 600,
+    "frozen_test": 600,
+    "model_selection_audit": 600,
+    "threshold_selection": 300,
+    "train": 3900
+  },
+  "samples": 6000,
+  "seed": 20260719,
+  "selected_config": {
+    "max_depth": 9,
+    "min_samples_leaf": 6,
+    "n_estimators": 72
+  },
+  "selected_threshold": {
+    "accepted": 167,
+    "coverage": 0.5566666666666666,
+    "false_accepts": 0,
+    "positive_recall": 1.0,
+    "precision": 1.0,
+    "threshold": 0.9994848795881937,
+    "true_accepts": 167
+  }
+}

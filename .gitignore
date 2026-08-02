@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments and package output
+.venv/
+venv/
+runtime/python/
+runtime/venv-*/
+runtime/uv-cache/
+dist/
+build/
+*.egg-info/
+
+# Local application state
+workspace/
+training_data/
+development_reports/
+test_materials/
+tmp/
+runtime/*.log
+runtime/*.lock
+runtime/ready.txt
+runtime/desktop.active
+runtime/start.failed
+runtime/uv.exe
+runtime/uv.sha256
+runtime/bootstrap_manifest.json
+
+# Generated release evidence and binaries
+RELEASE_QA.json
+RELEASE_READINESS.json
+launcher.exe
+pigeon-score-scan.exe
+ScoreScan.exe
+*.zip
+*.7z
+
+# Research-only resource outside the product boundary
+app/src/scorescan/resources/lyric_patch_calibrator.json
+
+# Secrets and local tooling
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

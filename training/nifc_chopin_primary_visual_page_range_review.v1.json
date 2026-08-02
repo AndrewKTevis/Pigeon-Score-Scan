@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "role": "nifc_chopin_primary_visual_page_range_review_not_training_or_evaluation",
+  "preparation_report_path": "training_data/external/diagnostic/nifc_chopin_layout_audit_pages_v1/page_preparation_report.json",
+  "preparation_report_sha256": "94057e3d58d19a3683ffe95efe73911f36e4e288598597c56228ba703ae5a7fe",
+  "automatic_alignment_report_path": "training_data/external/diagnostic/nifc_chopin_subwork_alignment_v1/subwork_alignment_report.json",
+  "automatic_alignment_report_sha256": "585a7dfb8d91fe51aaa211e840ea9a5e17ba408d8db7db4b5215fd6ddca072c0",
+  "reviewer": {
+    "id": "codex-primary-visual-review-2026-07-29",
+    "kind": "primary_agent_visual_inspection_not_independent_human_annotation",
+    "review_scope": "work_heading_start_boundary_end_boundary_and_contiguous_page_count",
+    "independent_of_candidate_discovery": false
+  },
+  "independent_second_review_complete": false,
+  "semantic_symbol_completeness_reviewed": false,
+  "training_authorized": false,
+  "evaluation_authorized": false,
+  "release_authorized": false,
+  "mappings": [
+    {
+      "parent_pid": "nifc:149891",
+      "reference_path": "006-1-KI-003.krn",
+      "reviewed_music_page_indices": [3, 4, 5, 6, 7, 8, 9, 10],
+      "reviewed_non_music_page_indices": [1, 2],
+      "selected_scan_page_indices": [7, 8, 9],
+      "renderer_warning_count": 0,
+      "visual_evidence": [
+        "page_7_heading_identifies_no_3",
+        "page_9_contains_no_3_ending",
+        "page_10_heading_identifies_no_4",
+        "selected_page_count_equals_encoded_reference_page_count"
+      ]
+    },
+    {
+      "parent_pid": "nifc:148491",
+      "reference_path": "007-1-KI-002.krn",
+      "reviewed_music_page_indices": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "reviewed_non_music_page_indices": [1, 2, 12],
+      "selected_scan_page_indices": [5, 6],
+      "renderer_warning_count": 0,
+      "visual_evidence": [
+        "page_5_heading_identifies_no_2_vivo_ma_non_troppo",
+        "page_6_contains_fine_for_no_2",
+        "page_7_begins_following_work",
+        "selected_page_count_equals_encoded_reference_page_count"
+      ]
+    },
+    {
+      "parent_pid": "nifc:153147",
+      "reference_path": "007-1-KI-002.krn",
+      "reviewed_music_page_indices": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "reviewed_non_music_page_indices": [1],
+      "selected_scan_page_indices": [4, 5],
+      "renderer_warning_count": 0,
+      "visual_evidence": [
+        "page_4_heading_identifies_no_2_vivo_ma_non_troppo",
+        "page_5_contains_no_2_ending",
+        "page_6_begins_following_work",
+        "selected_page_count_equals_encoded_reference_page_count"
+      ]
+    },
+    {
+      "parent_pid": "nifc:155255",
+      "reference_path": "017-1-BH-001.krn",
+      "reviewed_music_page_indices": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "reviewed_non_music_page_indices": [1, 2, 3, 4, 15, 16],
+      "selected_scan_page_indices": [5, 6],
+      "renderer_warning_count": 0,
+      "visual_evidence": [
+        "page_5_heading_identifies_mazurka_no_1",
+        "page_6_contains_no_1_ending",
+        "page_7_heading_identifies_mazurka_no_2",
+        "selected_page_count_equals_encoded_reference_page_count"
+      ]
+    },
+    {
+      "parent_pid": "nifc:155264",
+      "reference_path": "017-1-BH-001.krn",
+      "reviewed_music_page_indices": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "reviewed_non_music_page_indices": [1, 2],
+      "selected_scan_page_indices": [3, 4],
+      "renderer_warning_count": 0,
+      "visual_evidence": [
+        "page_3_heading_identifies_mazurka_no_1",
+        "page_4_contains_no_1_ending",
+        "page_5_heading_identifies_mazurka_no_2",
+        "selected_page_count_equals_encoded_reference_page_count"
+      ]
+    },
+    {
+      "parent_pid": "nifc:149928",
+      "reference_path": "033-1-BH-001.krn",
+      "reviewed_music_page_indices": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+      "reviewed_non_music_page_indices": [1, 2, 3, 18],
+      "selected_scan_page_indices": [4, 5],
+      "renderer_warning_count": 0,
+      "visual_evidence": [
+        "page_4_heading_identifies_mazurka_no_1",
+        "page_5_contains_no_1_ending",
+        "page_6_heading_identifies_mazurka_no_2",
+        "selected_page_count_equals_encoded_reference_page_count"
+      ]
+    },
+    {
+      "parent_pid": "nifc:150861",
+      "reference_path": "050-1a-Sm-001.krn",
+      "reviewed_music_page_indices": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "reviewed_non_music_page_indices": [],
+      "selected_scan_page_indices": [1, 2, 3, 4],
+      "renderer_warning_count": 3,
+      "visual_evidence": [
+        "page_1_heading_identifies_no_1",
+        "page_4_contains_no_1_ending",
+        "page_5_heading_identifies_no_2",
+        "selected_page_count_equals_encoded_reference_page_count"
+      ]
+    },
+    {
+      "parent_pid": "nifc:150415",
+      "reference_path": "063-1-BH-001.krn",
+      "reviewed_music_page_indices": [2, 3, 4, 5, 6, 7, 8, 9],
+      "reviewed_non_music_page_indices": [1, 10],
+      "selected_scan_page_indices": [2, 3, 4],
+      "renderer_warning_count": 0,
+      "visual_evidence": [
+        "page_1_is_non_music",
+        "page_2_heading_identifies_no_1_vivace",
+        "page_4_contains_fine_for_no_1",
+        "page_5_heading_identifies_no_2",
+        "selected_page_count_equals_encoded_reference_page_count"
+      ]
+    }
+  ]
+}

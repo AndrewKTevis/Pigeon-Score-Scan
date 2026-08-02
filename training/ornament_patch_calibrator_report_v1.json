@@ -1,0 +1,288 @@
+{
+  "dataset_fingerprint": "a9080b1b96b8f2db8c7da93a3e54fd331aa40bd9240e6bff86630c984fff1493",
+  "deployment_parity": {
+    "max_absolute_probability_delta": 3.3306690738754696e-16
+  },
+  "feature_names": [
+    "candidate_count_scaled",
+    "eligible_family_count_scaled",
+    "voting_family_count_scaled",
+    "changed_event_count_scaled",
+    "changed_event_ratio",
+    "added_mark_ratio",
+    "removed_mark_ratio",
+    "minimum_winner_family_support_ratio",
+    "mean_winner_family_support_ratio",
+    "minimum_winner_margin_ratio",
+    "mean_winner_margin_ratio",
+    "maximum_template_family_support_ratio",
+    "family_abstention_ratio",
+    "winner_mark_count_scaled",
+    "maximum_marks_per_event_scaled",
+    "mean_support_page_probability",
+    "mean_support_measure_probability",
+    "mean_support_visual_probability",
+    "mean_support_event_probability",
+    "mean_support_context_probability",
+    "mean_support_ensemble_probability",
+    "minimum_support_ensemble_probability",
+    "mean_support_page_score_margin_scaled",
+    "mean_support_vs_template_measure_probability",
+    "mean_support_vs_template_visual_probability",
+    "mean_support_vs_template_event_probability",
+    "mean_support_vs_template_context_probability",
+    "mean_support_vs_template_ensemble_probability"
+  ],
+  "frozen_test": {
+    "accept_all_deterministic_proposals": {
+      "accepted": 2700,
+      "coverage": 1.0,
+      "false_accepts": 1302,
+      "positive_recall": 1.0,
+      "precision": 0.5177777777777778,
+      "threshold": 0.5,
+      "true_accepts": 1398
+    },
+    "policy": {
+      "accepted": 1062,
+      "coverage": 0.3933333333333333,
+      "false_accepts": 0,
+      "positive_recall": 0.759656652360515,
+      "precision": 1.0,
+      "threshold": 0.995,
+      "true_accepts": 1062
+    },
+    "sample": {
+      "accuracy": 0.9988888888888889,
+      "brier_score": 0.0010161120406966104,
+      "log_loss": 0.011478047304831656,
+      "roc_auc": 0.9999961542603104
+    },
+    "scenarios": {
+      "common-mode-ornament-confusion": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "context-conflict": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "context-supported-mordent": {
+        "accepted": 129,
+        "coverage": 0.5375,
+        "false_accepts": 0,
+        "positive_recall": 0.5375,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 129
+      },
+      "cross-event-support-split": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "remove-spurious-turn": {
+        "accepted": 284,
+        "coverage": 0.9372937293729373,
+        "false_accepts": 0,
+        "positive_recall": 0.9372937293729373,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 284
+      },
+      "strong-trill-majority": {
+        "accepted": 378,
+        "coverage": 0.8936170212765957,
+        "false_accepts": 0,
+        "positive_recall": 0.8936170212765957,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 378
+      },
+      "template-quality-superior": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "two-event-ornament-repair": {
+        "accepted": 152,
+        "coverage": 0.7037037037037037,
+        "false_accepts": 0,
+        "positive_recall": 0.7037037037037037,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 152
+      },
+      "visual-conflict": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      },
+      "visual-supported-trill": {
+        "accepted": 119,
+        "coverage": 0.5509259259259259,
+        "false_accepts": 0,
+        "positive_recall": 0.5509259259259259,
+        "precision": 1.0,
+        "threshold": 0.995,
+        "true_accepts": 119
+      },
+      "weak-family-margin": {
+        "accepted": 0,
+        "coverage": 0.0,
+        "false_accepts": 0,
+        "positive_recall": 0.0,
+        "precision": 0.0,
+        "threshold": 0.995,
+        "true_accepts": 0
+      }
+    }
+  },
+  "group_leakage_audit": {
+    "groups_per_partition": {
+      "calibration": 900,
+      "frozen_test": 900,
+      "model_selection_audit": 900,
+      "threshold_selection": 450,
+      "train": 5850
+    },
+    "leakage_detected": false,
+    "pairwise_group_overlap": {
+      "calibration__frozen_test": 0,
+      "calibration__model_selection_audit": 0,
+      "calibration__threshold_selection": 0,
+      "model_selection_audit__frozen_test": 0,
+      "model_selection_audit__threshold_selection": 0,
+      "threshold_selection__frozen_test": 0,
+      "train__calibration": 0,
+      "train__frozen_test": 0,
+      "train__model_selection_audit": 0,
+      "train__threshold_selection": 0
+    }
+  },
+  "groups": 9000,
+  "independent_confirmation": {
+    "accept_all_deterministic_proposals": {
+      "accepted": 9000,
+      "coverage": 1.0,
+      "false_accepts": 4143,
+      "positive_recall": 1.0,
+      "precision": 0.5396666666666666,
+      "threshold": 0.5,
+      "true_accepts": 4857
+    },
+    "dataset_fingerprint": "bb15e0ddf6f010422ea2be4585b5bf7ab5007ea7e0fcc22aec14c9af46da4a55",
+    "groups": 3000,
+    "policy": {
+      "accepted": 3652,
+      "coverage": 0.4057777777777778,
+      "false_accepts": 0,
+      "positive_recall": 0.7519044677784641,
+      "precision": 1.0,
+      "threshold": 0.995,
+      "true_accepts": 3652
+    },
+    "samples": 9000,
+    "seed": 20260722
+  },
+  "model_bytes": 1466553,
+  "model_selection": [
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 8,
+        "n_estimators": 64
+      },
+      "sample": {
+        "accuracy": 0.9974074074074074,
+        "brier_score": 0.0020775341841075485,
+        "log_loss": 0.014634038086646676,
+        "roc_auc": 0.9999662064090376
+      }
+    },
+    {
+      "config": {
+        "max_depth": 9,
+        "min_samples_leaf": 7,
+        "n_estimators": 80
+      },
+      "sample": {
+        "accuracy": 0.9974074074074074,
+        "brier_score": 0.00182506628890087,
+        "log_loss": 0.013645394043584827,
+        "roc_auc": 0.9999634364425652
+      }
+    },
+    {
+      "config": {
+        "max_depth": 10,
+        "min_samples_leaf": 6,
+        "n_estimators": 96
+      },
+      "sample": {
+        "accuracy": 0.997037037037037,
+        "brier_score": 0.0019335916467955534,
+        "log_loss": 0.013955791147786506,
+        "roc_auc": 0.9999601124827985
+      }
+    }
+  ],
+  "model_sha256": "927910fcd52028b21075edb77ae622bd128afa649033906d25373912d59210bb",
+  "model_version": "scorescan-ornament-patch-forest-1",
+  "partitions": {
+    "calibration": 2700,
+    "frozen_test": 2700,
+    "model_selection_audit": 2700,
+    "threshold_selection": 1350,
+    "train": 17550
+  },
+  "policy_probability_floor": 0.995,
+  "raw_precision_threshold": {
+    "accepted": 750,
+    "coverage": 0.5555555555555556,
+    "false_accepts": 0,
+    "positive_recall": 0.9960159362549801,
+    "precision": 1.0,
+    "threshold": 0.5769720645717078,
+    "true_accepts": 750
+  },
+  "samples": 27000,
+  "samples_per_group": 3,
+  "seed": 20260720,
+  "selected_config": {
+    "max_depth": 8,
+    "min_samples_leaf": 8,
+    "n_estimators": 64
+  },
+  "selected_threshold": {
+    "accepted": 572,
+    "coverage": 0.4237037037037037,
+    "false_accepts": 0,
+    "positive_recall": 0.7596281540504648,
+    "precision": 1.0,
+    "threshold": 0.995,
+    "true_accepts": 572
+  }
+}

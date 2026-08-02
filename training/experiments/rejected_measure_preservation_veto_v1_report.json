@@ -1,0 +1,177 @@
+{
+  "confirmation": {
+    "accepted": 678,
+    "by_kind": {
+      "missing-family-trap": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 222
+      },
+      "one-family-exact-correct": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 306
+      },
+      "semantic-only-beam-conflict": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 487
+      },
+      "semantic-only-notation-conflict": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 389
+      },
+      "three-family-common-error": {
+        "accepted": 3,
+        "correct": 0,
+        "errors": 3,
+        "groups": 182
+      },
+      "three-family-exact-correct": {
+        "accepted": 380,
+        "correct": 380,
+        "errors": 0,
+        "groups": 484
+      },
+      "two-family-common-error": {
+        "accepted": 10,
+        "correct": 0,
+        "errors": 10,
+        "groups": 325
+      },
+      "two-family-exact-correct": {
+        "accepted": 285,
+        "correct": 285,
+        "errors": 0,
+        "groups": 605
+      }
+    },
+    "correct_accepts": 665,
+    "coverage": 0.226,
+    "error_accepts": 13,
+    "groups": 3000,
+    "selective_precision": 0.9808259587020649
+  },
+  "confirmation_deterministic_gate": {
+    "accepted": 1596,
+    "correct_accepts": 1089,
+    "coverage": 0.532,
+    "error_accepts": 507,
+    "groups": 3000,
+    "selective_precision": 0.6823308270676691
+  },
+  "confirmation_groups": 3000,
+  "decision": "reject; the forest retains common-mode false accepts, adds no correct coverage, and duplicates the page verifier",
+  "end_to_end_accuracy_claim": false,
+  "feature_names": [
+    "semantic_family_support_scaled",
+    "preservation_family_support_scaled",
+    "semantic_candidate_support",
+    "preservation_candidate_support",
+    "preservation_to_semantic_ratio",
+    "semantic_cluster_distance",
+    "page_score_delta",
+    "measure_probability_delta",
+    "event_probability_delta",
+    "visual_probability_delta",
+    "context_probability_delta",
+    "unmodelled_conflict_ratio",
+    "missing_ratio",
+    "template_is_selected"
+  ],
+  "format": 1,
+  "frozen": {
+    "accepted": 144,
+    "by_kind": {
+      "missing-family-trap": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 47
+      },
+      "one-family-exact-correct": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 71
+      },
+      "semantic-only-beam-conflict": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 85
+      },
+      "semantic-only-notation-conflict": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 69
+      },
+      "three-family-common-error": {
+        "accepted": 1,
+        "correct": 0,
+        "errors": 1,
+        "groups": 34
+      },
+      "three-family-exact-correct": {
+        "accepted": 75,
+        "correct": 75,
+        "errors": 0,
+        "groups": 93
+      },
+      "two-family-common-error": {
+        "accepted": 4,
+        "correct": 0,
+        "errors": 4,
+        "groups": 72
+      },
+      "two-family-exact-correct": {
+        "accepted": 64,
+        "correct": 64,
+        "errors": 0,
+        "groups": 129
+      }
+    },
+    "correct_accepts": 139,
+    "coverage": 0.24,
+    "error_accepts": 5,
+    "groups": 600,
+    "selective_precision": 0.9652777777777778
+  },
+  "frozen_deterministic_gate": {
+    "accepted": 328,
+    "correct_accepts": 222,
+    "coverage": 0.5466666666666666,
+    "error_accepts": 106,
+    "groups": 600,
+    "selective_precision": 0.676829268292683
+  },
+  "frozen_sample_metrics": {
+    "brier_score": 0.09456172673276006,
+    "log_loss": 0.30489796122562496,
+    "roc_auc": 0.9457815922001979
+  },
+  "independent_correct_coverage_gain": false,
+  "model_version": "scorescan-measure-preservation-veto-experiment-1",
+  "probability_floor": 0.8724944834904316,
+  "programmatic_training": true,
+  "rejection_reasons": [
+    "Programmatic data cannot prove real-scan preservation accuracy.",
+    "A veto-only model cannot create independent preservation support.",
+    "The exact normalized content gate detects unmodelled write-back conflicts deterministically; common-mode errors remain the responsibility of the existing page verifier.",
+    "The forest has lower correct coverage and still accepts common-mode errors on both frozen and confirmation sets."
+  ],
+  "runtime_deployed": false,
+  "selected_configuration": {
+    "max_depth": 6,
+    "min_samples_leaf": 10,
+    "trees": 16
+  },
+  "training_groups": 6000,
+  "zero_error_acceptance": false
+}

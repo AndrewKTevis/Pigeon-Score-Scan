@@ -1,0 +1,14 @@
+{
+  "baseline_group_top1": 0.8778409090909091,
+  "evaluated_decision_groups": 352,
+  "groups": 1600,
+  "model_group_top1": 0.90625,
+  "model_version": "scorescan-event-calibrator-1",
+  "positive_rate": 0.40839285714285717,
+  "samples": 11200,
+  "seed": 20260716,
+  "test_accuracy": 0.7504058441558441,
+  "test_auc": 0.8714890438247012,
+  "test_samples": 2464,
+  "train_samples": 8736
+}

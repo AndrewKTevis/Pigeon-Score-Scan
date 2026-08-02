@@ -1,0 +1,1157 @@
+{
+  "dataset": {
+    "confirmation_groups": 3000,
+    "confirmation_seed": 20270703,
+    "generator": "selection-risk-v5 programmatic grouped evidence",
+    "safety_groups": 4000,
+    "safety_seed": 20270503,
+    "split_unit": "programmatic score-family identity",
+    "training_groups": 6000,
+    "training_seed": 20270501
+  },
+  "frozen_test": {
+    "by_scenario": {
+      "evidence-conflict": {
+        "policy_0_22_control": {
+          "accepted": 5,
+          "coverage": 0.07142857142857142,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.07388774258975439,
+          "precision": 1.0,
+          "total_semantic_gain": 0.36943871294877195,
+          "true_accepts": 5
+        },
+        "policy_0_23": {
+          "accepted": 2,
+          "coverage": 0.02857142857142857,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.05413934848975524,
+          "precision": 1.0,
+          "total_semantic_gain": 0.10827869697951048,
+          "true_accepts": 2
+        }
+      },
+      "exact-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 5,
+          "coverage": 0.0199203187250996,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.15538431974828903,
+          "precision": 1.0,
+          "total_semantic_gain": 0.7769215987414452,
+          "true_accepts": 5
+        },
+        "policy_0_23": {
+          "accepted": 94,
+          "coverage": 0.3745019920318725,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.1453342115792886,
+          "precision": 1.0,
+          "total_semantic_gain": 13.66141588845313,
+          "true_accepts": 94
+        }
+      },
+      "exact-cross-family-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "exact-family-redundant-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "exact-invalid-family-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 2,
+          "coverage": 0.023809523809523808,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.21405061046894894,
+          "precision": 1.0,
+          "total_semantic_gain": 0.4281012209378979,
+          "true_accepts": 2
+        },
+        "policy_0_23": {
+          "accepted": 41,
+          "coverage": 0.4880952380952381,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.15512682591404262,
+          "precision": 1.0,
+          "total_semantic_gain": 6.360199862475747,
+          "true_accepts": 41
+        }
+      },
+      "exact-invalid-family-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "invalid-selected": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "localized-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 72,
+          "coverage": 0.5538461538461539,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.1450479941520827,
+          "precision": 1.0,
+          "total_semantic_gain": 10.443455578949955,
+          "true_accepts": 72
+        },
+        "policy_0_23": {
+          "accepted": 16,
+          "coverage": 0.12307692307692308,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.1644239980004329,
+          "precision": 1.0,
+          "total_semantic_gain": 2.6307839680069263,
+          "true_accepts": 16
+        }
+      },
+      "localized-confident-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "localized-partial-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "semantic-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 85,
+          "coverage": 0.3794642857142857,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.16328710106217406,
+          "precision": 1.0,
+          "total_semantic_gain": 13.879403590284795,
+          "true_accepts": 85
+        },
+        "policy_0_23": {
+          "accepted": 13,
+          "coverage": 0.05803571428571429,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.15891724692482642,
+          "precision": 1.0,
+          "total_semantic_gain": 2.0659242100227435,
+          "true_accepts": 13
+        }
+      },
+      "semantic-false-consensus": {
+        "policy_0_22_control": {
+          "accepted": 1,
+          "coverage": 0.0048543689320388345,
+          "false_accepts": 1,
+          "mean_semantic_gain": -0.057385600304454706,
+          "precision": 0.0,
+          "total_semantic_gain": -0.057385600304454706,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "semantic-subtle-gain": {
+        "policy_0_22_control": {
+          "accepted": 9,
+          "coverage": 0.047872340425531915,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.039903946925898465,
+          "precision": 1.0,
+          "total_semantic_gain": 0.3591355223330862,
+          "true_accepts": 9
+        },
+        "policy_0_23": {
+          "accepted": 4,
+          "coverage": 0.02127659574468085,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.04412246367287111,
+          "precision": 1.0,
+          "total_semantic_gain": 0.17648985469148443,
+          "true_accepts": 4
+        }
+      },
+      "template-better": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      }
+    },
+    "by_selection_kind": {
+      "exact_majority": {
+        "policy_0_22_control": {
+          "accepted": 7,
+          "coverage": 0.009873060648801129,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.17214611709704902,
+          "precision": 1.0,
+          "total_semantic_gain": 1.205022819679343,
+          "true_accepts": 7
+        },
+        "policy_0_23": {
+          "accepted": 135,
+          "coverage": 0.19040902679830748,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14830826482169535,
+          "precision": 1.0,
+          "total_semantic_gain": 20.021615750928873,
+          "true_accepts": 135
+        },
+        "stored_exact_threshold_control": {
+          "accepted": 120,
+          "coverage": 0.1692524682651622,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.15072281491312758,
+          "precision": 1.0,
+          "total_semantic_gain": 18.08673778957531,
+          "true_accepts": 120
+        }
+      },
+      "semantic_consensus": {
+        "policy_0_22_control": {
+          "accepted": 172,
+          "coverage": 0.15765352887259396,
+          "false_accepts": 1,
+          "mean_semantic_gain": 0.1453142314198381,
+          "precision": 0.9941860465116279,
+          "total_semantic_gain": 24.99404780421215,
+          "true_accepts": 171
+        },
+        "policy_0_23": {
+          "accepted": 35,
+          "coverage": 0.032080659945004586,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14232790656287617,
+          "precision": 1.0,
+          "total_semantic_gain": 4.981476729700666,
+          "true_accepts": 35
+        },
+        "stored_exact_threshold_control": {
+          "accepted": 35,
+          "coverage": 0.032080659945004586,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14232790656287617,
+          "precision": 1.0,
+          "total_semantic_gain": 4.981476729700666,
+          "true_accepts": 35
+        }
+      }
+    },
+    "policy_0_22_control": {
+      "accepted": 179,
+      "coverage": 0.09944444444444445,
+      "false_accepts": 1,
+      "mean_semantic_gain": 0.14636352303849998,
+      "precision": 0.994413407821229,
+      "total_semantic_gain": 26.199070623891497,
+      "true_accepts": 178
+    },
+    "policy_0_23": {
+      "accepted": 170,
+      "coverage": 0.09444444444444444,
+      "false_accepts": 0,
+      "mean_semantic_gain": 0.14707701459193848,
+      "precision": 1.0,
+      "total_semantic_gain": 25.00309248062954,
+      "true_accepts": 170
+    },
+    "samples": 1800,
+    "stored_exact_threshold_control": {
+      "accepted": 155,
+      "coverage": 0.08611111111111111,
+      "false_accepts": 0,
+      "mean_semantic_gain": 0.1488271904469418,
+      "precision": 1.0,
+      "total_semantic_gain": 23.068214519275976,
+      "true_accepts": 155
+    },
+    "thresholds": {
+      "stored_exact_majority": 0.9860207439938751,
+      "stored_semantic_consensus": 0.9920854666540732,
+      "verified_exact_majority": 0.9
+    }
+  },
+  "independent_confirmation": {
+    "by_scenario": {
+      "evidence-conflict": {
+        "policy_0_22_control": {
+          "accepted": 15,
+          "coverage": 0.04411764705882353,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.08486907380697653,
+          "precision": 1.0,
+          "total_semantic_gain": 1.2730361071046479,
+          "true_accepts": 15
+        },
+        "policy_0_23": {
+          "accepted": 7,
+          "coverage": 0.020588235294117647,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.08370939349772379,
+          "precision": 1.0,
+          "total_semantic_gain": 0.5859657544840665,
+          "true_accepts": 7
+        }
+      },
+      "exact-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 15,
+          "coverage": 0.011111111111111112,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.201720631810963,
+          "precision": 1.0,
+          "total_semantic_gain": 3.025809477164445,
+          "true_accepts": 15
+        },
+        "policy_0_23": {
+          "accepted": 490,
+          "coverage": 0.362962962962963,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14815006493178118,
+          "precision": 1.0,
+          "total_semantic_gain": 72.59353181657278,
+          "true_accepts": 490
+        }
+      },
+      "exact-cross-family-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "exact-family-redundant-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "exact-invalid-family-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 3,
+          "coverage": 0.0078125,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.18873261980651682,
+          "precision": 1.0,
+          "total_semantic_gain": 0.5661978594195505,
+          "true_accepts": 3
+        },
+        "policy_0_23": {
+          "accepted": 182,
+          "coverage": 0.4739583333333333,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14852328123064973,
+          "precision": 1.0,
+          "total_semantic_gain": 27.03123718397825,
+          "true_accepts": 182
+        }
+      },
+      "exact-invalid-family-trap": {
+        "policy_0_22_control": {
+          "accepted": 2,
+          "coverage": 0.0034965034965034965,
+          "false_accepts": 2,
+          "mean_semantic_gain": -0.12437406211306157,
+          "precision": 0.0,
+          "total_semantic_gain": -0.24874812422612314,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "invalid-selected": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "localized-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 358,
+          "coverage": 0.6226086956521739,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14799895244147887,
+          "precision": 1.0,
+          "total_semantic_gain": 52.983624974049434,
+          "true_accepts": 358
+        },
+        "policy_0_23": {
+          "accepted": 77,
+          "coverage": 0.13391304347826086,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.1536862350788814,
+          "precision": 1.0,
+          "total_semantic_gain": 11.833840101073868,
+          "true_accepts": 77
+        }
+      },
+      "localized-confident-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "localized-partial-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "semantic-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 437,
+          "coverage": 0.36784511784511786,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.15986044526978063,
+          "precision": 1.0,
+          "total_semantic_gain": 69.85901458289413,
+          "true_accepts": 437
+        },
+        "policy_0_23": {
+          "accepted": 92,
+          "coverage": 0.07744107744107744,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.1601704833871703,
+          "precision": 1.0,
+          "total_semantic_gain": 14.735684471619669,
+          "true_accepts": 92
+        }
+      },
+      "semantic-false-consensus": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "semantic-subtle-gain": {
+        "policy_0_22_control": {
+          "accepted": 42,
+          "coverage": 0.05115712545676005,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0410508144674106,
+          "precision": 1.0,
+          "total_semantic_gain": 1.7241342076312454,
+          "true_accepts": 42
+        },
+        "policy_0_23": {
+          "accepted": 10,
+          "coverage": 0.012180267965895249,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.04105799786131169,
+          "precision": 1.0,
+          "total_semantic_gain": 0.41057997861311685,
+          "true_accepts": 10
+        }
+      },
+      "template-better": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      }
+    },
+    "by_selection_kind": {
+      "exact_majority": {
+        "policy_0_22_control": {
+          "accepted": 20,
+          "coverage": 0.005564830272676683,
+          "false_accepts": 2,
+          "mean_semantic_gain": 0.16716296061789362,
+          "precision": 0.9,
+          "total_semantic_gain": 3.3432592123578724,
+          "true_accepts": 18
+        },
+        "policy_0_23": {
+          "accepted": 672,
+          "coverage": 0.18697829716193656,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14825114434605807,
+          "precision": 1.0,
+          "total_semantic_gain": 99.62476900055103,
+          "true_accepts": 672
+        },
+        "stored_exact_threshold_control": {
+          "accepted": 562,
+          "coverage": 0.1563717306622148,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14918379144137595,
+          "precision": 1.0,
+          "total_semantic_gain": 83.84129079005328,
+          "true_accepts": 562
+        }
+      },
+      "semantic_consensus": {
+        "policy_0_22_control": {
+          "accepted": 852,
+          "coverage": 0.15760266370699222,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.1476993073611261,
+          "precision": 1.0,
+          "total_semantic_gain": 125.83980987167945,
+          "true_accepts": 852
+        },
+        "policy_0_23": {
+          "accepted": 186,
+          "coverage": 0.03440621531631521,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14820467906339096,
+          "precision": 1.0,
+          "total_semantic_gain": 27.566070305790717,
+          "true_accepts": 186
+        },
+        "stored_exact_threshold_control": {
+          "accepted": 186,
+          "coverage": 0.03440621531631521,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14820467906339096,
+          "precision": 1.0,
+          "total_semantic_gain": 27.566070305790717,
+          "true_accepts": 186
+        }
+      }
+    },
+    "policy_0_22_control": {
+      "accepted": 872,
+      "coverage": 0.09688888888888889,
+      "false_accepts": 2,
+      "mean_semantic_gain": 0.1481457214266483,
+      "precision": 0.9977064220183486,
+      "total_semantic_gain": 129.18306908403733,
+      "true_accepts": 870
+    },
+    "policy_0_23": {
+      "accepted": 858,
+      "coverage": 0.09533333333333334,
+      "false_accepts": 0,
+      "mean_semantic_gain": 0.14824107145261278,
+      "precision": 1.0,
+      "total_semantic_gain": 127.19083930634176,
+      "true_accepts": 858
+    },
+    "samples": 9000,
+    "stored_exact_threshold_control": {
+      "accepted": 748,
+      "coverage": 0.08311111111111111,
+      "false_accepts": 0,
+      "mean_semantic_gain": 0.14894032232064705,
+      "precision": 1.0,
+      "total_semantic_gain": 111.407361095844,
+      "true_accepts": 748
+    },
+    "thresholds": {
+      "stored_exact_majority": 0.9860207439938751,
+      "stored_semantic_consensus": 0.9920854666540732,
+      "verified_exact_majority": 0.9
+    }
+  },
+  "limitations": [
+    "Programmatic grouped evidence does not replace a frozen real-scan benchmark.",
+    "The verifier can only veto a selected replacement and cannot create notation."
+  ],
+  "model_version": "scorescan-selection-risk-forest-4",
+  "policy_version": "scorescan-policy-45",
+  "release_assertions": {
+    "cross_family_trap_zero_accepts": true,
+    "invalid_family_trap_zero_accepts": true,
+    "verified_floor_adds_true_accepts_without_harm": true,
+    "zero_false_accepts": true
+  },
+  "safety_corpus": {
+    "by_scenario": {
+      "evidence-conflict": {
+        "policy_0_22_control": {
+          "accepted": 18,
+          "coverage": 0.04176334106728538,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.07748993032254868,
+          "precision": 1.0,
+          "total_semantic_gain": 1.3948187458058763,
+          "true_accepts": 18
+        },
+        "policy_0_23": {
+          "accepted": 5,
+          "coverage": 0.01160092807424594,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.07194683569820558,
+          "precision": 1.0,
+          "total_semantic_gain": 0.3597341784910279,
+          "true_accepts": 5
+        }
+      },
+      "exact-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 22,
+          "coverage": 0.012557077625570776,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.16774725388876954,
+          "precision": 1.0,
+          "total_semantic_gain": 3.6904395855529297,
+          "true_accepts": 22
+        },
+        "policy_0_23": {
+          "accepted": 678,
+          "coverage": 0.386986301369863,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14919912461258053,
+          "precision": 1.0,
+          "total_semantic_gain": 101.1570064873296,
+          "true_accepts": 678
+        }
+      },
+      "exact-cross-family-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "exact-family-redundant-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "exact-invalid-family-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 11,
+          "coverage": 0.018739352640545145,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.17660450182529386,
+          "precision": 1.0,
+          "total_semantic_gain": 1.9426495200782326,
+          "true_accepts": 11
+        },
+        "policy_0_23": {
+          "accepted": 271,
+          "coverage": 0.4616695059625213,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14515548187201083,
+          "precision": 1.0,
+          "total_semantic_gain": 39.33713558731493,
+          "true_accepts": 271
+        }
+      },
+      "exact-invalid-family-trap": {
+        "policy_0_22_control": {
+          "accepted": 4,
+          "coverage": 0.005376344086021506,
+          "false_accepts": 4,
+          "mean_semantic_gain": -0.11841829611390747,
+          "precision": 0.0,
+          "total_semantic_gain": -0.4736731844556299,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "invalid-selected": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "localized-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 470,
+          "coverage": 0.5889724310776943,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.1494866629124301,
+          "precision": 1.0,
+          "total_semantic_gain": 70.25873156884215,
+          "true_accepts": 470
+        },
+        "policy_0_23": {
+          "accepted": 94,
+          "coverage": 0.11779448621553884,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.1521962078552315,
+          "precision": 1.0,
+          "total_semantic_gain": 14.30644353839176,
+          "true_accepts": 94
+        }
+      },
+      "localized-confident-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "localized-partial-trap": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "semantic-clear-gain": {
+        "policy_0_22_control": {
+          "accepted": 537,
+          "coverage": 0.3553937789543349,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.15780606097423594,
+          "precision": 1.0,
+          "total_semantic_gain": 84.7418547431647,
+          "true_accepts": 537
+        },
+        "policy_0_23": {
+          "accepted": 109,
+          "coverage": 0.07213765718067505,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.15834567789738785,
+          "precision": 1.0,
+          "total_semantic_gain": 17.259678890815277,
+          "true_accepts": 109
+        }
+      },
+      "semantic-false-consensus": {
+        "policy_0_22_control": {
+          "accepted": 1,
+          "coverage": 0.0007479431563201197,
+          "false_accepts": 1,
+          "mean_semantic_gain": -0.027040599422340897,
+          "precision": 0.0,
+          "total_semantic_gain": -0.027040599422340897,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      },
+      "semantic-subtle-gain": {
+        "policy_0_22_control": {
+          "accepted": 58,
+          "coverage": 0.05263157894736842,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.040789509837261255,
+          "precision": 1.0,
+          "total_semantic_gain": 2.3657915705611527,
+          "true_accepts": 58
+        },
+        "policy_0_23": {
+          "accepted": 15,
+          "coverage": 0.013611615245009074,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.04126742528989924,
+          "precision": 1.0,
+          "total_semantic_gain": 0.6190113793484886,
+          "true_accepts": 15
+        }
+      },
+      "template-better": {
+        "policy_0_22_control": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        },
+        "policy_0_23": {
+          "accepted": 0,
+          "coverage": 0.0,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.0,
+          "precision": 1.0,
+          "total_semantic_gain": 0.0,
+          "true_accepts": 0
+        }
+      }
+    },
+    "by_selection_kind": {
+      "exact_majority": {
+        "policy_0_22_control": {
+          "accepted": 37,
+          "coverage": 0.007824064284203848,
+          "false_accepts": 4,
+          "mean_semantic_gain": 0.13944367354528464,
+          "precision": 0.8918918918918919,
+          "total_semantic_gain": 5.1594159211755315,
+          "true_accepts": 33
+        },
+        "policy_0_23": {
+          "accepted": 949,
+          "coverage": 0.2006766758299852,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14804440682259698,
+          "precision": 1.0,
+          "total_semantic_gain": 140.49414207464454,
+          "true_accepts": 949
+        },
+        "stored_exact_threshold_control": {
+          "accepted": 782,
+          "coverage": 0.1653626559526327,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.15133874053465105,
+          "precision": 1.0,
+          "total_semantic_gain": 118.34689509809711,
+          "true_accepts": 782
+        }
+      },
+      "semantic_consensus": {
+        "policy_0_22_control": {
+          "accepted": 1084,
+          "coverage": 0.14908540778434878,
+          "false_accepts": 1,
+          "mean_semantic_gain": 0.14643372327394055,
+          "precision": 0.9990774907749077,
+          "total_semantic_gain": 158.73415602895156,
+          "true_accepts": 1083
+        },
+        "policy_0_23": {
+          "accepted": 223,
+          "coverage": 0.030669784073717506,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14594111204953608,
+          "precision": 1.0,
+          "total_semantic_gain": 32.544867987046544,
+          "true_accepts": 223
+        },
+        "stored_exact_threshold_control": {
+          "accepted": 223,
+          "coverage": 0.030669784073717506,
+          "false_accepts": 0,
+          "mean_semantic_gain": 0.14594111204953608,
+          "precision": 1.0,
+          "total_semantic_gain": 32.544867987046544,
+          "true_accepts": 223
+        }
+      }
+    },
+    "policy_0_22_control": {
+      "accepted": 1121,
+      "coverage": 0.09341666666666666,
+      "false_accepts": 5,
+      "mean_semantic_gain": 0.14620300798405628,
+      "precision": 0.9955396966993756,
+      "total_semantic_gain": 163.8935719501271,
+      "true_accepts": 1116
+    },
+    "policy_0_23": {
+      "accepted": 1172,
+      "coverage": 0.09766666666666667,
+      "false_accepts": 0,
+      "mean_semantic_gain": 0.14764420653727908,
+      "precision": 1.0,
+      "total_semantic_gain": 173.03901006169107,
+      "true_accepts": 1172
+    },
+    "samples": 12000,
+    "stored_exact_threshold_control": {
+      "accepted": 1005,
+      "coverage": 0.08375,
+      "false_accepts": 0,
+      "mean_semantic_gain": 0.15014105779616282,
+      "precision": 1.0,
+      "total_semantic_gain": 150.89176308514365,
+      "true_accepts": 1005
+    },
+    "thresholds": {
+      "stored_exact_majority": 0.9860207439938751,
+      "stored_semantic_consensus": 0.9920854666540732,
+      "verified_exact_majority": 0.9
+    }
+  },
+  "scope": "programmatic replacement-risk policy audit; not end-to-end OMR accuracy",
+  "workflow_version": "single-staff-printed-scan@51"
+}

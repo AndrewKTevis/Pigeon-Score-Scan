@@ -1,0 +1,168 @@
+{
+  "deployed_evidence": {
+    "auto_patch_thresholds": {
+      "note": 0.976999903636,
+      "rest": 0.976871562567
+    },
+    "context_only_ablation": {
+      "accuracy": 0.5,
+      "brier_score": 0.250218723427,
+      "log_loss": 0.693585372504,
+      "roc_auc": 0.5
+    },
+    "deployment_max_probability_delta": 0.0,
+    "feature_count": 640,
+    "policies": {
+      "external_tail": {
+        "auto_patch_thresholds": {
+          "note": 0.976999903636,
+          "rest": 0.976871562567
+        },
+        "correct_accepts": 2383,
+        "coverage": 0.11915,
+        "delete_transactions_review_only": 10000,
+        "false_accepts": 0,
+        "insert_correct_accepts": 2383,
+        "insert_positive_total": 5000,
+        "insert_recall": 0.4766,
+        "note_insert_correct_accepts": 1284,
+        "note_insert_positive_total": 2471,
+        "note_insert_recall": 0.519627681101,
+        "rest_insert_correct_accepts": 1099,
+        "rest_insert_positive_total": 2529,
+        "rest_insert_recall": 0.434559114274,
+        "selective_precision": 1.0
+      },
+      "frozen_test": {
+        "auto_patch_thresholds": {
+          "note": 0.976999903636,
+          "rest": 0.976871562567
+        },
+        "correct_accepts": 69,
+        "coverage": 0.1078125,
+        "delete_transactions_review_only": 320,
+        "false_accepts": 0,
+        "insert_correct_accepts": 69,
+        "insert_positive_total": 160,
+        "insert_recall": 0.43125,
+        "note_insert_correct_accepts": 36,
+        "note_insert_positive_total": 79,
+        "note_insert_recall": 0.455696202532,
+        "rest_insert_correct_accepts": 33,
+        "rest_insert_positive_total": 81,
+        "rest_insert_recall": 0.407407407407,
+        "selective_precision": 1.0
+      },
+      "independent_test": {
+        "auto_patch_thresholds": {
+          "note": 0.976999903636,
+          "rest": 0.976871562567
+        },
+        "correct_accepts": 1372,
+        "coverage": 0.114333333333,
+        "delete_transactions_review_only": 6000,
+        "false_accepts": 0,
+        "insert_correct_accepts": 1372,
+        "insert_positive_total": 3000,
+        "insert_recall": 0.457333333333,
+        "note_insert_correct_accepts": 794,
+        "note_insert_positive_total": 1510,
+        "note_insert_recall": 0.52582781457,
+        "rest_insert_correct_accepts": 578,
+        "rest_insert_positive_total": 1490,
+        "rest_insert_recall": 0.387919463087,
+        "selective_precision": 1.0
+      },
+      "safety_calibration": {
+        "auto_patch_thresholds": {
+          "note": 0.976999903636,
+          "rest": 0.976871562567
+        },
+        "correct_accepts": 1893,
+        "coverage": 0.1183125,
+        "delete_transactions_review_only": 8000,
+        "false_accepts": 0,
+        "insert_correct_accepts": 1893,
+        "insert_positive_total": 4000,
+        "insert_recall": 0.47325,
+        "note_insert_correct_accepts": 1043,
+        "note_insert_positive_total": 1985,
+        "note_insert_recall": 0.525440806045,
+        "rest_insert_correct_accepts": 850,
+        "rest_insert_positive_total": 2015,
+        "rest_insert_recall": 0.421836228288,
+        "selective_precision": 1.0
+      }
+    },
+    "transaction_contract": {
+      "accepted_suffix_forms": [
+        "unchanged_explicit_gap",
+        "coherent_shift_by_inserted_duration"
+      ],
+      "operation": "single_event_insertion_only",
+      "source_comparison": "proposed_event_vs_displaced_event_plus_complete_before_after_sequence",
+      "surrounding_score_sampling": "natural_4_to_1_note_rest",
+      "target_event_kind_sampling": "balanced_note_rest"
+    }
+  },
+  "end_to_end_accuracy_claim": false,
+  "experiments": {
+    "automatic_deletion": {
+      "reason": "Partially visible and low-contrast source events made absence evidence unsafe. A non-empty source crop therefore makes deletion review-only; the model is never allowed to authorise deletion.",
+      "runtime_deployed": false,
+      "status": "rejected"
+    },
+    "gap_only_insertion_dataset": {
+      "reason": "It rendered an artificial empty slot and failed to model the normal MusicXML transaction in which every suffix event shifts by the inserted duration.",
+      "runtime_deployed": false,
+      "status": "rejected"
+    },
+    "lower_thresholds": {
+      "external_tail_false_accepts": {
+        "0.85": 29,
+        "0.88": 21,
+        "0.90": 16
+      },
+      "reason": "Each lower shared threshold produced false automatic insertions on the frozen-after-training 5000-group tail.",
+      "runtime_deployed": false,
+      "status": "rejected"
+    },
+    "sequence_only_without_competing_event": {
+      "independent": {
+        "false_accepts": 0,
+        "insert_recall": 0.062666666667,
+        "note_insert_recall": 0.072064777328,
+        "rest_insert_recall": 0.018867924528,
+        "roc_auc": 0.969468555556
+      },
+      "prototype_groups": {
+        "independent": 1500,
+        "safety": 1200,
+        "training": 800
+      },
+      "reason": "Whole-sequence statistics could not reliably distinguish the proposed event from the suffix event displaced from the same onset.",
+      "runtime_deployed": false,
+      "status": "rejected"
+    },
+    "shared_note_rest_target_prior": {
+      "reason": "Natural 4:1 note/rest sampling of the reviewed target underrepresented rest insertions. Only the target event is balanced 1:1; surrounding score events retain the natural 4:1 distribution.",
+      "runtime_deployed": false,
+      "status": "rejected"
+    },
+    "small_safety_tail": {
+      "independent_false_accepts": 2,
+      "prototype_groups": {
+        "independent": 1500,
+        "safety": 1200,
+        "training": 800
+      },
+      "reason": "The 1200-group safety set missed notehead-noise and staff-residue tail negatives. Formal calibration was expanded to 4000 groups and followed by untouched 3000- and 5000-group tests.",
+      "runtime_deployed": false,
+      "status": "rejected"
+    }
+  },
+  "format": 1,
+  "model_version": "scorescan-event-presence-visual-forest-1",
+  "runtime_deployed_scope": "single_event_insertion_confirmation_only",
+  "version": "0.36.0-rc1"
+}

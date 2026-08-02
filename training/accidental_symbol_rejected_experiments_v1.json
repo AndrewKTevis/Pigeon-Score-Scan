@@ -1,0 +1,22 @@
+{
+  "format": 1,
+  "scope": "programmatic rendered accidental-symbol experiments; not end-to-end OMR accuracy",
+  "deployed": false,
+  "experiments": [
+    {
+      "name": "pairwise_accidental_class_transaction",
+      "status": "rejected",
+      "reason": "A single model covering presence, absence, and sharp/flat/natural class substitutions did not maintain zero observed false accepts with useful independent coverage."
+    },
+    {
+      "name": "absolute_accidental_multiclass_hog",
+      "status": "rejected",
+      "reason": "High-confidence exact-class coverage was insufficient for automatic MusicXML changes; explicit accidental class substitutions remain review-only."
+    }
+  ],
+  "accepted_replacement": {
+    "model_version": "scorescan-accidental-presence-forest-1",
+    "responsibility": "veto-only binary printed-accidental presence evidence",
+    "excluded": "sharp/flat/natural/double-accidental class substitution"
+  }
+}

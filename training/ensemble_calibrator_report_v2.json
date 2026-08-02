@@ -1,0 +1,377 @@
+{
+  "baseline_v1_same_frozen_test": {
+    "by_scenario": {
+      "alignment-trap": {
+        "correct": 10,
+        "groups": 19,
+        "top1_accuracy": 0.5263157894736842
+      },
+      "clean-agreement": {
+        "correct": 18,
+        "groups": 18,
+        "top1_accuracy": 1.0
+      },
+      "clean-majority": {
+        "correct": 19,
+        "groups": 19,
+        "top1_accuracy": 1.0
+      },
+      "cross-family-fuzzy-trap": {
+        "correct": 4,
+        "groups": 21,
+        "top1_accuracy": 0.19047619047619047
+      },
+      "evidence-conflict": {
+        "correct": 8,
+        "groups": 19,
+        "top1_accuracy": 0.42105263157894735
+      },
+      "independent-errors": {
+        "correct": 6,
+        "groups": 23,
+        "top1_accuracy": 0.2608695652173913
+      },
+      "invalid-page-trap": {
+        "correct": 11,
+        "groups": 16,
+        "top1_accuracy": 0.6875
+      },
+      "legitimate-transition": {
+        "correct": 10,
+        "groups": 19,
+        "top1_accuracy": 0.5263157894736842
+      },
+      "local-structure-trap": {
+        "correct": 15,
+        "groups": 25,
+        "top1_accuracy": 0.6
+      },
+      "missing-visual": {
+        "correct": 8,
+        "groups": 14,
+        "top1_accuracy": 0.5714285714285714
+      },
+      "page-score-trap": {
+        "correct": 15,
+        "groups": 18,
+        "top1_accuracy": 0.8333333333333334
+      },
+      "single-family-exact-trap": {
+        "correct": 2,
+        "groups": 12,
+        "top1_accuracy": 0.16666666666666666
+      },
+      "visual-density-trap": {
+        "correct": 12,
+        "groups": 17,
+        "top1_accuracy": 0.7058823529411765
+      }
+    },
+    "decision": {
+      "correct": 138,
+      "groups": 240,
+      "top1_accuracy": 0.575
+    },
+    "model_version": "scorescan-ensemble-calibrator-1",
+    "policy_gate": {
+      "accuracy": 0.752568493150685,
+      "brier_score": 0.19103125595514053,
+      "f1": 0.6392009987515606,
+      "false_accepts": 201,
+      "false_rejects": 88,
+      "log_loss": 1.3313081127853954,
+      "precision": 0.5601750547045952,
+      "recall": 0.7441860465116279,
+      "roc_auc": 0.8089968107925041,
+      "threshold": 0.34
+    },
+    "sample": {
+      "accuracy": 0.7688356164383562,
+      "brier_score": 0.19103125595514053,
+      "f1": 0.6520618556701031,
+      "false_accepts": 179,
+      "false_rejects": 91,
+      "log_loss": 1.3313081127853954,
+      "precision": 0.5856481481481481,
+      "recall": 0.7354651162790697,
+      "roc_auc": 0.8089968107925041,
+      "threshold": 0.5
+    }
+  },
+  "component_models": {
+    "context": "scorescan-context-forest-2",
+    "event": "scorescan-event-forest-2",
+    "measure": "scorescan-measure-calibrator-2",
+    "visual": "scorescan-visual-measure-calibrator-2"
+  },
+  "deployment_parity": {
+    "max_absolute_probability_delta": 8.326672684688674e-16,
+    "tolerance": 1e-10
+  },
+  "feature_names": [
+    "page_score_scaled",
+    "page_probability",
+    "page_valid",
+    "alignment_similarity",
+    "alignment_margin",
+    "exact_support_ratio",
+    "semantic_support_ratio",
+    "signature_support_ratio",
+    "missing_ratio",
+    "distance_to_template",
+    "distance_to_medoid",
+    "mean_peer_distance",
+    "measure_probability",
+    "visual_probability",
+    "event_probability",
+    "context_probability",
+    "measure_probability_margin",
+    "visual_probability_margin",
+    "event_probability_margin",
+    "context_probability_margin",
+    "page_score_margin_scaled",
+    "candidate_count_scaled",
+    "initial_cluster_member",
+    "exact_signature_member"
+  ],
+  "frozen_test": {
+    "by_scenario": {
+      "alignment-trap": {
+        "correct": 14,
+        "groups": 19,
+        "top1_accuracy": 0.7368421052631579
+      },
+      "clean-agreement": {
+        "correct": 18,
+        "groups": 18,
+        "top1_accuracy": 1.0
+      },
+      "clean-majority": {
+        "correct": 19,
+        "groups": 19,
+        "top1_accuracy": 1.0
+      },
+      "cross-family-fuzzy-trap": {
+        "correct": 15,
+        "groups": 21,
+        "top1_accuracy": 0.7142857142857143
+      },
+      "evidence-conflict": {
+        "correct": 13,
+        "groups": 19,
+        "top1_accuracy": 0.6842105263157895
+      },
+      "independent-errors": {
+        "correct": 20,
+        "groups": 23,
+        "top1_accuracy": 0.8695652173913043
+      },
+      "invalid-page-trap": {
+        "correct": 15,
+        "groups": 16,
+        "top1_accuracy": 0.9375
+      },
+      "legitimate-transition": {
+        "correct": 16,
+        "groups": 19,
+        "top1_accuracy": 0.8421052631578947
+      },
+      "local-structure-trap": {
+        "correct": 22,
+        "groups": 25,
+        "top1_accuracy": 0.88
+      },
+      "missing-visual": {
+        "correct": 10,
+        "groups": 14,
+        "top1_accuracy": 0.7142857142857143
+      },
+      "page-score-trap": {
+        "correct": 14,
+        "groups": 18,
+        "top1_accuracy": 0.7777777777777778
+      },
+      "single-family-exact-trap": {
+        "correct": 12,
+        "groups": 12,
+        "top1_accuracy": 1.0
+      },
+      "visual-density-trap": {
+        "correct": 16,
+        "groups": 17,
+        "top1_accuracy": 0.9411764705882353
+      }
+    },
+    "decision": {
+      "correct": 204,
+      "groups": 240,
+      "top1_accuracy": 0.85
+    },
+    "policy_gate": {
+      "accuracy": 0.9203767123287672,
+      "brier_score": 0.05761217651252746,
+      "f1": 0.8706536856745479,
+      "false_accepts": 62,
+      "false_rejects": 31,
+      "log_loss": 0.1988800212179792,
+      "precision": 0.8346666666666667,
+      "recall": 0.9098837209302325,
+      "roc_auc": 0.9705562768119214,
+      "threshold": 0.34
+    },
+    "sample": {
+      "accuracy": 0.9203767123287672,
+      "brier_score": 0.05761217651252746,
+      "f1": 0.8638360175695461,
+      "false_accepts": 44,
+      "false_rejects": 49,
+      "log_loss": 0.1988800212179792,
+      "precision": 0.8702064896755162,
+      "recall": 0.8575581395348837,
+      "roc_auc": 0.9705562768119214,
+      "threshold": 0.5
+    }
+  },
+  "groups": 2400,
+  "limitations": [
+    "No large frozen real-scan candidate ensemble corpus is bundled.",
+    "The model is a bounded prior and cannot create consensus or bypass hard validation.",
+    "Cross-family fuzzy errors remain difficult when several independent evidence layers share the same mistake."
+  ],
+  "linear_model_ablation": {
+    "decision": {
+      "correct": 198,
+      "groups": 240,
+      "top1_accuracy": 0.825
+    },
+    "description": "retrained standardized logistic regression using all current features",
+    "sample": {
+      "accuracy": 0.877568493150685,
+      "brier_score": 0.08961290555760357,
+      "f1": 0.8110964332892999,
+      "false_accepts": 106,
+      "false_rejects": 37,
+      "log_loss": 0.28344301488615375,
+      "precision": 0.7433414043583535,
+      "recall": 0.8924418604651163,
+      "roc_auc": 0.9505637559268458,
+      "threshold": 0.5
+    }
+  },
+  "model_selection_audit": [
+    {
+      "config": {
+        "max_depth": 6,
+        "min_samples_leaf": 8,
+        "n_estimators": 24
+      },
+      "decision": {
+        "correct": 209,
+        "groups": 240,
+        "top1_accuracy": 0.8708333333333333
+      },
+      "sample": {
+        "accuracy": 0.9119217081850534,
+        "brier_score": 0.06314588203209774,
+        "f1": 0.8571428571428571,
+        "false_accepts": 43,
+        "false_rejects": 56,
+        "log_loss": 0.206931847336648,
+        "precision": 0.8735294117647059,
+        "recall": 0.8413597733711048,
+        "roc_auc": 0.9699591788744246,
+        "threshold": 0.5
+      }
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 32
+      },
+      "decision": {
+        "correct": 211,
+        "groups": 240,
+        "top1_accuracy": 0.8791666666666667
+      },
+      "sample": {
+        "accuracy": 0.9181494661921709,
+        "brier_score": 0.05746540853283586,
+        "f1": 0.8674351585014409,
+        "false_accepts": 40,
+        "false_rejects": 52,
+        "log_loss": 0.19100149834306399,
+        "precision": 0.8826979472140762,
+        "recall": 0.8526912181303116,
+        "roc_auc": 0.9748937217770233,
+        "threshold": 0.5
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 6,
+        "n_estimators": 48
+      },
+      "decision": {
+        "correct": 206,
+        "groups": 240,
+        "top1_accuracy": 0.8583333333333333
+      },
+      "sample": {
+        "accuracy": 0.9208185053380783,
+        "brier_score": 0.05782130552748026,
+        "f1": 0.8730385164051355,
+        "false_accepts": 42,
+        "false_rejects": 47,
+        "log_loss": 0.19296629220611117,
+        "precision": 0.8793103448275862,
+        "recall": 0.8668555240793201,
+        "roc_auc": 0.9743462557364521,
+        "threshold": 0.5
+      }
+    },
+    {
+      "config": {
+        "max_depth": 10,
+        "min_samples_leaf": 4,
+        "n_estimators": 64
+      },
+      "decision": {
+        "correct": 214,
+        "groups": 240,
+        "top1_accuracy": 0.8916666666666667
+      },
+      "sample": {
+        "accuracy": 0.9252669039145908,
+        "brier_score": 0.05415716465209602,
+        "f1": 0.88,
+        "false_accepts": 39,
+        "false_rejects": 45,
+        "log_loss": 0.18125900461091393,
+        "precision": 0.8876080691642652,
+        "recall": 0.8725212464589235,
+        "roc_auc": 0.9780719642273196,
+        "threshold": 0.5
+      }
+    }
+  ],
+  "model_version": "scorescan-ensemble-forest-2",
+  "positive_rate": 0.3031334555293707,
+  "samples": 11457,
+  "samples_by_partition": {
+    "frozen_test": 1168,
+    "model_selection_audit": 1124,
+    "probability_calibration": 1134,
+    "train": 8031
+  },
+  "scope": "programmatic difficult measure-candidate decisions scored by current component models; not end-to-end OMR",
+  "seed": 20270115,
+  "selected_config": {
+    "max_depth": 7,
+    "min_samples_leaf": 6,
+    "n_estimators": 32
+  },
+  "selection_rule": "smallest forest within 0.025 group Top-1 and 0.02 log-loss of the independent-audit best",
+  "split_unit": "complete source decision with three to seven candidates; correlated preprocessing families never cross partitions"
+}

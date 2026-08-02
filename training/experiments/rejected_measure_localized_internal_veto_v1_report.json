@@ -1,0 +1,407 @@
+{
+  "configuration_ablation": [
+    {
+      "configuration": {
+        "max_depth": 7,
+        "min_samples_leaf": 8,
+        "trees": 32
+      },
+      "frozen": {
+        "accepted": 219,
+        "by_kind": {
+          "all-correct-agree": {
+            "accepted": 100,
+            "correct": 100,
+            "errors": 0,
+            "groups": 144
+          },
+          "all-wrong-agree": {
+            "accepted": 0,
+            "correct": 0,
+            "errors": 0,
+            "groups": 62
+          },
+          "one-invalid-two-correct": {
+            "accepted": 38,
+            "correct": 38,
+            "errors": 0,
+            "groups": 63
+          },
+          "one-wrong-two-correct": {
+            "accepted": 48,
+            "correct": 48,
+            "errors": 0,
+            "groups": 97
+          },
+          "partial-common-error": {
+            "accepted": 0,
+            "correct": 0,
+            "errors": 0,
+            "groups": 62
+          },
+          "primary-wrong-two-correct": {
+            "accepted": 31,
+            "correct": 31,
+            "errors": 0,
+            "groups": 49
+          },
+          "three-way-split": {
+            "accepted": 0,
+            "correct": 0,
+            "errors": 0,
+            "groups": 50
+          },
+          "two-wrong-one-correct": {
+            "accepted": 2,
+            "correct": 0,
+            "errors": 2,
+            "groups": 73
+          }
+        },
+        "correct_accepts": 217,
+        "coverage": 0.365,
+        "error_accepts": 2,
+        "groups": 600,
+        "selective_precision": 0.9908675799086758
+      },
+      "probability_floor": 0.9663938540282577
+    },
+    {
+      "configuration": {
+        "max_depth": 8,
+        "min_samples_leaf": 7,
+        "trees": 48
+      },
+      "frozen": {
+        "accepted": 241,
+        "by_kind": {
+          "all-correct-agree": {
+            "accepted": 110,
+            "correct": 110,
+            "errors": 0,
+            "groups": 144
+          },
+          "all-wrong-agree": {
+            "accepted": 0,
+            "correct": 0,
+            "errors": 0,
+            "groups": 62
+          },
+          "one-invalid-two-correct": {
+            "accepted": 42,
+            "correct": 42,
+            "errors": 0,
+            "groups": 63
+          },
+          "one-wrong-two-correct": {
+            "accepted": 53,
+            "correct": 53,
+            "errors": 0,
+            "groups": 97
+          },
+          "partial-common-error": {
+            "accepted": 0,
+            "correct": 0,
+            "errors": 0,
+            "groups": 62
+          },
+          "primary-wrong-two-correct": {
+            "accepted": 35,
+            "correct": 35,
+            "errors": 0,
+            "groups": 49
+          },
+          "three-way-split": {
+            "accepted": 0,
+            "correct": 0,
+            "errors": 0,
+            "groups": 50
+          },
+          "two-wrong-one-correct": {
+            "accepted": 1,
+            "correct": 0,
+            "errors": 1,
+            "groups": 73
+          }
+        },
+        "correct_accepts": 240,
+        "coverage": 0.40166666666666667,
+        "error_accepts": 1,
+        "groups": 600,
+        "selective_precision": 0.995850622406639
+      },
+      "probability_floor": 0.9624095001683267
+    },
+    {
+      "configuration": {
+        "max_depth": 9,
+        "min_samples_leaf": 6,
+        "trees": 64
+      },
+      "frozen": {
+        "accepted": 236,
+        "by_kind": {
+          "all-correct-agree": {
+            "accepted": 107,
+            "correct": 107,
+            "errors": 0,
+            "groups": 144
+          },
+          "all-wrong-agree": {
+            "accepted": 0,
+            "correct": 0,
+            "errors": 0,
+            "groups": 62
+          },
+          "one-invalid-two-correct": {
+            "accepted": 41,
+            "correct": 41,
+            "errors": 0,
+            "groups": 63
+          },
+          "one-wrong-two-correct": {
+            "accepted": 52,
+            "correct": 52,
+            "errors": 0,
+            "groups": 97
+          },
+          "partial-common-error": {
+            "accepted": 0,
+            "correct": 0,
+            "errors": 0,
+            "groups": 62
+          },
+          "primary-wrong-two-correct": {
+            "accepted": 35,
+            "correct": 35,
+            "errors": 0,
+            "groups": 49
+          },
+          "three-way-split": {
+            "accepted": 0,
+            "correct": 0,
+            "errors": 0,
+            "groups": 50
+          },
+          "two-wrong-one-correct": {
+            "accepted": 1,
+            "correct": 0,
+            "errors": 1,
+            "groups": 73
+          }
+        },
+        "correct_accepts": 235,
+        "coverage": 0.3933333333333333,
+        "error_accepts": 1,
+        "groups": 600,
+        "selective_precision": 0.9957627118644068
+      },
+      "probability_floor": 0.9647520088599055
+    }
+  ],
+  "confirmation": {
+    "accepted": 1332,
+    "by_kind": {
+      "all-correct-agree": {
+        "accepted": 513,
+        "correct": 513,
+        "errors": 0,
+        "groups": 644
+      },
+      "all-wrong-agree": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 266
+      },
+      "one-invalid-two-correct": {
+        "accepted": 262,
+        "correct": 262,
+        "errors": 0,
+        "groups": 352
+      },
+      "one-wrong-two-correct": {
+        "accepted": 316,
+        "correct": 316,
+        "errors": 0,
+        "groups": 514
+      },
+      "partial-common-error": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 297
+      },
+      "primary-wrong-two-correct": {
+        "accepted": 240,
+        "correct": 240,
+        "errors": 0,
+        "groups": 315
+      },
+      "three-way-split": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 237
+      },
+      "two-wrong-one-correct": {
+        "accepted": 1,
+        "correct": 0,
+        "errors": 1,
+        "groups": 375
+      }
+    },
+    "correct_accepts": 1331,
+    "coverage": 0.444,
+    "error_accepts": 1,
+    "groups": 3000,
+    "selective_precision": 0.9992492492492493
+  },
+  "dataset": {
+    "confirmation_groups": 3000,
+    "feature_names": [
+      "valid_variant_count",
+      "winning_exact_support",
+      "runner_up_support",
+      "winning_margin",
+      "primary_in_winner",
+      "all_variants_valid",
+      "note_count",
+      "note_count_spread",
+      "local_rhythm_issue_max",
+      "page_score_delta",
+      "measure_probability_delta",
+      "event_probability_delta",
+      "visual_probability_delta",
+      "context_probability_delta"
+    ],
+    "groups": 6000,
+    "kinds": [
+      "all-correct-agree",
+      "one-wrong-two-correct",
+      "one-invalid-two-correct",
+      "primary-wrong-two-correct",
+      "two-wrong-one-correct",
+      "all-wrong-agree",
+      "partial-common-error",
+      "three-way-split"
+    ],
+    "programmatic": true,
+    "seed": 20260721
+  },
+  "deterministic_internal_majority": {
+    "confirmation": {
+      "accepted": 2763,
+      "correct_accepts": 1825,
+      "coverage": 0.921,
+      "error_accepts": 938,
+      "groups": 3000,
+      "selective_precision": 0.6605139341295693
+    },
+    "frozen": {
+      "accepted": 550,
+      "correct_accepts": 353,
+      "coverage": 0.9166666666666666,
+      "error_accepts": 197,
+      "groups": 600,
+      "selective_precision": 0.6418181818181818
+    }
+  },
+  "format": 1,
+  "frozen": {
+    "accepted": 241,
+    "by_kind": {
+      "all-correct-agree": {
+        "accepted": 110,
+        "correct": 110,
+        "errors": 0,
+        "groups": 144
+      },
+      "all-wrong-agree": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 62
+      },
+      "one-invalid-two-correct": {
+        "accepted": 42,
+        "correct": 42,
+        "errors": 0,
+        "groups": 63
+      },
+      "one-wrong-two-correct": {
+        "accepted": 53,
+        "correct": 53,
+        "errors": 0,
+        "groups": 97
+      },
+      "partial-common-error": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 62
+      },
+      "primary-wrong-two-correct": {
+        "accepted": 35,
+        "correct": 35,
+        "errors": 0,
+        "groups": 49
+      },
+      "three-way-split": {
+        "accepted": 0,
+        "correct": 0,
+        "errors": 0,
+        "groups": 50
+      },
+      "two-wrong-one-correct": {
+        "accepted": 1,
+        "correct": 0,
+        "errors": 1,
+        "groups": 73
+      }
+    },
+    "correct_accepts": 240,
+    "coverage": 0.40166666666666667,
+    "error_accepts": 1,
+    "groups": 600,
+    "selective_precision": 0.995850622406639
+  },
+  "frozen_sample": {
+    "brier_score": 0.027741032612134595,
+    "log_loss": 0.11682675734928201,
+    "roc_auc": 0.9909853081166634,
+    "samples": 600
+  },
+  "limitations": [
+    "All labels are programmatic grouped perturbations, not real scanned pages.",
+    "Subvariants remain correlated and never count as independent candidate families.",
+    "The experiment is veto-only and is intentionally absent from model_manifest.json."
+  ],
+  "model_version": "scorescan-measure-localized-internal-veto-experiment-1",
+  "old_single_pass_baseline": {
+    "confirmation": {
+      "accepted": 2276,
+      "correct_accepts": 1242,
+      "coverage": 0.7586666666666667,
+      "error_accepts": 1034,
+      "groups": 3000,
+      "selective_precision": 0.5456942003514939
+    },
+    "frozen": {
+      "accepted": 485,
+      "correct_accepts": 257,
+      "coverage": 0.8083333333333333,
+      "error_accepts": 228,
+      "groups": 600,
+      "selective_precision": 0.5298969072164949
+    }
+  },
+  "probability_floor": 0.9624095001683267,
+  "rejection_reason": "programmatic-only labels and responsibility overlap with the deployed page-level selection-risk verifier; the deterministic three-subvariant exact-majority gate is deployed instead",
+  "runtime_deployed": false,
+  "selected_configuration": {
+    "max_depth": 8,
+    "min_samples_leaf": 7,
+    "trees": 48
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "checks": {
+    "legacy_sampler_recovery": {
+      "expected": [
+        3,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        3,
+        3
+      ],
+      "observed": [
+        3,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        0,
+        3,
+        3,
+        2,
+        3,
+        3
+      ],
+      "passed": true,
+      "sample_count": 20
+    },
+    "microbatch_gradient": {
+      "maximum_absolute_delta": 0.0,
+      "passed": true,
+      "tolerance": 1e-06
+    }
+  },
+  "format": 1,
+  "input": {
+    "bytes": 155036,
+    "path": "app/tools/train_deepscores_symbol_detector.py",
+    "sha256": "4ee37002ddf5dee5ecf3fdefc0c9497f62662cd001fb0463fa3e26d387a57063"
+  },
+  "name": "scorescan-detector-isolated-torch-contracts-v1",
+  "passed": true,
+  "runtime": {
+    "cuda_available": false,
+    "cuda_visible_devices": "-1",
+    "python": "3.11.12",
+    "torch": "2.6.0+cu124"
+  }
+}

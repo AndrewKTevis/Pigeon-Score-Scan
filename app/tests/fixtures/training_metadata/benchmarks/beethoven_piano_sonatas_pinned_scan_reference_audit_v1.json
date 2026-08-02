@@ -1,0 +1,13 @@
+{
+  "format": 1,
+  "role": "public_test_fixture_not_training_or_evaluation",
+  "source_revision": "2d6627b8a2b085145b2be48e640fbb993771542b",
+  "unique_physical_scan_page_count": 635,
+  "sonata_work_count": 32,
+  "boundary_accepted_humdrum_count": 103,
+  "humdrum_movement_count": 103,
+  "source_license_file_present": false,
+  "training_authorized": false,
+  "evaluation_authorized": false,
+  "release_authorized": false
+}

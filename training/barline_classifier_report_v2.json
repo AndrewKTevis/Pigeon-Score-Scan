@@ -1,0 +1,94 @@
+{
+  "baseline_same_frozen_test": {
+    "at_0_5": {
+      "accepted": 627,
+      "accuracy": 0.8800200803212851,
+      "brier_score": 0.09122712555850139,
+      "f1": 0.7864164432529044,
+      "false_accepts": 187,
+      "false_rejects": 52,
+      "log_loss": 0.3078172661026249,
+      "precision": 0.7017543859649122,
+      "recall": 0.8943089430894309,
+      "roc_auc": 0.9371558265582655,
+      "threshold": 0.5
+    },
+    "at_rc5_runtime_threshold": {
+      "accepted": 553,
+      "accuracy": 0.8840361445783133,
+      "brier_score": 0.09122712555850139,
+      "f1": 0.7789473684210526,
+      "false_accepts": 146,
+      "false_rejects": 85,
+      "log_loss": 0.3078172661026249,
+      "precision": 0.7359855334538878,
+      "recall": 0.8272357723577236,
+      "roc_auc": 0.9371558265582655,
+      "threshold": 0.68
+    },
+    "model_version": "scorescan-barline-logistic-1"
+  },
+  "deployment_parity": {
+    "implementation": "dependency-free production JSON runtime",
+    "max_absolute_probability_delta": 5.551115123125783e-16
+  },
+  "frozen_test": {
+    "accepted": 483,
+    "accuracy": 0.9703815261044176,
+    "brier_score": 0.025296039158540427,
+    "f1": 0.9394871794871795,
+    "false_accepts": 25,
+    "false_rejects": 34,
+    "log_loss": 0.09951573337633789,
+    "precision": 0.94824016563147,
+    "recall": 0.9308943089430894,
+    "roc_auc": 0.9887831978319783,
+    "threshold": 0.5
+  },
+  "frozen_test_at_recommended_threshold": {
+    "accepted": 353,
+    "accuracy": 0.9302208835341366,
+    "brier_score": 0.025296039158540427,
+    "f1": 0.8355029585798817,
+    "false_accepts": 0,
+    "false_rejects": 139,
+    "log_loss": 0.09951573337633789,
+    "precision": 1.0,
+    "recall": 0.717479674796748,
+    "roc_auc": 0.9887831978319783,
+    "threshold": 0.9603725864393496
+  },
+  "groups": 400,
+  "limitations": [
+    "No large frozen real-scan proposal corpus is bundled.",
+    "The generator targets deskewed single-staff printed notation."
+  ],
+  "model_version": "scorescan-barline-forest-2",
+  "positive_rate": 0.25063769003162945,
+  "proposal_samples": 19602,
+  "recommended_threshold": 0.9603725864393496,
+  "rendered_systems": 800,
+  "samples": {
+    "frozen_test": 1992,
+    "probability_calibration": 1870,
+    "threshold_selection": 1912,
+    "train": 13828
+  },
+  "scope": "grouped rendered proposal classification; not end-to-end OMR accuracy",
+  "seed": 20261001,
+  "split_unit": "rendered staff-system identity; degraded variants never cross partitions",
+  "threshold_selection": {
+    "accepted": 334,
+    "accuracy": 0.9393305439330544,
+    "brier_score": 0.020507610380395128,
+    "f1": 0.8516624040920716,
+    "false_accepts": 1,
+    "false_rejects": 115,
+    "log_loss": 0.0802161604067193,
+    "precision": 0.9970059880239521,
+    "recall": 0.7433035714285714,
+    "roc_auc": 0.993867705893833,
+    "threshold": 0.9603725864393496
+  },
+  "variants_per_group": 2
+}

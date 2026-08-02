@@ -1,0 +1,15 @@
+{
+  "deployment_interpreter_probability_delta": 0.0,
+  "end_to_end_accuracy_claim": false,
+  "model_byte_identical": true,
+  "model_sha256_first": "55e4fd5794327e394a7516d7cebda25c681a35a6251ab43a3a1968ceb0366d62",
+  "model_sha256_second": "55e4fd5794327e394a7516d7cebda25c681a35a6251ab43a3a1968ceb0366d62",
+  "model_version": "scorescan-event-kind-visual-forest-1",
+  "passed": true,
+  "report_byte_identical": true,
+  "report_sha256_first": "adfd37d9804dba42d032fabc71731835a03087b706f1a415cb11bdf86dbe870f",
+  "report_sha256_second": "adfd37d9804dba42d032fabc71731835a03087b706f1a415cb11bdf86dbe870f",
+  "schema_version": 1,
+  "training_data_generator_deterministic_unit_test": true,
+  "training_dataset_group_isolation": true
+}

@@ -1,0 +1,180 @@
+Global:
+  model_name: PP-OCRv6_medium_det
+  debug: false
+  use_gpu: true
+  use_ema: true
+  ema_decay: 0.9996
+  ema_decay_type: threshold
+  epoch_num: &epoch_num 36
+  log_smooth_window: 20
+  print_batch_step: 20
+  save_model_dir: /workspace/pigeon-score-scan/training_data/models/ppocrv6-scorescan-det-stratified-e36-b2-20260729
+  save_epoch_step: 1
+  eval_batch_step: [0, 800]
+  cal_metric_during_train: false
+  pretrained_model: /workspace/pigeon-score-scan/training_data/external/models/paddleocr-ppocrv6-medium-det-training/PP-OCRv6_medium_det_pretrained
+  checkpoints:
+  save_inference_dir:
+  use_visualdl: false
+  save_res_path: /workspace/pigeon-score-scan/training_data/models/ppocrv6-scorescan-det-stratified-e36-b2-20260729/predicts.txt
+  d2s_train_image_shape: [3, 640, 640]
+  distributed: false
+
+Architecture:
+  model_type: det
+  algorithm: DB
+  Transform:
+  Backbone:
+    name: PPLCNetV4
+    det: true
+    model_size: medium
+  Neck:
+    name: RepLKPAN
+    out_channels: 256
+    intracl: true
+  Head:
+    name: DBHead
+    k: 50
+    fix_nan: true
+    aux_in_channels: 256
+
+Loss:
+  name: DBLoss
+  main_loss_type: DiceFocalLoss
+  alpha: 5
+  beta: 10
+  focal_alpha: 0.25
+  focal_gamma: 2.5
+  aux_weight_p4: 0.2
+  aux_weight_p3: 0.3
+  aux_weight_p2: 0.4
+
+Optimizer:
+  name: Adam
+  beta1: 0.9
+  beta2: 0.999
+  lr:
+    name: Cosine
+    learning_rate: 0.00005
+    warmup_epoch: 2
+  regularizer:
+    name: L2
+    factor: 1.0e-05
+
+PostProcess:
+  name: DBPostProcess
+  thresh: 0.3
+  box_thresh: 0.5
+  max_candidates: 1000
+  unclip_ratio: 1.6
+  use_dilation: true
+  score_mode: fast
+
+Metric:
+  name: DetMetric
+  main_indicator: hmean
+
+Train:
+  dataset:
+    name: SimpleDataSet
+    data_dir: /workspace/pigeon-score-scan
+    label_file_list:
+      - /workspace/pigeon-score-scan/training_data/prepared/scorescan_ocr_detection_stratified_v2/train.balanced.paddle.det.txt
+    ratio_list: [1.0]
+    transforms:
+      - DecodeImage:
+          img_mode: BGR
+          channel_first: false
+      - DetLabelEncode:
+      - ColorJitter:
+          brightness: 0.15
+          contrast: 0.2
+          saturation: 0.05
+          hue: 0.01
+      - IaaAugment:
+          augmenter_args:
+            - type: Affine
+              args:
+                p: 0.5
+                rotate: [-1.5, 1.5]
+                fit_output: true
+            - type: Resize
+              args:
+                size: [0.8, 1.25]
+      - RandomPerspective:
+          prob: 0.15
+          scale: 0.01
+          shear: 1.0
+          perspective: 0.0002
+          fit_output: true
+          fill_value: [255, 255, 255]
+      - RandomCrop:
+          size: [640, 640]
+          max_tries: 80
+          keep_ratio: true
+          # DetLabelEncode additionally requires a per-page authorization flag.
+          # Sparse registered-scan labels can therefore never turn legitimate
+          # instrument names, lyrics, or directions into negative supervision.
+          negative_crop_prob: 0.30
+      - MakeBorderMap:
+          shrink_ratio: 0.4
+          thresh_min: 0.3
+          thresh_max: 0.7
+          total_epoch: *epoch_num
+      - MakeShrinkMap:
+          shrink_ratio: 0.4
+          min_text_size: 8
+          total_epoch: *epoch_num
+      - NormalizeImage:
+          scale: 1./255.
+          mean: [0.485, 0.456, 0.406]
+          std: [0.229, 0.224, 0.225]
+          order: hwc
+      - ToCHWImage:
+      - KeepKeys:
+          keep_keys:
+            - image
+            - threshold_map
+            - threshold_mask
+            - shrink_map
+            - shrink_mask
+  loader:
+    shuffle: true
+    drop_last: false
+    batch_size_per_card: 2
+    num_workers: 4
+
+Eval:
+  dataset:
+    name: SimpleDataSet
+    data_dir: /workspace/pigeon-score-scan
+    label_file_list:
+      - /workspace/pigeon-score-scan/training_data/prepared/scorescan_ocr_detection_stratified_v2/calibration.scan.paddle.det.txt
+    transforms:
+      - DecodeImage:
+          img_mode: BGR
+          channel_first: false
+      - DetLabelEncode:
+      - DetResizeForTest:
+          limit_side_len: 736
+          limit_type: min
+          max_side_limit: 2000
+      - NormalizeImage:
+          scale: 1./255.
+          mean: [0.485, 0.456, 0.406]
+          std: [0.229, 0.224, 0.225]
+          order: hwc
+      - ToCHWImage:
+      - KeepKeys:
+          keep_keys:
+            - image
+            - shape
+            - polys
+            - ignore_tags
+  loader:
+    shuffle: false
+    drop_last: false
+    batch_size_per_card: 1
+    num_workers: 2
+
+profiler_options:

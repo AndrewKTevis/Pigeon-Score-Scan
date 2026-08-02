@@ -1,0 +1,11 @@
+{
+  "format": 1,
+  "model_byte_identical": true,
+  "model_sha256": "cfdc751ccec4f0d011a0df900c6251c80792247ac00923ea6a04d96067e60555",
+  "model_version": "scorescan-measure-preservation-veto-experiment-1",
+  "passed": true,
+  "report_byte_identical": true,
+  "report_sha256": "a69ba9f03c04d5b58e4cfd8c96158b8124bdfcd86aa417058dec676a6891fd71",
+  "runs": 2,
+  "runtime_deployed": false
+}

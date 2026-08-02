@@ -1,0 +1,38 @@
+{
+  "all_byte_identical": true,
+  "artifacts": {
+    "external_report": {
+      "byte_identical": true,
+      "primary_sha256": "18faa9ba05f4e5367415f99483e576773d5de4474b9c018a700ce4ec49955345",
+      "repeat_sha256": "18faa9ba05f4e5367415f99483e576773d5de4474b9c018a700ce4ec49955345",
+      "size_bytes": 4629
+    },
+    "model": {
+      "byte_identical": true,
+      "primary_sha256": "0c9b6ea7fc23b0fe7ed0b1a9d76551ab49f0b5df6df031ebc536971f9b701dcf",
+      "repeat_sha256": "0c9b6ea7fc23b0fe7ed0b1a9d76551ab49f0b5df6df031ebc536971f9b701dcf",
+      "size_bytes": 6324722
+    },
+    "training_report": {
+      "byte_identical": true,
+      "primary_sha256": "8a690baa760fec90fbc21245703844095bc7c0a2a19f0bf9105b1c2ea3376e39",
+      "repeat_sha256": "8a690baa760fec90fbc21245703844095bc7c0a2a19f0bf9105b1c2ea3376e39",
+      "size_bytes": 13838
+    }
+  },
+  "dataset_arrays_identical": true,
+  "dataset_npz_byte_identical": true,
+  "dataset_seeds": {
+    "external": 20261204,
+    "independent": 20261203,
+    "safety": 20261202,
+    "training": 20261201
+  },
+  "end_to_end_accuracy_claim": false,
+  "format": 1,
+  "model_version": "scorescan-event-presence-visual-forest-1",
+  "passed": true,
+  "scope": "two complete CPU dataset generation and training runs with grouped rendered transactions; proves reproducibility of this veto model, not real-scan end-to-end OMR accuracy.",
+  "training_seed": 20261205,
+  "version": "0.36.0-rc1"
+}

@@ -1,0 +1,141 @@
+{
+  "application_version": "0.36.0-rc2",
+  "dataset": {
+    "bundled": false,
+    "name": "PrIMuS",
+    "official_url": "https://grfia.dlsi.ua.es/primus/",
+    "scope": "synthetic monophonic printed incipits",
+    "warning": "This corpus does not validate real scanned pages, camera distortion, multi-page layout, OCR text, chords, or multiple rhythmic voices."
+  },
+  "dependency_audit": {
+    "audited_environment": "installed locked production environment",
+    "known_vulnerabilities_reported": 0,
+    "opencv_provider_exception": "RapidOCR names opencv-python, while ScoreScan intentionally provides the mutually exclusive cv2 API through opencv-python-headless.",
+    "tool": "pip-audit 2.10.1",
+    "verified_on": "2026-07-26"
+  },
+  "format": 1,
+  "musescore_acceptance": {
+    "exported_pdf_count": 60,
+    "musescore_version": "4.6.5.253511702",
+    "mxl_import_count": 30,
+    "musicxml_import_count": 30,
+    "one_page_pdf_count": 60,
+    "scope": "the 30 final one-page representative cases; not a multi-page or multi-version matrix"
+  },
+  "official_research_oracle": {
+    "description": "Read-only evaluation of the third-party official research checkpoint on its complete held-out fold. This is not the ScoreScan product pipeline.",
+    "failed_cases": 0,
+    "key_signature_exact_rate": 0.997086182,
+    "measure_count_exact_rate": 0.767006612,
+    "micro_event_error_rate": 0.028776745,
+    "micro_token_error_rate": 0.033413969,
+    "model_bundled": false,
+    "model_sha256": "811fef5e84d6c128345655ca5ca8749302b2c901288c7e1ee933c82ed5aae446",
+    "pitch_accuracy": 0.982328042,
+    "report_sha256": "79ab71ec6ef6e77e866457f904a702ffeadbb5cb58b9907ff0754f6df1a75cec",
+    "rhythm_accuracy": 0.991215429,
+    "semantic_exact_rate": 0.555082371,
+    "test_cases": 8923,
+    "test_list_sha256": "26f235c721a55308579ccf749ce58f6491f682b91b062f98d007b68d6c5447d5",
+    "time_signature_exact_rate": 0.973103216,
+    "token_edits": 7155,
+    "token_reference_count": 214132,
+    "weights_license_note": "No separate checkpoint-redistribution license was found in the downloaded model archive, so the weights are not included."
+  },
+  "pipeline_challenge": {
+    "case_selection": "the raw-engine failures first, then the highest raw event-error cases from the fixed 30-case sample",
+    "clef_exact_rate": 1.0,
+    "event_edits": 1,
+    "event_kind_accuracy": 1.0,
+    "event_presence_precision": 1.0,
+    "event_presence_recall": 1.0,
+    "failed_cases": 0,
+    "key_signature_exact_rate": 1.0,
+    "mean_event_error_rate": 0.010416667,
+    "measure_count_exact_rate": 0.75,
+    "micro_event_error_rate": 0.008333333,
+    "pitch_accuracy": 1.0,
+    "reference_events": 120,
+    "report_sha256": "49f557da278c205d3bddff54017860e5f2aef4726cdc0303c314f9432526fb8c",
+    "rhythm_accuracy": 1.0,
+    "selected_cases": 8,
+    "semantic_exact_rate": 0.625,
+    "successful_cases": 8,
+    "tie_count_exact_rate": 0.75,
+    "time_signature_exact_rate": 0.875
+  },
+  "pipeline_representative": {
+    "case_selection": "30 deterministic cases selected by seed scorescan-public-baseline-v1; pipeline order is the frozen raw-engine report order",
+    "clef_exact_rate": 1.0,
+    "event_edits": 9,
+    "event_kind_accuracy": 1.0,
+    "event_presence_precision": 1.0,
+    "event_presence_recall": 1.0,
+    "failed_cases": 0,
+    "key_signature_exact_rate": 1.0,
+    "mean_event_error_rate": 0.018970319,
+    "measure_count_exact_rate": 0.633333333,
+    "micro_event_error_rate": 0.017964072,
+    "pitch_accuracy": 0.996111111,
+    "quality_routing": {
+      "best_effort": 3,
+      "review_issue_count": 43,
+      "review_recommended": 27,
+      "warning_count": 82
+    },
+    "reference_events": 501,
+    "report_sha256": "56717a55bdf883951ee35187ca250c4b14e924feccf0dfca81d82dbcaabb4119",
+    "rhythm_accuracy": 1.0,
+    "selected_cases": 30,
+    "semantic_exact_rate": 0.466666667,
+    "successful_cases": 30,
+    "tie_count_exact_rate": 0.9,
+    "time_signature_exact_rate": 0.833333333
+  },
+  "raw_homr_baseline": {
+    "failed_cases": 3,
+    "mean_event_error_rate_on_successes": 0.127039824,
+    "measure_count_exact_rate_on_successes": 0.555555556,
+    "pitch_accuracy_on_successes": 0.988271605,
+    "report_sha256": "2549caef8805f3245f9260cf6e3cad58249c99ea34292da14d40697aa1d04990",
+    "rhythm_accuracy_on_successes": 0.899360823,
+    "selected_cases": 30,
+    "semantic_exact_rate_on_successes": 0.222222222,
+    "successful_cases": 27
+  },
+  "release_acceptance": {
+    "pytest_nodes_passed": 573,
+    "pytest_nodes_total": 573,
+    "pytest_seconds": 105.96,
+    "pytest_warnings": 2,
+    "source_archive": {
+      "deterministic_prepublication_rebuilds_equal": true,
+      "file_count": 526,
+      "private_or_generated_members": 0
+    },
+    "windows_atomic_reader_stress": {
+      "read_errors": 0,
+      "short_lived_reads": 228,
+      "stressed_case_completed": true
+    },
+    "windows_portable_e2e": {
+      "blank_page_failed_closed_without_download": true,
+      "current_host": "Windows 11 Home Chinese 64-bit, build 26200",
+      "diagnostics_redaction_passed": true,
+      "fresh_first_run_ready": true,
+      "representative_job_completed_with_valid_integrity_and_preview": true,
+      "system_check_count": 52,
+      "system_check_critical_failures": 0,
+      "unauthenticated_shutdown_http": 403
+    }
+  },
+  "reproducibility": {
+    "challenge_command": "python app/tools/benchmark_primus_pipeline.py --product-root . --dataset <primus> --engine-report <raw-report> --output <output> --limit 8 --challenge --timeout-seconds 180",
+    "official_oracle_command": "python app/tools/benchmark_primus_onnx.py --dataset <primus> --model <official-model.onnx> --test-list <official-test.txt> --output <output>",
+    "representative_command": "python app/tools/benchmark_primus_pipeline.py --product-root . --dataset <primus> --engine-report <raw-report> --output <output> --limit 30 --timeout-seconds 180"
+  },
+  "scope_warning": "No confidence interval is claimed. The 30-case and selected 8-case product results are narrow synthetic evidence, not a stable-production or universal state-of-the-art claim.",
+  "workflow_version": "single-staff-printed-scan@66",
+  "policy_version": "scorescan-policy-60"
+}

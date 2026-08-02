@@ -1,0 +1,142 @@
+{
+  "evaluation": "maintained real printed scan barline-sequence trace regression",
+  "source_file": "6bb348fd-e3ea-4d2c-9dd2-0e39312d6f20.png",
+  "source_sha256": "376399ce84a27f6595278f00cc8808af8cbd6284631ea0fadf88fa3b4fc717af",
+  "ground_truth_measures": 46,
+  "system_count": 8,
+  "system_measure_counts": [
+    6,
+    6,
+    6,
+    5,
+    6,
+    6,
+    5,
+    6
+  ],
+  "trace": {
+    "left": 66,
+    "right": 1322,
+    "staff_spacing": 11.5,
+    "candidates": [
+      {
+        "x": 202,
+        "local_probability": 0.849867
+      },
+      {
+        "x": 324,
+        "local_probability": 0.922263
+      },
+      {
+        "x": 539,
+        "local_probability": 0.935015
+      },
+      {
+        "x": 754,
+        "local_probability": 0.920533
+      },
+      {
+        "x": 964,
+        "local_probability": 0.918464
+      },
+      {
+        "x": 1148,
+        "local_probability": 0.881051
+      },
+      {
+        "x": 1318,
+        "local_probability": 0.992147
+      }
+    ],
+    "expected_false_candidates": [
+      202
+    ],
+    "expected_true_candidates": [
+      324,
+      539,
+      754,
+      964,
+      1148,
+      1318
+    ]
+  },
+  "runtime": {
+    "model_version": "scorescan-barline-sequence-gbdt-2",
+    "model_enabled": true,
+    "model_status": "verified",
+    "policy_version": "scorescan-policy-13",
+    "removed_candidates": [
+      202
+    ],
+    "retained_candidates": [
+      324,
+      539,
+      754,
+      964,
+      1148,
+      1318
+    ],
+    "refined_system_measure_count": 6,
+    "details": [
+      {
+        "x": 202,
+        "local_probability": 0.849867,
+        "sequence_probability": 0.144212,
+        "final_probability": 0.652284,
+        "retained": false,
+        "split_like": true
+      },
+      {
+        "x": 324,
+        "local_probability": 0.922263,
+        "sequence_probability": 0.979909,
+        "final_probability": 0.938404,
+        "retained": true,
+        "split_like": false
+      },
+      {
+        "x": 539,
+        "local_probability": 0.935015,
+        "sequence_probability": 0.979909,
+        "final_probability": 0.947585,
+        "retained": true,
+        "split_like": false
+      },
+      {
+        "x": 754,
+        "local_probability": 0.920533,
+        "sequence_probability": 0.979909,
+        "final_probability": 0.937158,
+        "retained": true,
+        "split_like": false
+      },
+      {
+        "x": 964,
+        "local_probability": 0.918464,
+        "sequence_probability": 0.979909,
+        "final_probability": 0.935669,
+        "retained": true,
+        "split_like": false
+      },
+      {
+        "x": 1148,
+        "local_probability": 0.881051,
+        "sequence_probability": 0.96927,
+        "final_probability": 0.905752,
+        "retained": true,
+        "split_like": false
+      },
+      {
+        "x": 1318,
+        "local_probability": 0.992147,
+        "sequence_probability": 0.428018,
+        "final_probability": 0.992147,
+        "retained": true,
+        "split_like": false
+      }
+    ]
+  },
+  "removed_false_split_regression": true,
+  "page_measure_count_preserved": true,
+  "scope": "one maintained real scan layout trace; not note recognition or end-to-end OMR accuracy"
+}

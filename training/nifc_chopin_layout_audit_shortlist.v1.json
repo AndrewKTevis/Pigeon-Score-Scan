@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "role": "nifc_chopin_layout_audit_shortlist_not_training_or_evaluation",
+  "boundary_contract_version": "printed-western-instrumental-scan-boundary@4",
+  "discovery_report_path": "training_data/benchmarks/nifc_chopin_clean_scan_match_discovery_v1.json",
+  "discovery_report_sha256": "6b06f1eb3c0b34cf13505e404b23f347e3ff6015b4434657b979f2fa403d023e",
+  "selection_policy": {
+    "same_publisher_opus_and_plate_required": true,
+    "complete_print_reproduction_required": true,
+    "editorial_annotation_copy_excluded": true,
+    "retain_materially_tied_layout_candidates": true,
+    "prefer_compact_complete_reproduction_over_multi-variant_archive": true
+  },
+  "training_authorized": false,
+  "evaluation_authorized": false,
+  "release_authorized": false,
+  "candidates": [
+    {
+      "parent_pid": "nifc:149891",
+      "reference_path": "kern/006-1-KI-003.krn",
+      "reference_sha256": "5df3dadddd93536dc5527354698aa7d09a8bcfb17c87382cd842f8cc67d90357",
+      "parent_mods_sha256": "d8dc985d7f3683ac7a658b78702afa2731ea91bfc8a11888540f5feb194cc6bd",
+      "selection_score": 261,
+      "selection_reason": "highest_rank_exact_collection_count_and_page_extent"
+    },
+    {
+      "parent_pid": "nifc:148491",
+      "reference_path": "kern/007-1-KI-002.krn",
+      "reference_sha256": "09e41184e55e751d67623aabb76dc4f6fd6476c0570a36b315c82eabbcaf63fe",
+      "parent_mods_sha256": "3ad34813a7821eba705ad45a50c554e19d8abcd2e153c8b35a48da8717b2c6db",
+      "selection_score": 269,
+      "selection_reason": "top_score_tie_exact_five_work_collection"
+    },
+    {
+      "parent_pid": "nifc:153147",
+      "reference_path": "kern/007-1-KI-002.krn",
+      "reference_sha256": "09e41184e55e751d67623aabb76dc4f6fd6476c0570a36b315c82eabbcaf63fe",
+      "parent_mods_sha256": "b9f9080b8c4a3e18eda4849d87d57d66d25ea8e3b70b8979bae228e084f1ac13",
+      "selection_score": 269,
+      "selection_reason": "top_score_tie_exact_five_work_collection"
+    },
+    {
+      "parent_pid": "nifc:155255",
+      "reference_path": "kern/017-1-BH-001.krn",
+      "reference_sha256": "d8a7b16ced0a520ebe198dcbb9d0a99430c24613cfd25db539961ce59f21e77a",
+      "parent_mods_sha256": "6b83c1ce0fa9ab9f58616d8330804807d4fc6e901525c5ac381aa28ab4adf242",
+      "selection_score": 330,
+      "selection_reason": "top_score_tie_first_print_reproduction"
+    },
+    {
+      "parent_pid": "nifc:155264",
+      "reference_path": "kern/017-1-BH-001.krn",
+      "reference_sha256": "d8a7b16ced0a520ebe198dcbb9d0a99430c24613cfd25db539961ce59f21e77a",
+      "parent_mods_sha256": "326dcdc0b0dac64ca952db2fb53fac5e5337ee49bd95ca8db74f0adc5887738d",
+      "selection_score": 330,
+      "selection_reason": "top_score_tie_first_print_reproduction"
+    },
+    {
+      "parent_pid": "nifc:149928",
+      "reference_path": "kern/033-1-BH-001.krn",
+      "reference_sha256": "9fa5fe65fc9e838fde524b6e28890623c9b808e6bc9557b3104dfdf7f1e27f11",
+      "parent_mods_sha256": "0aa94a2c081cccdc31ddaab92cf244d3df2d1e18191fc6aa5062a538c1017fb2",
+      "selection_score": 140,
+      "selection_reason": "highest_rank_nearest_complete_page_extent"
+    },
+    {
+      "parent_pid": "nifc:150861",
+      "reference_path": "kern/050-1a-Sm-001.krn",
+      "reference_sha256": "58fda3b4de563a340fca072b97337ce5580725e0351ab984fdb5cbc6ffba5fee",
+      "parent_mods_sha256": "3e1bf2146b1e716db41fb2434b36261e06c0f190ba1d0b96d08ce8191bf9721f",
+      "selection_score": 129,
+      "selection_reason": "compact_complete_reproduction_avoids_78_or_99_child_multi-variant_archives"
+    },
+    {
+      "parent_pid": "nifc:150415",
+      "reference_path": "kern/063-1-BH-001.krn",
+      "reference_sha256": "dc65b93a871360bac56dff4b05c57c06284804bddd84fe08a3376ffc277832e3",
+      "parent_mods_sha256": "26803d0cddf81ebb89ee2724eb242335b1fff35811c9b64279a1797423828788",
+      "selection_score": 330,
+      "selection_reason": "highest_rank_first_print_reproduction"
+    }
+  ]
+}

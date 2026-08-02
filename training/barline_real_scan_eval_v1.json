@@ -1,0 +1,42 @@
+{
+  "evaluation": "single real printed scan layout regression",
+  "source": "Allegretto No. 3 scan supplied in the development conversation",
+  "ground_truth_measure_count": 46,
+  "results": {
+    "baseline_0_13": {
+      "system_count": 8,
+      "estimated_measure_count": 8,
+      "layout_confidence": 0.987,
+      "system_measure_counts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "detected_barline_count": 0,
+      "absolute_measure_count_error": 38
+    },
+    "scorescan_0_14": {
+      "system_count": 8,
+      "estimated_measure_count": 47,
+      "layout_confidence": 0.987,
+      "system_measure_counts": [
+        6,
+        6,
+        6,
+        5,
+        6,
+        6,
+        5,
+        7
+      ],
+      "detected_barline_count": 47,
+      "absolute_measure_count_error": 1
+    }
+  },
+  "limitations": "One real page only; evaluates layout measure-count estimation, not note recognition or general end-to-end OMR accuracy."
+}

@@ -1,0 +1,16 @@
+{
+  "evaluation": "procedural candidate calibration",
+  "model_version": "scorescan-candidate-calibrator-1",
+  "seed": 20260716,
+  "ensembles": 120,
+  "samples": 840,
+  "positive_samples": 308,
+  "train_samples": 672,
+  "test_samples": 168,
+  "sample_accuracy": 0.8452380952380952,
+  "sample_auc": 0.9197860962566845,
+  "heldout_ensemble_count": 24,
+  "baseline_top1_accuracy": 1.0,
+  "calibrated_top1_accuracy": 1.0,
+  "notes": "Procedural MusicXML candidate-selection calibration; not an end-to-end scan OMR metric."
+}

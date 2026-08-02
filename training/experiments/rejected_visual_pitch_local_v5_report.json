@@ -1,0 +1,1838 @@
+{
+  "model_version": "scorescan-visual-measure-calibrator-5",
+  "seed": 20260723,
+  "measure_groups": 800,
+  "samples": 14400,
+  "split": {
+    "train": {
+      "samples": 10080,
+      "groups": 560
+    },
+    "calibration": {
+      "samples": 1440,
+      "groups": 80
+    },
+    "audit": {
+      "samples": 1440,
+      "groups": 80
+    },
+    "frozen": {
+      "samples": 1440,
+      "groups": 80
+    }
+  },
+  "positive_rate": 0.1111111111111111,
+  "feature_names": [
+    "ink_density",
+    "nonstaff_ink_density",
+    "component_density",
+    "notehead_proxy",
+    "open_notehead_proxy",
+    "stem_proxy",
+    "beam_proxy",
+    "onset_proxy",
+    "compact_mark_proxy",
+    "accidental_proxy",
+    "above_ink_density",
+    "below_ink_density",
+    "x_ink_profile_0",
+    "x_ink_profile_1",
+    "x_ink_profile_2",
+    "x_ink_profile_3",
+    "x_ink_profile_4",
+    "x_ink_profile_5",
+    "x_ink_profile_6",
+    "x_ink_profile_7",
+    "staff_ink_profile_0",
+    "staff_ink_profile_1",
+    "staff_ink_profile_2",
+    "staff_ink_profile_3",
+    "staff_ink_profile_4",
+    "staff_ink_profile_5",
+    "staff_ink_profile_6",
+    "staff_ink_profile_7",
+    "staff_ink_profile_8",
+    "anchor_count",
+    "pitched_count",
+    "rest_count",
+    "chord_extra_count",
+    "beam_complexity",
+    "direction_count",
+    "articulation_count",
+    "accidental_count",
+    "dot_count",
+    "open_notehead_count",
+    "grace_count",
+    "onset_profile_0",
+    "onset_profile_1",
+    "onset_profile_2",
+    "onset_profile_3",
+    "onset_profile_4",
+    "onset_profile_5",
+    "onset_profile_6",
+    "onset_profile_7",
+    "pitch_profile_0",
+    "pitch_profile_1",
+    "pitch_profile_2",
+    "pitch_profile_3",
+    "pitch_profile_4",
+    "pitch_profile_5",
+    "pitch_profile_6",
+    "pitch_profile_7",
+    "pitch_profile_8",
+    "anchor_notehead_gap",
+    "anchor_onset_gap",
+    "pitched_stem_gap",
+    "beam_gap",
+    "direction_ink_gap",
+    "rest_component_gap",
+    "compact_mark_gap",
+    "accidental_gap",
+    "open_notehead_gap",
+    "onset_profile_l1_gap",
+    "onset_profile_transport_gap",
+    "pitch_profile_l1_gap",
+    "pitch_profile_transport_gap",
+    "complexity_density_gap",
+    "event_grid_l1_gap",
+    "event_grid_cosine_gap",
+    "event_grid_neighbourhood_miss",
+    "event_grid_pitch_transport_gap",
+    "notehead_grid_l1_gap",
+    "notehead_grid_neighbourhood_miss",
+    "notehead_grid_pitch_transport_gap",
+    "beam_grid_l1_gap",
+    "beam_grid_neighbourhood_miss",
+    "compact_grid_l1_gap",
+    "compact_grid_neighbourhood_miss",
+    "accidental_grid_l1_gap",
+    "accidental_grid_neighbourhood_miss",
+    "open_notehead_grid_l1_gap",
+    "open_notehead_grid_neighbourhood_miss",
+    "beam_attachment_gap",
+    "accidental_attachment_gap",
+    "open_notehead_attachment_gap",
+    "notehead_exact_cell_miss",
+    "notehead_near_cell_miss",
+    "notehead_vertical_chamfer_gap",
+    "notehead_severe_vertical_miss",
+    "notehead_visual_unmatched_ratio",
+    "notehead_column_centroid_gap",
+    "notehead_column_order_gap"
+  ],
+  "v4_feature_names": [
+    "ink_density",
+    "nonstaff_ink_density",
+    "component_density",
+    "notehead_proxy",
+    "open_notehead_proxy",
+    "stem_proxy",
+    "beam_proxy",
+    "onset_proxy",
+    "compact_mark_proxy",
+    "accidental_proxy",
+    "above_ink_density",
+    "below_ink_density",
+    "x_ink_profile_0",
+    "x_ink_profile_1",
+    "x_ink_profile_2",
+    "x_ink_profile_3",
+    "x_ink_profile_4",
+    "x_ink_profile_5",
+    "x_ink_profile_6",
+    "x_ink_profile_7",
+    "staff_ink_profile_0",
+    "staff_ink_profile_1",
+    "staff_ink_profile_2",
+    "staff_ink_profile_3",
+    "staff_ink_profile_4",
+    "staff_ink_profile_5",
+    "staff_ink_profile_6",
+    "staff_ink_profile_7",
+    "staff_ink_profile_8",
+    "anchor_count",
+    "pitched_count",
+    "rest_count",
+    "chord_extra_count",
+    "beam_complexity",
+    "direction_count",
+    "articulation_count",
+    "accidental_count",
+    "dot_count",
+    "open_notehead_count",
+    "grace_count",
+    "onset_profile_0",
+    "onset_profile_1",
+    "onset_profile_2",
+    "onset_profile_3",
+    "onset_profile_4",
+    "onset_profile_5",
+    "onset_profile_6",
+    "onset_profile_7",
+    "pitch_profile_0",
+    "pitch_profile_1",
+    "pitch_profile_2",
+    "pitch_profile_3",
+    "pitch_profile_4",
+    "pitch_profile_5",
+    "pitch_profile_6",
+    "pitch_profile_7",
+    "pitch_profile_8",
+    "anchor_notehead_gap",
+    "anchor_onset_gap",
+    "pitched_stem_gap",
+    "beam_gap",
+    "direction_ink_gap",
+    "rest_component_gap",
+    "compact_mark_gap",
+    "accidental_gap",
+    "open_notehead_gap",
+    "onset_profile_l1_gap",
+    "onset_profile_transport_gap",
+    "pitch_profile_l1_gap",
+    "pitch_profile_transport_gap",
+    "complexity_density_gap",
+    "event_grid_l1_gap",
+    "event_grid_cosine_gap",
+    "event_grid_neighbourhood_miss",
+    "event_grid_pitch_transport_gap",
+    "notehead_grid_l1_gap",
+    "notehead_grid_neighbourhood_miss",
+    "notehead_grid_pitch_transport_gap",
+    "beam_grid_l1_gap",
+    "beam_grid_neighbourhood_miss",
+    "compact_grid_l1_gap",
+    "compact_grid_neighbourhood_miss",
+    "accidental_grid_l1_gap",
+    "accidental_grid_neighbourhood_miss",
+    "open_notehead_grid_l1_gap",
+    "open_notehead_grid_neighbourhood_miss",
+    "beam_attachment_gap",
+    "accidental_attachment_gap",
+    "open_notehead_attachment_gap"
+  ],
+  "v3_feature_names": [
+    "ink_density",
+    "nonstaff_ink_density",
+    "component_density",
+    "notehead_proxy",
+    "open_notehead_proxy",
+    "stem_proxy",
+    "beam_proxy",
+    "onset_proxy",
+    "compact_mark_proxy",
+    "accidental_proxy",
+    "above_ink_density",
+    "below_ink_density",
+    "x_ink_profile_0",
+    "x_ink_profile_1",
+    "x_ink_profile_2",
+    "x_ink_profile_3",
+    "x_ink_profile_4",
+    "x_ink_profile_5",
+    "x_ink_profile_6",
+    "x_ink_profile_7",
+    "staff_ink_profile_0",
+    "staff_ink_profile_1",
+    "staff_ink_profile_2",
+    "staff_ink_profile_3",
+    "staff_ink_profile_4",
+    "staff_ink_profile_5",
+    "staff_ink_profile_6",
+    "staff_ink_profile_7",
+    "staff_ink_profile_8",
+    "anchor_count",
+    "pitched_count",
+    "rest_count",
+    "chord_extra_count",
+    "beam_complexity",
+    "direction_count",
+    "articulation_count",
+    "accidental_count",
+    "dot_count",
+    "open_notehead_count",
+    "grace_count",
+    "onset_profile_0",
+    "onset_profile_1",
+    "onset_profile_2",
+    "onset_profile_3",
+    "onset_profile_4",
+    "onset_profile_5",
+    "onset_profile_6",
+    "onset_profile_7",
+    "pitch_profile_0",
+    "pitch_profile_1",
+    "pitch_profile_2",
+    "pitch_profile_3",
+    "pitch_profile_4",
+    "pitch_profile_5",
+    "pitch_profile_6",
+    "pitch_profile_7",
+    "pitch_profile_8",
+    "anchor_notehead_gap",
+    "anchor_onset_gap",
+    "pitched_stem_gap",
+    "beam_gap",
+    "direction_ink_gap",
+    "rest_component_gap",
+    "compact_mark_gap",
+    "accidental_gap",
+    "open_notehead_gap",
+    "onset_profile_l1_gap",
+    "onset_profile_transport_gap",
+    "pitch_profile_l1_gap",
+    "pitch_profile_transport_gap",
+    "complexity_density_gap"
+  ],
+  "legacy_feature_names": [
+    "ink_density",
+    "nonstaff_ink_density",
+    "component_density",
+    "notehead_proxy",
+    "stem_proxy",
+    "beam_proxy",
+    "onset_proxy",
+    "above_ink_density",
+    "below_ink_density",
+    "anchor_count",
+    "pitched_count",
+    "rest_count",
+    "chord_extra_count",
+    "beam_complexity",
+    "direction_count",
+    "articulation_count",
+    "accidental_count",
+    "grace_count",
+    "anchor_notehead_gap",
+    "anchor_onset_gap",
+    "pitched_stem_gap",
+    "beam_gap",
+    "direction_ink_gap",
+    "rest_component_gap",
+    "complexity_density_gap"
+  ],
+  "target_scope": "local source-crop and immutable MusicXML candidate compatibility, including event order, symbol-to-event attachment, hollow noteheads, accidentals and compact marks; exact symbol recognition, candidate generation and end-to-end OMR remain outside scope",
+  "model_selection": {
+    "candidates": [
+      {
+        "config": {
+          "estimator": "random_forest",
+          "trees": 32,
+          "max_depth": 8,
+          "min_samples_leaf": 6,
+          "max_features": "sqrt"
+        },
+        "model_bytes": 472577,
+        "evaluation": {
+          "sample": {
+            "accuracy": 0.625,
+            "roc_auc": 0.694892578125,
+            "log_loss": 0.6423560573383301,
+            "brier_score": 0.22644520296881307,
+            "precision": 0.1724137931034483,
+            "recall": 0.625,
+            "f1": 0.2702702702702703,
+            "false_accepts": 480,
+            "false_rejects": 60
+          },
+          "decision": {
+            "groups": 80,
+            "correct": 5,
+            "compatible_top1": 0.0625,
+            "trap_wins": {
+              "pitch-profile-trap": 2,
+              "onset-profile-trap": 4,
+              "accidental-trap": 13,
+              "compact-mark-trap": 8,
+              "open-notehead-trap": 4,
+              "density-trap": 3,
+              "pitch-order-trap": 1,
+              "accidental-position-trap": 7,
+              "compact-position-trap": 7,
+              "open-notehead-position-trap": 0,
+              "event-kind-position-trap": 4,
+              "rhythm-position-trap": 9,
+              "single-step-pitch-trap": 4,
+              "single-octave-pitch-trap": 2,
+              "adjacent-pitch-swap-trap": 1,
+              "chord-tone-pitch-trap": 6
+            },
+            "compatible_over_trap": {
+              "pitch-profile-trap": 0.9,
+              "onset-profile-trap": 0.8625,
+              "accidental-trap": 0.475,
+              "compact-mark-trap": 0.65,
+              "open-notehead-trap": 0.925,
+              "density-trap": 0.9,
+              "pitch-order-trap": 0.6375,
+              "accidental-position-trap": 0.3125,
+              "compact-position-trap": 0.4875,
+              "open-notehead-position-trap": 0.875,
+              "event-kind-position-trap": 0.875,
+              "rhythm-position-trap": 0.3125,
+              "single-step-pitch-trap": 0.575,
+              "single-octave-pitch-trap": 0.725,
+              "adjacent-pitch-swap-trap": 0.525,
+              "chord-tone-pitch-trap": 0.625
+            }
+          },
+          "by_kind": {
+            "exact": {
+              "samples": 80,
+              "mean_probability": 0.5672521099500518,
+              "accepted_fraction": 0.625
+            },
+            "invisible-notation": {
+              "samples": 80,
+              "mean_probability": 0.5672521099500518,
+              "accepted_fraction": 0.625
+            },
+            "pitch-profile-trap": {
+              "samples": 80,
+              "mean_probability": 0.3353500208291339,
+              "accepted_fraction": 0.1
+            },
+            "onset-profile-trap": {
+              "samples": 80,
+              "mean_probability": 0.33142835197442017,
+              "accepted_fraction": 0.225
+            },
+            "accidental-trap": {
+              "samples": 80,
+              "mean_probability": 0.5609935728520385,
+              "accepted_fraction": 0.6
+            },
+            "compact-mark-trap": {
+              "samples": 80,
+              "mean_probability": 0.5297417473466317,
+              "accepted_fraction": 0.5625
+            },
+            "open-notehead-trap": {
+              "samples": 80,
+              "mean_probability": 0.2742605851050076,
+              "accepted_fraction": 0.125
+            },
+            "density-trap": {
+              "samples": 80,
+              "mean_probability": 0.3229482773752248,
+              "accepted_fraction": 0.1375
+            },
+            "pitch-order-trap": {
+              "samples": 80,
+              "mean_probability": 0.4306603244118025,
+              "accepted_fraction": 0.3
+            },
+            "accidental-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5667852791742973,
+              "accepted_fraction": 0.6375
+            },
+            "compact-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5478836937270957,
+              "accepted_fraction": 0.5875
+            },
+            "open-notehead-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.28656282096308583,
+              "accepted_fraction": 0.15
+            },
+            "event-kind-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.40015440824534104,
+              "accepted_fraction": 0.3375
+            },
+            "rhythm-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5590946542115519,
+              "accepted_fraction": 0.6
+            },
+            "single-step-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.49933463002482414,
+              "accepted_fraction": 0.4875
+            },
+            "single-octave-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.42830907646054106,
+              "accepted_fraction": 0.2625
+            },
+            "adjacent-pitch-swap-trap": {
+              "samples": 80,
+              "mean_probability": 0.4844852028457267,
+              "accepted_fraction": 0.425
+            },
+            "chord-tone-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.48971339039696316,
+              "accepted_fraction": 0.4625
+            }
+          }
+        }
+      },
+      {
+        "config": {
+          "estimator": "extra_trees",
+          "trees": 48,
+          "max_depth": 8,
+          "min_samples_leaf": 6,
+          "max_features": "sqrt"
+        },
+        "model_bytes": 707068,
+        "evaluation": {
+          "sample": {
+            "accuracy": 0.5756944444444444,
+            "roc_auc": 0.7043457031249999,
+            "log_loss": 0.6556732135395648,
+            "brier_score": 0.23465870177627002,
+            "precision": 0.1736613603473227,
+            "recall": 0.75,
+            "f1": 0.282021151586369,
+            "false_accepts": 571,
+            "false_rejects": 40
+          },
+          "decision": {
+            "groups": 80,
+            "correct": 7,
+            "compatible_top1": 0.0875,
+            "trap_wins": {
+              "pitch-profile-trap": 3,
+              "onset-profile-trap": 2,
+              "accidental-trap": 8,
+              "compact-mark-trap": 9,
+              "open-notehead-trap": 1,
+              "density-trap": 3,
+              "pitch-order-trap": 4,
+              "accidental-position-trap": 7,
+              "compact-position-trap": 6,
+              "open-notehead-position-trap": 1,
+              "event-kind-position-trap": 8,
+              "rhythm-position-trap": 6,
+              "single-step-pitch-trap": 4,
+              "single-octave-pitch-trap": 1,
+              "adjacent-pitch-swap-trap": 4,
+              "chord-tone-pitch-trap": 6
+            },
+            "compatible_over_trap": {
+              "pitch-profile-trap": 0.9,
+              "onset-profile-trap": 0.85,
+              "accidental-trap": 0.65,
+              "compact-mark-trap": 0.725,
+              "open-notehead-trap": 0.95,
+              "density-trap": 0.9375,
+              "pitch-order-trap": 0.5875,
+              "accidental-position-trap": 0.3875,
+              "compact-position-trap": 0.575,
+              "open-notehead-position-trap": 0.925,
+              "event-kind-position-trap": 0.85,
+              "rhythm-position-trap": 0.475,
+              "single-step-pitch-trap": 0.5875,
+              "single-octave-pitch-trap": 0.7125,
+              "adjacent-pitch-swap-trap": 0.5375,
+              "chord-tone-pitch-trap": 0.5875
+            }
+          },
+          "by_kind": {
+            "exact": {
+              "samples": 80,
+              "mean_probability": 0.5801098972556643,
+              "accepted_fraction": 0.75
+            },
+            "invisible-notation": {
+              "samples": 80,
+              "mean_probability": 0.5801098972556643,
+              "accepted_fraction": 0.75
+            },
+            "pitch-profile-trap": {
+              "samples": 80,
+              "mean_probability": 0.3156716511940412,
+              "accepted_fraction": 0.15
+            },
+            "onset-profile-trap": {
+              "samples": 80,
+              "mean_probability": 0.36598856395453916,
+              "accepted_fraction": 0.25
+            },
+            "accidental-trap": {
+              "samples": 80,
+              "mean_probability": 0.5537810874166865,
+              "accepted_fraction": 0.65
+            },
+            "compact-mark-trap": {
+              "samples": 80,
+              "mean_probability": 0.540267118946746,
+              "accepted_fraction": 0.6375
+            },
+            "open-notehead-trap": {
+              "samples": 80,
+              "mean_probability": 0.2716343202861345,
+              "accepted_fraction": 0.0875
+            },
+            "density-trap": {
+              "samples": 80,
+              "mean_probability": 0.34924149813971195,
+              "accepted_fraction": 0.15
+            },
+            "pitch-order-trap": {
+              "samples": 80,
+              "mean_probability": 0.447147127822463,
+              "accepted_fraction": 0.4125
+            },
+            "accidental-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5686972479681079,
+              "accepted_fraction": 0.7
+            },
+            "compact-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5678533910066589,
+              "accepted_fraction": 0.75
+            },
+            "open-notehead-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.29070768674402225,
+              "accepted_fraction": 0.1
+            },
+            "event-kind-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.4289157545142713,
+              "accepted_fraction": 0.4
+            },
+            "rhythm-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5622922959139759,
+              "accepted_fraction": 0.6875
+            },
+            "single-step-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.5301424058138506,
+              "accepted_fraction": 0.65
+            },
+            "single-octave-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.46414360850884756,
+              "accepted_fraction": 0.4
+            },
+            "adjacent-pitch-swap-trap": {
+              "samples": 80,
+              "mean_probability": 0.5182995376665871,
+              "accepted_fraction": 0.5625
+            },
+            "chord-tone-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.5217424078679216,
+              "accepted_fraction": 0.55
+            }
+          }
+        }
+      },
+      {
+        "config": {
+          "estimator": "extra_trees",
+          "trees": 64,
+          "max_depth": 10,
+          "min_samples_leaf": 4,
+          "max_features": 0.7
+        },
+        "model_bytes": 1347590,
+        "evaluation": {
+          "sample": {
+            "accuracy": 0.5819444444444445,
+            "roc_auc": 0.7331640625,
+            "log_loss": 0.6319834746253116,
+            "brier_score": 0.2253366647192378,
+            "precision": 0.18155619596541786,
+            "recall": 0.7875,
+            "f1": 0.29508196721311475,
+            "false_accepts": 568,
+            "false_rejects": 34
+          },
+          "decision": {
+            "groups": 80,
+            "correct": 11,
+            "compatible_top1": 0.1375,
+            "trap_wins": {
+              "pitch-profile-trap": 1,
+              "onset-profile-trap": 4,
+              "accidental-trap": 14,
+              "compact-mark-trap": 8,
+              "open-notehead-trap": 0,
+              "density-trap": 3,
+              "pitch-order-trap": 2,
+              "accidental-position-trap": 7,
+              "compact-position-trap": 5,
+              "open-notehead-position-trap": 2,
+              "event-kind-position-trap": 5,
+              "rhythm-position-trap": 4,
+              "single-step-pitch-trap": 3,
+              "single-octave-pitch-trap": 3,
+              "adjacent-pitch-swap-trap": 2,
+              "chord-tone-pitch-trap": 6
+            },
+            "compatible_over_trap": {
+              "pitch-profile-trap": 0.9125,
+              "onset-profile-trap": 0.8875,
+              "accidental-trap": 0.65,
+              "compact-mark-trap": 0.8125,
+              "open-notehead-trap": 0.9625,
+              "density-trap": 0.9625,
+              "pitch-order-trap": 0.625,
+              "accidental-position-trap": 0.35,
+              "compact-position-trap": 0.575,
+              "open-notehead-position-trap": 0.925,
+              "event-kind-position-trap": 0.8125,
+              "rhythm-position-trap": 0.4125,
+              "single-step-pitch-trap": 0.575,
+              "single-octave-pitch-trap": 0.7125,
+              "adjacent-pitch-swap-trap": 0.5625,
+              "chord-tone-pitch-trap": 0.675
+            }
+          },
+          "by_kind": {
+            "exact": {
+              "samples": 80,
+              "mean_probability": 0.5957633213492958,
+              "accepted_fraction": 0.7875
+            },
+            "invisible-notation": {
+              "samples": 80,
+              "mean_probability": 0.5957633213492958,
+              "accepted_fraction": 0.7875
+            },
+            "pitch-profile-trap": {
+              "samples": 80,
+              "mean_probability": 0.2773604663241625,
+              "accepted_fraction": 0.0875
+            },
+            "onset-profile-trap": {
+              "samples": 80,
+              "mean_probability": 0.3465951100997834,
+              "accepted_fraction": 0.2625
+            },
+            "accidental-trap": {
+              "samples": 80,
+              "mean_probability": 0.5637703133156886,
+              "accepted_fraction": 0.6625
+            },
+            "compact-mark-trap": {
+              "samples": 80,
+              "mean_probability": 0.5010136573905699,
+              "accepted_fraction": 0.575
+            },
+            "open-notehead-trap": {
+              "samples": 80,
+              "mean_probability": 0.1819140107309909,
+              "accepted_fraction": 0.1
+            },
+            "density-trap": {
+              "samples": 80,
+              "mean_probability": 0.33331953061238984,
+              "accepted_fraction": 0.1875
+            },
+            "pitch-order-trap": {
+              "samples": 80,
+              "mean_probability": 0.42438462921249637,
+              "accepted_fraction": 0.3375
+            },
+            "accidental-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5838802315151675,
+              "accepted_fraction": 0.7875
+            },
+            "compact-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5581610798210116,
+              "accepted_fraction": 0.7125
+            },
+            "open-notehead-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.20655136328266935,
+              "accepted_fraction": 0.1375
+            },
+            "event-kind-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.4284061292740763,
+              "accepted_fraction": 0.3875
+            },
+            "rhythm-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.571804153899927,
+              "accepted_fraction": 0.7125
+            },
+            "single-step-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.5311282787439666,
+              "accepted_fraction": 0.65
+            },
+            "single-octave-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.4456682354917045,
+              "accepted_fraction": 0.375
+            },
+            "adjacent-pitch-swap-trap": {
+              "samples": 80,
+              "mean_probability": 0.5014610199331129,
+              "accepted_fraction": 0.5375
+            },
+            "chord-tone-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.5170906605010464,
+              "accepted_fraction": 0.5875
+            }
+          }
+        }
+      },
+      {
+        "config": {
+          "estimator": "extra_trees",
+          "trees": 96,
+          "max_depth": 10,
+          "min_samples_leaf": 4,
+          "max_features": 0.7
+        },
+        "model_bytes": 2005051,
+        "evaluation": {
+          "sample": {
+            "accuracy": 0.5770833333333333,
+            "roc_auc": 0.73341796875,
+            "log_loss": 0.6373156310457601,
+            "brier_score": 0.2275502696181597,
+            "precision": 0.17790530846484937,
+            "recall": 0.775,
+            "f1": 0.2893815635939323,
+            "false_accepts": 573,
+            "false_rejects": 36
+          },
+          "decision": {
+            "groups": 80,
+            "correct": 10,
+            "compatible_top1": 0.125,
+            "trap_wins": {
+              "pitch-profile-trap": 1,
+              "onset-profile-trap": 5,
+              "accidental-trap": 15,
+              "compact-mark-trap": 7,
+              "open-notehead-trap": 0,
+              "density-trap": 3,
+              "pitch-order-trap": 3,
+              "accidental-position-trap": 8,
+              "compact-position-trap": 5,
+              "open-notehead-position-trap": 2,
+              "event-kind-position-trap": 7,
+              "rhythm-position-trap": 3,
+              "single-step-pitch-trap": 4,
+              "single-octave-pitch-trap": 2,
+              "adjacent-pitch-swap-trap": 2,
+              "chord-tone-pitch-trap": 3
+            },
+            "compatible_over_trap": {
+              "pitch-profile-trap": 0.9,
+              "onset-profile-trap": 0.875,
+              "accidental-trap": 0.65,
+              "compact-mark-trap": 0.825,
+              "open-notehead-trap": 0.9625,
+              "density-trap": 0.9625,
+              "pitch-order-trap": 0.625,
+              "accidental-position-trap": 0.4,
+              "compact-position-trap": 0.625,
+              "open-notehead-position-trap": 0.925,
+              "event-kind-position-trap": 0.85,
+              "rhythm-position-trap": 0.4375,
+              "single-step-pitch-trap": 0.6,
+              "single-octave-pitch-trap": 0.725,
+              "adjacent-pitch-swap-trap": 0.5875,
+              "chord-tone-pitch-trap": 0.6875
+            }
+          },
+          "by_kind": {
+            "exact": {
+              "samples": 80,
+              "mean_probability": 0.597728015956225,
+              "accepted_fraction": 0.775
+            },
+            "invisible-notation": {
+              "samples": 80,
+              "mean_probability": 0.597728015956225,
+              "accepted_fraction": 0.775
+            },
+            "pitch-profile-trap": {
+              "samples": 80,
+              "mean_probability": 0.2899570574130703,
+              "accepted_fraction": 0.1
+            },
+            "onset-profile-trap": {
+              "samples": 80,
+              "mean_probability": 0.3531926266040113,
+              "accepted_fraction": 0.2625
+            },
+            "accidental-trap": {
+              "samples": 80,
+              "mean_probability": 0.5674780872201916,
+              "accepted_fraction": 0.6875
+            },
+            "compact-mark-trap": {
+              "samples": 80,
+              "mean_probability": 0.5047480448522569,
+              "accepted_fraction": 0.575
+            },
+            "open-notehead-trap": {
+              "samples": 80,
+              "mean_probability": 0.18523068106271867,
+              "accepted_fraction": 0.1125
+            },
+            "density-trap": {
+              "samples": 80,
+              "mean_probability": 0.33865090685971355,
+              "accepted_fraction": 0.1875
+            },
+            "pitch-order-trap": {
+              "samples": 80,
+              "mean_probability": 0.4303185853425129,
+              "accepted_fraction": 0.3875
+            },
+            "accidental-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5867596220743355,
+              "accepted_fraction": 0.75
+            },
+            "compact-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5600676174843002,
+              "accepted_fraction": 0.6875
+            },
+            "open-notehead-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.20928666869993967,
+              "accepted_fraction": 0.15
+            },
+            "event-kind-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.4363874293044227,
+              "accepted_fraction": 0.4375
+            },
+            "rhythm-position-trap": {
+              "samples": 80,
+              "mean_probability": 0.5748734331752507,
+              "accepted_fraction": 0.7125
+            },
+            "single-step-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.532351081868697,
+              "accepted_fraction": 0.6125
+            },
+            "single-octave-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.4516305184667722,
+              "accepted_fraction": 0.3625
+            },
+            "adjacent-pitch-swap-trap": {
+              "samples": 80,
+              "mean_probability": 0.505930468569745,
+              "accepted_fraction": 0.5625
+            },
+            "chord-tone-pitch-trap": {
+              "samples": 80,
+              "mean_probability": 0.5197050025377998,
+              "accepted_fraction": 0.575
+            }
+          }
+        }
+      }
+    ],
+    "selected": {
+      "config": {
+        "estimator": "extra_trees",
+        "trees": 64,
+        "max_depth": 10,
+        "min_samples_leaf": 4,
+        "max_features": 0.7
+      },
+      "model_bytes": 1347590,
+      "evaluation": {
+        "sample": {
+          "accuracy": 0.5819444444444445,
+          "roc_auc": 0.7331640625,
+          "log_loss": 0.6319834746253116,
+          "brier_score": 0.2253366647192378,
+          "precision": 0.18155619596541786,
+          "recall": 0.7875,
+          "f1": 0.29508196721311475,
+          "false_accepts": 568,
+          "false_rejects": 34
+        },
+        "decision": {
+          "groups": 80,
+          "correct": 11,
+          "compatible_top1": 0.1375,
+          "trap_wins": {
+            "pitch-profile-trap": 1,
+            "onset-profile-trap": 4,
+            "accidental-trap": 14,
+            "compact-mark-trap": 8,
+            "open-notehead-trap": 0,
+            "density-trap": 3,
+            "pitch-order-trap": 2,
+            "accidental-position-trap": 7,
+            "compact-position-trap": 5,
+            "open-notehead-position-trap": 2,
+            "event-kind-position-trap": 5,
+            "rhythm-position-trap": 4,
+            "single-step-pitch-trap": 3,
+            "single-octave-pitch-trap": 3,
+            "adjacent-pitch-swap-trap": 2,
+            "chord-tone-pitch-trap": 6
+          },
+          "compatible_over_trap": {
+            "pitch-profile-trap": 0.9125,
+            "onset-profile-trap": 0.8875,
+            "accidental-trap": 0.65,
+            "compact-mark-trap": 0.8125,
+            "open-notehead-trap": 0.9625,
+            "density-trap": 0.9625,
+            "pitch-order-trap": 0.625,
+            "accidental-position-trap": 0.35,
+            "compact-position-trap": 0.575,
+            "open-notehead-position-trap": 0.925,
+            "event-kind-position-trap": 0.8125,
+            "rhythm-position-trap": 0.4125,
+            "single-step-pitch-trap": 0.575,
+            "single-octave-pitch-trap": 0.7125,
+            "adjacent-pitch-swap-trap": 0.5625,
+            "chord-tone-pitch-trap": 0.675
+          }
+        },
+        "by_kind": {
+          "exact": {
+            "samples": 80,
+            "mean_probability": 0.5957633213492958,
+            "accepted_fraction": 0.7875
+          },
+          "invisible-notation": {
+            "samples": 80,
+            "mean_probability": 0.5957633213492958,
+            "accepted_fraction": 0.7875
+          },
+          "pitch-profile-trap": {
+            "samples": 80,
+            "mean_probability": 0.2773604663241625,
+            "accepted_fraction": 0.0875
+          },
+          "onset-profile-trap": {
+            "samples": 80,
+            "mean_probability": 0.3465951100997834,
+            "accepted_fraction": 0.2625
+          },
+          "accidental-trap": {
+            "samples": 80,
+            "mean_probability": 0.5637703133156886,
+            "accepted_fraction": 0.6625
+          },
+          "compact-mark-trap": {
+            "samples": 80,
+            "mean_probability": 0.5010136573905699,
+            "accepted_fraction": 0.575
+          },
+          "open-notehead-trap": {
+            "samples": 80,
+            "mean_probability": 0.1819140107309909,
+            "accepted_fraction": 0.1
+          },
+          "density-trap": {
+            "samples": 80,
+            "mean_probability": 0.33331953061238984,
+            "accepted_fraction": 0.1875
+          },
+          "pitch-order-trap": {
+            "samples": 80,
+            "mean_probability": 0.42438462921249637,
+            "accepted_fraction": 0.3375
+          },
+          "accidental-position-trap": {
+            "samples": 80,
+            "mean_probability": 0.5838802315151675,
+            "accepted_fraction": 0.7875
+          },
+          "compact-position-trap": {
+            "samples": 80,
+            "mean_probability": 0.5581610798210116,
+            "accepted_fraction": 0.7125
+          },
+          "open-notehead-position-trap": {
+            "samples": 80,
+            "mean_probability": 0.20655136328266935,
+            "accepted_fraction": 0.1375
+          },
+          "event-kind-position-trap": {
+            "samples": 80,
+            "mean_probability": 0.4284061292740763,
+            "accepted_fraction": 0.3875
+          },
+          "rhythm-position-trap": {
+            "samples": 80,
+            "mean_probability": 0.571804153899927,
+            "accepted_fraction": 0.7125
+          },
+          "single-step-pitch-trap": {
+            "samples": 80,
+            "mean_probability": 0.5311282787439666,
+            "accepted_fraction": 0.65
+          },
+          "single-octave-pitch-trap": {
+            "samples": 80,
+            "mean_probability": 0.4456682354917045,
+            "accepted_fraction": 0.375
+          },
+          "adjacent-pitch-swap-trap": {
+            "samples": 80,
+            "mean_probability": 0.5014610199331129,
+            "accepted_fraction": 0.5375
+          },
+          "chord-tone-pitch-trap": {
+            "samples": 80,
+            "mean_probability": 0.5170906605010464,
+            "accepted_fraction": 0.5875
+          }
+        }
+      }
+    },
+    "rule": "maximise audit compatible Top-1; within 0.2 percentage points and 0.012 Log Loss choose smallest model"
+  },
+  "frozen_test": {
+    "v5": {
+      "sample": {
+        "accuracy": 0.5388888888888889,
+        "roc_auc": 0.7206982421875001,
+        "log_loss": 0.6689891740970195,
+        "brier_score": 0.24225964739652892,
+        "precision": 0.17015706806282724,
+        "recall": 0.8125,
+        "f1": 0.2813852813852814,
+        "false_accepts": 634,
+        "false_rejects": 30
+      },
+      "decision": {
+        "groups": 80,
+        "correct": 9,
+        "compatible_top1": 0.1125,
+        "trap_wins": {
+          "pitch-profile-trap": 1,
+          "onset-profile-trap": 2,
+          "accidental-trap": 6,
+          "compact-mark-trap": 6,
+          "open-notehead-trap": 1,
+          "density-trap": 9,
+          "pitch-order-trap": 2,
+          "accidental-position-trap": 9,
+          "compact-position-trap": 10,
+          "open-notehead-position-trap": 2,
+          "event-kind-position-trap": 4,
+          "rhythm-position-trap": 4,
+          "single-step-pitch-trap": 6,
+          "single-octave-pitch-trap": 5,
+          "adjacent-pitch-swap-trap": 3,
+          "chord-tone-pitch-trap": 1
+        },
+        "compatible_over_trap": {
+          "pitch-profile-trap": 0.9125,
+          "onset-profile-trap": 0.9,
+          "accidental-trap": 0.6125,
+          "compact-mark-trap": 0.8125,
+          "open-notehead-trap": 0.95,
+          "density-trap": 0.875,
+          "pitch-order-trap": 0.625,
+          "accidental-position-trap": 0.3,
+          "compact-position-trap": 0.5,
+          "open-notehead-position-trap": 0.85,
+          "event-kind-position-trap": 0.925,
+          "rhythm-position-trap": 0.3625,
+          "single-step-pitch-trap": 0.6,
+          "single-octave-pitch-trap": 0.7625,
+          "adjacent-pitch-swap-trap": 0.525,
+          "chord-tone-pitch-trap": 0.7
+        }
+      },
+      "by_kind": {
+        "exact": {
+          "samples": 80,
+          "mean_probability": 0.6130085482092428,
+          "accepted_fraction": 0.8125
+        },
+        "invisible-notation": {
+          "samples": 80,
+          "mean_probability": 0.6130085482092428,
+          "accepted_fraction": 0.8125
+        },
+        "pitch-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.282057014971335,
+          "accepted_fraction": 0.1125
+        },
+        "onset-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.34843282807074505,
+          "accepted_fraction": 0.2625
+        },
+        "accidental-trap": {
+          "samples": 80,
+          "mean_probability": 0.5926905792472039,
+          "accepted_fraction": 0.8125
+        },
+        "compact-mark-trap": {
+          "samples": 80,
+          "mean_probability": 0.5108182880478618,
+          "accepted_fraction": 0.5625
+        },
+        "open-notehead-trap": {
+          "samples": 80,
+          "mean_probability": 0.18764190768285757,
+          "accepted_fraction": 0.1125
+        },
+        "density-trap": {
+          "samples": 80,
+          "mean_probability": 0.44005842394564426,
+          "accepted_fraction": 0.475
+        },
+        "pitch-order-trap": {
+          "samples": 80,
+          "mean_probability": 0.45882821191112094,
+          "accepted_fraction": 0.45
+        },
+        "accidental-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.6093563680012429,
+          "accepted_fraction": 0.8375
+        },
+        "compact-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.5852644042212829,
+          "accepted_fraction": 0.75
+        },
+        "open-notehead-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.24578067495520797,
+          "accepted_fraction": 0.225
+        },
+        "event-kind-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.3942955424420689,
+          "accepted_fraction": 0.3625
+        },
+        "rhythm-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.5861214570644693,
+          "accepted_fraction": 0.725
+        },
+        "single-step-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5441148215029743,
+          "accepted_fraction": 0.65
+        },
+        "single-octave-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.4419630058652502,
+          "accepted_fraction": 0.3875
+        },
+        "adjacent-pitch-swap-trap": {
+          "samples": 80,
+          "mean_probability": 0.5123499680289991,
+          "accepted_fraction": 0.575
+        },
+        "chord-tone-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5380130896280747,
+          "accepted_fraction": 0.625
+        }
+      }
+    },
+    "v4_same_test": {
+      "sample": {
+        "accuracy": 0.5083333333333333,
+        "roc_auc": 0.745,
+        "log_loss": 0.6957959323272732,
+        "brier_score": 0.25689538788136734,
+        "precision": 0.16747572815533981,
+        "recall": 0.8625,
+        "f1": 0.2804878048780488,
+        "false_accepts": 686,
+        "false_rejects": 22
+      },
+      "decision": {
+        "groups": 80,
+        "correct": 13,
+        "compatible_top1": 0.1625,
+        "trap_wins": {
+          "pitch-profile-trap": 1,
+          "onset-profile-trap": 2,
+          "accidental-trap": 7,
+          "compact-mark-trap": 3,
+          "open-notehead-trap": 0,
+          "density-trap": 4,
+          "pitch-order-trap": 6,
+          "accidental-position-trap": 14,
+          "compact-position-trap": 6,
+          "open-notehead-position-trap": 1,
+          "event-kind-position-trap": 3,
+          "rhythm-position-trap": 8,
+          "single-step-pitch-trap": 3,
+          "single-octave-pitch-trap": 6,
+          "adjacent-pitch-swap-trap": 2,
+          "chord-tone-pitch-trap": 1
+        },
+        "compatible_over_trap": {
+          "pitch-profile-trap": 0.9125,
+          "onset-profile-trap": 0.95,
+          "accidental-trap": 0.7375,
+          "compact-mark-trap": 0.875,
+          "open-notehead-trap": 0.975,
+          "density-trap": 0.9375,
+          "pitch-order-trap": 0.625,
+          "accidental-position-trap": 0.4875,
+          "compact-position-trap": 0.6625,
+          "open-notehead-position-trap": 0.8625,
+          "event-kind-position-trap": 0.95,
+          "rhythm-position-trap": 0.4375,
+          "single-step-pitch-trap": 0.6125,
+          "single-octave-pitch-trap": 0.725,
+          "adjacent-pitch-swap-trap": 0.525,
+          "chord-tone-pitch-trap": 0.7
+        }
+      },
+      "by_kind": {
+        "exact": {
+          "samples": 80,
+          "mean_probability": 0.6494860048563824,
+          "accepted_fraction": 0.8625
+        },
+        "invisible-notation": {
+          "samples": 80,
+          "mean_probability": 0.6494860048563824,
+          "accepted_fraction": 0.8625
+        },
+        "pitch-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.272791086801674,
+          "accepted_fraction": 0.1375
+        },
+        "onset-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.3299546737399258,
+          "accepted_fraction": 0.275
+        },
+        "accidental-trap": {
+          "samples": 80,
+          "mean_probability": 0.6031233372147065,
+          "accepted_fraction": 0.775
+        },
+        "compact-mark-trap": {
+          "samples": 80,
+          "mean_probability": 0.4646540698406387,
+          "accepted_fraction": 0.5375
+        },
+        "open-notehead-trap": {
+          "samples": 80,
+          "mean_probability": 0.16141749333099548,
+          "accepted_fraction": 0.075
+        },
+        "density-trap": {
+          "samples": 80,
+          "mean_probability": 0.44162868059231497,
+          "accepted_fraction": 0.475
+        },
+        "pitch-order-trap": {
+          "samples": 80,
+          "mean_probability": 0.4921219428860706,
+          "accepted_fraction": 0.55
+        },
+        "accidental-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.6429232159136851,
+          "accepted_fraction": 0.85
+        },
+        "compact-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.6059200498372267,
+          "accepted_fraction": 0.8
+        },
+        "open-notehead-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.22282907339531502,
+          "accepted_fraction": 0.1625
+        },
+        "event-kind-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.40022754729847226,
+          "accepted_fraction": 0.4
+        },
+        "rhythm-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.6035500956469285,
+          "accepted_fraction": 0.7625
+        },
+        "single-step-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5962566746343233,
+          "accepted_fraction": 0.775
+        },
+        "single-octave-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5015861598180916,
+          "accepted_fraction": 0.525
+        },
+        "adjacent-pitch-swap-trap": {
+          "samples": 80,
+          "mean_probability": 0.5604894777817495,
+          "accepted_fraction": 0.7125
+        },
+        "chord-tone-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5901338232937792,
+          "accepted_fraction": 0.7625
+        }
+      }
+    },
+    "pitch_local_ablation": {
+      "sample": {
+        "accuracy": 0.5229166666666667,
+        "roc_auc": 0.729296875,
+        "log_loss": 0.6812824261036198,
+        "brier_score": 0.24834100553912344,
+        "precision": 0.1702127659574468,
+        "recall": 0.85,
+        "f1": 0.28362877997914493,
+        "false_accepts": 663,
+        "false_rejects": 24
+      },
+      "decision": {
+        "groups": 80,
+        "correct": 8,
+        "compatible_top1": 0.1,
+        "trap_wins": {
+          "pitch-profile-trap": 2,
+          "onset-profile-trap": 3,
+          "accidental-trap": 6,
+          "compact-mark-trap": 4,
+          "open-notehead-trap": 1,
+          "density-trap": 7,
+          "pitch-order-trap": 3,
+          "accidental-position-trap": 15,
+          "compact-position-trap": 6,
+          "open-notehead-position-trap": 0,
+          "event-kind-position-trap": 3,
+          "rhythm-position-trap": 5,
+          "single-step-pitch-trap": 6,
+          "single-octave-pitch-trap": 2,
+          "adjacent-pitch-swap-trap": 4,
+          "chord-tone-pitch-trap": 5
+        },
+        "compatible_over_trap": {
+          "pitch-profile-trap": 0.9125,
+          "onset-profile-trap": 0.8625,
+          "accidental-trap": 0.6125,
+          "compact-mark-trap": 0.825,
+          "open-notehead-trap": 0.975,
+          "density-trap": 0.8625,
+          "pitch-order-trap": 0.625,
+          "accidental-position-trap": 0.35,
+          "compact-position-trap": 0.5625,
+          "open-notehead-position-trap": 0.875,
+          "event-kind-position-trap": 0.8875,
+          "rhythm-position-trap": 0.4125,
+          "single-step-pitch-trap": 0.6125,
+          "single-octave-pitch-trap": 0.725,
+          "adjacent-pitch-swap-trap": 0.5375,
+          "chord-tone-pitch-trap": 0.6375
+        }
+      },
+      "by_kind": {
+        "exact": {
+          "samples": 80,
+          "mean_probability": 0.623130519271797,
+          "accepted_fraction": 0.85
+        },
+        "invisible-notation": {
+          "samples": 80,
+          "mean_probability": 0.623130519271797,
+          "accepted_fraction": 0.85
+        },
+        "pitch-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.29396248708067413,
+          "accepted_fraction": 0.1
+        },
+        "onset-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.3452597309681461,
+          "accepted_fraction": 0.3
+        },
+        "accidental-trap": {
+          "samples": 80,
+          "mean_probability": 0.6063780086747592,
+          "accepted_fraction": 0.8125
+        },
+        "compact-mark-trap": {
+          "samples": 80,
+          "mean_probability": 0.5167246114851589,
+          "accepted_fraction": 0.6125
+        },
+        "open-notehead-trap": {
+          "samples": 80,
+          "mean_probability": 0.18830025916599144,
+          "accepted_fraction": 0.1
+        },
+        "density-trap": {
+          "samples": 80,
+          "mean_probability": 0.44606658504427343,
+          "accepted_fraction": 0.5
+        },
+        "pitch-order-trap": {
+          "samples": 80,
+          "mean_probability": 0.46750978811422855,
+          "accepted_fraction": 0.4625
+        },
+        "accidental-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.6196370708888704,
+          "accepted_fraction": 0.8625
+        },
+        "compact-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.5957410007147782,
+          "accepted_fraction": 0.825
+        },
+        "open-notehead-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.24666951653001973,
+          "accepted_fraction": 0.2125
+        },
+        "event-kind-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.3917824535212303,
+          "accepted_fraction": 0.3
+        },
+        "rhythm-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.5950183120285026,
+          "accepted_fraction": 0.7875
+        },
+        "single-step-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5609183661866759,
+          "accepted_fraction": 0.6875
+        },
+        "single-octave-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.46431720604945037,
+          "accepted_fraction": 0.4
+        },
+        "adjacent-pitch-swap-trap": {
+          "samples": 80,
+          "mean_probability": 0.5250758980902795,
+          "accepted_fraction": 0.6125
+        },
+        "chord-tone-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5584330574518355,
+          "accepted_fraction": 0.7125
+        }
+      }
+    },
+    "event_grid_ablation": {
+      "sample": {
+        "accuracy": 0.44305555555555554,
+        "roc_auc": 0.673583984375,
+        "log_loss": 0.6602889052931421,
+        "brier_score": 0.24195594833816686,
+        "precision": 0.1503267973856209,
+        "recall": 0.8625,
+        "f1": 0.2560296846011132,
+        "false_accepts": 780,
+        "false_rejects": 22
+      },
+      "decision": {
+        "groups": 80,
+        "correct": 4,
+        "compatible_top1": 0.05,
+        "trap_wins": {
+          "pitch-profile-trap": 3,
+          "onset-profile-trap": 7,
+          "accidental-trap": 13,
+          "compact-mark-trap": 5,
+          "open-notehead-trap": 1,
+          "density-trap": 6,
+          "pitch-order-trap": 2,
+          "accidental-position-trap": 8,
+          "compact-position-trap": 6,
+          "open-notehead-position-trap": 0,
+          "event-kind-position-trap": 3,
+          "rhythm-position-trap": 1,
+          "single-step-pitch-trap": 9,
+          "single-octave-pitch-trap": 5,
+          "adjacent-pitch-swap-trap": 4,
+          "chord-tone-pitch-trap": 3
+        },
+        "compatible_over_trap": {
+          "pitch-profile-trap": 0.75,
+          "onset-profile-trap": 0.8375,
+          "accidental-trap": 0.5375,
+          "compact-mark-trap": 0.8625,
+          "open-notehead-trap": 0.9,
+          "density-trap": 0.8625,
+          "pitch-order-trap": 0.1625,
+          "accidental-position-trap": 0.3,
+          "compact-position-trap": 0.5375,
+          "open-notehead-position-trap": 0.7625,
+          "event-kind-position-trap": 0.725,
+          "rhythm-position-trap": 0.3375,
+          "single-step-pitch-trap": 0.2375,
+          "single-octave-pitch-trap": 0.5625,
+          "adjacent-pitch-swap-trap": 0.075,
+          "chord-tone-pitch-trap": 0.225
+        }
+      },
+      "by_kind": {
+        "exact": {
+          "samples": 80,
+          "mean_probability": 0.5676225313338332,
+          "accepted_fraction": 0.8625
+        },
+        "invisible-notation": {
+          "samples": 80,
+          "mean_probability": 0.5676225313338332,
+          "accepted_fraction": 0.8625
+        },
+        "pitch-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.41090466297187034,
+          "accepted_fraction": 0.3625
+        },
+        "onset-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.3894927942243328,
+          "accepted_fraction": 0.425
+        },
+        "accidental-trap": {
+          "samples": 80,
+          "mean_probability": 0.5501359666863115,
+          "accepted_fraction": 0.8125
+        },
+        "compact-mark-trap": {
+          "samples": 80,
+          "mean_probability": 0.4190954831826629,
+          "accepted_fraction": 0.475
+        },
+        "open-notehead-trap": {
+          "samples": 80,
+          "mean_probability": 0.15656564475781282,
+          "accepted_fraction": 0.1
+        },
+        "density-trap": {
+          "samples": 80,
+          "mean_probability": 0.3749392397914565,
+          "accepted_fraction": 0.4125
+        },
+        "pitch-order-trap": {
+          "samples": 80,
+          "mean_probability": 0.548186711805771,
+          "accepted_fraction": 0.775
+        },
+        "accidental-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.5698388054981312,
+          "accepted_fraction": 0.8875
+        },
+        "compact-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.5313203042508632,
+          "accepted_fraction": 0.7375
+        },
+        "open-notehead-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.2128000086064802,
+          "accepted_fraction": 0.2
+        },
+        "event-kind-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.37357057937478966,
+          "accepted_fraction": 0.45
+        },
+        "rhythm-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.5492933516903198,
+          "accepted_fraction": 0.8125
+        },
+        "single-step-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5643329002025327,
+          "accepted_fraction": 0.8625
+        },
+        "single-octave-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5385568652531006,
+          "accepted_fraction": 0.75
+        },
+        "adjacent-pitch-swap-trap": {
+          "samples": 80,
+          "mean_probability": 0.5639721564882969,
+          "accepted_fraction": 0.8375
+        },
+        "chord-tone-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5677747527107979,
+          "accepted_fraction": 0.85
+        }
+      }
+    },
+    "legacy_feature_ablation": {
+      "sample": {
+        "accuracy": 0.49236111111111114,
+        "roc_auc": 0.580068359375,
+        "log_loss": 0.6642938710349958,
+        "brier_score": 0.2373132191813324,
+        "precision": 0.13350449293966624,
+        "recall": 0.65,
+        "f1": 0.2215122470713525,
+        "false_accepts": 675,
+        "false_rejects": 56
+      },
+      "decision": {
+        "groups": 80,
+        "correct": 6,
+        "compatible_top1": 0.075,
+        "trap_wins": {
+          "pitch-profile-trap": 3,
+          "onset-profile-trap": 1,
+          "accidental-trap": 7,
+          "compact-mark-trap": 7,
+          "open-notehead-trap": 5,
+          "density-trap": 11,
+          "pitch-order-trap": 5,
+          "accidental-position-trap": 7,
+          "compact-position-trap": 0,
+          "open-notehead-position-trap": 2,
+          "event-kind-position-trap": 10,
+          "rhythm-position-trap": 3,
+          "single-step-pitch-trap": 2,
+          "single-octave-pitch-trap": 4,
+          "adjacent-pitch-swap-trap": 5,
+          "chord-tone-pitch-trap": 2
+        },
+        "compatible_over_trap": {
+          "pitch-profile-trap": 0.0,
+          "onset-profile-trap": 0.0,
+          "accidental-trap": 0.7875,
+          "compact-mark-trap": 0.5625,
+          "open-notehead-trap": 0.7625,
+          "density-trap": 0.8,
+          "pitch-order-trap": 0.0,
+          "accidental-position-trap": 0.1625,
+          "compact-position-trap": 0.1875,
+          "open-notehead-position-trap": 0.5875,
+          "event-kind-position-trap": 0.525,
+          "rhythm-position-trap": 0.025,
+          "single-step-pitch-trap": 0.0,
+          "single-octave-pitch-trap": 0.0,
+          "adjacent-pitch-swap-trap": 0.0,
+          "chord-tone-pitch-trap": 0.0
+        }
+      },
+      "by_kind": {
+        "exact": {
+          "samples": 80,
+          "mean_probability": 0.5073842440562109,
+          "accepted_fraction": 0.65
+        },
+        "invisible-notation": {
+          "samples": 80,
+          "mean_probability": 0.5073842440562109,
+          "accepted_fraction": 0.65
+        },
+        "pitch-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.5073842440562109,
+          "accepted_fraction": 0.65
+        },
+        "onset-profile-trap": {
+          "samples": 80,
+          "mean_probability": 0.5073842440562109,
+          "accepted_fraction": 0.65
+        },
+        "accidental-trap": {
+          "samples": 80,
+          "mean_probability": 0.4588051490231284,
+          "accepted_fraction": 0.375
+        },
+        "compact-mark-trap": {
+          "samples": 80,
+          "mean_probability": 0.46483133676632155,
+          "accepted_fraction": 0.45
+        },
+        "open-notehead-trap": {
+          "samples": 80,
+          "mean_probability": 0.41035251443772436,
+          "accepted_fraction": 0.2625
+        },
+        "density-trap": {
+          "samples": 80,
+          "mean_probability": 0.3865286721243469,
+          "accepted_fraction": 0.3125
+        },
+        "pitch-order-trap": {
+          "samples": 80,
+          "mean_probability": 0.5073842440562109,
+          "accepted_fraction": 0.65
+        },
+        "accidental-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.5065813881385509,
+          "accepted_fraction": 0.625
+        },
+        "compact-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.48615900631373365,
+          "accepted_fraction": 0.575
+        },
+        "open-notehead-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.4359618505040476,
+          "accepted_fraction": 0.3125
+        },
+        "event-kind-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.4041538945760852,
+          "accepted_fraction": 0.35
+        },
+        "rhythm-position-trap": {
+          "samples": 80,
+          "mean_probability": 0.5034299426424585,
+          "accepted_fraction": 0.625
+        },
+        "single-step-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5073842440562109,
+          "accepted_fraction": 0.65
+        },
+        "single-octave-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5073842440562109,
+          "accepted_fraction": 0.65
+        },
+        "adjacent-pitch-swap-trap": {
+          "samples": 80,
+          "mean_probability": 0.5073842440562109,
+          "accepted_fraction": 0.65
+        },
+        "chord-tone-pitch-trap": {
+          "samples": 80,
+          "mean_probability": 0.5073842440562109,
+          "accepted_fraction": 0.65
+        }
+      }
+    }
+  },
+  "deployment_parity": {
+    "max_absolute_probability_delta": 4.440892098500626e-16,
+    "samples": 1440
+  },
+  "model_bytes": 1347590,
+  "baseline_model_version": "scorescan-visual-measure-calibrator-4"
+}

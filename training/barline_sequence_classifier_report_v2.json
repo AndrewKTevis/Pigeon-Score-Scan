@@ -1,0 +1,112 @@
+{
+  "baseline_v1_on_same_test": {
+    "model_version": "scorescan-barline-sequence-logistic-1",
+    "sequence_test": {
+      "baseline_exact_measure_count_rate": 0.11060606060606061,
+      "false_candidate_removal": 0.17624932831810855,
+      "harmed_system_rate": 0.0,
+      "harmed_systems": 0,
+      "helped_system_rate": 0.05606060606060606,
+      "refined_exact_measure_count_rate": 0.16666666666666666,
+      "systems": 660,
+      "true_boundary_retention": 0.9964147821290679
+    },
+    "test": {
+      "accuracy": 0.8594860579551667,
+      "brier_score": 0.09809270213612822,
+      "f1": 0.8941951420337587,
+      "log_loss": 0.31848659230000326,
+      "precision": 0.8899207866703086,
+      "recall": 0.8985107556536128,
+      "roc_auc": 0.930221254163835
+    }
+  },
+  "calibration_samples": 5373,
+  "deployment_parity": {
+    "max_absolute_probability_delta": 2.220446049250313e-16,
+    "samples": 5487
+  },
+  "feature_names": [
+    "local_probability",
+    "normalised_position",
+    "edge_distance_ratio",
+    "left_gap_ratio",
+    "right_gap_ratio",
+    "minimum_gap_ratio",
+    "maximum_gap_ratio",
+    "merged_gap_ratio",
+    "merged_gap_deviation",
+    "gap_balance",
+    "left_neighbour_probability",
+    "right_neighbour_probability",
+    "probability_margin",
+    "candidate_density_ratio",
+    "both_adjacent_short",
+    "near_system_edge",
+    "split_fraction",
+    "left_outer_gap_ratio",
+    "right_outer_gap_ratio",
+    "merged_outer_deviation",
+    "removal_regularity_gain",
+    "local_probability_percentile",
+    "neighbour_probability_min",
+    "neighbour_probability_max",
+    "candidate_count_scaled",
+    "typical_gap_staff_spaces"
+  ],
+  "groups": 2200,
+  "model_version": "scorescan-barline-sequence-gbdt-2",
+  "positive_rate": 0.6542100548650767,
+  "runtime_policy": {
+    "candidate_density_floor": 1.0,
+    "edge_distance_floor": 0.3,
+    "hard_reject_floor": 0.02,
+    "local_override": 0.96,
+    "merged_gap_deviation": 0.28,
+    "opening_gap_ratio_ceiling": 0.68,
+    "opening_local_ceiling": 0.9,
+    "opening_margin_ceiling": -0.1,
+    "opening_merged_gap_deviation": 0.24,
+    "opening_position_ceiling": 0.15,
+    "opening_probability_floor": 0.15,
+    "opening_regularity_gain_floor": 0.5,
+    "probability_floor": 0.09,
+    "probability_margin_ceiling": 0.04,
+    "short_gap_ratio": 0.92
+  },
+  "samples": 35724,
+  "scope": "grouped synthetic staff-system boundary refinement; not end-to-end OMR accuracy",
+  "seed": 20260803,
+  "sequence_calibration": {
+    "baseline_exact_measure_count_rate": 0.11212121212121212,
+    "false_candidate_removal": 0.1940928270042194,
+    "harmed_system_rate": 0.0,
+    "harmed_systems": 0,
+    "helped_system_rate": 0.07727272727272727,
+    "refined_exact_measure_count_rate": 0.1893939393939394,
+    "systems": 660,
+    "true_boundary_retention": 0.9951107276387691
+  },
+  "sequence_test": {
+    "baseline_exact_measure_count_rate": 0.11060606060606061,
+    "false_candidate_removal": 0.22675980655561526,
+    "harmed_system_rate": 0.0,
+    "harmed_systems": 0,
+    "helped_system_rate": 0.0893939393939394,
+    "refined_exact_measure_count_rate": 0.2,
+    "systems": 660,
+    "true_boundary_retention": 0.9969663541092113
+  },
+  "test": {
+    "accuracy": 0.8767997084016766,
+    "brier_score": 0.08884693810673293,
+    "f1": 0.9066556199944766,
+    "log_loss": 0.2899643024178566,
+    "precision": 0.9079092920353983,
+    "recall": 0.9054054054054054,
+    "roc_auc": 0.9431259934445626
+  },
+  "test_samples": 5487,
+  "train_samples": 24864,
+  "variants_per_group": 2
+}

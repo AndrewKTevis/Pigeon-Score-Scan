@@ -1,0 +1,187 @@
+{
+  "baseline_model_version": "scorescan-pitch-patch-forest-2",
+  "baseline_threshold": 0.9680630474617604,
+  "by_kind": {
+    "adjacent-swap": {
+      "deterministic_conflicts": 15,
+      "pitch_model": {
+        "accepted": 78,
+        "false_accepts": 1,
+        "positive_recall": 0.385,
+        "precision": 0.9871794871794872,
+        "samples": 400,
+        "true_accepts": 77
+      },
+      "production_and_gate": {
+        "accepted": 6,
+        "false_accepts": 0,
+        "positive_recall": 0.03,
+        "precision": 1.0,
+        "samples": 400,
+        "true_accepts": 6
+      },
+      "v2_same_test": {
+        "accepted": 377,
+        "false_accepts": 177,
+        "positive_recall": 1.0,
+        "precision": 0.5305039787798409,
+        "samples": 400,
+        "true_accepts": 200
+      },
+      "visual_guard": {
+        "accepted": 6,
+        "false_accepts": 0,
+        "positive_recall": 0.03,
+        "precision": 1.0,
+        "samples": 400,
+        "true_accepts": 6
+      }
+    },
+    "chord-tone": {
+      "deterministic_conflicts": 4,
+      "pitch_model": {
+        "accepted": 68,
+        "false_accepts": 6,
+        "positive_recall": 0.31,
+        "precision": 0.9117647058823529,
+        "samples": 400,
+        "true_accepts": 62
+      },
+      "production_and_gate": {
+        "accepted": 3,
+        "false_accepts": 0,
+        "positive_recall": 0.015,
+        "precision": 1.0,
+        "samples": 400,
+        "true_accepts": 3
+      },
+      "v2_same_test": {
+        "accepted": 389,
+        "false_accepts": 189,
+        "positive_recall": 1.0,
+        "precision": 0.5141388174807198,
+        "samples": 400,
+        "true_accepts": 200
+      },
+      "visual_guard": {
+        "accepted": 3,
+        "false_accepts": 0,
+        "positive_recall": 0.015,
+        "precision": 1.0,
+        "samples": 400,
+        "true_accepts": 3
+      }
+    },
+    "octave": {
+      "deterministic_conflicts": 76,
+      "pitch_model": {
+        "accepted": 113,
+        "false_accepts": 1,
+        "positive_recall": 0.56,
+        "precision": 0.9911504424778761,
+        "samples": 400,
+        "true_accepts": 112
+      },
+      "production_and_gate": {
+        "accepted": 34,
+        "false_accepts": 0,
+        "positive_recall": 0.17,
+        "precision": 1.0,
+        "samples": 400,
+        "true_accepts": 34
+      },
+      "v2_same_test": {
+        "accepted": 318,
+        "false_accepts": 123,
+        "positive_recall": 0.975,
+        "precision": 0.6132075471698113,
+        "samples": 400,
+        "true_accepts": 195
+      },
+      "visual_guard": {
+        "accepted": 34,
+        "false_accepts": 0,
+        "positive_recall": 0.17,
+        "precision": 1.0,
+        "samples": 400,
+        "true_accepts": 34
+      }
+    },
+    "single-step": {
+      "deterministic_conflicts": 12,
+      "pitch_model": {
+        "accepted": 89,
+        "false_accepts": 6,
+        "positive_recall": 0.415,
+        "precision": 0.9325842696629213,
+        "samples": 400,
+        "true_accepts": 83
+      },
+      "production_and_gate": {
+        "accepted": 11,
+        "false_accepts": 0,
+        "positive_recall": 0.055,
+        "precision": 1.0,
+        "samples": 400,
+        "true_accepts": 11
+      },
+      "v2_same_test": {
+        "accepted": 376,
+        "false_accepts": 176,
+        "positive_recall": 1.0,
+        "precision": 0.5319148936170213,
+        "samples": 400,
+        "true_accepts": 200
+      },
+      "visual_guard": {
+        "accepted": 11,
+        "false_accepts": 0,
+        "positive_recall": 0.055,
+        "precision": 1.0,
+        "samples": 400,
+        "true_accepts": 11
+      }
+    }
+  },
+  "format": 2,
+  "pitch_model": {
+    "accepted": 348,
+    "false_accepts": 14,
+    "positive_recall": 0.4175,
+    "precision": 0.9597701149425287,
+    "samples": 1600,
+    "true_accepts": 334
+  },
+  "pitch_model_version": "scorescan-pitch-patch-forest-3",
+  "pitch_threshold": 0.9270221637310101,
+  "production_and_gate": {
+    "accepted": 54,
+    "false_accepts": 0,
+    "positive_recall": 0.0675,
+    "precision": 1.0,
+    "samples": 1600,
+    "true_accepts": 54
+  },
+  "rendered_groups": 800,
+  "samples": 1600,
+  "scope": "independent rendered pitch transaction audit; not end-to-end OMR accuracy",
+  "seed": 20260731,
+  "v2_same_test": {
+    "accepted": 1460,
+    "false_accepts": 665,
+    "positive_recall": 0.99375,
+    "precision": 0.5445205479452054,
+    "samples": 1600,
+    "true_accepts": 795
+  },
+  "visual_guard": {
+    "accepted": 54,
+    "false_accepts": 0,
+    "positive_recall": 0.0675,
+    "precision": 1.0,
+    "samples": 1600,
+    "true_accepts": 54
+  },
+  "visual_model_version": "scorescan-pitch-visual-guard-1",
+  "visual_threshold": 0.9555957011096021
+}

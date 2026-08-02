@@ -1,0 +1,64 @@
+name: Bug report
+description: Report a reproducible defect in the application or output.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not upload copyrighted scores, access tokens or a complete user workspace. Crop the smallest permitted example that reproduces the problem.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 0.37.0-dev or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: dropdown
+    id: input
+    attributes:
+      label: Input type
+      options:
+        - Images
+        - PDF
+        - Startup or desktop shell
+        - Export or preview
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: State the observed result and the expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Import ...
+        2. Start conversion ...
+        3. Open ...
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Relevant diagnostics
+      description: Paste only the relevant, privacy-reviewed lines.
+      render: text
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: I removed access tokens, personal paths and material I do not have permission to share.
+          required: true

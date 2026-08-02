@@ -1,0 +1,54 @@
+{
+  "format": 1,
+  "version": "0.33.0-rc1",
+  "deployed": false,
+  "scope": "rejected programmatic-rendered curve and tie visual experiments; not end-to-end OMR accuracy",
+  "experiments": [
+    {
+      "name": "generic_tie_and_slur_arc_presence_model",
+      "status": "rejected",
+      "runtime_deployed": false,
+      "observed_false_accepts": 2,
+      "reason": "short same-endpoint slurs and ties were not separable at the zero-false-accept boundary; a generic curve model would exceed its semantic authority"
+    },
+    {
+      "name": "early_64x32_tie_descriptor_lower_threshold",
+      "status": "rejected",
+      "runtime_deployed": false,
+      "observed_false_accepts": 2,
+      "reason": "the compact descriptor produced tail false accepts at the selected lower threshold and was replaced by a larger deterministic matched-curve descriptor"
+    },
+    {
+      "name": "enhanced_descriptor_first_untouched_tail_at_0_889570",
+      "status": "rejected",
+      "runtime_deployed": false,
+      "observed_false_accepts": 1,
+      "reason": "the first untouched rendered tail exposed one false accept; the dataset was reclassified as safety calibration and the deployment floor was raised before a new independent set was generated"
+    },
+    {
+      "name": "enhanced_descriptor_second_untouched_tail_at_0_914230",
+      "status": "rejected",
+      "runtime_deployed": false,
+      "observed_false_accepts": 1,
+      "reason": "a second independently seeded tail exposed one false accept below the fixed 0.92 floor; it was incorporated only as safety evidence, never as final test evidence"
+    },
+    {
+      "name": "source_backed_tie_removal",
+      "status": "rejected",
+      "runtime_deployed": false,
+      "observed_false_accepts": 1,
+      "reason": "absence of a visible curve cannot be established reliably from a bounded noisy crop; removals remain review-only"
+    }
+  ],
+  "accepted_replacement": {
+    "model_version": "scorescan-tie-visual-forest-1",
+    "threshold": 0.92,
+    "included": "source-backed complete addition of an adjacent same-pitch same-voice within-measure tie",
+    "excluded": "tie removal, cross-measure tie change, non-adjacent tie change, and same-endpoint or other slur classification",
+    "independent_groups": 3000,
+    "independent_false_accepts": 0,
+    "independent_correct_accepts": 1360,
+    "independent_present_recall": 0.453333333333
+  },
+  "end_to_end_accuracy_claim": false
+}

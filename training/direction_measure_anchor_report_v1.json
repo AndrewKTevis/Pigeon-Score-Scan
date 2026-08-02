@@ -1,0 +1,357 @@
+{
+  "anchor_model_version": "scorescan-direction-measure-anchor-forest-1",
+  "audit": {
+    "absolute_accuracy_gain": 0.007092198581560183,
+    "baseline_accuracy": 0.6524822695035462,
+    "by_kind": {
+      "direction": {
+        "baseline_accuracy": 0.6482504604051565,
+        "decisions": 543,
+        "refined_accuracy": 0.6666666666666666
+      },
+      "dynamic": {
+        "baseline_accuracy": 0.6834264432029795,
+        "decisions": 537,
+        "refined_accuracy": 0.6871508379888268
+      },
+      "metronome": {
+        "baseline_accuracy": 0.6362068965517241,
+        "decisions": 580,
+        "refined_accuracy": 0.6431034482758621
+      },
+      "text": {
+        "baseline_accuracy": 0.6442953020134228,
+        "decisions": 596,
+        "refined_accuracy": 0.6442953020134228
+      }
+    },
+    "by_scenario": {
+      "extra_boundary": {
+        "baseline_accuracy": 0.637906647807638,
+        "decisions": 707,
+        "refined_accuracy": 0.6421499292786421
+      },
+      "missing_boundary": {
+        "baseline_accuracy": 0.7279693486590039,
+        "decisions": 783,
+        "refined_accuracy": 0.7432950191570882
+      },
+      "mixed_boundaries": {
+        "baseline_accuracy": 0.5887728459530026,
+        "decisions": 766,
+        "refined_accuracy": 0.5900783289817232
+      }
+    },
+    "changed_coverage": 0.0070921985815602835,
+    "changed_decisions": 16,
+    "changed_errors": 0,
+    "changed_precision": 1.0,
+    "decisions": 2256,
+    "refined_accuracy": 0.6595744680851063
+  },
+  "candidate_samples": 90743,
+  "decision_samples": 22508,
+  "deployment_max_abs_probability_difference": 6.772360450213455e-15,
+  "features": [
+    "baseline_delta_scaled",
+    "relative_x",
+    "source_index_scaled",
+    "source_offset",
+    "source_count_scaled",
+    "target_count_scaled",
+    "count_gap_scaled",
+    "candidate_index_scaled",
+    "candidate_distance_scaled",
+    "candidate_is_baseline",
+    "interval_width_ratio",
+    "previous_width_ratio",
+    "next_width_ratio",
+    "left_boundary_distance",
+    "right_boundary_distance",
+    "nearest_boundary_distance",
+    "kind_dynamic",
+    "kind_metronome",
+    "kind_direction",
+    "kind_text",
+    "placement_above",
+    "placement_below"
+  ],
+  "model_candidates": [
+    {
+      "audit_candidates": {
+        "brier_score": 0.09316813954880743,
+        "log_loss": 0.28973595290034554,
+        "negative_samples": 6849,
+        "positive_samples": 2256,
+        "roc_auc": 0.9303071305641761
+      },
+      "audit_top1": 0.6959219858156028,
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 24
+      },
+      "gate": {
+        "absolute_accuracy_gain": 0.004875886524822626,
+        "baseline_accuracy": 0.6524822695035462,
+        "by_kind": {
+          "direction": {
+            "baseline_accuracy": 0.6482504604051565,
+            "decisions": 543,
+            "refined_accuracy": 0.6574585635359116
+          },
+          "dynamic": {
+            "baseline_accuracy": 0.6834264432029795,
+            "decisions": 537,
+            "refined_accuracy": 0.6871508379888268
+          },
+          "metronome": {
+            "baseline_accuracy": 0.6362068965517241,
+            "decisions": 580,
+            "refined_accuracy": 0.6431034482758621
+          },
+          "text": {
+            "baseline_accuracy": 0.6442953020134228,
+            "decisions": 596,
+            "refined_accuracy": 0.6442953020134228
+          }
+        },
+        "by_scenario": {
+          "extra_boundary": {
+            "baseline_accuracy": 0.637906647807638,
+            "decisions": 707,
+            "refined_accuracy": 0.637906647807638
+          },
+          "missing_boundary": {
+            "baseline_accuracy": 0.7279693486590039,
+            "decisions": 783,
+            "refined_accuracy": 0.7420178799489144
+          },
+          "mixed_boundaries": {
+            "baseline_accuracy": 0.5887728459530026,
+            "decisions": 766,
+            "refined_accuracy": 0.5887728459530026
+          }
+        },
+        "changed_coverage": 0.004875886524822695,
+        "changed_decisions": 11,
+        "changed_errors": 0,
+        "changed_precision": 1.0,
+        "decisions": 2256,
+        "refined_accuracy": 0.6573581560283688
+      },
+      "margin_threshold": 0.05,
+      "probability_threshold": 0.65,
+      "serialized_bytes": 427029
+    },
+    {
+      "audit_candidates": {
+        "brier_score": 0.087455261318279,
+        "log_loss": 0.27344150654906724,
+        "negative_samples": 6849,
+        "positive_samples": 2256,
+        "roc_auc": 0.9384563569356815
+      },
+      "audit_top1": 0.7203014184397163,
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 6,
+        "n_estimators": 32
+      },
+      "gate": {
+        "absolute_accuracy_gain": 0.007092198581560183,
+        "baseline_accuracy": 0.6524822695035462,
+        "by_kind": {
+          "direction": {
+            "baseline_accuracy": 0.6482504604051565,
+            "decisions": 543,
+            "refined_accuracy": 0.6666666666666666
+          },
+          "dynamic": {
+            "baseline_accuracy": 0.6834264432029795,
+            "decisions": 537,
+            "refined_accuracy": 0.6871508379888268
+          },
+          "metronome": {
+            "baseline_accuracy": 0.6362068965517241,
+            "decisions": 580,
+            "refined_accuracy": 0.6431034482758621
+          },
+          "text": {
+            "baseline_accuracy": 0.6442953020134228,
+            "decisions": 596,
+            "refined_accuracy": 0.6442953020134228
+          }
+        },
+        "by_scenario": {
+          "extra_boundary": {
+            "baseline_accuracy": 0.637906647807638,
+            "decisions": 707,
+            "refined_accuracy": 0.6421499292786421
+          },
+          "missing_boundary": {
+            "baseline_accuracy": 0.7279693486590039,
+            "decisions": 783,
+            "refined_accuracy": 0.7432950191570882
+          },
+          "mixed_boundaries": {
+            "baseline_accuracy": 0.5887728459530026,
+            "decisions": 766,
+            "refined_accuracy": 0.5900783289817232
+          }
+        },
+        "changed_coverage": 0.0070921985815602835,
+        "changed_decisions": 16,
+        "changed_errors": 0,
+        "changed_precision": 1.0,
+        "decisions": 2256,
+        "refined_accuracy": 0.6595744680851063
+      },
+      "margin_threshold": 0.05,
+      "probability_threshold": 0.7550000000000001,
+      "serialized_bytes": 961511
+    },
+    {
+      "audit_candidates": {
+        "brier_score": 0.0813405199591276,
+        "log_loss": 0.25730417432774827,
+        "negative_samples": 6849,
+        "positive_samples": 2256,
+        "roc_auc": 0.946370425770082
+      },
+      "audit_top1": 0.7557624113475178,
+      "config": {
+        "max_depth": 9,
+        "min_samples_leaf": 5,
+        "n_estimators": 48
+      },
+      "gate": {
+        "absolute_accuracy_gain": 0.009751773049645363,
+        "baseline_accuracy": 0.6524822695035462,
+        "by_kind": {
+          "direction": {
+            "baseline_accuracy": 0.6482504604051565,
+            "decisions": 543,
+            "refined_accuracy": 0.6611418047882136
+          },
+          "dynamic": {
+            "baseline_accuracy": 0.6834264432029795,
+            "decisions": 537,
+            "refined_accuracy": 0.6871508379888268
+          },
+          "metronome": {
+            "baseline_accuracy": 0.6362068965517241,
+            "decisions": 580,
+            "refined_accuracy": 0.6517241379310345
+          },
+          "text": {
+            "baseline_accuracy": 0.6442953020134228,
+            "decisions": 596,
+            "refined_accuracy": 0.6510067114093959
+          }
+        },
+        "by_scenario": {
+          "extra_boundary": {
+            "baseline_accuracy": 0.637906647807638,
+            "decisions": 707,
+            "refined_accuracy": 0.6463932107496464
+          },
+          "missing_boundary": {
+            "baseline_accuracy": 0.7279693486590039,
+            "decisions": 783,
+            "refined_accuracy": 0.7484035759897829
+          },
+          "mixed_boundaries": {
+            "baseline_accuracy": 0.5887728459530026,
+            "decisions": 766,
+            "refined_accuracy": 0.5887728459530026
+          }
+        },
+        "changed_coverage": 0.00975177304964539,
+        "changed_decisions": 22,
+        "changed_errors": 0,
+        "changed_precision": 1.0,
+        "decisions": 2256,
+        "refined_accuracy": 0.6622340425531915
+      },
+      "margin_threshold": 0.05,
+      "probability_threshold": 0.7950000000000002,
+      "serialized_bytes": 2253600
+    }
+  ],
+  "model_version": "scorescan-direction-anchor-hybrid-2",
+  "scope": "CPU candidate ranking for OCR direction ownership when visual and MusicXML measure counts differ; not OCR text accuracy or end-to-end OMR accuracy",
+  "seed": 20270112,
+  "selected_config": {
+    "max_depth": 8,
+    "min_samples_leaf": 6,
+    "n_estimators": 32
+  },
+  "selected_margin_threshold": 0.05,
+  "selected_probability_threshold": 0.7550000000000001,
+  "splits": {
+    "audit_candidates": 9105,
+    "audit_decisions": 2256,
+    "calibration_candidates": 9000,
+    "test_candidates": 9221,
+    "test_decisions": 2271,
+    "train_candidates": 63417
+  },
+  "system_groups": 3200,
+  "test_candidates": {
+    "brier_score": 0.09155714418039458,
+    "log_loss": 0.28598206635807,
+    "negative_samples": 6950,
+    "positive_samples": 2271,
+    "roc_auc": 0.9322136161612321
+  },
+  "test_decisions": {
+    "absolute_accuracy_gain": 0.01276970497578156,
+    "baseline_accuracy": 0.6305592250110084,
+    "by_kind": {
+      "direction": {
+        "baseline_accuracy": 0.6228893058161351,
+        "decisions": 533,
+        "refined_accuracy": 0.6416510318949343
+      },
+      "dynamic": {
+        "baseline_accuracy": 0.6360424028268551,
+        "decisions": 566,
+        "refined_accuracy": 0.6466431095406361
+      },
+      "metronome": {
+        "baseline_accuracy": 0.5911504424778761,
+        "decisions": 565,
+        "refined_accuracy": 0.6123893805309735
+      },
+      "text": {
+        "baseline_accuracy": 0.6688632619439868,
+        "decisions": 607,
+        "refined_accuracy": 0.6705107084019769
+      }
+    },
+    "by_scenario": {
+      "extra_boundary": {
+        "baseline_accuracy": 0.6092105263157894,
+        "decisions": 760,
+        "refined_accuracy": 0.6118421052631579
+      },
+      "missing_boundary": {
+        "baseline_accuracy": 0.6771084337349398,
+        "decisions": 830,
+        "refined_accuracy": 0.7072289156626506
+      },
+      "mixed_boundaries": {
+        "baseline_accuracy": 0.5976505139500734,
+        "decisions": 681,
+        "refined_accuracy": 0.6005873715124816
+      }
+    },
+    "changed_coverage": 0.012769704975781594,
+    "changed_decisions": 29,
+    "changed_errors": 0,
+    "changed_precision": 1.0,
+    "decisions": 2271,
+    "refined_accuracy": 0.6433289299867899
+  }
+}

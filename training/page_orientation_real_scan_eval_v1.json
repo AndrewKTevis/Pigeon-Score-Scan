@@ -1,0 +1,151 @@
+{
+  "model": "scorescan-page-orientation-logistic-1",
+  "model_status": "verified",
+  "cases": 8,
+  "classification_accuracy": 1.0,
+  "rotated_cases": 6,
+  "auto_applied": 2,
+  "auto_correction_precision": 1.0,
+  "auto_correction_coverage": 0.3333333333333333,
+  "harmful_actions": 0,
+  "upright_false_rotations": 0,
+  "rows": [
+    {
+      "image": "/mnt/data/6bb348fd-e3ea-4d2c-9dd2-0e39312d6f20.png",
+      "source_rotation": 0,
+      "expected_correction": 0,
+      "predicted_correction": 0,
+      "probability": 0.54065,
+      "margin": 0.092389,
+      "applied": false,
+      "correct_class": true,
+      "harmful_action": false,
+      "probabilities": {
+        "0": 0.54065,
+        "90": 0.006768,
+        "180": 0.448261,
+        "270": 0.004322
+      }
+    },
+    {
+      "image": "/mnt/data/6bb348fd-e3ea-4d2c-9dd2-0e39312d6f20.png",
+      "source_rotation": 90,
+      "expected_correction": 270,
+      "predicted_correction": 270,
+      "probability": 0.54065,
+      "margin": 0.092389,
+      "applied": false,
+      "correct_class": true,
+      "harmful_action": false,
+      "probabilities": {
+        "0": 0.006768,
+        "90": 0.448261,
+        "180": 0.004322,
+        "270": 0.54065
+      }
+    },
+    {
+      "image": "/mnt/data/6bb348fd-e3ea-4d2c-9dd2-0e39312d6f20.png",
+      "source_rotation": 180,
+      "expected_correction": 180,
+      "predicted_correction": 180,
+      "probability": 0.54065,
+      "margin": 0.092389,
+      "applied": false,
+      "correct_class": true,
+      "harmful_action": false,
+      "probabilities": {
+        "0": 0.448261,
+        "90": 0.004322,
+        "180": 0.54065,
+        "270": 0.006768
+      }
+    },
+    {
+      "image": "/mnt/data/6bb348fd-e3ea-4d2c-9dd2-0e39312d6f20.png",
+      "source_rotation": 270,
+      "expected_correction": 90,
+      "predicted_correction": 90,
+      "probability": 0.54065,
+      "margin": 0.092389,
+      "applied": false,
+      "correct_class": true,
+      "harmful_action": false,
+      "probabilities": {
+        "0": 0.004322,
+        "90": 0.54065,
+        "180": 0.006768,
+        "270": 0.448261
+      }
+    },
+    {
+      "image": "/mnt/data/bwv147_render/page-1.png",
+      "source_rotation": 0,
+      "expected_correction": 0,
+      "predicted_correction": 0,
+      "probability": 0.751295,
+      "margin": 0.508399,
+      "applied": false,
+      "correct_class": true,
+      "harmful_action": false,
+      "probabilities": {
+        "0": 0.751295,
+        "90": 0.004902,
+        "180": 0.242896,
+        "270": 0.000907
+      }
+    },
+    {
+      "image": "/mnt/data/bwv147_render/page-1.png",
+      "source_rotation": 90,
+      "expected_correction": 270,
+      "predicted_correction": 270,
+      "probability": 0.751295,
+      "margin": 0.508399,
+      "applied": true,
+      "correct_class": true,
+      "harmful_action": false,
+      "probabilities": {
+        "0": 0.004902,
+        "90": 0.242896,
+        "180": 0.000907,
+        "270": 0.751295
+      }
+    },
+    {
+      "image": "/mnt/data/bwv147_render/page-1.png",
+      "source_rotation": 180,
+      "expected_correction": 180,
+      "predicted_correction": 180,
+      "probability": 0.751295,
+      "margin": 0.508399,
+      "applied": false,
+      "correct_class": true,
+      "harmful_action": false,
+      "probabilities": {
+        "0": 0.242896,
+        "90": 0.000907,
+        "180": 0.751295,
+        "270": 0.004902
+      }
+    },
+    {
+      "image": "/mnt/data/bwv147_render/page-1.png",
+      "source_rotation": 270,
+      "expected_correction": 90,
+      "predicted_correction": 90,
+      "probability": 0.751295,
+      "margin": 0.508399,
+      "applied": true,
+      "correct_class": true,
+      "harmful_action": false,
+      "probabilities": {
+        "0": 0.000907,
+        "90": 0.751295,
+        "180": 0.004902,
+        "270": 0.242896
+      }
+    }
+  ],
+  "scope": "two supplied printed-score pages rotated by exact quadrants; orientation only, not end-to-end OMR accuracy"
+}

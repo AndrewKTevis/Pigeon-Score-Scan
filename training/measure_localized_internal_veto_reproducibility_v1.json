@@ -1,0 +1,11 @@
+{
+  "first_model_sha256": "3085b699974bdedc6bc8759f566efe7cb274eedcd98f042c20630322b8bcfaa7",
+  "first_report_sha256": "a46f4a592e2b53d7f7e666ad12dee1563d190aab42825740d7c5564b51a2f749",
+  "format": 1,
+  "model_reproducible": true,
+  "model_version": "scorescan-measure-localized-internal-veto-experiment-1",
+  "report_reproducible": true,
+  "runtime_deployed": false,
+  "second_model_sha256": "3085b699974bdedc6bc8759f566efe7cb274eedcd98f042c20630322b8bcfaa7",
+  "second_report_sha256": "a46f4a592e2b53d7f7e666ad12dee1563d190aab42825740d7c5564b51a2f749"
+}

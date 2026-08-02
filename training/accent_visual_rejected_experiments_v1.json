@@ -1,0 +1,41 @@
+{
+  "format": 1,
+  "deployed": false,
+  "scope": "programmatic rendered articulation-symbol experiments; not end-to-end OMR accuracy",
+  "experiments": [
+    {
+      "name": "staccato_presence_guard",
+      "status": "rejected",
+      "runtime_deployed": false,
+      "observed_false_accepts": 0,
+      "best_zero_false_recall_upper_bound": 0.1,
+      "reason": "At zero observed false accepts, independent correct-addition coverage was below the minimum useful deployment gate; duration dots, dust and nearby staccato marks remained dominant confounders."
+    },
+    {
+      "name": "shared_tenuto_accent_shape_model",
+      "status": "rejected",
+      "runtime_deployed": false,
+      "observed_false_accepts": 0,
+      "reason": "Tenuto marks remained inseparable from staff fragments and short horizontal print defects at useful selective coverage; sharing one classifier diluted the safer accent geometry."
+    },
+    {
+      "name": "accent_without_direction_balance",
+      "status": "rejected",
+      "runtime_deployed": false,
+      "observed_false_accepts": 1,
+      "reason": "Single diagonal fragments entered the high-confidence tail before opposing-slope balance features were added."
+    },
+    {
+      "name": "articulation_deletion_or_class_substitution",
+      "status": "rejected",
+      "runtime_deployed": false,
+      "observed_false_accepts": 0,
+      "reason": "A presence-only local model cannot prove deletion or distinguish accent, tenuto and staccato substitutions safely."
+    }
+  ],
+  "accepted_replacement": {
+    "model_version": "scorescan-accent-visual-forest-1",
+    "responsibility": "veto-only source-crop confirmation for empty articulation set to one accent addition",
+    "excluded": "staccato, tenuto, articulation deletion, class substitution, stacked articulations and general articulation recognition"
+  }
+}

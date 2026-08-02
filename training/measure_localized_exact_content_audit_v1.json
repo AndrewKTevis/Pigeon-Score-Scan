@@ -1,0 +1,62 @@
+{
+  "accepted_capabilities": {
+    "beam_and_stem_disagreement_detected": true,
+    "equivalent_divisions_normalized": true,
+    "layout_coordinates_ignored": true,
+    "mid_measure_divisions_rejected": true,
+    "unmodelled_notation_disagreement_detected": true
+  },
+  "diagnostic_signature": "score-ir-semantic-v1",
+  "end_to_end_accuracy_claim": false,
+  "failed": 0,
+  "format": 2,
+  "passed": 6,
+  "permission_signature": "normalized-splice-content-c14n-v1",
+  "policy_version": "scorescan-policy-61",
+  "programmatic_audit": true,
+  "scenario_count": 6,
+  "scenarios": [
+    {
+      "exact_equal": true,
+      "expected_exact_equal": true,
+      "name": "layout-only",
+      "passed": true,
+      "semantic_equal": true
+    },
+    {
+      "exact_equal": false,
+      "expected_exact_equal": false,
+      "name": "beam-topology",
+      "passed": true,
+      "semantic_equal": true
+    },
+    {
+      "exact_equal": false,
+      "expected_exact_equal": false,
+      "name": "stem-topology",
+      "passed": true,
+      "semantic_equal": true
+    },
+    {
+      "exact_equal": false,
+      "expected_exact_equal": false,
+      "name": "unmodelled-notation",
+      "passed": true,
+      "semantic_equal": true
+    },
+    {
+      "exact_equal": true,
+      "expected_exact_equal": true,
+      "name": "equivalent-divisions",
+      "passed": true,
+      "semantic_equal": true
+    },
+    {
+      "error": "measure-localised MusicXML changes divisions after performed content",
+      "expected_rejected": true,
+      "name": "mid-measure-divisions",
+      "passed": true,
+      "rejected": true
+    }
+  ]
+}

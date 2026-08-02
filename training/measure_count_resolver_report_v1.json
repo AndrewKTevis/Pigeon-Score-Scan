@@ -1,0 +1,15 @@
+{
+  "model_version": "scorescan-measure-count-resolver-1",
+  "training_seed": 20260717,
+  "scenario_count": 12000,
+  "candidate_option_samples": 34881,
+  "train_samples": 27927,
+  "test_samples": 6954,
+  "test_accuracy": 0.9758412424503883,
+  "test_roc_auc": 0.9964911680131454,
+  "test_log_loss": 0.07248073988946344,
+  "eligible_test_scenarios": 2398,
+  "deterministic_mode_top1": 0.8548790658882403,
+  "model_top1": 0.9858215179316097,
+  "scope": "measure-count evidence fusion; not end-to-end OMR accuracy"
+}

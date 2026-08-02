@@ -1,0 +1,296 @@
+{
+  "context_only_ablation": {
+    "accuracy": 0.502166666667,
+    "brier_score": 0.259888384069,
+    "log_loss": 0.715638611366,
+    "roc_auc": 0.503307666667
+  },
+  "dataset": {
+    "independent_groups": 3000,
+    "independent_samples": 6000,
+    "safety_groups": 1600,
+    "safety_samples": 3200,
+    "training_groups": 1600,
+    "training_samples": 3200
+  },
+  "deployment_max_probability_delta": 0.0,
+  "deployment_probability_deltas": {
+    "independent_test": 0.0,
+    "safety_calibration": 0.0,
+    "training_all": 0.0
+  },
+  "feature_count": 448,
+  "limitations": [
+    "Programmatic rendered note/rest transactions are not a substitute for an independently reviewed real-scan benchmark.",
+    "The runtime gate confirms only one fixed-onset, fixed-duration note/rest replacement and cannot select pitch or duration.",
+    "Multiple event-kind changes, grace notes, chords, unpitched events and unsupported note types remain review-only when source evidence is present."
+  ],
+  "model_version": "scorescan-event-kind-visual-forest-1",
+  "policies": {
+    "frozen_test": {
+      "auto_patch_threshold": 0.939859538729,
+      "correct_accepts": 109,
+      "coverage": 0.340625,
+      "false_accepts": 0,
+      "note_correct_accepts": 50,
+      "note_positive_total": 69,
+      "note_recall": 0.724637681159,
+      "rest_correct_accepts": 59,
+      "rest_positive_total": 91,
+      "rest_recall": 0.648351648352,
+      "selective_precision": 1.0
+    },
+    "independent_test": {
+      "auto_patch_threshold": 0.939859538729,
+      "correct_accepts": 1883,
+      "coverage": 0.313833333333,
+      "false_accepts": 0,
+      "note_correct_accepts": 954,
+      "note_positive_total": 1513,
+      "note_recall": 0.630535360212,
+      "rest_correct_accepts": 929,
+      "rest_positive_total": 1487,
+      "rest_recall": 0.624747814391,
+      "selective_precision": 1.0
+    },
+    "safety_calibration": {
+      "auto_patch_threshold": 0.939859538729,
+      "correct_accepts": 962,
+      "coverage": 0.300625,
+      "false_accepts": 0,
+      "note_correct_accepts": 485,
+      "note_positive_total": 782,
+      "note_recall": 0.620204603581,
+      "rest_correct_accepts": 477,
+      "rest_positive_total": 818,
+      "rest_recall": 0.583129584352,
+      "selective_precision": 1.0
+    }
+  },
+  "sample_metrics": {
+    "frozen_test": {
+      "accuracy": 0.959375,
+      "brier_score": 0.038702314378,
+      "log_loss": 0.148724544033,
+      "roc_auc": 0.9929296875
+    },
+    "independent_test": {
+      "accuracy": 0.9525,
+      "brier_score": 0.041551812214,
+      "log_loss": 0.157563238099,
+      "roc_auc": 0.993230055556
+    },
+    "safety_calibration": {
+      "accuracy": 0.948125,
+      "brier_score": 0.043519392599,
+      "log_loss": 0.164194853895,
+      "roc_auc": 0.991914648438
+    }
+  },
+  "scenario_false_accepts": {
+    "frozen_test": {
+      "beam_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.499600985159,
+        "negative_samples": 18
+      },
+      "clean": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.466269118386,
+        "negative_samples": 15
+      },
+      "compact_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.493885141153,
+        "negative_samples": 16
+      },
+      "dense_neighbours": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.346886801488,
+        "negative_samples": 17
+      },
+      "low_contrast": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.345297662666,
+        "negative_samples": 10
+      },
+      "nearby_opposite_symbol": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.438249073819,
+        "negative_samples": 21
+      },
+      "notehead_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.773392409247,
+        "negative_samples": 20
+      },
+      "partial_symbol": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.514696773211,
+        "negative_samples": 13
+      },
+      "staff_residue": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.614303179941,
+        "negative_samples": 11
+      },
+      "stem_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.487643302495,
+        "negative_samples": 19
+      }
+    },
+    "independent_test": {
+      "beam_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.75189399994,
+        "negative_samples": 318
+      },
+      "clean": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.780914022734,
+        "negative_samples": 281
+      },
+      "compact_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.738748415824,
+        "negative_samples": 305
+      },
+      "dense_neighbours": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.800515881071,
+        "negative_samples": 302
+      },
+      "low_contrast": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.845566345492,
+        "negative_samples": 290
+      },
+      "nearby_opposite_symbol": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.808898264558,
+        "negative_samples": 326
+      },
+      "notehead_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.768194102743,
+        "negative_samples": 307
+      },
+      "partial_symbol": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.81841758828,
+        "negative_samples": 270
+      },
+      "staff_residue": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.888293366552,
+        "negative_samples": 286
+      },
+      "stem_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.68979370789,
+        "negative_samples": 315
+      }
+    },
+    "safety_calibration": {
+      "beam_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.649019930791,
+        "negative_samples": 166
+      },
+      "clean": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.557692569289,
+        "negative_samples": 158
+      },
+      "compact_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.735839992297,
+        "negative_samples": 164
+      },
+      "dense_neighbours": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.717429923094,
+        "negative_samples": 143
+      },
+      "low_contrast": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.796435027797,
+        "negative_samples": 152
+      },
+      "nearby_opposite_symbol": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.904989094853,
+        "negative_samples": 148
+      },
+      "notehead_noise": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.747063846211,
+        "negative_samples": 156
+      },
+      "partial_symbol": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.939859538729,
+        "negative_samples": 170
+      },
+      "staff_residue": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.62475467472,
+        "negative_samples": 185
+      },
+      "stem_fragment": {
+        "false_accepts": 0,
+        "maximum_negative_probability": 0.675414497615,
+        "negative_samples": 158
+      }
+    }
+  },
+  "schema_version": 1,
+  "selected_config": {
+    "max_depth": 9,
+    "min_samples_leaf": 3,
+    "n_estimators": 96
+  },
+  "selection": [
+    {
+      "config": {
+        "max_depth": 9,
+        "min_samples_leaf": 3,
+        "n_estimators": 96
+      },
+      "sample": {
+        "accuracy": 0.9625,
+        "brier_score": 0.0405311309,
+        "log_loss": 0.155511481813,
+        "roc_auc": 0.9955859375
+      }
+    },
+    {
+      "config": {
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "n_estimators": 128
+      },
+      "sample": {
+        "accuracy": 0.953125,
+        "brier_score": 0.041884047364,
+        "log_loss": 0.158188217442,
+        "roc_auc": 0.9928125
+      }
+    },
+    {
+      "config": {
+        "max_depth": 11,
+        "min_samples_leaf": 2,
+        "n_estimators": 160
+      },
+      "sample": {
+        "accuracy": 0.959375,
+        "brier_score": 0.039389469052,
+        "log_loss": 0.153061479483,
+        "roc_auc": 0.99546875
+      }
+    }
+  ],
+  "training_seed": 20260723
+}

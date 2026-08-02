@@ -1,0 +1,252 @@
+{
+  "baseline_v1_same_frozen_test": {
+    "by_scenario": {
+      "context-neutral-internal-error": {
+        "correct": 47,
+        "groups": 63,
+        "top1_accuracy": 0.746031746031746
+      },
+      "cross-family-correlated-sequence-error": {
+        "correct": 53,
+        "groups": 75,
+        "top1_accuracy": 0.7066666666666667
+      },
+      "current-boundary-error": {
+        "correct": 69,
+        "groups": 71,
+        "top1_accuracy": 0.971830985915493
+      },
+      "legitimate-transition": {
+        "correct": 51,
+        "groups": 64,
+        "top1_accuracy": 0.796875
+      },
+      "neighbor-corruption": {
+        "correct": 57,
+        "groups": 57,
+        "top1_accuracy": 1.0
+      },
+      "single-family-correlated-sequence-error": {
+        "correct": 50,
+        "groups": 70,
+        "top1_accuracy": 0.7142857142857143
+      }
+    },
+    "decision": {
+      "correct": 327,
+      "groups": 400,
+      "top1_accuracy": 0.8175
+    },
+    "model_version": "scorescan-context-calibrator-1",
+    "sample": {
+      "accuracy": 0.5442857142857143,
+      "brier_score": 0.29866421824225997,
+      "f1": 0.5061919504643962,
+      "false_accepts": 210,
+      "false_rejects": 1066,
+      "log_loss": 0.8289450189787038,
+      "precision": 0.7569444444444444,
+      "recall": 0.3802325581395349,
+      "roc_auc": 0.6775931309216192
+    }
+  },
+  "deployment_parity": {
+    "implementation": "dependency-free verified random-forest JSON runtime",
+    "max_absolute_probability_delta": 1.1102230246251565e-14
+  },
+  "family_feature_ablation": {
+    "by_scenario": {
+      "context-neutral-internal-error": {
+        "correct": 38,
+        "groups": 63,
+        "top1_accuracy": 0.6031746031746031
+      },
+      "cross-family-correlated-sequence-error": {
+        "correct": 48,
+        "groups": 75,
+        "top1_accuracy": 0.64
+      },
+      "current-boundary-error": {
+        "correct": 65,
+        "groups": 71,
+        "top1_accuracy": 0.9154929577464789
+      },
+      "legitimate-transition": {
+        "correct": 63,
+        "groups": 64,
+        "top1_accuracy": 0.984375
+      },
+      "neighbor-corruption": {
+        "correct": 57,
+        "groups": 57,
+        "top1_accuracy": 1.0
+      },
+      "single-family-correlated-sequence-error": {
+        "correct": 47,
+        "groups": 70,
+        "top1_accuracy": 0.6714285714285714
+      }
+    },
+    "decision": {
+      "correct": 318,
+      "groups": 400,
+      "top1_accuracy": 0.795
+    },
+    "description": "same forest configuration and split using only the twenty-four same-variant context features",
+    "sample": {
+      "accuracy": 0.7360714285714286,
+      "brier_score": 0.1835040545253747,
+      "f1": 0.8119114278442352,
+      "false_accepts": 614,
+      "false_rejects": 125,
+      "log_loss": 0.5441191878612734,
+      "precision": 0.7220461747397012,
+      "recall": 0.9273255813953488,
+      "roc_auc": 0.7397989341085272
+    }
+  },
+  "frozen_test": {
+    "by_scenario": {
+      "context-neutral-internal-error": {
+        "correct": 46,
+        "groups": 63,
+        "top1_accuracy": 0.7301587301587301
+      },
+      "cross-family-correlated-sequence-error": {
+        "correct": 47,
+        "groups": 75,
+        "top1_accuracy": 0.6266666666666667
+      },
+      "current-boundary-error": {
+        "correct": 69,
+        "groups": 71,
+        "top1_accuracy": 0.971830985915493
+      },
+      "legitimate-transition": {
+        "correct": 62,
+        "groups": 64,
+        "top1_accuracy": 0.96875
+      },
+      "neighbor-corruption": {
+        "correct": 57,
+        "groups": 57,
+        "top1_accuracy": 1.0
+      },
+      "single-family-correlated-sequence-error": {
+        "correct": 56,
+        "groups": 70,
+        "top1_accuracy": 0.8
+      }
+    },
+    "decision": {
+      "correct": 337,
+      "groups": 400,
+      "top1_accuracy": 0.8425
+    },
+    "sample": {
+      "accuracy": 0.7978571428571428,
+      "brier_score": 0.14917435098623352,
+      "f1": 0.8354651162790697,
+      "false_accepts": 283,
+      "false_rejects": 283,
+      "log_loss": 0.46326384395217457,
+      "precision": 0.8354651162790697,
+      "recall": 0.8354651162790697,
+      "roc_auc": 0.8390242786391042
+    }
+  },
+  "groups": 4000,
+  "limitations": [
+    "No large frozen real-scan candidate sequence corpus is bundled.",
+    "Context is a bounded prior and cannot override event consensus or hard validation.",
+    "Context-neutral internal note errors remain the responsibility of event and visual evidence."
+  ],
+  "model_selection_audit": [
+    {
+      "config": {
+        "max_depth": 6,
+        "min_samples_leaf": 8,
+        "n_estimators": 24
+      },
+      "decision": {
+        "correct": 343,
+        "groups": 400,
+        "top1_accuracy": 0.8575
+      },
+      "sample": {
+        "accuracy": 0.7914285714285715,
+        "brier_score": 0.15539308760114806,
+        "f1": 0.8337129840546698,
+        "false_accepts": 355,
+        "false_rejects": 229,
+        "log_loss": 0.48083540349576304,
+        "precision": 0.8048378229796591,
+        "recall": 0.8647371529828707,
+        "roc_auc": 0.8240630023941508
+      }
+    },
+    {
+      "config": {
+        "max_depth": 7,
+        "min_samples_leaf": 6,
+        "n_estimators": 32
+      },
+      "decision": {
+        "correct": 343,
+        "groups": 400,
+        "top1_accuracy": 0.8575
+      },
+      "sample": {
+        "accuracy": 0.7935714285714286,
+        "brier_score": 0.15217474636710182,
+        "f1": 0.8367231638418079,
+        "false_accepts": 366,
+        "false_rejects": 212,
+        "log_loss": 0.4711902084285191,
+        "precision": 0.8018408229561451,
+        "recall": 0.8747784997046663,
+        "roc_auc": 0.8446664649753408
+      }
+    },
+    {
+      "config": {
+        "max_depth": 8,
+        "min_samples_leaf": 6,
+        "n_estimators": 48
+      },
+      "decision": {
+        "correct": 338,
+        "groups": 400,
+        "top1_accuracy": 0.845
+      },
+      "sample": {
+        "accuracy": 0.8025,
+        "brier_score": 0.1469208878497405,
+        "f1": 0.8428530832622905,
+        "false_accepts": 343,
+        "false_rejects": 210,
+        "log_loss": 0.4572805927445324,
+        "precision": 0.812157721796276,
+        "recall": 0.8759598346131128,
+        "roc_auc": 0.8602545899449937
+      }
+    }
+  ],
+  "model_version": "scorescan-context-forest-2",
+  "positive_rate": 0.6189642857142857,
+  "samples": 28000,
+  "samples_by_partition": {
+    "frozen_test": 2800,
+    "model_selection_audit": 2800,
+    "probability_calibration": 2800,
+    "train": 19600
+  },
+  "scope": "grouped procedural three-measure candidate selection with preprocessing-family correlations; not end-to-end scan or MusicXML accuracy",
+  "seed": 20261201,
+  "selected_config": {
+    "max_depth": 6,
+    "min_samples_leaf": 8,
+    "n_estimators": 24
+  },
+  "split_unit": "source three-measure segment identity; all seven correlated preprocessing variants remain together"
+}

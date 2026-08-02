@@ -1,0 +1,33 @@
+name: Feature request
+description: Propose a bounded product or workflow change.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the concrete workflow or notation case that is not handled.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: boundary
+    attributes:
+      label: Does this change the recognition boundary?
+      options:
+        - "No"
+        - "Yes"
+        - "Unsure"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Verification material
+      description: Describe the licensed or synthetic material that could verify the change. Do not attach copyrighted scores without permission.

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "model_version": "scorescan-measure-count-resolver-4",
+  "training_seed": 20260721,
+  "model_byte_identical": true,
+  "report_byte_identical": true,
+  "sha256": {
+    "model_primary": "8be009e6b11a285bc617bae0be982b390e39ca80fc1fbe46e4e08a2f44b45f23",
+    "model_repeat": "8be009e6b11a285bc617bae0be982b390e39ca80fc1fbe46e4e08a2f44b45f23",
+    "report_primary": "bcfec2377bd74088d5203785c7fc3b73613e7eb69f915c58e58f3d653cc70109",
+    "report_repeat": "bcfec2377bd74088d5203785c7fc3b73613e7eb69f915c58e58f3d653cc70109"
+  },
+  "scope": "Two complete CPU training runs with the same frozen grouped dataset, seed and configuration search. This proves build reproducibility, not real-scan end-to-end accuracy."
+}

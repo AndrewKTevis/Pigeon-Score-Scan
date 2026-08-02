@@ -1,0 +1,15 @@
+{
+  "format": 1,
+  "role": "public_test_fixture_not_training_or_evaluation",
+  "full_page_png_count": 3307,
+  "published_sample_count": 2931,
+  "published_score_group_count": 200,
+  "mapped_full_page_count": 788,
+  "mapped_system_count": 2961,
+  "extra_mapping_sample_count": 30,
+  "published_dev_test_source_document_overlap_count": 0,
+  "full_page_semantic_ground_truth_complete": false,
+  "training_authorized": false,
+  "evaluation_authorized": false,
+  "release_authorized": false
+}

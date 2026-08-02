@@ -1,0 +1,11 @@
+{
+  "claim_boundary": "This is an experiment rejection record, not an end-to-end scan accuracy result.",
+  "decision": "rejected",
+  "experiment": "pitch_visual_single_detector_v1",
+  "format": 1,
+  "observed_false_accepts": 3,
+  "reason": "Independent rendered confirmation produced three false accepts. Raising the threshold removed the observed false accepts but left unstable and insufficient coverage, so this design was not deployed.",
+  "replacement": "A single decision model fed by inclusive and strict staff-removed detector evidence; both detector views are features of the same guard rather than separate voting models.",
+  "runtime_deployed": false,
+  "scope": "Rendered local pitch-repair visual guard using one inclusive notehead detector."
+}

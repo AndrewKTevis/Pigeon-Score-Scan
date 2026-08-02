@@ -1,0 +1,44 @@
+{
+  "calibration": {
+    "accuracy": 0.7671177539890931,
+    "auc": 0.9431182400032451,
+    "f1": 0.8125508047471955,
+    "precision": 0.9850216791486007,
+    "recall": 0.6914775871610404,
+    "threshold": 0.9260051830379135
+  },
+  "calibration_samples": 4951,
+  "groups": 2200,
+  "model_version": "scorescan-barline-sequence-logistic-1",
+  "positive_rate": 0.7273064326762653,
+  "runtime_probability_floor": 0.3,
+  "runtime_test": {
+    "accuracy": 0.8756177924217463,
+    "auc": 0.943866265619238,
+    "f1": 0.9176213857064921,
+    "precision": 0.879937222076903,
+    "recall": 0.9586776859504132,
+    "threshold": 0.3
+  },
+  "samples": 32366,
+  "scope": "synthetic system-level barline candidate refinement; not end-to-end OMR accuracy",
+  "seed": 20260717,
+  "sequence_evaluation": {
+    "baseline_exact_measure_count_rate": 0.17833333333333334,
+    "false_candidate_removal": 0.16598860862489828,
+    "refined_exact_measure_count_rate": 0.22833333333333333,
+    "systems": 600,
+    "true_boundary_retention": 0.9936688825577714
+  },
+  "test": {
+    "accuracy": 0.7633855024711697,
+    "auc": 0.943866265619238,
+    "f1": 0.8067933411804271,
+    "precision": 0.9840032813781788,
+    "recall": 0.6836705614135081,
+    "threshold": 0.9260051830379135
+  },
+  "test_samples": 4856,
+  "train_samples": 22559,
+  "variants_per_group": 2
+}

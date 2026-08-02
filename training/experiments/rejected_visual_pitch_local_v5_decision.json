@@ -1,0 +1,9 @@
+{
+  "decision": "rejected_for_runtime",
+  "reason": "The specialised pitch-local features improved selected pitch traps but regressed the general visual candidate selector on the same frozen rendered groups.",
+  "v5_compatible_top1": 0.1125,
+  "v4_same_test_compatible_top1": 0.1625,
+  "v5_roc_auc": 0.7206982421875001,
+  "v4_same_test_roc_auc": 0.745,
+  "retained_scope": "The deterministic local pitch gaps are retained only inside the pitch-patch safety path; the general visual model remains v4."
+}

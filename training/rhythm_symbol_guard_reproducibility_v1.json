@@ -1,0 +1,37 @@
+{
+  "all_byte_identical": true,
+  "artifacts": {
+    "independent_report": {
+      "byte_identical": true,
+      "path": "training/rhythm_symbol_guard_independent_audit_v1.json",
+      "run_a_sha256": "9c6d7a79884312647d216a74f0334b04399949020df8bfff9e349757a59b516c",
+      "run_b_sha256": "9c6d7a79884312647d216a74f0334b04399949020df8bfff9e349757a59b516c"
+    },
+    "model": {
+      "byte_identical": true,
+      "path": "app/src/scorescan/resources/rhythm_symbol_guard.json",
+      "run_a_sha256": "1cbac02b83c5dfa3d210eddb065fd082e60f2b627b745327bcf9580c0c288f69",
+      "run_b_sha256": "1cbac02b83c5dfa3d210eddb065fd082e60f2b627b745327bcf9580c0c288f69"
+    },
+    "safety_report": {
+      "byte_identical": true,
+      "path": "training/rhythm_symbol_guard_safety_calibration_v1.json",
+      "run_a_sha256": "14d5674d3f92651ed31f8c4dc4391cc3257e51ab393064d2dbbb408948252780",
+      "run_b_sha256": "14d5674d3f92651ed31f8c4dc4391cc3257e51ab393064d2dbbb408948252780"
+    },
+    "training_report": {
+      "byte_identical": true,
+      "path": "training/rhythm_symbol_guard_report_v1.json",
+      "run_a_sha256": "8da641f3d76f54c7148391990d100793126dc281db50544910dfea0fcd4f02be",
+      "run_b_sha256": "8da641f3d76f54c7148391990d100793126dc281db50544910dfea0fcd4f02be"
+    }
+  },
+  "end_to_end_accuracy_claim": false,
+  "fixed_seed_independent_audit": 20261017,
+  "fixed_seed_safety_calibration": 20260917,
+  "fixed_seed_training": 20260805,
+  "format": 1,
+  "model_version": "scorescan-rhythm-symbol-forest-1",
+  "scope": "two complete CPU training, safety calibration, and independent audit runs in the same locked source environment",
+  "version": "0.31.0-rc1"
+}

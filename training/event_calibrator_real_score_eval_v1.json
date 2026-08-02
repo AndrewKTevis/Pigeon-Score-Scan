@@ -1,0 +1,22 @@
+{
+  "baseline_top1": 1.0,
+  "by_file": [
+    {
+      "baseline_top1": 1.0,
+      "file": "Allegretto_No_3_from_image.musicxml",
+      "groups": 46,
+      "model_top1": 1.0
+    },
+    {
+      "baseline_top1": 1.0,
+      "file": "Cantata_BWV147_HP_Violin_Club.musicxml",
+      "groups": 44,
+      "model_top1": 1.0
+    }
+  ],
+  "groups": 90,
+  "model_top1": 1.0,
+  "model_version": "scorescan-event-calibrator-1",
+  "scope": "real MusicXML measures with controlled semantic corruptions; not end-to-end scan OMR",
+  "seed": 20260716
+}

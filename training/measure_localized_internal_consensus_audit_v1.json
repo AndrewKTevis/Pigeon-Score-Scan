@@ -1,0 +1,109 @@
+{
+  "accepted_capabilities": {
+    "primary_error_overruled_by_two_matching_siblings": true,
+    "primary_failure_recovered_by_two_matching_siblings": true,
+    "single_valid_result_rejected": true,
+    "three_way_split_rejected": true
+  },
+  "end_to_end_accuracy_claim": false,
+  "failed": 0,
+  "format": 1,
+  "independent_family_count_contributed": 1,
+  "known_limits": [
+    "Two related local treatments can still share the same error.",
+    "All three local treatments can still share the same error.",
+    "The local result therefore remains one family and must pass the ordinary independent-family and page-level veto gates."
+  ],
+  "passed": 9,
+  "policy_version": "scorescan-policy-61",
+  "programmatic_audit": true,
+  "scenario_count": 9,
+  "scenarios": [
+    {
+      "error": null,
+      "expected_signature": "truth",
+      "name": "all-agree-correct",
+      "observed_signature": "truth",
+      "passed": true,
+      "reported_signature": "truth",
+      "winning_support": 3
+    },
+    {
+      "error": null,
+      "expected_signature": "truth",
+      "name": "primary-wrong-two-correct",
+      "observed_signature": "truth",
+      "passed": true,
+      "reported_signature": "truth",
+      "winning_support": 2
+    },
+    {
+      "error": null,
+      "expected_signature": "truth",
+      "name": "primary-invalid-two-correct",
+      "observed_signature": "truth",
+      "passed": true,
+      "reported_signature": "truth",
+      "winning_support": 2
+    },
+    {
+      "error": null,
+      "expected_signature": "truth",
+      "name": "flat-wrong-two-correct",
+      "observed_signature": "truth",
+      "passed": true,
+      "reported_signature": "truth",
+      "winning_support": 2
+    },
+    {
+      "error": null,
+      "expected_signature": "truth",
+      "name": "otsu-invalid-two-correct",
+      "observed_signature": "truth",
+      "passed": true,
+      "reported_signature": "truth",
+      "winning_support": 2
+    },
+    {
+      "error": "internal_exact_support_low",
+      "expected_signature": null,
+      "name": "three-way-split",
+      "observed_signature": null,
+      "passed": true,
+      "reported_signature": "a",
+      "winning_support": 1
+    },
+    {
+      "error": "insufficient_valid_internal_variants",
+      "expected_signature": null,
+      "name": "only-one-valid",
+      "observed_signature": null,
+      "passed": true,
+      "reported_signature": null,
+      "winning_support": 0
+    },
+    {
+      "error": null,
+      "expected_signature": "wrong",
+      "name": "two-correlated-wrong",
+      "observed_signature": "wrong",
+      "passed": true,
+      "reported_signature": "wrong",
+      "winning_support": 2
+    },
+    {
+      "error": null,
+      "expected_signature": "wrong",
+      "name": "all-correlated-wrong",
+      "observed_signature": "wrong",
+      "passed": true,
+      "reported_signature": "wrong",
+      "winning_support": 3
+    }
+  ],
+  "subvariants": [
+    "primary",
+    "flat",
+    "otsu"
+  ]
+}

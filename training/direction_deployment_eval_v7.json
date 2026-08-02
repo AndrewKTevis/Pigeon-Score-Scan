@@ -1,0 +1,14 @@
+{
+  "evaluation": "direction deployment stress test",
+  "model_file": "src/scorescan/resources/direction_model.json",
+  "model_version": "scorescan-direction-logistic-7",
+  "seed": 777,
+  "samples": 1006,
+  "corruption": "one deterministic 1-2 operation synthetic OCR corruption per maintained phrase",
+  "top1_accuracy": 0.9811133200795229,
+  "autocorrect_count": 155,
+  "autocorrect_coverage": 0.1540755467196819,
+  "autocorrect_precision": 1.0,
+  "autocorrect_errors": [],
+  "notes": "This evaluates the deployed hybrid decoder on synthetic corruptions. It is not an end-to-end score OCR metric."
+}

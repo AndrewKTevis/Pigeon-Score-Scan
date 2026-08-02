@@ -1,0 +1,12 @@
+{
+  "format": 1,
+  "role": "public_test_fixture_not_training_or_evaluation",
+  "source_revision": "d4cc435b2a34d7e1ee3a4132361e4887f96bb20a",
+  "dataset_total_pages": 184,
+  "declared_work_count": 24,
+  "strict_boundary_accepted_work_count": 0,
+  "source_images_downloaded": false,
+  "training_authorized": false,
+  "evaluation_authorized": false,
+  "release_authorized": false
+}

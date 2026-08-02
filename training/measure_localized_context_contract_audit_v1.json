@@ -1,0 +1,121 @@
+{
+  "contract": "measure-localized-notation-context@1",
+  "passed": true,
+  "passed_count": 10,
+  "policy_version": "scorescan-policy-61",
+  "scenario_count": 10,
+  "scenarios": [
+    {
+      "error": null,
+      "error_contains": null,
+      "expected_valid": true,
+      "name": "implicit-default",
+      "passed": true,
+      "splice_checked": true,
+      "splice_error": null,
+      "splice_ok": true,
+      "valid": true
+    },
+    {
+      "error": null,
+      "error_contains": null,
+      "expected_valid": true,
+      "name": "explicit-default-local",
+      "passed": true,
+      "splice_checked": false,
+      "splice_error": null,
+      "splice_ok": null,
+      "valid": true
+    },
+    {
+      "error": null,
+      "error_contains": null,
+      "expected_valid": true,
+      "name": "matching-nondefault",
+      "passed": true,
+      "splice_checked": true,
+      "splice_error": null,
+      "splice_ok": true,
+      "valid": true
+    },
+    {
+      "error": "local clef context has no matching template context",
+      "error_contains": "clef context",
+      "expected_valid": false,
+      "name": "conflicting-clef",
+      "passed": true,
+      "splice_checked": false,
+      "splice_error": null,
+      "splice_ok": null,
+      "valid": false
+    },
+    {
+      "error": "local key context has no matching template context",
+      "error_contains": "key context",
+      "expected_valid": false,
+      "name": "conflicting-key",
+      "passed": true,
+      "splice_checked": false,
+      "splice_error": null,
+      "splice_ok": null,
+      "valid": false
+    },
+    {
+      "error": "local time context conflicts with template",
+      "error_contains": "time context",
+      "expected_valid": false,
+      "name": "conflicting-time",
+      "passed": true,
+      "splice_checked": false,
+      "splice_error": null,
+      "splice_ok": null,
+      "valid": false
+    },
+    {
+      "error": "local transpose context has no matching template context",
+      "error_contains": "transpose context",
+      "expected_valid": false,
+      "name": "conflicting-transpose",
+      "passed": true,
+      "splice_checked": false,
+      "splice_error": null,
+      "splice_ok": null,
+      "valid": false
+    },
+    {
+      "error": "local clef context is missing for non-default template",
+      "error_contains": "clef context is missing",
+      "expected_valid": false,
+      "name": "missing-nondefault-clef",
+      "passed": true,
+      "splice_checked": false,
+      "splice_error": null,
+      "splice_ok": null,
+      "valid": false
+    },
+    {
+      "error": "notation context parse failed: measure-localised MusicXML changes notation context after performed content",
+      "error_contains": "after performed content",
+      "expected_valid": false,
+      "name": "local-mid-measure-context",
+      "passed": true,
+      "splice_checked": false,
+      "splice_error": null,
+      "splice_ok": null,
+      "valid": false
+    },
+    {
+      "error": "notation context parse failed: template measure has mid-measure attributes unsafe for local context",
+      "error_contains": "mid-measure attributes",
+      "expected_valid": false,
+      "name": "template-mid-measure-context",
+      "passed": true,
+      "splice_checked": false,
+      "splice_error": null,
+      "splice_ok": null,
+      "valid": false
+    }
+  ],
+  "version": "0.37.0-dev",
+  "workflow_version": "printed-full-score-scan@1"
+}

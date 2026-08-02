@@ -1,0 +1,126 @@
+{
+  "model_version": "scorescan-visual-measure-calibrator-2",
+  "seed": 20260717,
+  "measure_groups": 1200,
+  "samples": 4800,
+  "train_samples": 3360,
+  "calibration_samples": 720,
+  "test_samples": 720,
+  "positive_rate": 0.5,
+  "candidate_pool": 240,
+  "feature_names": [
+    "ink_density",
+    "nonstaff_ink_density",
+    "component_density",
+    "notehead_proxy",
+    "stem_proxy",
+    "beam_proxy",
+    "onset_proxy",
+    "above_ink_density",
+    "below_ink_density",
+    "anchor_count",
+    "pitched_count",
+    "rest_count",
+    "chord_extra_count",
+    "beam_complexity",
+    "direction_count",
+    "articulation_count",
+    "accidental_count",
+    "grace_count",
+    "anchor_notehead_gap",
+    "anchor_onset_gap",
+    "pitched_stem_gap",
+    "beam_gap",
+    "direction_ink_gap",
+    "rest_component_gap",
+    "complexity_density_gap"
+  ],
+  "target_scope": "visual density and notation-complexity compatibility; not pitch identity or end-to-end OMR accuracy",
+  "test": {
+    "accuracy": 0.8611111111111112,
+    "roc_auc": 0.9433834876543209,
+    "log_loss": 0.29956789614639895,
+    "brier_score": 0.09457932845833857,
+    "precision": 0.8201970443349754,
+    "recall": 0.925,
+    "f1": 0.8694516971279374,
+    "accepted_fraction": 0.5638888888888889,
+    "true_vs_gross_top1": 0.8611111111111112,
+    "kind_metrics": {
+      "exact": {
+        "samples": 180,
+        "mean_probability": 0.8270523878609115,
+        "accepted_fraction": 0.9277777777777778
+      },
+      "near": {
+        "samples": 180,
+        "mean_probability": 0.8127418551691292,
+        "accepted_fraction": 0.9222222222222223
+      },
+      "medium": {
+        "samples": 180,
+        "mean_probability": 0.3718127496978116,
+        "accepted_fraction": 0.4
+      },
+      "far": {
+        "samples": 180,
+        "mean_probability": 0.025038297421904318,
+        "accepted_fraction": 0.005555555555555556
+      }
+    },
+    "semantic_distance_by_kind": {
+      "exact": 0.0,
+      "near": 0.035632716049382715,
+      "medium": 0.19394290123456795,
+      "far": 0.4278266460905349
+    }
+  },
+  "baseline_on_same_test": {
+    "accuracy": 0.5513888888888889,
+    "roc_auc": 0.920108024691358,
+    "log_loss": 0.5847676892305743,
+    "brier_score": 0.21686726402814868,
+    "precision": 0.9743589743589743,
+    "recall": 0.10555555555555556,
+    "f1": 0.19047619047619047,
+    "accepted_fraction": 0.05416666666666667,
+    "true_vs_gross_top1": 0.8166666666666667,
+    "kind_metrics": {
+      "exact": {
+        "samples": 180,
+        "mean_probability": 0.3777330845654183,
+        "accepted_fraction": 0.11666666666666667
+      },
+      "near": {
+        "samples": 180,
+        "mean_probability": 0.36896395127619325,
+        "accepted_fraction": 0.09444444444444444
+      },
+      "medium": {
+        "samples": 180,
+        "mean_probability": 0.18400022970316784,
+        "accepted_fraction": 0.0
+      },
+      "far": {
+        "samples": 180,
+        "mean_probability": 0.04836691043413166,
+        "accepted_fraction": 0.005555555555555556
+      }
+    },
+    "semantic_distance_by_kind": {
+      "exact": 0.0,
+      "near": 0.035632716049382715,
+      "medium": 0.19394290123456795,
+      "far": 0.4278266460905349
+    },
+    "model_version": "scorescan-visual-measure-calibrator-1"
+  },
+  "deployment_parity": {
+    "max_absolute_probability_delta": 3.3306690738754696e-16,
+    "samples": 720
+  },
+  "calibration": {
+    "intercept": -0.06876274797103693,
+    "slope": 1.4595104622372261
+  }
+}

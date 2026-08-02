@@ -1,0 +1,26 @@
+{
+  "all_byte_identical": true,
+  "artifacts": {
+    "model": {
+      "byte_identical": true,
+      "path": "app/src/scorescan/resources/accidental_presence_guard.json",
+      "run_a_sha256": "abb3921a2df661c7ae146b7aa3d35715638331a4aaaa74d898b3a262b1d84920",
+      "run_b_sha256": "abb3921a2df661c7ae146b7aa3d35715638331a4aaaa74d898b3a262b1d84920"
+    },
+    "training_report": {
+      "byte_identical": true,
+      "path": "training/accidental_presence_guard_report_v1.json",
+      "run_a_sha256": "f03a26e8729ce3065720ff94f7f791aa31fe0a63c7254514a65ff41ce1c86016",
+      "run_b_sha256": "f03a26e8729ce3065720ff94f7f791aa31fe0a63c7254514a65ff41ce1c86016"
+    }
+  },
+  "dataset_arrays_identical": true,
+  "end_to_end_accuracy_claim": false,
+  "fixed_seed_independent_audit": 20261030,
+  "fixed_seed_safety_calibration": 20260920,
+  "fixed_seed_training": 20260819,
+  "format": 1,
+  "model_version": "scorescan-accidental-presence-forest-1",
+  "scope": "two complete CPU dataset generation, model training, safety calibration, and independent audit runs in the same locked source environment",
+  "version": "0.32.0-rc1"
+}

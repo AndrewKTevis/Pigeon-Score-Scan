@@ -1,0 +1,675 @@
+{
+  "model_version": "scorescan-measure-count-resolver-4",
+  "training_seed": 20260721,
+  "independent_groups": 6000,
+  "option_samples": 14404,
+  "feature_count": 26,
+  "split_option_samples": {
+    "train": 10094,
+    "calibration": 1446,
+    "audit": 1431,
+    "frozen": 1433
+  },
+  "selected_configuration": {
+    "trees": 96,
+    "max_depth": 10,
+    "min_samples_leaf": 3,
+    "max_features": "sqrt"
+  },
+  "model_bytes": 2842833,
+  "model_selection": [
+    {
+      "config": {
+        "trees": 48,
+        "max_depth": 8,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt"
+      },
+      "model_bytes": 863009,
+      "sample": {
+        "samples": 1431,
+        "roc_auc": 0.9982330525471319,
+        "log_loss": 0.060043515628836,
+        "brier_score": 0.013294764874547447,
+        "false_accepts_at_0_5": 18,
+        "false_rejects_at_0_5": 8
+      },
+      "decision": {
+        "groups": 600,
+        "top1": 0.9916666666666667,
+        "deterministic_top1": 0.855,
+        "by_kind": {
+          "agreement": {
+            "groups": 30,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "high-confidence-layout-wrong": {
+            "groups": 37,
+            "top1": 1.0,
+            "deterministic_top1": 0.9459459459459459
+          },
+          "single-family-duplicate-trap": {
+            "groups": 33,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "two-family-shared-error": {
+            "groups": 39,
+            "top1": 0.8974358974358975,
+            "deterministic_top1": 0.358974358974359
+          },
+          "adjacent-count-split": {
+            "groups": 34,
+            "top1": 1.0,
+            "deterministic_top1": 0.7058823529411765
+          },
+          "layout-only-rescue": {
+            "groups": 31,
+            "top1": 1.0,
+            "deterministic_top1": 0.25806451612903225
+          },
+          "high-score-single-family-trap": {
+            "groups": 26,
+            "top1": 0.9615384615384616,
+            "deterministic_top1": 0.9230769230769231
+          },
+          "invalid-true-candidates": {
+            "groups": 42,
+            "top1": 1.0,
+            "deterministic_top1": 0.8571428571428571
+          },
+          "candidate-majority-trap": {
+            "groups": 35,
+            "top1": 1.0,
+            "deterministic_top1": 0.7428571428571429
+          },
+          "independent-family-consensus": {
+            "groups": 41,
+            "top1": 1.0,
+            "deterministic_top1": 0.975609756097561
+          },
+          "large-layout-error": {
+            "groups": 36,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "low-confidence-layout": {
+            "groups": 36,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "localized-correct-rescue": {
+            "groups": 42,
+            "top1": 1.0,
+            "deterministic_top1": 0.7857142857142857
+          },
+          "localized-wrong-isolation": {
+            "groups": 41,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "localized-invalid-trap": {
+            "groups": 34,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "template-count-outlier": {
+            "groups": 34,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "invalid-sibling-family-trap": {
+            "groups": 29,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          }
+        }
+      }
+    },
+    {
+      "config": {
+        "trees": 96,
+        "max_depth": 10,
+        "min_samples_leaf": 3,
+        "max_features": "sqrt"
+      },
+      "model_bytes": 2842833,
+      "sample": {
+        "samples": 1431,
+        "roc_auc": 0.9989350180505414,
+        "log_loss": 0.04692985719003472,
+        "brier_score": 0.009524223077346829,
+        "false_accepts_at_0_5": 11,
+        "false_rejects_at_0_5": 6
+      },
+      "decision": {
+        "groups": 600,
+        "top1": 0.9916666666666667,
+        "deterministic_top1": 0.855,
+        "by_kind": {
+          "agreement": {
+            "groups": 30,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "high-confidence-layout-wrong": {
+            "groups": 37,
+            "top1": 1.0,
+            "deterministic_top1": 0.9459459459459459
+          },
+          "single-family-duplicate-trap": {
+            "groups": 33,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "two-family-shared-error": {
+            "groups": 39,
+            "top1": 0.9230769230769231,
+            "deterministic_top1": 0.358974358974359
+          },
+          "adjacent-count-split": {
+            "groups": 34,
+            "top1": 1.0,
+            "deterministic_top1": 0.7058823529411765
+          },
+          "layout-only-rescue": {
+            "groups": 31,
+            "top1": 1.0,
+            "deterministic_top1": 0.25806451612903225
+          },
+          "high-score-single-family-trap": {
+            "groups": 26,
+            "top1": 0.9615384615384616,
+            "deterministic_top1": 0.9230769230769231
+          },
+          "invalid-true-candidates": {
+            "groups": 42,
+            "top1": 1.0,
+            "deterministic_top1": 0.8571428571428571
+          },
+          "candidate-majority-trap": {
+            "groups": 35,
+            "top1": 1.0,
+            "deterministic_top1": 0.7428571428571429
+          },
+          "independent-family-consensus": {
+            "groups": 41,
+            "top1": 0.975609756097561,
+            "deterministic_top1": 0.975609756097561
+          },
+          "large-layout-error": {
+            "groups": 36,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "low-confidence-layout": {
+            "groups": 36,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "localized-correct-rescue": {
+            "groups": 42,
+            "top1": 1.0,
+            "deterministic_top1": 0.7857142857142857
+          },
+          "localized-wrong-isolation": {
+            "groups": 41,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "localized-invalid-trap": {
+            "groups": 34,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "template-count-outlier": {
+            "groups": 34,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          },
+          "invalid-sibling-family-trap": {
+            "groups": 29,
+            "top1": 1.0,
+            "deterministic_top1": 1.0
+          }
+        }
+      }
+    }
+  ],
+  "deployment_max_probability_delta": 1.1102230246251565e-15,
+  "selected_policy_thresholds": {
+    "probability_floor": 0.875,
+    "margin_floor": 0.5,
+    "accuracy": 0.8733333333333333,
+    "overrides": 11,
+    "improvements": 11,
+    "harms": 0,
+    "override_precision": 1.0
+  },
+  "frozen": {
+    "sample": {
+      "samples": 1433,
+      "roc_auc": 0.9988235294117647,
+      "log_loss": 0.049847929876940575,
+      "brier_score": 0.01067010819343415,
+      "false_accepts_at_0_5": 12,
+      "false_rejects_at_0_5": 7
+    },
+    "decision": {
+      "groups": 600,
+      "top1": 0.99,
+      "deterministic_top1": 0.8483333333333334,
+      "by_kind": {
+        "agreement": {
+          "groups": 26,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "high-confidence-layout-wrong": {
+          "groups": 31,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "single-family-duplicate-trap": {
+          "groups": 36,
+          "top1": 1.0,
+          "deterministic_top1": 0.9722222222222222
+        },
+        "two-family-shared-error": {
+          "groups": 37,
+          "top1": 0.8378378378378378,
+          "deterministic_top1": 0.32432432432432434
+        },
+        "adjacent-count-split": {
+          "groups": 28,
+          "top1": 1.0,
+          "deterministic_top1": 0.8928571428571429
+        },
+        "layout-only-rescue": {
+          "groups": 38,
+          "top1": 1.0,
+          "deterministic_top1": 0.13157894736842105
+        },
+        "high-score-single-family-trap": {
+          "groups": 49,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "invalid-true-candidates": {
+          "groups": 42,
+          "top1": 1.0,
+          "deterministic_top1": 0.8333333333333334
+        },
+        "candidate-majority-trap": {
+          "groups": 36,
+          "top1": 1.0,
+          "deterministic_top1": 0.5555555555555556
+        },
+        "independent-family-consensus": {
+          "groups": 30,
+          "top1": 1.0,
+          "deterministic_top1": 0.9666666666666667
+        },
+        "large-layout-error": {
+          "groups": 36,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "low-confidence-layout": {
+          "groups": 33,
+          "top1": 1.0,
+          "deterministic_top1": 0.9090909090909091
+        },
+        "localized-correct-rescue": {
+          "groups": 28,
+          "top1": 1.0,
+          "deterministic_top1": 0.9285714285714286
+        },
+        "localized-wrong-isolation": {
+          "groups": 34,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "localized-invalid-trap": {
+          "groups": 45,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "template-count-outlier": {
+          "groups": 32,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "invalid-sibling-family-trap": {
+          "groups": 39,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        }
+      }
+    },
+    "gated": {
+      "accuracy": 0.8733333333333333,
+      "overrides": 15,
+      "improvements": 15,
+      "harms": 0,
+      "override_precision": 1.0
+    }
+  },
+  "baseline_v2_same_test": {
+    "sample": {
+      "samples": 1433,
+      "roc_auc": 0.9742476990796318,
+      "log_loss": 0.24246459130243367,
+      "brier_score": 0.07704182167378919,
+      "false_accepts_at_0_5": 69,
+      "false_rejects_at_0_5": 81
+    },
+    "decision": {
+      "groups": 600,
+      "top1": 0.8966666666666666,
+      "deterministic_top1": 0.8483333333333334,
+      "by_kind": {
+        "agreement": {
+          "groups": 26,
+          "top1": 0.9230769230769231,
+          "deterministic_top1": 1.0
+        },
+        "high-confidence-layout-wrong": {
+          "groups": 31,
+          "top1": 0.967741935483871,
+          "deterministic_top1": 1.0
+        },
+        "single-family-duplicate-trap": {
+          "groups": 36,
+          "top1": 0.9444444444444444,
+          "deterministic_top1": 0.9722222222222222
+        },
+        "two-family-shared-error": {
+          "groups": 37,
+          "top1": 0.8648648648648649,
+          "deterministic_top1": 0.32432432432432434
+        },
+        "adjacent-count-split": {
+          "groups": 28,
+          "top1": 0.9285714285714286,
+          "deterministic_top1": 0.8928571428571429
+        },
+        "layout-only-rescue": {
+          "groups": 38,
+          "top1": 0.7631578947368421,
+          "deterministic_top1": 0.13157894736842105
+        },
+        "high-score-single-family-trap": {
+          "groups": 49,
+          "top1": 0.8979591836734694,
+          "deterministic_top1": 1.0
+        },
+        "invalid-true-candidates": {
+          "groups": 42,
+          "top1": 0.6190476190476191,
+          "deterministic_top1": 0.8333333333333334
+        },
+        "candidate-majority-trap": {
+          "groups": 36,
+          "top1": 1.0,
+          "deterministic_top1": 0.5555555555555556
+        },
+        "independent-family-consensus": {
+          "groups": 30,
+          "top1": 0.9666666666666667,
+          "deterministic_top1": 0.9666666666666667
+        },
+        "large-layout-error": {
+          "groups": 36,
+          "top1": 0.9444444444444444,
+          "deterministic_top1": 1.0
+        },
+        "low-confidence-layout": {
+          "groups": 33,
+          "top1": 0.8181818181818182,
+          "deterministic_top1": 0.9090909090909091
+        },
+        "localized-correct-rescue": {
+          "groups": 28,
+          "top1": 0.6428571428571429,
+          "deterministic_top1": 0.9285714285714286
+        },
+        "localized-wrong-isolation": {
+          "groups": 34,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "localized-invalid-trap": {
+          "groups": 45,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "template-count-outlier": {
+          "groups": 32,
+          "top1": 0.96875,
+          "deterministic_top1": 1.0
+        },
+        "invalid-sibling-family-trap": {
+          "groups": 39,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        }
+      }
+    }
+  },
+  "legacy_feature_forest_ablation": {
+    "sample": {
+      "samples": 1433,
+      "roc_auc": 0.9973549419767908,
+      "log_loss": 0.07205708366609437,
+      "brier_score": 0.017738848364700025,
+      "false_accepts_at_0_5": 23,
+      "false_rejects_at_0_5": 12
+    },
+    "decision": {
+      "groups": 600,
+      "top1": 0.975,
+      "deterministic_top1": 0.8483333333333334,
+      "by_kind": {
+        "agreement": {
+          "groups": 26,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "high-confidence-layout-wrong": {
+          "groups": 31,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "single-family-duplicate-trap": {
+          "groups": 36,
+          "top1": 1.0,
+          "deterministic_top1": 0.9722222222222222
+        },
+        "two-family-shared-error": {
+          "groups": 37,
+          "top1": 0.8108108108108109,
+          "deterministic_top1": 0.32432432432432434
+        },
+        "adjacent-count-split": {
+          "groups": 28,
+          "top1": 1.0,
+          "deterministic_top1": 0.8928571428571429
+        },
+        "layout-only-rescue": {
+          "groups": 38,
+          "top1": 1.0,
+          "deterministic_top1": 0.13157894736842105
+        },
+        "high-score-single-family-trap": {
+          "groups": 49,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "invalid-true-candidates": {
+          "groups": 42,
+          "top1": 1.0,
+          "deterministic_top1": 0.8333333333333334
+        },
+        "candidate-majority-trap": {
+          "groups": 36,
+          "top1": 0.8055555555555556,
+          "deterministic_top1": 0.5555555555555556
+        },
+        "independent-family-consensus": {
+          "groups": 30,
+          "top1": 1.0,
+          "deterministic_top1": 0.9666666666666667
+        },
+        "large-layout-error": {
+          "groups": 36,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "low-confidence-layout": {
+          "groups": 33,
+          "top1": 1.0,
+          "deterministic_top1": 0.9090909090909091
+        },
+        "localized-correct-rescue": {
+          "groups": 28,
+          "top1": 0.9642857142857143,
+          "deterministic_top1": 0.9285714285714286
+        },
+        "localized-wrong-isolation": {
+          "groups": 34,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "localized-invalid-trap": {
+          "groups": 45,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "template-count-outlier": {
+          "groups": 32,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "invalid-sibling-family-trap": {
+          "groups": 39,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        }
+      }
+    }
+  },
+  "independent_confirmation": {
+    "training_seed": 20365450,
+    "groups": 1500,
+    "sample": {
+      "samples": 3596,
+      "roc_auc": 0.9988711832061069,
+      "log_loss": 0.0491194340276899,
+      "brier_score": 0.010290862098263801,
+      "false_accepts_at_0_5": 27,
+      "false_rejects_at_0_5": 20
+    },
+    "decision": {
+      "groups": 1500,
+      "top1": 0.9853333333333333,
+      "deterministic_top1": 0.8633333333333333,
+      "by_kind": {
+        "agreement": {
+          "groups": 89,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "high-confidence-layout-wrong": {
+          "groups": 89,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "single-family-duplicate-trap": {
+          "groups": 89,
+          "top1": 1.0,
+          "deterministic_top1": 0.9550561797752809
+        },
+        "two-family-shared-error": {
+          "groups": 89,
+          "top1": 0.8314606741573034,
+          "deterministic_top1": 0.3595505617977528
+        },
+        "adjacent-count-split": {
+          "groups": 88,
+          "top1": 1.0,
+          "deterministic_top1": 0.8977272727272727
+        },
+        "layout-only-rescue": {
+          "groups": 88,
+          "top1": 0.9772727272727273,
+          "deterministic_top1": 0.17045454545454544
+        },
+        "high-score-single-family-trap": {
+          "groups": 88,
+          "top1": 1.0,
+          "deterministic_top1": 0.9772727272727273
+        },
+        "invalid-true-candidates": {
+          "groups": 88,
+          "top1": 0.9886363636363636,
+          "deterministic_top1": 0.8181818181818182
+        },
+        "candidate-majority-trap": {
+          "groups": 88,
+          "top1": 0.9772727272727273,
+          "deterministic_top1": 0.7045454545454546
+        },
+        "independent-family-consensus": {
+          "groups": 88,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "large-layout-error": {
+          "groups": 88,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "low-confidence-layout": {
+          "groups": 88,
+          "top1": 0.9886363636363636,
+          "deterministic_top1": 0.9886363636363636
+        },
+        "localized-correct-rescue": {
+          "groups": 88,
+          "top1": 1.0,
+          "deterministic_top1": 0.8181818181818182
+        },
+        "localized-wrong-isolation": {
+          "groups": 88,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "localized-invalid-trap": {
+          "groups": 88,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "template-count-outlier": {
+          "groups": 88,
+          "top1": 1.0,
+          "deterministic_top1": 1.0
+        },
+        "invalid-sibling-family-trap": {
+          "groups": 88,
+          "top1": 0.9886363636363636,
+          "deterministic_top1": 0.9886363636363636
+        }
+      }
+    },
+    "gated": {
+      "accuracy": 0.888,
+      "overrides": 37,
+      "improvements": 37,
+      "harms": 0,
+      "override_precision": 1.0
+    }
+  },
+  "scope": "programmatic grouped layout/OMR measure-count evidence fusion; not end-to-end OMR accuracy"
+}

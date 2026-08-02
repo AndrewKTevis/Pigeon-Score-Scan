@@ -1,0 +1,4231 @@
+{
+  "coefficients": [
+    1.2575580746894477,
+    -3.6494182485806856,
+    0.9817937703461593,
+    -0.3764920262256395,
+    0.11298206826871773,
+    0.7861832433286784,
+    0.9491287346444508,
+    0.26347556339482137,
+    0.5427628966972137,
+    -2.035527134330417,
+    0.7468597547791582,
+    1.2540893070752512,
+    0.7028350573971462,
+    4.578940245767238,
+    -1.8955163856608757,
+    -0.4863427442520281,
+    0.17701896218625196,
+    -1.6150663804861398,
+    -0.15495137308226314,
+    6.7734220114137385,
+    -0.49720076849124234,
+    0.022886912648220098,
+    0.5007952166667324
+  ],
+  "feature_names": [
+    "edit_similarity",
+    "trigram_jaccard",
+    "token_overlap",
+    "prefix",
+    "suffix",
+    "length_ratio",
+    "exact",
+    "prefix_ratio",
+    "suffix_ratio",
+    "char_overlap",
+    "space_similarity",
+    "damerau_similarity",
+    "compact_similarity",
+    "skeleton_similarity",
+    "accent_fold_similarity",
+    "token_count_similarity",
+    "punctuation_similarity",
+    "token_sequence_similarity",
+    "initials_similarity",
+    "bigram_similarity",
+    "fourgram_similarity",
+    "digit_pattern_similarity",
+    "log_frequency"
+  ],
+  "format": 3,
+  "intercept": -5.324652792486408,
+  "lexicon": [
+    {
+      "frequency": 8,
+      "text": "1st time"
+    },
+    {
+      "frequency": 8,
+      "text": "2nd time"
+    },
+    {
+      "frequency": 8,
+      "text": "A little faster"
+    },
+    {
+      "frequency": 8,
+      "text": "A little slower"
+    },
+    {
+      "frequency": 8,
+      "text": "a piacere"
+    },
+    {
+      "frequency": 8,
+      "text": "a tempo"
+    },
+    {
+      "frequency": 8,
+      "text": "a tempo ma tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "A tempo subito"
+    },
+    {
+      "frequency": 8,
+      "text": "A tiempo"
+    },
+    {
+      "frequency": 8,
+      "text": "accel."
+    },
+    {
+      "frequency": 8,
+      "text": "accel. poco a poco"
+    },
+    {
+      "frequency": 8,
+      "text": "acceler."
+    },
+    {
+      "frequency": 8,
+      "text": "accelerando"
+    },
+    {
+      "frequency": 8,
+      "text": "ad lib."
+    },
+    {
+      "frequency": 8,
+      "text": "ad libitum"
+    },
+    {
+      "frequency": 8,
+      "text": "Adagietto"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagietto tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Adagio"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio leggiero"
+    },
+    {
+      "frequency": 11,
+      "text": "Adagio ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio semplice"
+    },
+    {
+      "frequency": 11,
+      "text": "Adagio sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Adagio tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "agitato"
+    },
+    {
+      "frequency": 8,
+      "text": "al Coda"
+    },
+    {
+      "frequency": 8,
+      "text": "al fine"
+    },
+    {
+      "frequency": 8,
+      "text": "al niente"
+    },
+    {
+      "frequency": 8,
+      "text": "al segno"
+    },
+    {
+      "frequency": 8,
+      "text": "Alla breve"
+    },
+    {
+      "frequency": 8,
+      "text": "Alla polacca"
+    },
+    {
+      "frequency": 8,
+      "text": "Alla siciliana"
+    },
+    {
+      "frequency": 8,
+      "text": "Alla tedesca"
+    },
+    {
+      "frequency": 8,
+      "text": "Alla turca"
+    },
+    {
+      "frequency": 8,
+      "text": "allargando"
+    },
+    {
+      "frequency": 8,
+      "text": "Allegretto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegretto tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Allegrissimo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegrissimo tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Allegro"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro appassionato"
+    },
+    {
+      "frequency": 11,
+      "text": "Allegro assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro cantabile"
+    },
+    {
+      "frequency": 11,
+      "text": "Allegro con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro con moto"
+    },
+    {
+      "frequency": 11,
+      "text": "Allegro con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro dolce"
+    },
+    {
+      "frequency": 11,
+      "text": "Allegro energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro espressivo"
+    },
+    {
+      "frequency": 8,
+      "text": "Allegro giusto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro ma non troppo"
+    },
+    {
+      "frequency": 8,
+      "text": "Allegro ma non troppo e molto espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro misterioso"
+    },
+    {
+      "frequency": 8,
+      "text": "Allegro moderato"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro moderato tranquillo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Allegro tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Allegro vivace"
+    },
+    {
+      "frequency": 8,
+      "text": "Andante"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante con fuoco"
+    },
+    {
+      "frequency": 11,
+      "text": "Andante con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante energico"
+    },
+    {
+      "frequency": 11,
+      "text": "Andante espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante misterioso"
+    },
+    {
+      "frequency": 8,
+      "text": "Andante moderato"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante moderato tranquillo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante molto"
+    },
+    {
+      "frequency": 8,
+      "text": "Andante molto cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante semplice"
+    },
+    {
+      "frequency": 11,
+      "text": "Andante sostenuto"
+    },
+    {
+      "frequency": 8,
+      "text": "Andante sostenuto e cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Andante tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Andantino"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Andantino tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "animato"
+    },
+    {
+      "frequency": 8,
+      "text": "Animé"
+    },
+    {
+      "frequency": 8,
+      "text": "appassionato"
+    },
+    {
+      "frequency": 8,
+      "text": "arco"
+    },
+    {
+      "frequency": 8,
+      "text": "assez vif"
+    },
+    {
+      "frequency": 8,
+      "text": "Au mouvement"
+    },
+    {
+      "frequency": 8,
+      "text": "au mouvement précédent"
+    },
+    {
+      "frequency": 8,
+      "text": "au mouvt."
+    },
+    {
+      "frequency": 8,
+      "text": "avec chaleur"
+    },
+    {
+      "frequency": 8,
+      "text": "avec douceur"
+    },
+    {
+      "frequency": 8,
+      "text": "Avec expression"
+    },
+    {
+      "frequency": 8,
+      "text": "Bewegt"
+    },
+    {
+      "frequency": 8,
+      "text": "Breit"
+    },
+    {
+      "frequency": 8,
+      "text": "brillante"
+    },
+    {
+      "frequency": 8,
+      "text": "Broadly"
+    },
+    {
+      "frequency": 8,
+      "text": "Broadly and sustained"
+    },
+    {
+      "frequency": 8,
+      "text": "Broadly, but not slower"
+    },
+    {
+      "frequency": 8,
+      "text": "ca. 72"
+    },
+    {
+      "frequency": 8,
+      "text": "calando"
+    },
+    {
+      "frequency": 8,
+      "text": "Calmly"
+    },
+    {
+      "frequency": 8,
+      "text": "cantabile"
+    },
+    {
+      "frequency": 8,
+      "text": "cantabile con espressione"
+    },
+    {
+      "frequency": 8,
+      "text": "cantabile ed espressivo"
+    },
+    {
+      "frequency": 8,
+      "text": "cantando"
+    },
+    {
+      "frequency": 8,
+      "text": "cedendo"
+    },
+    {
+      "frequency": 8,
+      "text": "cedez"
+    },
+    {
+      "frequency": 8,
+      "text": "circa 96"
+    },
+    {
+      "frequency": 8,
+      "text": "Coda"
+    },
+    {
+      "frequency": 8,
+      "text": "come prima"
+    },
+    {
+      "frequency": 8,
+      "text": "come sopra"
+    },
+    {
+      "frequency": 8,
+      "text": "comodo"
+    },
+    {
+      "frequency": 8,
+      "text": "con affetto"
+    },
+    {
+      "frequency": 8,
+      "text": "con calma"
+    },
+    {
+      "frequency": 8,
+      "text": "Con delicatezza"
+    },
+    {
+      "frequency": 8,
+      "text": "con dolcezza"
+    },
+    {
+      "frequency": 8,
+      "text": "con dolore"
+    },
+    {
+      "frequency": 8,
+      "text": "Con eleganza"
+    },
+    {
+      "frequency": 8,
+      "text": "con energia"
+    },
+    {
+      "frequency": 8,
+      "text": "Con energía"
+    },
+    {
+      "frequency": 8,
+      "text": "con espressione"
+    },
+    {
+      "frequency": 8,
+      "text": "Con expresión"
+    },
+    {
+      "frequency": 8,
+      "text": "con forza"
+    },
+    {
+      "frequency": 8,
+      "text": "Con gracia"
+    },
+    {
+      "frequency": 8,
+      "text": "con grazia"
+    },
+    {
+      "frequency": 8,
+      "text": "con impeto"
+    },
+    {
+      "frequency": 8,
+      "text": "con libertà"
+    },
+    {
+      "frequency": 8,
+      "text": "con malinconia"
+    },
+    {
+      "frequency": 8,
+      "text": "Con molto espressione"
+    },
+    {
+      "frequency": 8,
+      "text": "con moto e grazia"
+    },
+    {
+      "frequency": 8,
+      "text": "Con moto ma tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "con nobiltà"
+    },
+    {
+      "frequency": 8,
+      "text": "Con passione"
+    },
+    {
+      "frequency": 8,
+      "text": "con semplicità"
+    },
+    {
+      "frequency": 8,
+      "text": "Con sentimento"
+    },
+    {
+      "frequency": 8,
+      "text": "con slancio"
+    },
+    {
+      "frequency": 8,
+      "text": "con sordino"
+    },
+    {
+      "frequency": 8,
+      "text": "con tenerezza"
+    },
+    {
+      "frequency": 8,
+      "text": "Con tutta forza"
+    },
+    {
+      "frequency": 8,
+      "text": "con vibrato"
+    },
+    {
+      "frequency": 8,
+      "text": "cresc."
+    },
+    {
+      "frequency": 1,
+      "text": "cresc. a tempo"
+    },
+    {
+      "frequency": 1,
+      "text": "cresc. e cresc."
+    },
+    {
+      "frequency": 1,
+      "text": "cresc. e dim."
+    },
+    {
+      "frequency": 8,
+      "text": "cresc. ed animando"
+    },
+    {
+      "frequency": 9,
+      "text": "cresc. molto"
+    },
+    {
+      "frequency": 8,
+      "text": "cresc. poco a poco"
+    },
+    {
+      "frequency": 1,
+      "text": "cresc. sempre"
+    },
+    {
+      "frequency": 8,
+      "text": "crescendo"
+    },
+    {
+      "frequency": 8,
+      "text": "Cédez"
+    },
+    {
+      "frequency": 8,
+      "text": "D.C."
+    },
+    {
+      "frequency": 8,
+      "text": "D.C. al Coda"
+    },
+    {
+      "frequency": 16,
+      "text": "D.C. al Fine"
+    },
+    {
+      "frequency": 8,
+      "text": "D.S."
+    },
+    {
+      "frequency": 16,
+      "text": "D.S. al Coda"
+    },
+    {
+      "frequency": 8,
+      "text": "D.S. al Fine"
+    },
+    {
+      "frequency": 8,
+      "text": "Da Capo"
+    },
+    {
+      "frequency": 8,
+      "text": "dal niente"
+    },
+    {
+      "frequency": 8,
+      "text": "Dal Segno"
+    },
+    {
+      "frequency": 8,
+      "text": "de plus en plus animé"
+    },
+    {
+      "frequency": 8,
+      "text": "de plus en plus lent"
+    },
+    {
+      "frequency": 8,
+      "text": "deciso"
+    },
+    {
+      "frequency": 8,
+      "text": "decresc."
+    },
+    {
+      "frequency": 8,
+      "text": "Delicatamente"
+    },
+    {
+      "frequency": 8,
+      "text": "dim."
+    },
+    {
+      "frequency": 1,
+      "text": "dim. a tempo"
+    },
+    {
+      "frequency": 1,
+      "text": "dim. e cresc."
+    },
+    {
+      "frequency": 1,
+      "text": "dim. e dim."
+    },
+    {
+      "frequency": 9,
+      "text": "dim. molto"
+    },
+    {
+      "frequency": 8,
+      "text": "dim. poco a poco"
+    },
+    {
+      "frequency": 1,
+      "text": "dim. sempre"
+    },
+    {
+      "frequency": 8,
+      "text": "diminuendo"
+    },
+    {
+      "frequency": 8,
+      "text": "divisi"
+    },
+    {
+      "frequency": 8,
+      "text": "dolce"
+    },
+    {
+      "frequency": 8,
+      "text": "dolce e cantabile"
+    },
+    {
+      "frequency": 8,
+      "text": "dolce ma espressivo"
+    },
+    {
+      "frequency": 8,
+      "text": "dolcissimo"
+    },
+    {
+      "frequency": 8,
+      "text": "dotted eighth = 96"
+    },
+    {
+      "frequency": 8,
+      "text": "dotted quarter = 60"
+    },
+    {
+      "frequency": 8,
+      "text": "dotted quarter = 72"
+    },
+    {
+      "frequency": 8,
+      "text": "Doux et expressif"
+    },
+    {
+      "frequency": 8,
+      "text": "eighth = 120"
+    },
+    {
+      "frequency": 8,
+      "text": "En animant"
+    },
+    {
+      "frequency": 8,
+      "text": "En dehors"
+    },
+    {
+      "frequency": 8,
+      "text": "en dehors et bien chanté"
+    },
+    {
+      "frequency": 8,
+      "text": "En pressant"
+    },
+    {
+      "frequency": 8,
+      "text": "En retenant"
+    },
+    {
+      "frequency": 8,
+      "text": "En élargissant"
+    },
+    {
+      "frequency": 8,
+      "text": "energico"
+    },
+    {
+      "frequency": 8,
+      "text": "espressivo"
+    },
+    {
+      "frequency": 8,
+      "text": "Espressivo e cantabile"
+    },
+    {
+      "frequency": 8,
+      "text": "espressivo e sostenuto"
+    },
+    {
+      "frequency": 8,
+      "text": "etwas bewegt"
+    },
+    {
+      "frequency": 8,
+      "text": "Etwas langsamer"
+    },
+    {
+      "frequency": 8,
+      "text": "Etwas schneller"
+    },
+    {
+      "frequency": 8,
+      "text": "f"
+    },
+    {
+      "frequency": 8,
+      "text": "f marcato"
+    },
+    {
+      "frequency": 8,
+      "text": "ff"
+    },
+    {
+      "frequency": 8,
+      "text": "ff subito"
+    },
+    {
+      "frequency": 8,
+      "text": "fff"
+    },
+    {
+      "frequency": 8,
+      "text": "ffff"
+    },
+    {
+      "frequency": 16,
+      "text": "Fine"
+    },
+    {
+      "frequency": 8,
+      "text": "first time"
+    },
+    {
+      "frequency": 8,
+      "text": "flautando"
+    },
+    {
+      "frequency": 8,
+      "text": "Flowing"
+    },
+    {
+      "frequency": 8,
+      "text": "fp"
+    },
+    {
+      "frequency": 8,
+      "text": "Freely"
+    },
+    {
+      "frequency": 8,
+      "text": "freely, with expression"
+    },
+    {
+      "frequency": 8,
+      "text": "fz"
+    },
+    {
+      "frequency": 8,
+      "text": "gently but flowing"
+    },
+    {
+      "frequency": 8,
+      "text": "Gently flowing"
+    },
+    {
+      "frequency": 8,
+      "text": "Gently flowing, with expression"
+    },
+    {
+      "frequency": 8,
+      "text": "Gesangvoll"
+    },
+    {
+      "frequency": 8,
+      "text": "Gesangvoll und innig"
+    },
+    {
+      "frequency": 8,
+      "text": "giocoso"
+    },
+    {
+      "frequency": 8,
+      "text": "Gradually faster"
+    },
+    {
+      "frequency": 8,
+      "text": "Gradually slower"
+    },
+    {
+      "frequency": 8,
+      "text": "grandioso"
+    },
+    {
+      "frequency": 8,
+      "text": "Grave"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Grave tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "grazioso"
+    },
+    {
+      "frequency": 8,
+      "text": "Grazioso e leggiero"
+    },
+    {
+      "frequency": 8,
+      "text": "half = 60"
+    },
+    {
+      "frequency": 8,
+      "text": "half note = 54"
+    },
+    {
+      "frequency": 8,
+      "text": "harmonics"
+    },
+    {
+      "frequency": 8,
+      "text": "Im Tempo"
+    },
+    {
+      "frequency": 8,
+      "text": "Im vorigen Zeitmaß"
+    },
+    {
+      "frequency": 8,
+      "text": "Immer bewegter"
+    },
+    {
+      "frequency": 8,
+      "text": "immer im Tempo"
+    },
+    {
+      "frequency": 8,
+      "text": "Immer langsamer"
+    },
+    {
+      "frequency": 8,
+      "text": "Immer ruhiger"
+    },
+    {
+      "frequency": 8,
+      "text": "Immer schneller"
+    },
+    {
+      "frequency": 8,
+      "text": "In strict time"
+    },
+    {
+      "frequency": 8,
+      "text": "in tempo"
+    },
+    {
+      "frequency": 8,
+      "text": "incalzando"
+    },
+    {
+      "frequency": 8,
+      "text": "Innig"
+    },
+    {
+      "frequency": 8,
+      "text": "istesso tempo"
+    },
+    {
+      "frequency": 8,
+      "text": "Kräftig"
+    },
+    {
+      "frequency": 8,
+      "text": "L'istesso tempo"
+    },
+    {
+      "frequency": 8,
+      "text": "lamentoso"
+    },
+    {
+      "frequency": 8,
+      "text": "Langsam"
+    },
+    {
+      "frequency": 8,
+      "text": "Largamente"
+    },
+    {
+      "frequency": 8,
+      "text": "largamente"
+    },
+    {
+      "frequency": 8,
+      "text": "largando"
+    },
+    {
+      "frequency": 8,
+      "text": "Larghetto"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghetto tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Larghissimo"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Larghissimo tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Largo"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Largo tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Lebhaft"
+    },
+    {
+      "frequency": 8,
+      "text": "legato"
+    },
+    {
+      "frequency": 8,
+      "text": "leggiero"
+    },
+    {
+      "frequency": 8,
+      "text": "leggiero e scherzando"
+    },
+    {
+      "frequency": 8,
+      "text": "Lentement"
+    },
+    {
+      "frequency": 8,
+      "text": "Lento"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento appassionato"
+    },
+    {
+      "frequency": 11,
+      "text": "Lento assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento con brio"
+    },
+    {
+      "frequency": 8,
+      "text": "Lento con espressione"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Lento tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Libremente"
+    },
+    {
+      "frequency": 8,
+      "text": "M.M. = 80"
+    },
+    {
+      "frequency": 8,
+      "text": "M.M. dotted quarter = 60"
+    },
+    {
+      "frequency": 8,
+      "text": "M.M. quarter = 72"
+    },
+    {
+      "frequency": 8,
+      "text": "M.M. ♩ = 80"
+    },
+    {
+      "frequency": 8,
+      "text": "M.M. ♩ = ca. 72"
+    },
+    {
+      "frequency": 8,
+      "text": "M.M. ♪ = 120"
+    },
+    {
+      "frequency": 8,
+      "text": "maestoso"
+    },
+    {
+      "frequency": 8,
+      "text": "Maestoso e sostenuto"
+    },
+    {
+      "frequency": 8,
+      "text": "marcato"
+    },
+    {
+      "frequency": 8,
+      "text": "marcato e deciso"
+    },
+    {
+      "frequency": 8,
+      "text": "Marcato il canto"
+    },
+    {
+      "frequency": 8,
+      "text": "Marcia moderato"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Marcia moderato tranquillo"
+    },
+    {
+      "frequency": 2,
+      "text": "meno animato"
+    },
+    {
+      "frequency": 2,
+      "text": "meno cantabile"
+    },
+    {
+      "frequency": 2,
+      "text": "meno dolce"
+    },
+    {
+      "frequency": 2,
+      "text": "meno espressivo"
+    },
+    {
+      "frequency": 2,
+      "text": "meno legato"
+    },
+    {
+      "frequency": 2,
+      "text": "meno marcato"
+    },
+    {
+      "frequency": 8,
+      "text": "meno mosso"
+    },
+    {
+      "frequency": 8,
+      "text": "Menos rápido"
+    },
+    {
+      "frequency": 8,
+      "text": "mesto"
+    },
+    {
+      "frequency": 8,
+      "text": "mezza voce"
+    },
+    {
+      "frequency": 8,
+      "text": "mf"
+    },
+    {
+      "frequency": 8,
+      "text": "misterioso"
+    },
+    {
+      "frequency": 8,
+      "text": "Mit Ausdruck"
+    },
+    {
+      "frequency": 8,
+      "text": "mit Empfindung"
+    },
+    {
+      "frequency": 8,
+      "text": "Mit innigem Ausdruck"
+    },
+    {
+      "frequency": 8,
+      "text": "Mit innigem und warmem Ausdruck"
+    },
+    {
+      "frequency": 8,
+      "text": "mit Leidenschaft"
+    },
+    {
+      "frequency": 8,
+      "text": "Mit Ruhe"
+    },
+    {
+      "frequency": 8,
+      "text": "Mit Wärme"
+    },
+    {
+      "frequency": 8,
+      "text": "Moderately"
+    },
+    {
+      "frequency": 8,
+      "text": "Moderato"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato appassionato"
+    },
+    {
+      "frequency": 11,
+      "text": "Moderato assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato con fuoco"
+    },
+    {
+      "frequency": 11,
+      "text": "Moderato con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Moderato tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Modéré"
+    },
+    {
+      "frequency": 8,
+      "text": "molto allargando"
+    },
+    {
+      "frequency": 2,
+      "text": "molto animato"
+    },
+    {
+      "frequency": 2,
+      "text": "molto cantabile"
+    },
+    {
+      "frequency": 2,
+      "text": "molto dolce"
+    },
+    {
+      "frequency": 8,
+      "text": "Molto espressivo"
+    },
+    {
+      "frequency": 2,
+      "text": "molto espressivo"
+    },
+    {
+      "frequency": 2,
+      "text": "molto legato"
+    },
+    {
+      "frequency": 2,
+      "text": "molto marcato"
+    },
+    {
+      "frequency": 8,
+      "text": "molto meno"
+    },
+    {
+      "frequency": 8,
+      "text": "molto più"
+    },
+    {
+      "frequency": 8,
+      "text": "molto rall."
+    },
+    {
+      "frequency": 8,
+      "text": "molto rit."
+    },
+    {
+      "frequency": 8,
+      "text": "morendo"
+    },
+    {
+      "frequency": 8,
+      "text": "morendo al niente"
+    },
+    {
+      "frequency": 8,
+      "text": "mouvement de valse"
+    },
+    {
+      "frequency": 8,
+      "text": "mp"
+    },
+    {
+      "frequency": 8,
+      "text": "Muy lento"
+    },
+    {
+      "frequency": 8,
+      "text": "Más rápido"
+    },
+    {
+      "frequency": 8,
+      "text": "Mäßig"
+    },
+    {
+      "frequency": 8,
+      "text": "Même mouvement"
+    },
+    {
+      "frequency": 8,
+      "text": "nicht eilen"
+    },
+    {
+      "frequency": 8,
+      "text": "Nicht schleppen"
+    },
+    {
+      "frequency": 8,
+      "text": "Nicht zu langsam"
+    },
+    {
+      "frequency": 8,
+      "text": "Nicht zu schnell"
+    },
+    {
+      "frequency": 8,
+      "text": "niente"
+    },
+    {
+      "frequency": 8,
+      "text": "nobilmente"
+    },
+    {
+      "frequency": 8,
+      "text": "Non legato"
+    },
+    {
+      "frequency": 8,
+      "text": "not hurried"
+    },
+    {
+      "frequency": 8,
+      "text": "Not too fast"
+    },
+    {
+      "frequency": 8,
+      "text": "ordinario"
+    },
+    {
+      "frequency": 8,
+      "text": "p"
+    },
+    {
+      "frequency": 8,
+      "text": "p dolce"
+    },
+    {
+      "frequency": 8,
+      "text": "perdendo"
+    },
+    {
+      "frequency": 8,
+      "text": "perdendosi"
+    },
+    {
+      "frequency": 8,
+      "text": "pf"
+    },
+    {
+      "frequency": 8,
+      "text": "pizz."
+    },
+    {
+      "frequency": 8,
+      "text": "pizzicato"
+    },
+    {
+      "frequency": 2,
+      "text": "più animato"
+    },
+    {
+      "frequency": 2,
+      "text": "più cantabile"
+    },
+    {
+      "frequency": 2,
+      "text": "più dolce"
+    },
+    {
+      "frequency": 2,
+      "text": "più espressivo"
+    },
+    {
+      "frequency": 2,
+      "text": "più legato"
+    },
+    {
+      "frequency": 2,
+      "text": "più marcato"
+    },
+    {
+      "frequency": 8,
+      "text": "più mosso"
+    },
+    {
+      "frequency": 8,
+      "text": "poco a poco"
+    },
+    {
+      "frequency": 8,
+      "text": "Poco a poco"
+    },
+    {
+      "frequency": 1,
+      "text": "poco a poco a tempo"
+    },
+    {
+      "frequency": 8,
+      "text": "poco a poco cresc."
+    },
+    {
+      "frequency": 8,
+      "text": "poco a poco dim."
+    },
+    {
+      "frequency": 1,
+      "text": "poco a poco e cresc."
+    },
+    {
+      "frequency": 1,
+      "text": "poco a poco e dim."
+    },
+    {
+      "frequency": 1,
+      "text": "poco a poco molto"
+    },
+    {
+      "frequency": 1,
+      "text": "poco a poco sempre"
+    },
+    {
+      "frequency": 8,
+      "text": "poco accel."
+    },
+    {
+      "frequency": 8,
+      "text": "Poco allegretto"
+    },
+    {
+      "frequency": 8,
+      "text": "Poco animato"
+    },
+    {
+      "frequency": 2,
+      "text": "poco animato"
+    },
+    {
+      "frequency": 2,
+      "text": "poco cantabile"
+    },
+    {
+      "frequency": 8,
+      "text": "poco cresc."
+    },
+    {
+      "frequency": 8,
+      "text": "poco dim."
+    },
+    {
+      "frequency": 2,
+      "text": "poco dolce"
+    },
+    {
+      "frequency": 2,
+      "text": "poco espressivo"
+    },
+    {
+      "frequency": 2,
+      "text": "poco legato"
+    },
+    {
+      "frequency": 2,
+      "text": "poco marcato"
+    },
+    {
+      "frequency": 8,
+      "text": "poco meno"
+    },
+    {
+      "frequency": 8,
+      "text": "Poco meno mosso"
+    },
+    {
+      "frequency": 8,
+      "text": "Poco meno mosso e tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "poco più"
+    },
+    {
+      "frequency": 8,
+      "text": "Poco più mosso"
+    },
+    {
+      "frequency": 8,
+      "text": "Poco più mosso con anima"
+    },
+    {
+      "frequency": 8,
+      "text": "poco rall."
+    },
+    {
+      "frequency": 8,
+      "text": "poco rit."
+    },
+    {
+      "frequency": 8,
+      "text": "poco stringendo"
+    },
+    {
+      "frequency": 8,
+      "text": "pp"
+    },
+    {
+      "frequency": 8,
+      "text": "pp subito"
+    },
+    {
+      "frequency": 8,
+      "text": "ppp"
+    },
+    {
+      "frequency": 8,
+      "text": "pppp"
+    },
+    {
+      "frequency": 8,
+      "text": "pressante"
+    },
+    {
+      "frequency": 8,
+      "text": "Prestissimo"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Prestissimo tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Presto"
+    },
+    {
+      "frequency": 11,
+      "text": "Presto agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Presto tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "quarter = 108"
+    },
+    {
+      "frequency": 8,
+      "text": "quarter = 120"
+    },
+    {
+      "frequency": 8,
+      "text": "quarter = 120-126"
+    },
+    {
+      "frequency": 8,
+      "text": "quarter = 60"
+    },
+    {
+      "frequency": 8,
+      "text": "quarter = 72"
+    },
+    {
+      "frequency": 8,
+      "text": "quarter = 84"
+    },
+    {
+      "frequency": 8,
+      "text": "quarter = 96"
+    },
+    {
+      "frequency": 8,
+      "text": "quarter = ca. 88"
+    },
+    {
+      "frequency": 8,
+      "text": "quarter note = 100"
+    },
+    {
+      "frequency": 8,
+      "text": "Quasi allegretto"
+    },
+    {
+      "frequency": 8,
+      "text": "Quasi andante"
+    },
+    {
+      "frequency": 8,
+      "text": "quasi niente"
+    },
+    {
+      "frequency": 8,
+      "text": "Quickly"
+    },
+    {
+      "frequency": 8,
+      "text": "quietly expressive"
+    },
+    {
+      "frequency": 8,
+      "text": "rall."
+    },
+    {
+      "frequency": 1,
+      "text": "rall. a tempo"
+    },
+    {
+      "frequency": 1,
+      "text": "rall. e cresc."
+    },
+    {
+      "frequency": 1,
+      "text": "rall. e dim."
+    },
+    {
+      "frequency": 8,
+      "text": "rall. e morendo"
+    },
+    {
+      "frequency": 1,
+      "text": "rall. molto"
+    },
+    {
+      "frequency": 8,
+      "text": "rall. poco a poco"
+    },
+    {
+      "frequency": 1,
+      "text": "rall. sempre"
+    },
+    {
+      "frequency": 8,
+      "text": "rallent."
+    },
+    {
+      "frequency": 8,
+      "text": "rallentando"
+    },
+    {
+      "frequency": 8,
+      "text": "religioso"
+    },
+    {
+      "frequency": 8,
+      "text": "Retenu"
+    },
+    {
+      "frequency": 8,
+      "text": "Return to tempo"
+    },
+    {
+      "frequency": 8,
+      "text": "Revenez au mouvement"
+    },
+    {
+      "frequency": 8,
+      "text": "rf"
+    },
+    {
+      "frequency": 8,
+      "text": "rfz"
+    },
+    {
+      "frequency": 8,
+      "text": "risoluto"
+    },
+    {
+      "frequency": 8,
+      "text": "rit."
+    },
+    {
+      "frequency": 1,
+      "text": "rit. a tempo"
+    },
+    {
+      "frequency": 1,
+      "text": "rit. e cresc."
+    },
+    {
+      "frequency": 9,
+      "text": "rit. e dim."
+    },
+    {
+      "frequency": 1,
+      "text": "rit. molto"
+    },
+    {
+      "frequency": 8,
+      "text": "rit. poco a poco"
+    },
+    {
+      "frequency": 1,
+      "text": "rit. sempre"
+    },
+    {
+      "frequency": 8,
+      "text": "ritard."
+    },
+    {
+      "frequency": 8,
+      "text": "ritardando"
+    },
+    {
+      "frequency": 8,
+      "text": "riten."
+    },
+    {
+      "frequency": 16,
+      "text": "ritenuto"
+    },
+    {
+      "frequency": 8,
+      "text": "rubato"
+    },
+    {
+      "frequency": 8,
+      "text": "Ruhig"
+    },
+    {
+      "frequency": 8,
+      "text": "sans lenteur"
+    },
+    {
+      "frequency": 8,
+      "text": "Sans presser"
+    },
+    {
+      "frequency": 8,
+      "text": "Sans ralentir"
+    },
+    {
+      "frequency": 8,
+      "text": "sans ralentissement"
+    },
+    {
+      "frequency": 8,
+      "text": "scherzando"
+    },
+    {
+      "frequency": 8,
+      "text": "Schnell"
+    },
+    {
+      "frequency": 8,
+      "text": "scorrevole"
+    },
+    {
+      "frequency": 8,
+      "text": "second time"
+    },
+    {
+      "frequency": 8,
+      "text": "Segno"
+    },
+    {
+      "frequency": 8,
+      "text": "Sehr ausdrucksvoll"
+    },
+    {
+      "frequency": 8,
+      "text": "sehr getragen"
+    },
+    {
+      "frequency": 8,
+      "text": "Sehr langsam"
+    },
+    {
+      "frequency": 8,
+      "text": "Sehr zart"
+    },
+    {
+      "frequency": 8,
+      "text": "semplice"
+    },
+    {
+      "frequency": 8,
+      "text": "sempre"
+    },
+    {
+      "frequency": 2,
+      "text": "sempre animato"
+    },
+    {
+      "frequency": 10,
+      "text": "sempre cantabile"
+    },
+    {
+      "frequency": 8,
+      "text": "sempre cresc."
+    },
+    {
+      "frequency": 8,
+      "text": "sempre dim."
+    },
+    {
+      "frequency": 2,
+      "text": "sempre dolce"
+    },
+    {
+      "frequency": 10,
+      "text": "sempre espressivo"
+    },
+    {
+      "frequency": 8,
+      "text": "Sempre legato"
+    },
+    {
+      "frequency": 2,
+      "text": "sempre legato"
+    },
+    {
+      "frequency": 2,
+      "text": "sempre marcato"
+    },
+    {
+      "frequency": 8,
+      "text": "sempre meno mosso"
+    },
+    {
+      "frequency": 8,
+      "text": "Sempre più forte"
+    },
+    {
+      "frequency": 8,
+      "text": "sempre più mosso"
+    },
+    {
+      "frequency": 8,
+      "text": "Sempre più piano"
+    },
+    {
+      "frequency": 8,
+      "text": "sempre sostenuto"
+    },
+    {
+      "frequency": 8,
+      "text": "senza espressione"
+    },
+    {
+      "frequency": 8,
+      "text": "senza misura"
+    },
+    {
+      "frequency": 8,
+      "text": "senza rall."
+    },
+    {
+      "frequency": 8,
+      "text": "senza rit."
+    },
+    {
+      "frequency": 8,
+      "text": "senza sordino"
+    },
+    {
+      "frequency": 8,
+      "text": "senza tempo"
+    },
+    {
+      "frequency": 8,
+      "text": "senza vibrato"
+    },
+    {
+      "frequency": 8,
+      "text": "serioso"
+    },
+    {
+      "frequency": 8,
+      "text": "sf"
+    },
+    {
+      "frequency": 8,
+      "text": "sffz"
+    },
+    {
+      "frequency": 8,
+      "text": "sfp"
+    },
+    {
+      "frequency": 8,
+      "text": "sfpp"
+    },
+    {
+      "frequency": 8,
+      "text": "sfz"
+    },
+    {
+      "frequency": 8,
+      "text": "Singing"
+    },
+    {
+      "frequency": 8,
+      "text": "Slowly"
+    },
+    {
+      "frequency": 8,
+      "text": "smorzando"
+    },
+    {
+      "frequency": 8,
+      "text": "soave"
+    },
+    {
+      "frequency": 8,
+      "text": "solo"
+    },
+    {
+      "frequency": 8,
+      "text": "sostenuto"
+    },
+    {
+      "frequency": 8,
+      "text": "Sotto voce"
+    },
+    {
+      "frequency": 8,
+      "text": "sotto voce"
+    },
+    {
+      "frequency": 8,
+      "text": "staccato"
+    },
+    {
+      "frequency": 8,
+      "text": "stretto"
+    },
+    {
+      "frequency": 8,
+      "text": "stringendo"
+    },
+    {
+      "frequency": 8,
+      "text": "subito"
+    },
+    {
+      "frequency": 2,
+      "text": "subito animato"
+    },
+    {
+      "frequency": 2,
+      "text": "subito cantabile"
+    },
+    {
+      "frequency": 2,
+      "text": "subito dolce"
+    },
+    {
+      "frequency": 2,
+      "text": "subito espressivo"
+    },
+    {
+      "frequency": 8,
+      "text": "subito f"
+    },
+    {
+      "frequency": 2,
+      "text": "subito legato"
+    },
+    {
+      "frequency": 2,
+      "text": "subito marcato"
+    },
+    {
+      "frequency": 8,
+      "text": "subito p"
+    },
+    {
+      "frequency": 8,
+      "text": "sul A"
+    },
+    {
+      "frequency": 8,
+      "text": "sul D"
+    },
+    {
+      "frequency": 8,
+      "text": "sul E"
+    },
+    {
+      "frequency": 8,
+      "text": "sul G"
+    },
+    {
+      "frequency": 8,
+      "text": "sul ponticello"
+    },
+    {
+      "frequency": 8,
+      "text": "sul tasto"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo 1"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo 1°"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo del principio"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo di gavotta"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo di marcia"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo di mazurka"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo di minuetto"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo di valse"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo giusto"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo I"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo I ma sostenuto"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo I subito"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo I."
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo ordinario"
+    },
+    {
+      "frequency": 8,
+      "text": "tempo precedente"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo primo"
+    },
+    {
+      "frequency": 8,
+      "text": "Tempo rubato"
+    },
+    {
+      "frequency": 8,
+      "text": "Tenderly"
+    },
+    {
+      "frequency": 8,
+      "text": "teneramente"
+    },
+    {
+      "frequency": 8,
+      "text": "To Coda"
+    },
+    {
+      "frequency": 8,
+      "text": "tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "tre corde"
+    },
+    {
+      "frequency": 8,
+      "text": "très calme"
+    },
+    {
+      "frequency": 8,
+      "text": "Très calme et très expressif"
+    },
+    {
+      "frequency": 8,
+      "text": "Très chanté"
+    },
+    {
+      "frequency": 8,
+      "text": "très doux"
+    },
+    {
+      "frequency": 8,
+      "text": "Très expressif"
+    },
+    {
+      "frequency": 8,
+      "text": "Très lent"
+    },
+    {
+      "frequency": 8,
+      "text": "très modéré"
+    },
+    {
+      "frequency": 8,
+      "text": "tutti"
+    },
+    {
+      "frequency": 8,
+      "text": "Un peu moins vite"
+    },
+    {
+      "frequency": 8,
+      "text": "Un peu plus vite"
+    },
+    {
+      "frequency": 8,
+      "text": "Un poco animato"
+    },
+    {
+      "frequency": 8,
+      "text": "Un poco meno mosso"
+    },
+    {
+      "frequency": 8,
+      "text": "Un poco più mosso"
+    },
+    {
+      "frequency": 8,
+      "text": "Un poco sostenuto"
+    },
+    {
+      "frequency": 8,
+      "text": "una corda"
+    },
+    {
+      "frequency": 8,
+      "text": "unisono"
+    },
+    {
+      "frequency": 8,
+      "text": "Vif"
+    },
+    {
+      "frequency": 8,
+      "text": "Vivace"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace leggiero"
+    },
+    {
+      "frequency": 11,
+      "text": "Vivace ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivace tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Vivacissimo"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo agitato"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo alla marcia"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo appassionato"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo assai"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo brillante"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo cantabile"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo con anima"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo con brio"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo con fuoco"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo con moto"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo con spirito"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo deciso"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo dolce"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo energico"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo espressivo"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo grazioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo leggiero"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo ma non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo maestoso"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo misterioso"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo molto"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo non troppo"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo scherzando"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo semplice"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo sostenuto"
+    },
+    {
+      "frequency": 3,
+      "text": "Vivacissimo tranquillo"
+    },
+    {
+      "frequency": 8,
+      "text": "Vivement"
+    },
+    {
+      "frequency": 8,
+      "text": "vivo"
+    },
+    {
+      "frequency": 8,
+      "text": "Warmly"
+    },
+    {
+      "frequency": 8,
+      "text": "with breadth"
+    },
+    {
+      "frequency": 8,
+      "text": "With expression"
+    },
+    {
+      "frequency": 8,
+      "text": "with feeling"
+    },
+    {
+      "frequency": 8,
+      "text": "With great expression"
+    },
+    {
+      "frequency": 8,
+      "text": "With noble expression"
+    },
+    {
+      "frequency": 8,
+      "text": "with restrained expression"
+    },
+    {
+      "frequency": 8,
+      "text": "With tenderness"
+    },
+    {
+      "frequency": 8,
+      "text": "With warmth"
+    },
+    {
+      "frequency": 8,
+      "text": "Without slowing"
+    },
+    {
+      "frequency": 8,
+      "text": "Zart"
+    },
+    {
+      "frequency": 8,
+      "text": "Zurückhaltend"
+    },
+    {
+      "frequency": 8,
+      "text": "♩ = 108"
+    },
+    {
+      "frequency": 8,
+      "text": "♩ = 108-112"
+    },
+    {
+      "frequency": 8,
+      "text": "♩ = 120"
+    },
+    {
+      "frequency": 8,
+      "text": "♩ = 120-126"
+    },
+    {
+      "frequency": 8,
+      "text": "♩ = 60"
+    },
+    {
+      "frequency": 8,
+      "text": "♩ = 72"
+    },
+    {
+      "frequency": 8,
+      "text": "♩ = 84"
+    },
+    {
+      "frequency": 8,
+      "text": "♩ = 96"
+    },
+    {
+      "frequency": 8,
+      "text": "♩ = ca. 88"
+    },
+    {
+      "frequency": 8,
+      "text": "♩. = 60"
+    },
+    {
+      "frequency": 8,
+      "text": "♩. = 72"
+    },
+    {
+      "frequency": 8,
+      "text": "♪ = 120"
+    },
+    {
+      "frequency": 8,
+      "text": "𝅘𝅥 = 88"
+    },
+    {
+      "frequency": 8,
+      "text": "𝅘𝅥. = 66"
+    },
+    {
+      "frequency": 8,
+      "text": "𝅘𝅥𝅮 = 132"
+    }
+  ],
+  "means": [
+    0.4301268238989518,
+    0.256425952301783,
+    0.1406516524520256,
+    0.3021321961620469,
+    0.2019722814498934,
+    0.7841588163774765,
+    0.09035181236673774,
+    0.22667612727640132,
+    0.1906207210958581,
+    0.5271199013353224,
+    0.741967839374561,
+    0.4304445875862881,
+    0.43321872859814076,
+    0.43749924582900807,
+    0.4312830215612463,
+    0.7190884861407305,
+    0.8861051883439944,
+    0.15744390293430818,
+    0.4532246928622166,
+    0.34578505353441885,
+    0.1978670746747285,
+    0.9167377398720682,
+    2.110975983468573
+  ],
+  "model_version": "scorescan-direction-logistic-9",
+  "probability_calibration": {
+    "group_count": 103,
+    "intercept": -0.6568012794877676,
+    "method": "platt-logistic",
+    "samples": 1236,
+    "slope": 1.2703356831842982
+  },
+  "scales": [
+    0.31329659582024555,
+    0.3131323215366749,
+    0.3007613406936436,
+    0.45918224291060833,
+    0.4014716415587183,
+    0.19550984983550618,
+    0.2866851275681554,
+    0.3098557039380612,
+    0.3144318310896735,
+    0.29280503486409726,
+    0.36049206064735173,
+    0.3131543724408897,
+    0.3236554418408228,
+    0.323371878325898,
+    0.3127603577872918,
+    0.3737180343463301,
+    0.3156588418737978,
+    0.31517041317797917,
+    0.3839786065546576,
+    0.3040594880543191,
+    0.3131002596277533,
+    0.2762782223887608,
+    0.8556386854952971
+  ],
+  "seed": 20261107
+}
