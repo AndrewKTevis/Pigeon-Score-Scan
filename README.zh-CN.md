@@ -28,8 +28,6 @@ Pigeon Score Scan 是一款本地运行的 Windows 乐谱识别程序，用于�
 
 支持 Windows 10/11 和 Python 3.12/3.13。环境准备、测试和发布命令见 [BUILDING.md](BUILDING.md)，贡献说明见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-安全问题请使用 [GitHub 私密漏洞报告](SECURITY.md)。
-
 ## 许可证
 
 Pigeon Score Scan 使用 [GNU AGPL v3 或更高版本](LICENSE)。第三方组件保留各自许可证，详见 [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) 和 `licenses/`。

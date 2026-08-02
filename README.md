@@ -32,8 +32,6 @@ The application exports MXL for use in MuseScore, uncompressed MusicXML, a local
 
 Windows 10 or 11 and Python 3.12 or 3.13 are supported. Setup, test and release commands are in [BUILDING.md](BUILDING.md). Contributions are described in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Security reports should use [private vulnerability reporting](SECURITY.md).
-
 ## License
 
 Pigeon Score Scan is licensed under [GNU AGPL v3 or later](LICENSE). Third-party components retain their own licenses; see [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) and `licenses/`.
