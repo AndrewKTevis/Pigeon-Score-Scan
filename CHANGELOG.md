@@ -4,9 +4,14 @@ This project follows [Semantic Versioning](https://semver.org/) after the first 
 
 ## Unreleased
 
-- Public source repository, CI, security policy and contribution process established.
-- Windows desktop interface refined for bilingual local use.
-- CPU-only runtime and portable bootstrap retained as the supported execution path.
+- No changes yet.
+
+## 0.37.0 — 2026-08-02
+
+- Published the first stable Windows release and signed source tag.
+- Updated ONNX Runtime, the development toolchain and pinned GitHub Actions.
+- Kept OpenCV on the latest homr-compatible 4.x release.
+- Added deterministic source and Windows archives with SHA-256 verification.
 
 ## 0.37.0-dev — 2026-08-02
 

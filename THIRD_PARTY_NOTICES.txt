@@ -1,4 +1,4 @@
-Pigeon Score Scan 0.37.0-dev third-party notices
+Pigeon Score Scan 0.37.0 third-party notices
 
 Pigeon Score Scan source is distributed under the project LICENSE. Runtime dependencies remain governed by their respective licenses as recorded by the committed lock and license files.
 

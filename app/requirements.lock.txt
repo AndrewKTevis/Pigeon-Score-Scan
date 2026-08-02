@@ -1,10 +1,9 @@
-# ScoreScan 0.37.0-dev direct runtime pins.
-# The optional CUDA profile is independently frozen in ../app-gpu/uv.lock.
+# Pigeon Score Scan 0.37.0 direct runtime pins.
 Flask==3.1.3
 homr==0.7.0
 lxml==6.1.1
 numpy==2.5.1
-onnxruntime==1.27.0
+onnxruntime==1.28.0
 opencv-python-headless==4.13.0.92
 Pillow==12.3.0
 PyMuPDF==1.28.0

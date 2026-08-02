@@ -44,4 +44,4 @@ The output preserves musical semantics; exact source engraving, font choice and 
 
 ## Release claims
 
-Passing structural checks does not prove that every symbol matches the source. Stable accuracy claims require a work-disjoint frozen real-scan benchmark with published per-configuration metrics. Until those gates pass, the application remains a development release and may require manual review.
+The stable release label covers application behavior, file formats and packaging. It does not claim that every recognized symbol matches the source. Recognition claims require work-disjoint real-scan evidence, and outputs that fail a structural check require manual review.

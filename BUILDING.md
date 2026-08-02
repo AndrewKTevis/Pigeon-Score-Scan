@@ -48,7 +48,7 @@ Do not commit the compiled executable.
 uv run --project app python app/tools/build_release.py `
   --source-root . `
   --output-dir dist `
-  --version 0.37.0-dev
+  --version 0.37.0
 ```
 
 Portable Windows packages require the verified launcher and pinned `uv.exe`. Release artifacts are attached to a signed GitHub release and are never committed to `main`.

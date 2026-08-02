@@ -10,4 +10,4 @@
 8. Create a signed tag from the verified commit.
 9. Attach archives and checksums to the GitHub release.
 
-Release notes state the supported score boundary, known limitations, benchmark evidence and any migration requirement. A failed verification gate blocks the release; it is not converted into advisory wording.
+Release notes state the supported score boundary, known limitations, available benchmark evidence and any migration requirement. A failed engineering verification gate blocks the release. Missing recognition evidence blocks the corresponding accuracy claim and must be disclosed.

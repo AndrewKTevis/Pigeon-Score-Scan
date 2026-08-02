@@ -7,7 +7,7 @@ param(
 $ErrorActionPreference = "Stop"
 $projectDir = Split-Path -Parent $PSScriptRoot
 $workspaceRoot = Split-Path -Parent (Split-Path -Parent $projectDir)
-$gpuPython = Join-Path $workspaceRoot "test_space\ScoreScan-0.37.0-dev\runtime\venv-gpu\Scripts\python.exe"
+$gpuPython = Join-Path $workspaceRoot "test_space\Pigeon-Score-Scan-0.37.0\runtime\venv-gpu\Scripts\python.exe"
 $mediumModel = Join-Path $projectDir "training_data\external\models\rapidocr-ppocrv6-medium\PP-OCRv6_rec_medium.onnx"
 $textDataset = Join-Path $projectDir "training_data\prepared\openscore_pdf_text_smoke_v1"
 $textImages = Join-Path $projectDir "training_data\prepared\openscore_svg_regions_smoke_v2"

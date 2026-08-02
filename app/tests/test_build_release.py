@@ -88,7 +88,7 @@ def test_published_runtime_is_cpu_only_and_frozen() -> None:
     cpu_lock = (app_root / "uv.lock").read_text(encoding="utf-8")
     start_script = (source_root / "runtime" / "start.cmd").read_text(encoding="utf-8")
 
-    assert "onnxruntime==1.27.0" in cpu_project["project"]["dependencies"]
+    assert "onnxruntime==1.28.0" in cpu_project["project"]["dependencies"]
     assert not any(
         item.startswith("onnxruntime-gpu")
         for item in cpu_project["project"]["dependencies"]

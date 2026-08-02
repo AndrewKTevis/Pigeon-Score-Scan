@@ -1,6 +1,6 @@
 [project]
 name = "scorescan"
-version = "0.37.0.dev0"
+version = "0.37.0"
 description = "Local Windows desktop converter from printed score scans to MXL and MusicXML"
 readme = "README.md"
 requires-python = ">=3.12,<3.14"
@@ -11,7 +11,7 @@ dependencies = [
   "homr==0.7.0",
   "lxml==6.1.1",
   "numpy==2.5.1",
-  "onnxruntime==1.27.0",
+  "onnxruntime==1.28.0",
   "opencv-python-headless==4.13.0.92",
   "Pillow==12.3.0",
   "PyMuPDF==1.28.0",
@@ -22,9 +22,9 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-  "pdfplumber==0.11.9",
-  "pytest==9.0.3",
-  "scikit-learn==1.8.0",
+  "pdfplumber==0.11.10",
+  "pytest==9.1.1",
+  "scikit-learn==1.9.0",
 ]
 
 [tool.uv]

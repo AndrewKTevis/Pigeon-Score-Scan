@@ -7,6 +7,10 @@ updates:
       day: monday
     open-pull-requests-limit: 5
     labels: [dependencies]
+    ignore:
+      # homr 0.7.0 requires opencv-python-headless <5.0.0.0.
+      - dependency-name: opencv-python-headless
+        update-types: [version-update:semver-major]
 
   - package-ecosystem: github-actions
     directory: /
