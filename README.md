@@ -12,7 +12,7 @@ Pigeon Score Scan is a local Windows application for converting printed staff-no
 
 Download the Windows x64 package from [Releases](https://github.com/KalePotato/Pigeon-Score-Scan/releases), extract the complete ZIP, and run `pigeon-score-scan.exe`.
 
-The first launch requires an internet connection to install the pinned Python runtime, dependencies and recognition models. Later launches use the local portable runtime. Current Windows packages are unsigned, so Windows may display a security warning.
+The Windows package includes Python, locked dependencies and recognition models. Startup and conversion do not download runtime files. Current Windows packages are unsigned, so Windows may display a security warning.
 
 ## Supported scores
 

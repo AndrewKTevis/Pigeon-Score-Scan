@@ -58,7 +58,7 @@ CC_BY_4_PATTERN = re.compile(
 )
 PID_PATTERN = re.compile(r"^nifc:\d+$")
 SHA256_PATTERN = re.compile(r"^[0-9a-f]{64}$")
-USER_AGENT = "ScoreScan-source-audit/0.37"
+USER_AGENT = "ScoreScan-source-audit/0.38"
 MAXIMUM_METADATA_BYTES = 4 * 1024 * 1024
 MAXIMUM_IMAGE_BYTES = 64 * 1024 * 1024
 

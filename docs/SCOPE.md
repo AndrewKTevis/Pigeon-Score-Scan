@@ -1,6 +1,6 @@
 # Scope and limitations
 
-This document defines the 0.37 recognition boundary. Expanding the boundary requires new tests and independent real-scan evidence.
+This document defines the 0.38 recognition boundary. Expanding the boundary requires new tests and independent real-scan evidence.
 
 ## Input contract
 

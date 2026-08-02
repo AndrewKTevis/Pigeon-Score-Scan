@@ -140,6 +140,8 @@ def test_home_settings_and_mxl_first_output_are_kept_by_contract() -> None:
     assert '<p>MusicXML and MXL</p>' not in html
     assert html.index('id="downloadMxl" class="button primary"') < html.index('id="downloadXml" class="button"')
     assert 'MXL files can be viewed and edited in MuseScore' in html
+    assert 'After export, assign the correct instrument to each part in MuseScore.' in html
+    assert '导出后请在 MuseScore 中为声部选择正确的乐器，否则可能出现音高显示错误。' in javascript
     assert 'MXL 文件可用 MuseScore 软件查看和编辑' in javascript
     assert 'id="previewDialog"' in html
     assert 'id="previewViewport"' in html

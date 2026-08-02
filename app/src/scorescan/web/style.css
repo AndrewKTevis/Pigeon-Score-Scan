@@ -169,6 +169,7 @@ details > summary { color: var(--ink-soft); cursor: pointer; user-select: none; 
 .result-actions { display: grid; gap: 8px; margin-top: 12px; }
 .result-actions .button { width: 100%; }
 .mxl-note { margin: -2px 2px 4px; color: var(--muted); font-size: 11px; line-height: 1.45; }
+.mxl-note + .mxl-note { margin-top: -8px; }
 .secondary-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
 .secondary-actions .button { padding-inline: 8px; font-size: 12px; }
 

@@ -1,14 +1,19 @@
 param(
     [Parameter(Mandatory = $true)]
     [int]$WaitSemanticHoldoutPid,
-    [int]$WaitGpuReleasePid = 2147483647
+    [int]$WaitGpuReleasePid = 2147483647,
+    [string]$GpuPython = $env:PIGEON_SCORE_SCAN_GPU_PYTHON
 )
 
 $ErrorActionPreference = "Stop"
 $projectDir = Split-Path -Parent $PSScriptRoot
-$workspaceRoot = Split-Path -Parent (Split-Path -Parent $projectDir)
 $python = Join-Path $projectDir "app\.venv\Scripts\python.exe"
-$gpuPython = Join-Path $workspaceRoot "test_space\Pigeon-Score-Scan-0.37.0\runtime\venv-gpu\Scripts\python.exe"
+if (
+    [string]::IsNullOrWhiteSpace($GpuPython) -or
+    -not (Test-Path -LiteralPath $GpuPython -PathType Leaf)
+) {
+    throw "Set PIGEON_SCORE_SCAN_GPU_PYTHON to an isolated CUDA training Python executable"
+}
 $preparedDir = Join-Path $projectDir "training_data\prepared\muse_omr_scan_regions_stratified_complete_page_overlap_consistent_deduplicated_v7"
 $modelDir = Join-Path $projectDir "training_data\models\muse-omr-scan-semantic-detector-v4-complete-page-e12-b2-20260730"
 $candidateDir = Join-Path $projectDir "training_data\release_candidates\semantic-detector-muse-v4-complete-page-e12-20260730"

@@ -12,7 +12,9 @@
 
 - [ ] Full Windows test suite passes from a clean checkout.
 - [ ] Portable self-test has zero critical failures.
-- [ ] Windows 10 and 11 startup, repair, tray, Unicode paths and paths containing spaces are exercised.
+- [ ] The Windows archive contains the pinned offline Python, dependencies and recognition models and contains no download bootstrap.
+- [ ] Startup and model initialization succeed while external socket connections are blocked.
+- [ ] Windows 10 and 11 startup, tray, Unicode paths and paths containing spaces are exercised.
 - [ ] Multi-page image and PDF inputs produce one ordered score.
 - [ ] MXL opens in the current MuseScore release.
 - [ ] Interrupted conversion resumes without corrupting the workspace.

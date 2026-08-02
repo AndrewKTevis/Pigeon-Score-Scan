@@ -8,7 +8,7 @@ Pigeon Score Scan 是一款本地运行的 Windows 乐谱识别程序，用于�
 
 从 [Releases](https://github.com/KalePotato/Pigeon-Score-Scan/releases) 下载 Windows x64 压缩包，完整解压后运行 `pigeon-score-scan.exe`。
 
-首次启动需要联网安装已锁定版本的 Python 运行时、依赖和识别模型，后续启动使用本地便携运行时。当前 Windows 安装包尚未签名，系统可能显示安全提示。
+Windows 压缩包已包含 Python、锁定依赖和识别模型，启动和转换过程不会下载运行文件。当前 Windows 程序尚未签名，系统可能显示安全提示。
 
 ## 支持范围
 

@@ -139,17 +139,18 @@ pub fn main(init: std.process.Init) !void {
         std.Io.Dir.deleteFileAbsolute(init.io, ready) catch {};
     }
 
-    const runtime_environment = try std.fs.path.join(
+    const runtime_python = try std.fs.path.join(
         allocator,
-        &.{ root, "runtime", "venv-cpu" },
+        &.{ root, "runtime", "python", "python.exe" },
     );
-    defer allocator.free(runtime_environment);
-    if (!exists(init.io, runtime_environment)) {
+    defer allocator.free(runtime_python);
+    if (!exists(init.io, runtime_python)) {
         showMessage(
             allocator,
-            "Pigeon Score Scan is starting.\n\nThe first launch downloads the portable Python runtime, required components, and recognition models. The application will open when setup is complete.",
-            MB_ICONINFORMATION,
+            "The bundled Pigeon Score Scan runtime is missing.\n\nExtract the complete archive again before starting the application.",
+            MB_ICONERROR,
         );
+        return;
     }
 
     const start_cmd = try std.fs.path.join(allocator, &.{ root, "runtime", "start.cmd" });
@@ -187,7 +188,7 @@ pub fn main(init: std.process.Init) !void {
 
     showMessage(
         allocator,
-        "Pigeon Score Scan timed out while starting. Check the network connection and runtime\\launcher.log.",
+        "Pigeon Score Scan timed out while starting. Check runtime\\launcher.log.",
         MB_ICONERROR,
     );
 }

@@ -46,7 +46,7 @@ ROWS_ENDPOINT = "https://datasets-server.huggingface.co/rows"
 DIAGNOSTIC_ROLE = (
     "external_real_scan_diagnostic_only_license_not_release_authorized"
 )
-USER_AGENT = "ScoreScan-dataset-audit/0.37"
+USER_AGENT = "ScoreScan-dataset-audit/0.38"
 MAXIMUM_RESPONSE_BYTES = 64 * 1024 * 1024
 MAXIMUM_IMAGE_BYTES = 16 * 1024 * 1024
 

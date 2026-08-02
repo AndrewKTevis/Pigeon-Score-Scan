@@ -48,7 +48,26 @@ Do not commit the compiled executable.
 uv run --project app python app/tools/build_release.py `
   --source-root . `
   --output-dir dist `
-  --version 0.37.0
+  --version 0.38.0
 ```
 
-Portable Windows packages require the verified launcher and pinned `uv.exe`. Release artifacts are attached to a signed GitHub release and are never committed to `main`.
+## Offline Windows package
+
+Prepare a clean, relocatable runtime. This build step downloads the pinned Python distribution, locked wheels and model files; the resulting product does not download at startup or during conversion.
+
+```powershell
+uv run --project app python app/tools/prepare_offline_runtime.py `
+  --source-root . `
+  --output-root build/offline-runtime `
+  --uv (Get-Command uv).Source `
+  --python-version 3.12.10
+
+uv run --project app python app/tools/build_release.py `
+  --source-root . `
+  --output-dir dist `
+  --version 0.38.0 `
+  --launcher launcher.exe `
+  --offline-runtime build/offline-runtime
+```
+
+Release artifacts are attached to a signed GitHub release and are never committed to `main`.

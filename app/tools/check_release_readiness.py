@@ -50,6 +50,41 @@ def find_non_cache_temporary_files(source_root: Path) -> list[str]:
     return sorted(leftovers)
 
 
+def portable_runtime_source_contract(source_root: Path) -> bool:
+    """Verify that the published launcher can only use the bundled offline runtime."""
+
+    runtime = source_root / "runtime"
+    start_script = runtime / "start.cmd"
+    runner = runtime / "run_scorescan.py"
+    network_guard = source_root / "app" / "src" / "sitecustomize.py"
+    if not all(path.is_file() for path in (start_script, runner, network_guard)):
+        return False
+    if any(
+        path.exists()
+        for path in (
+            runtime / "uv-bootstrap.ps1",
+            runtime / "repair-runtime.cmd",
+            runtime / "uv.exe",
+        )
+    ):
+        return False
+    start_text = start_script.read_text(encoding="utf-8", errors="replace")
+    start_folded = start_text.casefold()
+    guard_text = network_guard.read_text(encoding="utf-8", errors="replace")
+    return (
+        "%root%\\runtime\\python\\python.exe" in start_folded
+        and "%root%\\runtime\\site-packages" in start_folded
+        and "scorescan_offline_runtime=1" in start_folded
+        and "runtime\\run_scorescan.py" in start_folded
+        and not any(
+            token in start_folded
+            for token in ("uv.exe", "uv-bootstrap", "http://", "https://")
+        )
+        and "sys.addaudithook" in guard_text
+        and 'event != "socket.connect"' in guard_text
+    )
+
+
 def check(source_root: Path) -> dict[str, object]:
     app_root = source_root / "app"
     resources = app_root / "src" / "scorescan" / "resources"
@@ -3663,19 +3698,10 @@ def check(source_root: Path) -> dict[str, object]:
         (source_root / "licenses" / "LICENSE-MIT-Zig.txt").is_file(),
         "Zig launcher-toolchain MIT notice present",
     )
-    start_script = source_root / "runtime" / "start.cmd"
-    start_text = start_script.read_text(encoding="utf-8", errors="replace") if start_script.is_file() else ""
     add(
         "launcher:start-script",
-        start_script.is_file()
-        and "uv.sha256" in start_text
-        and "Get-FileHash" in start_text
-        and "uv-bootstrap.ps1" in start_text
-        and (source_root / "runtime" / "uv-bootstrap.ps1").is_file()
-        and "--frozen" in start_text
-        and "--no-dev" in start_text
-        and "--no-lock" not in start_text,
-        "portable bootstrap verifies bundled uv.exe or a pinned first-run archive, then enforces the committed lock",
+        portable_runtime_source_contract(source_root),
+        "portable launcher uses only the bundled Python, dependencies and models; external sockets are blocked",
     )
     release_builder = app_root / "tools" / "build_release.py"
     release_builder_text = (
@@ -3697,6 +3723,20 @@ def check(source_root: Path) -> dict[str, object]:
             )
         ),
         "release archives use a runtime source whitelist and exclude task data, authentication state, logs, caches, probes and virtual environments",
+    )
+    add(
+        "release:offline-runtime",
+        release_builder.is_file()
+        and all(
+            token in release_builder_text
+            for token in (
+                "copy_offline_runtime",
+                '"runtime_delivery": "offline-bundled"',
+                '"network_required": False',
+                '"--offline-runtime"',
+            )
+        ),
+        "Windows release assembly requires a verified offline runtime payload",
     )
     add("ui:assets", all((app_root / "src" / "scorescan" / "web" / item).is_file() for item in ("index.html", "app.js", "style.css")), "web UI assets present")
 

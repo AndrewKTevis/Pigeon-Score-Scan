@@ -1,13 +1,18 @@
 param(
     [Parameter(Mandatory = $true)]
     [int]$WaitPid,
-    [string[]]$WaitForProcessName = @()
+    [string[]]$WaitForProcessName = @(),
+    [string]$GpuPython = $env:PIGEON_SCORE_SCAN_GPU_PYTHON
 )
 
 $ErrorActionPreference = "Stop"
 $projectDir = Split-Path -Parent $PSScriptRoot
-$workspaceRoot = Split-Path -Parent (Split-Path -Parent $projectDir)
-$gpuPython = Join-Path $workspaceRoot "test_space\Pigeon-Score-Scan-0.37.0\runtime\venv-gpu\Scripts\python.exe"
+if (
+    [string]::IsNullOrWhiteSpace($GpuPython) -or
+    -not (Test-Path -LiteralPath $GpuPython -PathType Leaf)
+) {
+    throw "Set PIGEON_SCORE_SCAN_GPU_PYTHON to an isolated CUDA training Python executable"
+}
 $mediumModel = Join-Path $projectDir "training_data\external\models\rapidocr-ppocrv6-medium\PP-OCRv6_rec_medium.onnx"
 $textDataset = Join-Path $projectDir "training_data\prepared\openscore_pdf_text_smoke_v1"
 $textImages = Join-Path $projectDir "training_data\prepared\openscore_svg_regions_smoke_v2"
@@ -447,11 +452,12 @@ if (Test-Path -LiteralPath $museCheckpoint -PathType Leaf) {
 
 if (-not (Test-Path -LiteralPath $candidateReport -PathType Leaf)) {
     if (-not (Test-Path -LiteralPath $gpuPython -PathType Leaf)) {
-        throw "Verified portable GPU runtime is unavailable: $gpuPython"
+        throw "Isolated CUDA training Python is unavailable: $gpuPython"
     }
     & powershell.exe -NoProfile -ExecutionPolicy Bypass -File `
         $releaseCandidateQueue `
-        -WaitSemanticHoldoutPid 2147483647
+        -WaitSemanticHoldoutPid 2147483647 `
+        -GpuPython $GpuPython
     if ($LASTEXITCODE -ne 0) {
         throw "Semantic detector release-candidate pipeline failed with exit code $LASTEXITCODE"
     }

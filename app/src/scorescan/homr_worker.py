@@ -7,6 +7,7 @@ import shutil
 import sys
 import tempfile
 from pathlib import Path
+from types import ModuleType
 
 from .util import atomic_write_bytes, atomic_write_json, read_json
 
@@ -35,6 +36,36 @@ def _argument_value(name: str, default: str | None = None) -> str | None:
         return default
     index = sys.argv.index(name)
     return sys.argv[index + 1] if index + 1 < len(sys.argv) else default
+
+
+def _install_offline_model_policy() -> ModuleType:
+    import homr
+    import homr.main as homr_module
+
+    if os.environ.get("SCORESCAN_OFFLINE_RUNTIME") != "1":
+        return homr_module
+
+    from .offline_runtime import verify_bundled_models
+
+    site_packages = Path(homr.__file__).resolve().parent.parent
+
+    def require_models(*_arguments: object, **_keywords: object) -> None:
+        problems = verify_bundled_models(site_packages, verify_hashes=False)
+        if problems:
+            raise RuntimeError(
+                "bundled offline recognition models are incomplete: "
+                + "; ".join(problems)
+            )
+
+    original_ocr_initialization = homr_module.download_ocr_weights
+
+    def initialize_bundled_ocr() -> None:
+        require_models()
+        original_ocr_initialization()
+
+    homr_module.download_weights = require_models
+    homr_module.download_ocr_weights = initialize_bundled_ocr
+    return homr_module
 
 
 def _run_ocr_enrichment(request_path: Path, requested: str) -> int:
@@ -185,9 +216,8 @@ def main() -> None:
         )
     if preserve_raw_tuplets:
         _install_raw_tuplet_preservation()
-    from homr.main import main as homr_main
-
-    homr_main()
+    homr_module = _install_offline_model_policy()
+    homr_module.main()
 
 
 if __name__ == "__main__":

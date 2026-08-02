@@ -143,27 +143,58 @@ def _verovio_smoke_check() -> CheckResult:
 
 
 def _bootstrap_integrity(settings: Settings) -> list[CheckResult]:
-    uv_path = settings.runtime / "uv.exe"
-    hash_path = settings.runtime / "uv.sha256"
-    if not uv_path.exists() and not hash_path.exists():
-        # Source checkouts do not bundle the Windows bootstrap binary.
-        return [CheckResult("bootstrap:uv", True, False, "源码环境未包含 Windows uv.exe，跳过启动器哈希检查")]
-    if not uv_path.is_file() or not hash_path.is_file():
-        return [CheckResult("bootstrap:uv", False, True, "Windows 启动依赖或哈希文件缺失")]
+    bootstrap_path = settings.runtime / "bootstrap_manifest.json"
+    offline_path = settings.runtime / "offline_manifest.json"
+    if not bootstrap_path.exists() and not offline_path.exists():
+        return [CheckResult("bootstrap:offline", True, False, "源码环境未包含离线运行时，跳过发布包检查")]
+    if not bootstrap_path.is_file() or not offline_path.is_file():
+        return [CheckResult("bootstrap:offline", False, True, "离线运行时清单不完整")]
     try:
-        expected = hash_path.read_text(encoding="ascii").strip().casefold()
-        actual = sha256_file(uv_path).casefold()
-    except OSError as exc:
-        return [CheckResult("bootstrap:uv", False, True, "无法验证 uv.exe", {"error": str(exc)})]
-    ok = len(expected) == 64 and expected == actual
+        bootstrap = json.loads(bootstrap_path.read_text(encoding="utf-8"))
+        offline = json.loads(offline_path.read_text(encoding="utf-8"))
+        python_path = settings.runtime / "python" / "python.exe"
+        expected_manifest = str(bootstrap.get("offline_manifest_sha256", "")).casefold()
+        expected_python = str(bootstrap.get("python_sha256", "")).casefold()
+        actual_manifest = sha256_file(offline_path).casefold()
+        actual_python = sha256_file(python_path).casefold() if python_path.is_file() else ""
+        from .offline_runtime import verify_bundled_models
+
+        model_problems = verify_bundled_models(
+            settings.runtime / "site-packages",
+            verify_hashes=True,
+        )
+    except (OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
+        return [CheckResult("bootstrap:offline", False, True, "无法验证离线运行时", {"error": str(exc)})]
+    runtime_ok = bool(
+        bootstrap.get("runtime_delivery") == "offline-bundled"
+        and bootstrap.get("network_required") is False
+        and offline.get("delivery") == "offline-bundled"
+        and offline.get("network_required") is False
+        and len(expected_manifest) == 64
+        and expected_manifest == actual_manifest
+        and len(expected_python) == 64
+        and expected_python == actual_python
+    )
     return [
         CheckResult(
-            "bootstrap:uv",
-            ok,
+            "bootstrap:offline",
+            runtime_ok,
             True,
-            "uv.exe SHA-256 验证通过" if ok else "uv.exe SHA-256 不匹配",
-            {"expected": expected, "actual": actual},
-        )
+            "离线运行时验证通过" if runtime_ok else "离线运行时验证失败",
+            {
+                "manifest_expected": expected_manifest,
+                "manifest_actual": actual_manifest,
+                "python_expected": expected_python,
+                "python_actual": actual_python,
+            },
+        ),
+        CheckResult(
+            "bootstrap:offline-models",
+            not model_problems,
+            True,
+            "离线识别模型验证通过" if not model_problems else "离线识别模型验证失败",
+            {"problems": model_problems},
+        ),
     ]
 
 

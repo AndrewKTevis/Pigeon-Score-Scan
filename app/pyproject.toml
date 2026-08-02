@@ -1,6 +1,6 @@
 [project]
 name = "scorescan"
-version = "0.37.0"
+version = "0.38.0"
 description = "Local Windows desktop converter from printed score scans to MXL and MusicXML"
 readme = "README.md"
 requires-python = ">=3.12,<3.14"

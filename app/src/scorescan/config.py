@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 APP_NAME = "Pigeon Score Scan"
-APP_VERSION = "0.37.0"
+APP_VERSION = "0.38.0"
 WORKFLOW_VERSION = "printed-full-score-scan@1"
 
 

@@ -11,6 +11,34 @@ from pathlib import Path
 from app.tools import build_release
 
 
+def _offline_runtime_fixture(root: Path) -> Path:
+    runtime = root / "offline-runtime"
+    (runtime / "python").mkdir(parents=True)
+    (runtime / "site-packages" / "homr").mkdir(parents=True)
+    python_bytes = b"offline-python"
+    (runtime / "python" / "python.exe").write_bytes(python_bytes)
+    (runtime / "site-packages" / "homr" / "package.py").write_text(
+        "offline = True\n",
+        encoding="utf-8",
+    )
+    (runtime / "offline_manifest.json").write_text(
+        json.dumps(
+            {
+                "format": 1,
+                "delivery": "offline-bundled",
+                "network_required": False,
+                "python": {
+                    "version": "3.12.10",
+                    "executable": "python/python.exe",
+                    "sha256": hashlib.sha256(python_bytes).hexdigest(),
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+    return runtime
+
+
 def test_deterministic_zip_accepts_relative_source_root(
     tmp_path: Path,
     monkeypatch,
@@ -35,7 +63,7 @@ def test_release_excludes_out_of_scope_semantic_lyric_model() -> None:
     assert path.as_posix() in build_release.EXCLUDED_RELEASE_FILES
 
 
-def test_launcher_and_bootstrap_reject_stale_ready_state() -> None:
+def test_launcher_and_offline_runtime_reject_stale_ready_state() -> None:
     source_root = Path(__file__).resolve().parents[2]
     launcher = (source_root / "launcher.zig").read_text(encoding="utf-8")
     start_script = (source_root / "runtime" / "start.cmd").read_text(encoding="utf-8")
@@ -47,27 +75,27 @@ def test_launcher_and_bootstrap_reject_stale_ready_state() -> None:
     assert "executableDirPathAlloc(init.io" in launcher
     assert "READY_FILE" in start_script
     assert "FAILED_FILE" in start_script
-    assert "--frozen" in start_script
-    assert "--no-dev" in start_script
-    assert "--no-lock" not in start_script
-    assert "uv-bootstrap.ps1" in start_script
-    assert "pinned bootstrap" in start_script
+    assert 'set "SCORESCAN_OFFLINE_RUNTIME=1"' in start_script
+    assert 'set "PYTHON_EXE=%ROOT%\\runtime\\python\\python.exe"' in start_script
+    assert 'set "SITE_PACKAGES=%ROOT%\\runtime\\site-packages"' in start_script
+    assert "uv.exe" not in start_script
+    assert "http://" not in start_script and "https://" not in start_script
     assert "launchHidden" in launcher
     assert "ShellExecuteW" in launcher
-    assert '&.{ root, "runtime", "venv-cpu" }' in launcher
+    assert '&.{ root, "runtime", "python", "python.exe" }' in launcher
     assert "gpu_marker" not in launcher
-    assert "if (!exists(init.io, runtime_environment))" in launcher
+    assert "if (!exists(init.io, runtime_python))" in launcher
+    assert "first launch downloads" not in launcher.casefold()
     assert "openReadyUrl(init.io, allocator, ready, root, true)" in launcher
     assert "openReadyUrl(init.io, allocator, ready, root, false)" in launcher
     assert "if (!allow_browser_fallback) return true;" in launcher
 
 
-def test_first_run_bootstrap_download_uses_expand_archive_compatible_name() -> None:
+def test_runtime_source_contains_no_download_bootstrap() -> None:
     source_root = Path(__file__).resolve().parents[2]
-    bootstrap = (source_root / "runtime" / "uv-bootstrap.ps1").read_text(encoding="utf-8")
-
-    assert '"uv-download.zip"' in bootstrap
-    assert '"uv-download.tmp"' not in bootstrap
+    assert not (source_root / "runtime" / "uv-bootstrap.ps1").exists()
+    assert not (source_root / "runtime" / "repair-runtime.cmd").exists()
+    assert (source_root / "runtime" / "run_scorescan.py").is_file()
 
 
 def test_runtime_lock_installs_only_one_opencv_distribution() -> None:
@@ -98,13 +126,12 @@ def test_published_runtime_is_cpu_only_and_frozen() -> None:
     assert not (source_root / "app-gpu" / "pyproject.toml").exists()
     assert not (source_root / "app-gpu" / "uv.lock").exists()
 
-    assert 'set "PROJECT_ROOT=%ROOT%\\app"' in start_script
-    assert 'set "RUNTIME_ENVIRONMENT=%ROOT%\\runtime\\venv-cpu"' in start_script
+    assert 'set "SCORESCAN_RUNTIME_PROFILE=cpu"' in start_script
+    assert 'set "SCORESCAN_OFFLINE_RUNTIME=1"' in start_script
     assert "gpu.enabled" not in start_script.casefold()
-    assert 'set "PROJECT_ROOT=%ROOT%\\app-gpu"' not in start_script
-    assert 'set "RUNTIME_ENVIRONMENT=%ROOT%\\runtime\\venv-gpu"' not in start_script
-    assert 'set "UV_PROJECT_ENVIRONMENT=%RUNTIME_ENVIRONMENT%"' in start_script
-    assert '--frozen --no-dev --project "%PROJECT_ROOT%"' in start_script
+    assert "venv-gpu" not in start_script
+    assert "uv run" not in start_script.casefold()
+    assert '"%PYTHON_EXE%" -s "%RUNNER%"' in start_script
     assert not (source_root / "runtime" / "enable-gpu.cmd").exists()
     assert not (source_root / "runtime" / "disable-gpu.cmd").exists()
 
@@ -145,11 +172,11 @@ def test_windows_release_contains_verified_bootstrap_hashes(tmp_path: Path) -> N
     output = tmp_path / "out"
     (source / "runtime").mkdir(parents=True)
     (source / "runtime" / "start.cmd").write_text("@echo off\n", encoding="utf-8")
+    (source / "runtime" / "run_scorescan.py").write_text("# runner\n", encoding="utf-8")
     (source / "VERSION").write_text("test\n", encoding="utf-8")
     launcher = tmp_path / "ScoreScan.exe"
-    uv = tmp_path / "uv.exe"
     launcher.write_bytes(b"launcher")
-    uv.write_bytes(b"uv-binary")
+    offline_runtime = _offline_runtime_fixture(tmp_path)
     tool = Path(__file__).resolve().parents[1] / "tools" / "build_release.py"
     subprocess.run(
         [
@@ -163,27 +190,30 @@ def test_windows_release_contains_verified_bootstrap_hashes(tmp_path: Path) -> N
             "0.0.0-test",
             "--launcher",
             str(launcher),
-            "--uv",
-            str(uv),
+            "--offline-runtime",
+            str(offline_runtime),
         ],
         check=True,
     )
     archive_path = output / "Pigeon-Score-Scan-Windows-0.0.0-test.zip"
     with zipfile.ZipFile(archive_path) as archive:
         root = "Pigeon-Score-Scan-0.0.0-test"
-        expected = hashlib.sha256(b"uv-binary").hexdigest()
-        assert archive.read(f"{root}/runtime/uv.sha256").decode().strip() == expected
         manifest = json.loads(archive.read(f"{root}/runtime/bootstrap_manifest.json"))
-        assert manifest["uv_sha256"] == expected
+        assert manifest["runtime_delivery"] == "offline-bundled"
+        assert manifest["network_required"] is False
+        assert manifest["python_version"] == "3.12.10"
         assert manifest["launcher_sha256"] == hashlib.sha256(b"launcher").hexdigest()
+        assert archive.read(f"{root}/runtime/python/python.exe") == b"offline-python"
+        assert f"{root}/runtime/uv.exe" not in archive.namelist()
+        assert f"{root}/runtime/uv-bootstrap.ps1" not in archive.namelist()
 
 
-def test_windows_release_can_use_pinned_first_run_uv_bootstrap(tmp_path: Path) -> None:
+def test_windows_release_requires_complete_offline_runtime(tmp_path: Path) -> None:
     source = tmp_path / "source"
     output = tmp_path / "out"
     (source / "runtime").mkdir(parents=True)
     (source / "runtime" / "start.cmd").write_text("@echo off\n", encoding="utf-8")
-    (source / "runtime" / "uv-bootstrap.ps1").write_text("# pinned bootstrap\n", encoding="utf-8")
+    (source / "runtime" / "run_scorescan.py").write_text("# runner\n", encoding="utf-8")
     (source / "VERSION").write_text("test\n", encoding="utf-8")
     launcher = tmp_path / "ScoreScan.exe"
     launcher.write_bytes(b"launcher")
@@ -198,8 +228,8 @@ def test_windows_release_can_use_pinned_first_run_uv_bootstrap(tmp_path: Path) -
             str(output),
             "--version",
             "0.0.0-test",
-            "--launcher",
-            str(launcher),
+            "--launcher", str(launcher),
+            "--offline-runtime", str(_offline_runtime_fixture(tmp_path)),
         ],
         check=True,
     )
@@ -208,11 +238,10 @@ def test_windows_release_can_use_pinned_first_run_uv_bootstrap(tmp_path: Path) -
         root = "Pigeon-Score-Scan-0.0.0-test"
         manifest = json.loads(archive.read(f"{root}/runtime/bootstrap_manifest.json"))
         assert manifest["format"] == 2
-        assert manifest["uv_delivery"] == "pinned-first-run-download"
-        assert manifest["uv_version"] == "0.9.26"
-        assert len(manifest["uv_archive_sha256"]) == 64
+        assert manifest["runtime_delivery"] == "offline-bundled"
+        assert manifest["network_required"] is False
         assert f"{root}/runtime/uv.exe" not in archive.namelist()
-        assert f"{root}/runtime/uv-bootstrap.ps1" in archive.namelist()
+        assert f"{root}/runtime/site-packages/homr/package.py" in archive.namelist()
 
 
 def test_release_zip_normalises_source_file_permissions(tmp_path: Path) -> None:
@@ -269,6 +298,7 @@ def test_release_archives_exclude_user_runtime_state_and_stale_binaries(
     (source / "app" / ".venv").mkdir(parents=True)
     (source / "app" / "source.py").write_text("kept = True\n", encoding="utf-8")
     (source / "runtime" / "start.cmd").write_text("@echo off\n", encoding="utf-8")
+    (source / "runtime" / "run_scorescan.py").write_text("# runner\n", encoding="utf-8")
     (source / "runtime" / "uv-bootstrap.ps1").write_text("# bootstrap\n", encoding="utf-8")
     for path in (
         source / "runtime" / "venv" / "private.bin",
@@ -298,6 +328,7 @@ def test_release_archives_exclude_user_runtime_state_and_stale_binaries(
         path.write_bytes(b"must-not-ship")
     launcher = tmp_path / "fresh-ScoreScan.exe"
     launcher.write_bytes(b"fresh-launcher")
+    offline_runtime = _offline_runtime_fixture(tmp_path)
     tool = Path(__file__).resolve().parents[1] / "tools" / "build_release.py"
 
     subprocess.run(
@@ -312,6 +343,8 @@ def test_release_archives_exclude_user_runtime_state_and_stale_binaries(
             "0.0.0-test",
             "--launcher",
             str(launcher),
+            "--offline-runtime",
+            str(offline_runtime),
         ],
         check=True,
     )
@@ -322,13 +355,15 @@ def test_release_archives_exclude_user_runtime_state_and_stale_binaries(
     ):
         with zipfile.ZipFile(archive_path) as archive:
             names = archive.namelist()
+            is_windows = "-Windows-" in archive_path.name
             assert any(name.endswith("/app/source.py") for name in names)
             assert not any("/workspace/" in name for name in names)
             assert not any("/runtime/venv/" in name for name in names)
             assert not any("/runtime/venv-cpu/" in name for name in names)
             assert not any("/runtime/venv-gpu/" in name for name in names)
             assert not any("/runtime/uv-cache/" in name for name in names)
-            assert not any("/runtime/python/" in name for name in names)
+            assert any("/runtime/python/" in name for name in names) is is_windows
+            assert any("/runtime/site-packages/" in name for name in names) is is_windows
             assert not any("/runtime/diagnostics/" in name for name in names)
             assert not any("/runtime/preview-" in name for name in names)
             assert not any(

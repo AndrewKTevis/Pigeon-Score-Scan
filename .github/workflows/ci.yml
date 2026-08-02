@@ -66,4 +66,4 @@ jobs:
 
       - name: Build deterministic source archive
         if: matrix.python-version == '3.12'
-        run: uv run --project app python app/tools/build_release.py --source-root . --output-dir dist --version 0.37.0
+        run: uv run --project app python app/tools/build_release.py --source-root . --output-dir dist --version 0.38.0

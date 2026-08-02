@@ -11,6 +11,8 @@ htmlcov/
 .venv/
 venv/
 runtime/python/
+runtime/site-packages/
+runtime/offline_manifest.json
 runtime/venv-*/
 runtime/uv-cache/
 dist/

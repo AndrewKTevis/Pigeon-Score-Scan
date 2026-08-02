@@ -6,6 +6,12 @@ This project follows [Semantic Versioning](https://semver.org/) after the first 
 
 - No changes yet.
 
+## 0.38.0 — 2026-08-03
+
+- Bundled Python, locked dependencies and recognition models in the Windows package.
+- Removed first-run and first-conversion downloads from the product runtime.
+- Added an output reminder to assign the correct MuseScore instrument to each part.
+
 ## 0.37.0 — 2026-08-02
 
 - Published the first stable Windows release and signed source tag.

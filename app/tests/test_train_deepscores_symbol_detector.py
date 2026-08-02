@@ -557,6 +557,8 @@ def test_gpu_queue_cannot_skip_registered_scan_degraded_holdout_gates() -> None:
     assert "queue_semantic_detector_release_candidate.ps1" in queue
     assert "isolated candidate export remains blocked" in queue
     assert "never authorize canonical resources" in queue
+    assert "PIGEON_SCORE_SCAN_GPU_PYTHON" in queue
+    assert "test_space\\Pigeon-Score-Scan-0.37.0" not in queue
 
 
 def test_high_value_gpu_queue_is_serial_and_stops_on_stage_failure() -> None:
@@ -618,6 +620,8 @@ def test_semantic_candidate_is_authorized_only_in_isolated_resources() -> None:
     assert "isolated_product_evaluation_resources_verified = $true" in script
     assert "Copy-Item" in script
     assert "app\\src\\scorescan\\resources" in script
+    assert "PIGEON_SCORE_SCAN_GPU_PYTHON" in script
+    assert "test_space\\Pigeon-Score-Scan-0.37.0" not in script
 
 
 def test_muse_v2_preparation_keeps_strict_registration_and_class_evidence() -> None:

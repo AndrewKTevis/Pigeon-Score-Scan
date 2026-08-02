@@ -34,6 +34,7 @@ const messages = {
     conversionResult: 'Conversion result', checkDetails: 'Check details', handleChecks: 'Handle checks', downloadMusicXml: 'Download MusicXML',
     downloadMxl: 'Download MXL', exportMxl: 'Export MXL', exportMusicXml: 'Export MusicXML',
     mxlMuseScoreNote: 'MXL files can be viewed and edited in MuseScore', preview: 'Preview', closePreview: 'Close preview',
+    museScoreInstrumentNote: 'After export, assign the correct instrument to each part in MuseScore. Otherwise, displayed pitches may be incorrect.',
     loadingPreview: 'Loading preview…', previewUnavailable: 'Preview could not be loaded.', previewPage: 'Score preview page {count}',
     conversionReport: 'Conversion report', openMusicXml: 'Open MusicXML', openMxl: 'Open MXL', openFolder: 'Open folder',
     closeProduct: 'Close Pigeon Score Scan?', returnToApp: 'Return to application', chooseCloseAction: 'The service will stop.',
@@ -63,6 +64,7 @@ const messages = {
     currentResultChecked: 'Checked — keep current result'
   },
   zh: {
+    museScoreInstrumentNote: '导出后请在 MuseScore 中为声部选择正确的乐器，否则可能出现音高显示错误。',
     appToolbar: '应用工具栏', language: '语言', systemStatus: '系统状态', close: '关闭',
     conversionWorkflow: '转换流程', import: '导入', recognize: '识别', output: '输出', runtimeCheck: '运行检查', closeSystemStatus: '关闭系统状态',
     checking: '正在检查…', allChecks: '全部项目', downloadDiagnostics: '下载诊断包', unfinished: '未完成', resumePrevious: '继续上次转换',

@@ -24,6 +24,7 @@ FORBIDDEN_DIRECTORIES = {
     "__pycache__",
     "build",
     "dist",
+    "site-packages",
     "uv-cache",
     "venv",
 }
@@ -36,6 +37,7 @@ FORBIDDEN_NAMES = {
     "desktop.active",
     "launcher.exe",
     "launcher.log",
+    "offline_manifest.json",
     "pigeon-score-scan.exe",
     "ready.txt",
     "server.lock",

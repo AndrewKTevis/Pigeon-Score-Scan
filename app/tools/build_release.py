@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import os
 import shutil
 import tempfile
@@ -59,15 +60,15 @@ PORTABLE_EXCLUDED_ROOT_NAMES = {
 }
 PORTABLE_EXCLUDED_PREFIXES = {("app", "tests"), ("app", "tools")}
 RUNTIME_SOURCE_NAMES = {
-    "repair-runtime.cmd",
+    "run_scorescan.py",
     "show-window.cmd",
     "start.cmd",
-    "uv-bootstrap.ps1",
 }
 GENERATED_RUNTIME_NAMES = {
-    "uv.exe",
-    "uv.sha256",
     "bootstrap_manifest.json",
+    "offline_manifest.json",
+    "python",
+    "site-packages",
 }
 EXCLUDED_RELEASE_FILES = {
     # Semantic lyric output is outside the frozen product boundary.  Retain
@@ -191,13 +192,46 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def copy_offline_runtime(source: Path, destination: Path) -> dict[str, object]:
+    source = source.resolve()
+    python_source = source / "python"
+    packages_source = source / "site-packages"
+    manifest_source = source / "offline_manifest.json"
+    if not (python_source / "python.exe").is_file():
+        raise FileNotFoundError("offline runtime is missing python/python.exe")
+    if not (packages_source / "homr").is_dir():
+        raise FileNotFoundError("offline runtime is missing bundled dependencies")
+    if not manifest_source.is_file():
+        raise FileNotFoundError("offline runtime is missing offline_manifest.json")
+    for path in source.rglob("*"):
+        if path.is_symlink():
+            raise ValueError(f"offline runtime contains a symbolic link: {path}")
+    payload = json.loads(manifest_source.read_text(encoding="utf-8"))
+    if (
+        not isinstance(payload, dict)
+        or payload.get("delivery") != "offline-bundled"
+        or payload.get("network_required") is not False
+    ):
+        raise ValueError("offline runtime manifest has an invalid delivery contract")
+    python_payload = payload.get("python")
+    if not isinstance(python_payload, dict):
+        raise ValueError("offline runtime manifest is missing Python metadata")
+    expected_python_hash = str(python_payload.get("sha256", "")).casefold()
+    if sha256(python_source / "python.exe") != expected_python_hash:
+        raise ValueError("offline Python executable does not match its manifest")
+    shutil.copytree(python_source, destination / "python")
+    shutil.copytree(packages_source, destination / "site-packages")
+    shutil.copy2(manifest_source, destination / "offline_manifest.json")
+    return payload
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-root", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--version", required=True)
     parser.add_argument("--launcher", type=Path)
-    parser.add_argument("--uv", type=Path)
+    parser.add_argument("--offline-runtime", type=Path)
     args = parser.parse_args()
 
     version_label = args.version
@@ -214,35 +248,20 @@ def main() -> None:
             shutil.copy2(args.launcher, windows_root / PRODUCT_EXE)
             runtime = windows_root / "runtime"
             runtime.mkdir(parents=True, exist_ok=True)
+            if args.offline_runtime is None:
+                raise ValueError("--offline-runtime is required for a Windows release")
+            offline_payload = copy_offline_runtime(args.offline_runtime, runtime)
             bootstrap_manifest: dict[str, object] = {
                 "format": 2,
                 "launcher_sha256": sha256(windows_root / PRODUCT_EXE),
                 "start_cmd_sha256": sha256(runtime / "start.cmd"),
+                "runner_sha256": sha256(runtime / "run_scorescan.py"),
+                "runtime_delivery": "offline-bundled",
+                "network_required": False,
+                "offline_manifest_sha256": sha256(runtime / "offline_manifest.json"),
+                "python_version": offline_payload["python"]["version"],
+                "python_sha256": sha256(runtime / "python" / "python.exe"),
             }
-            bootstrap_script = runtime / "uv-bootstrap.ps1"
-            if bootstrap_script.is_file():
-                bootstrap_manifest["uv_bootstrap_sha256"] = sha256(bootstrap_script)
-            if args.uv:
-                uv_target = runtime / "uv.exe"
-                shutil.copy2(args.uv, uv_target)
-                (runtime / "uv.sha256").write_text(sha256(uv_target) + "\n", encoding="ascii")
-                bootstrap_manifest.update(
-                    {
-                        "uv_delivery": "bundled",
-                        "uv_sha256": sha256(uv_target),
-                    }
-                )
-            else:
-                if not bootstrap_script.is_file():
-                    raise FileNotFoundError("runtime/uv-bootstrap.ps1 is required when --uv is omitted")
-                bootstrap_manifest.update(
-                    {
-                        "uv_delivery": "pinned-first-run-download",
-                        "uv_version": "0.9.26",
-                        "uv_archive_sha256": "eb02fd95d8e0eed462b4a67ecdd320d865b38c560bffcda9a0b87ec944bdf036",
-                    }
-                )
-            import json
             (runtime / "bootstrap_manifest.json").write_text(
                 json.dumps(bootstrap_manifest, indent=2, sort_keys=True) + "\n",
                 encoding="utf-8",
