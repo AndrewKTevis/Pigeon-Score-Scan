@@ -22,7 +22,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-  "pdfplumber==0.11.9",
+  "pdfplumber==0.11.10",
   "pytest==9.0.3",
   "scikit-learn==1.8.0",
 ]
