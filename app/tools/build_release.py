@@ -25,6 +25,8 @@ EXCLUDED_SUFFIXES = {".pyc", ".pyo", ".tmp"}
 # archives: shipping it would leak local research state and can inflate one
 # build by tens of gigabytes.
 EXCLUDED_ROOT_NAMES = {
+    "build",
+    "dist",
     "workspace",
     "development_reports",
     "tmp",
@@ -40,7 +42,21 @@ GENERATED_ROOT_NAMES = {
     "ScoreScan",
     "launcher.exe",
 }
-PORTABLE_EXCLUDED_ROOT_NAMES = {"training", "test_materials"}
+PORTABLE_EXCLUDED_ROOT_NAMES = {
+    ".editorconfig",
+    ".gitattributes",
+    ".github",
+    ".gitignore",
+    "BUILDING.md",
+    "CHANGELOG.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "PUBLIC_RELEASE_CHECKLIST.md",
+    "launcher.zig",
+    "third_party",
+    "training",
+    "test_materials",
+}
 PORTABLE_EXCLUDED_PREFIXES = {("app", "tests"), ("app", "tools")}
 RUNTIME_SOURCE_NAMES = {
     "repair-runtime.cmd",
@@ -186,7 +202,7 @@ def main() -> None:
 
     version_label = args.version
     source_name = f"{PRODUCT_SLUG}-Source-{version_label}"
-    windows_name = f"{PRODUCT_SLUG}-{version_label.removesuffix('-beta')}"
+    windows_name = f"{PRODUCT_SLUG}-{version_label}"
     source_zip = args.output_dir / f"{PRODUCT_SLUG}-Source-{version_label}.zip"
     windows_zip = args.output_dir / f"{PRODUCT_SLUG}-Windows-{version_label}.zip"
     deterministic_zip(args.source_root, source_zip, source_name)

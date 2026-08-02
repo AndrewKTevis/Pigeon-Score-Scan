@@ -113,6 +113,9 @@ def test_portable_copy_omits_development_only_roots(tmp_path: Path) -> None:
     source = tmp_path / "source"
     destination = tmp_path / "portable"
     for relative in (
+        ".github/workflows/ci.yml",
+        "BUILDING.md",
+        "launcher.zig",
         "app/src/scorescan/main.py",
         "app/tests/test_main.py",
         "app/tools/benchmark.py",
@@ -128,6 +131,9 @@ def test_portable_copy_omits_development_only_roots(tmp_path: Path) -> None:
 
     assert (destination / "app/src/scorescan/main.py").is_file()
     assert (destination / "README_zh-CN.txt").is_file()
+    assert not (destination / ".github").exists()
+    assert not (destination / "BUILDING.md").exists()
+    assert not (destination / "launcher.zig").exists()
     assert not (destination / "app/tests").exists()
     assert not (destination / "app/tools").exists()
     assert not (destination / "training").exists()
@@ -371,3 +377,31 @@ def test_release_file_walk_prunes_external_training_tree(
 
     assert [path.relative_to(source).as_posix() for path in selected] == ["app/kept.py"]
     assert source / "training_data" not in visited
+
+
+def test_release_file_walk_prunes_output_directories(
+    tmp_path: Path,
+    monkeypatch,
+) -> None:
+    source = tmp_path / "source"
+    (source / "app").mkdir(parents=True)
+    (source / "app" / "kept.py").write_text("kept = True\n", encoding="utf-8")
+    for name in ("build", "dist"):
+        output = source / name / "nested"
+        output.mkdir(parents=True)
+        (output / "stale.zip").write_bytes(b"stale")
+
+    visited: list[Path] = []
+    original_walk = build_release.os.walk
+
+    def recording_walk(*args, **kwargs):
+        for directory, directory_names, file_names in original_walk(*args, **kwargs):
+            visited.append(Path(directory))
+            yield directory, directory_names, file_names
+
+    monkeypatch.setattr(build_release.os, "walk", recording_walk)
+    selected = build_release.release_files(source)
+
+    assert [path.relative_to(source).as_posix() for path in selected] == ["app/kept.py"]
+    assert source / "build" not in visited
+    assert source / "dist" not in visited
