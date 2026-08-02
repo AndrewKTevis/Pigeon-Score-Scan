@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from scorescan import cpu_runtime
 from scorescan.cpu_runtime import (
     configure_cpu_environment,
     cpu_thread_budget,
@@ -35,6 +36,7 @@ def test_native_libraries_share_one_cpu_budget() -> None:
 
 
 def test_rapidocr_is_explicitly_cpu_and_avoids_interop_oversubscription(monkeypatch) -> None:
+    monkeypatch.setattr(cpu_runtime.os, "cpu_count", lambda: 8)
     monkeypatch.setenv("SCORESCAN_ENGINE_THREADS", "5")
     parameters = rapidocr_cpu_parameters()
     assert parameters["EngineConfig.onnxruntime.use_cuda"] is False
