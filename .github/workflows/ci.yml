@@ -37,6 +37,9 @@ jobs:
       - name: Install uv
         run: python -m pip install uv==0.9.26
 
+      - name: Audit public tree
+        run: python app/tools/check_public_tree.py .
+
       - name: Verify and install locked dependencies
         run: |
           uv lock --project app --check
@@ -44,9 +47,6 @@ jobs:
 
       - name: Audit installed dependencies
         run: uv tool run --from pip-audit==2.10.1 pip-audit --path app/.venv/Lib/site-packages --progress-spinner off
-
-      - name: Audit public tree
-        run: uv run --project app python app/tools/check_public_tree.py .
 
       - name: Static checks
         run: |
