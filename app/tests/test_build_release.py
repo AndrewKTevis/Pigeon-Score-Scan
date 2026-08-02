@@ -76,7 +76,7 @@ def test_runtime_lock_installs_only_one_opencv_distribution() -> None:
     lock = (app_root / "uv.lock").read_text(encoding="utf-8")
 
     assert "opencv-python" in project["tool"]["uv"]["exclude-dependencies"]
-    assert "opencv-python-headless==4.13.0.92" in project["project"]["dependencies"]
+    assert "opencv-python-headless==4.14.0.94" in project["project"]["dependencies"]
     assert '\nname = "opencv-python-headless"\n' in lock
     assert '\nname = "opencv-python"\n' not in lock
 
