@@ -23,6 +23,7 @@ jobs:
         python-version: ["3.12", "3.13"]
     env:
       PYTHONUTF8: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
       PYTHONPATH: ${{ github.workspace }}\app\src
     steps:
       - name: Check out source
