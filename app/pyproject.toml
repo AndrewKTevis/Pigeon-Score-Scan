@@ -17,7 +17,7 @@ dependencies = [
   "PyMuPDF==1.28.0",
   "pystray==0.19.5",
   "pywebview==6.2.1",
-  "verovio==6.2.1",
+  "verovio==6.3.0",
 ]
 
 [dependency-groups]
