@@ -24,7 +24,7 @@ from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
 from typing import Any, Callable
 
-import fitz
+import pymupdf as fitz
 from lxml import etree
 
 

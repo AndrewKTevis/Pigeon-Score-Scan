@@ -7,7 +7,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-import fitz
+import pymupdf as fitz
 
 from app.tools.acquire_openscore_imslp_scans import ROLE as BYTE_MANIFEST_ROLE
 from app.tools.catalog_openscore_imslp_scan_candidates import (

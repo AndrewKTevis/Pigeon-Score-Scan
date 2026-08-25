@@ -406,7 +406,7 @@ def _pdf_coverage(
     selected_ids: list[int],
     work_by_pair: dict[int, str],
 ) -> dict[str, Any]:
-    import fitz
+    import pymupdf as fitz
 
     rows: list[dict[str, Any]] = []
     independent_rows: list[dict[str, Any]] = []

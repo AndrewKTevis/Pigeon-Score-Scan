@@ -6,7 +6,7 @@ import shutil
 import uuid
 from pathlib import Path
 
-import fitz
+import pymupdf as fitz
 from PIL import Image, ImageDraw, ImageOps, ImageSequence
 
 from .config import Settings

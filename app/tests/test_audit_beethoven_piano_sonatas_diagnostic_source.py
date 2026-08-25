@@ -3,7 +3,7 @@ from __future__ import annotations
 import base64
 from pathlib import Path
 
-import fitz
+import pymupdf as fitz
 import pytest
 
 from app.tools.audit_beethoven_piano_sonatas_diagnostic_source import (

@@ -239,7 +239,7 @@ def _render_pdf_reference_page(
     width: int,
     height: int,
 ) -> Image.Image:
-    import fitz
+    import pymupdf as fitz
 
     if width <= 0 or height <= 0:
         raise ValueError("reference render dimensions must be positive")
@@ -536,7 +536,7 @@ def main(argv: list[str] | None = None) -> int:
         remaining_non_lyrics = non_lyric_tokens.copy()
         source_rows = 0
         source_rejected = 0
-        import fitz
+        import pymupdf as fitz
 
         with pdfplumber.open(pdf_path) as pdf, fitz.open(
             str(pdf_path)

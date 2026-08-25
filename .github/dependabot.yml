@@ -1,12 +1,16 @@
 version: 2
 updates:
-  - package-ecosystem: pip
+  - package-ecosystem: uv
     directory: /app
     schedule:
       interval: weekly
       day: monday
     open-pull-requests-limit: 5
     labels: [dependencies]
+    groups:
+      routine-runtime-updates:
+        dependency-type: production
+        update-types: [minor, patch]
     ignore:
       # homr 0.7.0 requires opencv-python-headless <5.0.0.0.
       - dependency-name: opencv-python-headless
@@ -19,3 +23,6 @@ updates:
       day: monday
     open-pull-requests-limit: 5
     labels: [dependencies]
+    groups:
+      codeql-actions:
+        patterns: ["github/codeql-action/*"]

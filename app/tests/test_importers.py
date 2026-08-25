@@ -105,7 +105,7 @@ def test_image_pixel_budget_is_not_converted_to_placeholder(tmp_path: Path) -> N
 
 
 def test_pdf_render_pixel_budget_fails_before_pixmap_allocation(tmp_path: Path) -> None:
-    import fitz
+    import pymupdf as fitz
     import pytest
 
     source = tmp_path / "large-page.pdf"
@@ -131,7 +131,7 @@ def test_pdf_render_pixel_budget_fails_before_pixmap_allocation(tmp_path: Path) 
 
 
 def test_pdf_render_adapts_dpi_within_safe_quality_floor(tmp_path: Path) -> None:
-    import fitz
+    import pymupdf as fitz
 
     source = tmp_path / "large-page.pdf"
     document = fitz.open()

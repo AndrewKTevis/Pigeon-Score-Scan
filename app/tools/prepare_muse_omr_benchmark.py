@@ -22,7 +22,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from lxml import etree
-import fitz
+import pymupdf as fitz
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))

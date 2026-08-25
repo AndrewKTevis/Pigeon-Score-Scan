@@ -22,7 +22,7 @@ from statistics import median
 from typing import Any, Iterable
 
 import cv2
-import fitz
+import pymupdf as fitz
 import numpy as np
 from PIL import Image
 

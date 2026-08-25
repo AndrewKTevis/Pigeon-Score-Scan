@@ -15,7 +15,7 @@ from collections import Counter, defaultdict
 from pathlib import Path, PurePosixPath
 from typing import BinaryIO, Callable, Mapping
 
-import fitz
+import pymupdf as fitz
 
 APP_ROOT = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = APP_ROOT.parent

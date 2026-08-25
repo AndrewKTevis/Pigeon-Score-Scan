@@ -15,7 +15,7 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-import fitz
+import pymupdf as fitz
 
 
 APP_ROOT = Path(__file__).resolve().parents[1]

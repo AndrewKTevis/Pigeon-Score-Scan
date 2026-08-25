@@ -6,7 +6,7 @@ import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
-import fitz
+import pymupdf as fitz
 import pytest
 
 from app.tools.prepare_openscore_real_scan_semantic_corpus import (

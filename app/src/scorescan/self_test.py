@@ -39,7 +39,11 @@ class CheckResult:
 def _module_check(module_name: str, *, critical: bool = True) -> CheckResult:
     try:
         importlib.import_module(module_name)
-        distribution_names = {"cv2": "opencv-python-headless", "PIL": "Pillow", "fitz": "PyMuPDF"}
+        distribution_names = {
+            "cv2": "opencv-python-headless",
+            "PIL": "Pillow",
+            "pymupdf": "PyMuPDF",
+        }
         try:
             version = importlib.metadata.version(distribution_names.get(module_name, module_name))
         except importlib.metadata.PackageNotFoundError:
@@ -241,7 +245,7 @@ def run_system_check(settings: Settings) -> dict[str, Any]:
     except OSError as exc:
         checks.append(CheckResult("filesystem:free-space", False, True, "无法读取磁盘空间", {"error": str(exc)}))
 
-    for name in ("cv2", "numpy", "lxml", "PIL", "flask", "fitz"):
+    for name in ("cv2", "numpy", "lxml", "PIL", "flask", "pymupdf"):
         checks.append(_module_check(name))
     # homr can be relatively heavy, but a public build must at least import its entrypoint.
     checks.append(_module_check("homr"))

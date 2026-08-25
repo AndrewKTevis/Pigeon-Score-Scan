@@ -162,7 +162,7 @@ def test_reuse_or_download_hardlinks_verified_catalog_file(
 
 
 def test_pdf_coverage_counts_only_one_variant_per_work(tmp_path: Path) -> None:
-    import fitz
+    import pymupdf as fitz
 
     pairs = {
         1: ("mscz/score_file_1.mscz", "pdf/score_file_1.pdf"),

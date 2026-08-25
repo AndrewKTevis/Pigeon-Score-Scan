@@ -7,7 +7,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-import fitz
+import pymupdf as fitz
 import pytest
 
 from app.tools.acquire_openscore_imslp_scans import (
