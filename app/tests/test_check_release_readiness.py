@@ -3,6 +3,7 @@ from pathlib import Path
 from app.tools.check_release_readiness import (
     find_non_cache_temporary_files,
     portable_runtime_source_contract,
+    public_pypi_lock_contract,
 )
 
 
@@ -49,3 +50,35 @@ def test_portable_runtime_source_contract_requires_offline_bundle(
     assert portable_runtime_source_contract(tmp_path)
     (runtime / "uv-bootstrap.ps1").write_text("# download\n", encoding="utf-8")
     assert not portable_runtime_source_contract(tmp_path)
+
+
+def test_public_pypi_lock_contract_parses_exact_artifact_hosts(tmp_path: Path) -> None:
+    lock_path = tmp_path / "uv.lock"
+    valid = """\
+version = 1
+revision = 3
+requires-python = ">=3.12, <3.14"
+
+[[package]]
+name = "sample"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/sample.tar.gz", hash = "sha256:00" }
+"""
+    lock_path.write_text(valid, encoding="utf-8")
+    assert public_pypi_lock_contract(lock_path)
+
+    deceptive_values = (
+        valid.replace("files.pythonhosted.org", "files.pythonhosted.org.example.invalid"),
+        valid.replace("https://files.pythonhosted.org", "https://user@files.pythonhosted.org"),
+        valid.replace("https://pypi.org/simple", "https://pypi.org.example.invalid/simple"),
+        valid.replace("/packages/sample.tar.gz", "/other/sample.tar.gz"),
+    )
+    for value in deceptive_values:
+        lock_path.write_text(value, encoding="utf-8")
+        assert not public_pypi_lock_contract(lock_path)
+
+
+def test_checked_in_lock_uses_exact_public_pypi_hosts() -> None:
+    app_root = Path(__file__).resolve().parents[1]
+    assert public_pypi_lock_contract(app_root / "uv.lock")

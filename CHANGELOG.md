@@ -7,6 +7,7 @@ This project follows [Semantic Versioning](https://semver.org/) after the first 
 - Updated lxml, NumPy, ONNX Runtime, PyMuPDF and Verovio.
 - Migrated PDF imports to the current PyMuPDF module name.
 - Updated the development dependency lock and CodeQL; grouped compatible Dependabot updates.
+- Redacted internal exception details from local API responses and tightened public-PyPI lock verification.
 
 ## 0.38.0 — 2026-08-03
 

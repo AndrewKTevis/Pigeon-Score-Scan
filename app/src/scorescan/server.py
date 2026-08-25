@@ -181,8 +181,9 @@ def create_app(root: Path, access_token: str | None = None) -> Flask:
                 reserve_bytes=settings.minimum_free_space_bytes,
                 context="接收上传文件",
             )
-        except StorageCapacityError as exc:
-            return jsonify({"error": str(exc)}), 507
+        except StorageCapacityError:
+            app.logger.warning("Upload capacity preflight failed", exc_info=True)
+            return jsonify({"error": "可用磁盘空间不足，请释放空间后重试。"}), 507
         files = request.files.getlist("files")
         if not files:
             return jsonify({"error": "没有收到文件"}), 400
@@ -205,8 +206,9 @@ def create_app(root: Path, access_token: str | None = None) -> Flask:
                 pdf_dpi=pdf_dpi,
             )
             return jsonify(manager.describe(job)), 201
-        except StorageCapacityError as exc:
-            return jsonify({"error": str(exc)}), 507
+        except StorageCapacityError:
+            app.logger.warning("Job creation exceeded storage capacity", exc_info=True)
+            return jsonify({"error": "可用磁盘空间或工作区容量不足，请清理旧任务后重试。"}), 507
         except OSError as exc:
             # ENOSPC and quota failures can still occur between the preflight check
             # and the final write.  Report a capacity error while the finally block
@@ -214,8 +216,9 @@ def create_app(root: Path, access_token: str | None = None) -> Flask:
             if getattr(exc, "errno", None) in {28, 122}:
                 return jsonify({"error": "磁盘空间或工作区配额不足，上传未提交。"}), 507
             raise
-        except ValueError as exc:
-            return jsonify({"error": str(exc)}), 400
+        except ValueError:
+            app.logger.info("Job submission was rejected", exc_info=True)
+            return jsonify({"error": "输入文件或转换设置无效。"}), 400
         finally:
             for path in saved:
                 try:
@@ -269,10 +272,15 @@ def create_app(root: Path, access_token: str | None = None) -> Flask:
             return None, (jsonify({"error": "结果尚未生成"}), 404)
         valid_bundle, bundle_errors = verify_job_bundle(job)
         if not valid_bundle:
-            return None, (jsonify({
-                "error": "结果文件完整性检查失败，请重新转换或查看报告",
-                "details": bundle_errors,
-            }), 409)
+            app.logger.warning(
+                "Result bundle verification failed for job %s: %s",
+                job.id,
+                bundle_errors,
+            )
+            return None, (
+                jsonify({"error": "结果文件完整性检查失败，请重新转换。"}),
+                409,
+            )
         path = Path(path_value).resolve()
         if not path_is_within(path, job.root) or not path.exists():
             return None, (jsonify({"error": "结果文件不存在"}), 404)
@@ -284,9 +292,15 @@ def create_app(root: Path, access_token: str | None = None) -> Flask:
         if job is None:
             return jsonify({"error": "任务不存在"}), 404
         valid, errors = verify_job_bundle(job)
+        if not valid:
+            app.logger.warning(
+                "Result bundle integrity endpoint failed for job %s: %s",
+                job.id,
+                errors,
+            )
         return jsonify({
             "valid": valid,
-            "errors": errors,
+            "errors": [] if valid else ["结果文件完整性检查未通过"],
             "bundle_id": job.artifact_bundle_id,
             "manifest": bool(job.artifact_manifest_path),
         }), (200 if valid else 409)
@@ -395,8 +409,9 @@ def create_app(root: Path, access_token: str | None = None) -> Flask:
         try:
             _open_path(path)
             return jsonify({"ok": True})
-        except Exception as exc:
-            return jsonify({"error": f"无法打开文件：{exc}"}), 500
+        except Exception:
+            app.logger.exception("Failed to open MusicXML for job %s", job_id)
+            return jsonify({"error": "无法打开 MusicXML 文件。"}), 500
 
     @app.post("/api/jobs/<job_id>/open/mxl")
     def open_mxl(job_id: str):
@@ -407,8 +422,9 @@ def create_app(root: Path, access_token: str | None = None) -> Flask:
         try:
             _open_path(path)
             return jsonify({"ok": True})
-        except Exception as exc:
-            return jsonify({"error": f"无法打开文件：{exc}"}), 500
+        except Exception:
+            app.logger.exception("Failed to open MXL for job %s", job_id)
+            return jsonify({"error": "无法打开 MXL 文件。"}), 500
 
     @app.post("/api/jobs/<job_id>/open/folder")
     def open_result_folder(job_id: str):
@@ -419,8 +435,9 @@ def create_app(root: Path, access_token: str | None = None) -> Flask:
         try:
             _open_path(path, select=True)
             return jsonify({"ok": True})
-        except Exception as exc:
-            return jsonify({"error": f"无法打开文件夹：{exc}"}), 500
+        except Exception:
+            app.logger.exception("Failed to open result folder for job %s", job_id)
+            return jsonify({"error": "无法打开结果文件夹。"}), 500
 
     shutdown_event = threading.Event()
 

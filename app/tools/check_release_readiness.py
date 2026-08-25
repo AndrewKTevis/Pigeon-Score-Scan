@@ -3,7 +3,9 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import tomllib
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from scorescan.config import APP_VERSION, WORKFLOW_VERSION
 from scorescan.model_registry import build_manifest
@@ -29,6 +31,65 @@ REQUIRED_DOCS = (
     "THIRD_PARTY_NOTICES.txt",
     "LICENSE",
 )
+
+
+def public_pypi_lock_contract(lock_path: Path) -> bool:
+    """Require a parsed uv lock whose downloadable artifacts use public PyPI."""
+
+    if not lock_path.is_file():
+        return False
+    try:
+        lock = tomllib.loads(lock_path.read_text(encoding="utf-8"))
+    except (OSError, tomllib.TOMLDecodeError):
+        return False
+    if lock.get("requires-python") != ">=3.12, <3.14":
+        return False
+    packages = lock.get("package")
+    if not isinstance(packages, list) or not packages:
+        return False
+
+    artifact_seen = False
+    for package in packages:
+        if not isinstance(package, dict):
+            return False
+        source = package.get("source")
+        if source not in (
+            {"registry": "https://pypi.org/simple"},
+            {"virtual": "."},
+        ):
+            return False
+
+        artifacts: list[object] = []
+        if "sdist" in package:
+            artifacts.append(package["sdist"])
+        wheels = package.get("wheels", [])
+        if not isinstance(wheels, list):
+            return False
+        artifacts.extend(wheels)
+        for artifact in artifacts:
+            if not isinstance(artifact, dict):
+                return False
+            url = artifact.get("url")
+            if not isinstance(url, str):
+                return False
+            try:
+                parsed = urlsplit(url)
+                port = parsed.port
+            except ValueError:
+                return False
+            if (
+                parsed.scheme.casefold() != "https"
+                or (parsed.hostname or "").casefold() != "files.pythonhosted.org"
+                or parsed.username is not None
+                or parsed.password is not None
+                or port is not None
+                or not parsed.path.startswith("/packages/")
+                or parsed.query
+                or parsed.fragment
+            ):
+                return False
+            artifact_seen = True
+    return artifact_seen
 
 
 def find_non_cache_temporary_files(source_root: Path) -> list[str]:
@@ -4069,10 +4130,7 @@ def check(source_root: Path) -> dict[str, object]:
     lock_text = uv_lock.read_text(encoding="utf-8", errors="replace") if uv_lock.is_file() else ""
     add(
         "dependency:transitive-lock",
-        uv_lock.is_file()
-        and 'requires-python = ">=3.12, <3.14"' in lock_text
-        and 'source = { registry = "https://pypi.org/simple" }' in lock_text
-        and "files.pythonhosted.org" in lock_text
+        public_pypi_lock_contract(uv_lock)
         and "applied-caas" not in lock_text
         and "reader:" not in lock_text,
         "fully resolved public-PyPI uv.lock is committed and portable bootstrap runs frozen",

@@ -59,7 +59,7 @@ def test_local_api_requires_session_token_and_rejects_cross_site_origin(tmp_path
     ).status_code == 200
 
 
-def test_download_is_guarded_by_bundle_integrity(tmp_path: Path) -> None:
+def test_download_is_guarded_by_bundle_integrity(tmp_path: Path, monkeypatch) -> None:
     from lxml import etree
 
     from scorescan.integrity import build_bundle_integrity
@@ -119,9 +119,29 @@ def test_download_is_guarded_by_bundle_integrity(tmp_path: Path) -> None:
     # downloadable even when the automatic checks classify it as best effort.
     assert client.get(f"/api/jobs/{job.id}/download/musicxml", headers=AUTH).status_code == 200
     job.quality_state = "verified"
+
+    def reject_open(*_args, **_kwargs):
+        raise RuntimeError("private runtime detail")
+
+    monkeypatch.setattr("scorescan.server._open_path", reject_open)
+    expected_open_errors = {
+        "musicxml": "无法打开 MusicXML 文件。",
+        "mxl": "无法打开 MXL 文件。",
+        "folder": "无法打开结果文件夹。",
+    }
+    for target, expected_error in expected_open_errors.items():
+        open_response = client.post(f"/api/jobs/{job.id}/open/{target}", headers=AUTH)
+        assert open_response.status_code == 500
+        assert open_response.json == {"error": expected_error}
+        assert "private runtime detail" not in open_response.get_data(as_text=True)
+
     musicxml.write_text("corrupted", encoding="utf-8")
-    assert client.get(f"/api/jobs/{job.id}/integrity", headers=AUTH).status_code == 409
-    assert client.get(f"/api/jobs/{job.id}/download/musicxml", headers=AUTH).status_code == 409
+    integrity_response = client.get(f"/api/jobs/{job.id}/integrity", headers=AUTH)
+    assert integrity_response.status_code == 409
+    assert integrity_response.json["errors"] == ["结果文件完整性检查未通过"]
+    download_response = client.get(f"/api/jobs/{job.id}/download/musicxml", headers=AUTH)
+    assert download_response.status_code == 409
+    assert download_response.json == {"error": "结果文件完整性检查失败，请重新转换。"}
 
 
 def test_http_errors_preserve_status_and_completed_result_requires_manifest(tmp_path: Path) -> None:
@@ -282,7 +302,41 @@ def test_upload_preflight_reports_insufficient_storage(tmp_path: Path, monkeypat
         content_type="multipart/form-data",
     )
     assert response.status_code == 507
-    assert response.json["error"] == "synthetic disk reserve"
+    assert response.json["error"] == "可用磁盘空间不足，请释放空间后重试。"
+    assert "synthetic disk reserve" not in response.get_data(as_text=True)
+
+
+def test_job_submission_redacts_manager_exceptions(tmp_path: Path, monkeypatch) -> None:
+    from scorescan.storage import StorageCapacityError
+
+    app = create_app(tmp_path, access_token="test-token")
+    app.testing = True
+    client = app.test_client()
+    manager = app.config["SCORESCAN_JOB_MANAGER"]
+
+    def submit_with(exception: Exception):
+        def reject(*_args, **_kwargs):
+            raise exception
+
+        monkeypatch.setattr(manager, "create_job", reject)
+        return client.post(
+            "/api/jobs",
+            headers=AUTH,
+            data={"files": [(BytesIO(png_bytes()), "1.png")]},
+            content_type="multipart/form-data",
+        )
+
+    capacity = submit_with(StorageCapacityError("private workspace path"))
+    assert capacity.status_code == 507
+    assert capacity.json["error"] == (
+        "可用磁盘空间或工作区容量不足，请清理旧任务后重试。"
+    )
+    assert "private workspace path" not in capacity.get_data(as_text=True)
+
+    invalid = submit_with(ValueError("private parser detail"))
+    assert invalid.status_code == 400
+    assert invalid.json["error"] == "输入文件或转换设置无效。"
+    assert "private parser detail" not in invalid.get_data(as_text=True)
 
 
 def test_compact_job_status_omits_heavy_page_audits(tmp_path: Path) -> None:
