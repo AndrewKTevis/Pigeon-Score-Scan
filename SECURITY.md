@@ -6,7 +6,7 @@ Security fixes are applied to the newest published release and the current `main
 
 ## Reporting a vulnerability
 
-Use [GitHub private vulnerability reporting](https://github.com/KalePotato/Pigeon-Score-Scan/security/advisories/new). Do not open a public issue before a fix is available.
+Use [GitHub private vulnerability reporting](https://github.com/AndrewKTevis/Pigeon-Score-Scan/security/advisories/new). Do not open a public issue before a fix is available.
 
 Include:
 

@@ -1,7 +1,7 @@
 # Pigeon Score Scan
 
-[![CI](https://github.com/KalePotato/Pigeon-Score-Scan/actions/workflows/ci.yml/badge.svg)](https://github.com/KalePotato/Pigeon-Score-Scan/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/KalePotato/Pigeon-Score-Scan/actions/workflows/codeql.yml/badge.svg)](https://github.com/KalePotato/Pigeon-Score-Scan/actions/workflows/codeql.yml)
+[![CI](https://github.com/AndrewKTevis/Pigeon-Score-Scan/actions/workflows/ci.yml/badge.svg)](https://github.com/AndrewKTevis/Pigeon-Score-Scan/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/AndrewKTevis/Pigeon-Score-Scan/actions/workflows/codeql.yml/badge.svg)](https://github.com/AndrewKTevis/Pigeon-Score-Scan/actions/workflows/codeql.yml)
 [![License: AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue.svg)](LICENSE)
 
 [中文](README.zh-CN.md)
@@ -10,7 +10,7 @@ Pigeon Score Scan is a local Windows application for converting printed staff-no
 
 ## Download
 
-Download the Windows x64 package from [Releases](https://github.com/KalePotato/Pigeon-Score-Scan/releases), extract the complete ZIP, and run `pigeon-score-scan.exe`.
+Download the Windows x64 package from [Releases](https://github.com/AndrewKTevis/Pigeon-Score-Scan/releases), extract the complete ZIP, and run `pigeon-score-scan.exe`.
 
 The Windows package includes Python, locked dependencies and recognition models. Startup and conversion do not download runtime files. Current Windows packages are unsigned, so Windows may display a security warning.
 
