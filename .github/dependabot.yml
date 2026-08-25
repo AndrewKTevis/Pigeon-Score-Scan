@@ -3,8 +3,7 @@ updates:
   - package-ecosystem: uv
     directory: /app
     schedule:
-      interval: weekly
-      day: monday
+      interval: monthly
     open-pull-requests-limit: 5
     labels: [dependencies]
     groups:
@@ -19,8 +18,7 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
-      day: monday
+      interval: monthly
     open-pull-requests-limit: 5
     labels: [dependencies]
     groups:
